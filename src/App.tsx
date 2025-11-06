@@ -55,6 +55,18 @@ const getGroupName = (group: number): string => {
   return names[group] || 'Unknown Group';
 };
 
+const getSequenceLabel = (group: number): string => {
+  const labels: Record<number, string> = {
+    1: "First:",
+    2: 'Then:',
+    3: 'Next:',
+    4: 'Following:',
+    5: 'After:',
+    6: 'Finally:'
+  };
+  return labels[group] || '';
+};
+
 const getGroupTransition = (group: number): string => {
   const transitions: Record<number, string> = {
     1: "Encountering God's throne, seraphim, and holy glory",
@@ -242,7 +254,10 @@ function App() {
                 <div key={group} className="flex items-start gap-3">
                   <div className={`w-4 h-4 rounded mt-1 flex-shrink-0 ${getColorClass(group)}`}></div>
                   <div className="text-sm">
-                    <div className="font-medium text-gray-800">{getGroupName(group)}</div>
+                    <div className="font-medium text-gray-800">
+                      <span className="text-gray-500 text-xs mr-1">{getSequenceLabel(group)}</span>
+                      {getGroupName(group)}
+                    </div>
                     <div className="text-gray-600 text-xs">{getGroupTransition(group)}</div>
                   </div>
                 </div>
