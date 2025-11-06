@@ -90,6 +90,33 @@ const getGroupTransition = (group: number): string => {
   return transitions[group] || "Transition point in Isaiah's vision";
 };
 
+const getHingeColor = (hingeType?: string): string => {
+  const colors: Record<string, string> = {
+    'conviction': 'bg-red-500',
+    'cleansing': 'bg-blue-500',
+    'commission': 'bg-yellow-400',
+    'hope': 'bg-green-500'
+  };
+  return hingeType ? colors[hingeType] || 'bg-yellow-400' : 'bg-yellow-400';
+};
+
+const getHingeExplanation = (hingeType: string): string => {
+  const explanations: Record<string, string> = {
+    'conviction': 'Red dots mark moments of conviction—recognizing our sinfulness in light of God\'s holiness.',
+    'cleansing': 'Blue dots mark moments of cleansing—receiving God\'s purification and forgiveness.',
+    'commission': 'Yellow dots mark moments of commissioning—responding to God\'s call to service.',
+    'hope': 'Green dots mark moments of hope—discovering promise even in judgment.'
+  };
+  return explanations[hingeType] || '';
+};
+
+const getUniqueHingeTypes = (): string[] => {
+  const types = verses
+    .filter(v => v.isHinge && v.hingeType)
+    .map(v => v.hingeType as string);
+  return Array.from(new Set(types));
+};
+
 const reflectionContent: Record<number, {seeing: string, life: string, teach: string}> = {
   1: {
     seeing: "This verse marks a pivotal transition—the death of King Uzziah represents the end of an era of prosperity, but Isaiah's vision reveals an eternal King whose throne never ends. The train of God's robe filling the temple shows His glory permeating every space.",
@@ -294,9 +321,13 @@ function App() {
           {/* Key Transformation Points */}
           <div className="bg-white rounded-lg p-4 shadow-md mb-6">
             <h3 className="text-lg font-semibold text-gray-800 mb-3">Key transformation points</h3>
-            <div className="flex items-start gap-3">
-              <div className="w-3 h-3 bg-yellow-400 rounded-full mt-1 flex-shrink-0"></div>
-              <p className="text-sm text-gray-700">Yellow dots mark moments where everything changes—from uncleanness to cleansing, from silence to service, from judgment to hope.</p>
+            <div className="space-y-2">
+              {getUniqueHingeTypes().map((hingeType) => (
+                <div key={hingeType} className="flex items-start gap-3">
+                  <div className={`w-3 h-3 ${getHingeColor(hingeType)} rounded-full mt-1 flex-shrink-0`}></div>
+                  <p className="text-sm text-gray-700">{getHingeExplanation(hingeType)}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -318,7 +349,7 @@ function App() {
             >
               <div className="text-sm font-bold">6:{verse.number}</div>
               {verse.isHinge && (
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
+                <div className={`absolute -top-1 -right-1 w-3 h-3 ${getHingeColor(verse.hingeType)} rounded-full animate-pulse`}></div>
               )}
               
               {/* Hover Tooltip */}
@@ -329,7 +360,10 @@ function App() {
                   <div className="text-xs text-yellow-300 mb-1">{getGroupName(verse.group)}</div>
                   <div className="text-xs text-gray-300">{getGroupTransition(verse.group)}</div>
                   {verse.isHinge && (
-                    <div className="text-xs text-yellow-300 mt-1">• Key Transformation Point</div>
+                    <div className="text-xs text-yellow-300 mt-1 flex items-center gap-1">
+                      <div className={`w-2 h-2 ${getHingeColor(verse.hingeType)} rounded-full`}></div>
+                      Chiastic Pivot Point
+                    </div>
                   )}
                 </div>
               )}
