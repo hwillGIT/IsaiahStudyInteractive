@@ -260,14 +260,14 @@ function App() {
                   
                   {/* Flow arrows - right arrow for items 1-2, 4-5 */}
                   {(group === 1 || group === 2 || group === 4 || group === 5) && (
-                    <div className="hidden md:block absolute -right-4 top-1/2 -translate-y-1/2 text-3xl text-gray-400 opacity-30 z-10">
+                    <div className="hidden md:block absolute -right-5 top-1/2 -translate-y-1/2 text-4xl font-bold text-blue-400 opacity-60 z-10 drop-shadow-sm">
                       →
                     </div>
                   )}
                   
                   {/* Flow arrows - down arrow for items 3 */}
                   {group === 3 && (
-                    <div className="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-5 text-3xl text-gray-400 opacity-30 z-10">
+                    <div className="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-6 text-4xl font-bold text-blue-400 opacity-60 z-10 drop-shadow-sm">
                       ↓
                     </div>
                   )}
