@@ -1,8 +1,18 @@
-# Isaiah 6 Interactive Study
+# Isaiah Interactive Study - Chapters 2-9
 
 ## Overview
 
-This is an interactive web application for studying Isaiah Chapter 6 from the Bible. The application features a color-coded grid visualization of all 13 verses organized into 6 thematic groups, with interactive hover tooltips and transformation point markers. A two-level modal navigation system provides both reflective study (three viewing modes: Seeing Connections, How This Helps My Life, What This Teaches Us) and Scripture Connections showing how each verse fits into God's larger plan across the entire Bible. Built with React, TypeScript, and Tailwind CSS, it offers an engaging educational experience for understanding Isaiah's vision of God's holiness and his prophetic commission.
+This is a comprehensive interactive web application for studying Isaiah Chapters 2-9 from the Bible. Each chapter features a color-coded grid visualization of verses organized into thematic groups, with interactive hover tooltips and transformation point markers. A two-level modal navigation system provides both reflective study (three viewing modes: Seeing Connections, How This Helps My Life, What This Teaches Us) and Scripture Connections showing how each verse fits into God's larger plan across the entire Bible. Built with React, TypeScript, Tailwind CSS, and React Router, the application offers an engaging educational experience across 8 complete chapters with 537 total reflections (3 perspectives per verse) and comprehensive Scripture connections.
+
+**Completed Chapters**:
+- Chapter 2 (22 verses): God's Mountain, Idolatry, and the Day of the LORD
+- Chapter 3 (25 verses): Judgment on Leaders and Pride
+- Chapter 4 (6 verses): The Branch of the LORD and God's Return
+- Chapter 5 (30 verses): The Song of the Vineyard and Six Woes
+- Chapter 6 (13 verses): Encountering God's Holiness and Divine Commissioning
+- Chapter 7 (25 verses): The Sign of Immanuel - God With Us
+- Chapter 8 (22 verses): Sanctuary or Stumbling Stone
+- Chapter 9 (21 verses): The Light in the Darkness and the Prince of Peace
 
 ---
 
@@ -65,9 +75,10 @@ Preferred communication style: Simple, everyday language.
 
 **Framework**: React 18 with TypeScript
 - **Rationale**: Provides type safety and modern component-based architecture for building interactive UI
-- **Component Structure**: Single App component with grid-based verse visualization and modal-based detail view
-- **State Management**: Local component state using React hooks (useState) for verse selection, modal view, and reflection mode
-- **Pros**: Simple state management adequate for current scope, easy to understand and maintain
+- **Component Structure**: App component with React Router for chapter navigation; each chapter is a separate component with grid-based verse visualization and modal-based detail view
+- **State Management**: Local component state using React hooks (useState) for verse selection, modal view, and reflection mode within each chapter
+- **Routing**: React Router DOM provides seamless navigation between chapters with URL-based routing
+- **Pros**: Simple state management adequate for current scope, easy to understand and maintain, modular chapter components
 - **Cons**: May need state management library (Redux, Zustand) if complexity grows
 
 **Build Tool**: Vite 6
@@ -86,10 +97,10 @@ Preferred communication style: Simple, everyday language.
 ### Data Architecture
 
 **Data Storage**: Static TypeScript data structures
-- **Location**: Embedded in `src/App.tsx`
+- **Location**: Embedded in each chapter component (`src/chapters/Chapter2.tsx`, `src/chapters/Chapter3.tsx`, etc.)
 - **Structure**: 
   - `Verse` interface with number, text, group, hinge markers
-  - `verses` array containing all 13 verses
+  - `verses` array containing all verses for that chapter
   - `reflectionContent` object with three perspectives per verse (seeing, life, teach)
   - `scriptureConnections` object with FROM/TO references and theological context per verse
 - **Rationale**: Content is static biblical text that doesn't change; no need for database
@@ -105,11 +116,10 @@ Preferred communication style: Simple, everyday language.
 
 ### User Interface Design
 
-**Layout Pattern**: Single-page application with modal-based navigation
-- **Problem**: Multiple views of the same content without page reloads
-- **Solution**: Two-level modal navigation - first level tabs (Reflections vs Scripture Connections), second level buttons (viewing modes)
-- **Alternatives**: Multi-page with routing (React Router)
-- **Chosen Approach**: Simpler for small scope, no URL management needed
+**Layout Pattern**: Multi-chapter application with routing and modal-based detail views
+- **Problem**: Navigate between multiple chapters while providing detailed views of individual verses
+- **Solution**: React Router for chapter navigation + two-level modal navigation within chapters (first level tabs for Reflections vs Scripture Connections, second level buttons for viewing modes)
+- **Benefits**: URL-based navigation allows bookmarking specific chapters, back/forward browser buttons work naturally, each chapter is independently loadable
 
 **Visual Theme**: Purple gradient background with white/light gray content cards
 - **Design Language**: Clean, modern, focused on readability
