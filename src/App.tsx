@@ -234,23 +234,6 @@ function App() {
           <h1 className="text-4xl font-bold text-gray-800 mb-2">Isaiah Chapter 6 Interactive Study</h1>
           <p className="text-lg text-gray-600 mb-4">Encountering God's Holiness and Divine Commissioning</p>
           
-          {/* Viewing Mode Buttons */}
-          <div className="flex flex-wrap justify-center gap-2 mb-6">
-            {viewingModes.map((mode) => (
-              <button
-                key={mode.id}
-                onClick={() => setActiveMode(mode.id)}
-                className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
-                  activeMode === mode.id
-                    ? 'bg-blue-600 text-white shadow-lg'
-                    : 'bg-white text-gray-700 hover:bg-blue-50 border border-gray-300'
-                }`}
-              >
-                {mode.label}
-              </button>
-            ))}
-          </div>
-
           {/* Color Legend */}
           <div className="bg-white rounded-lg p-4 shadow-md mb-6">
             <h3 className="text-lg font-semibold text-gray-800 mb-3">Understanding the Vision Sequence</h3>
@@ -287,7 +270,10 @@ function App() {
               } ${selectedVerse?.number === verse.number ? 'ring-4 ring-white' : ''}`}
               onMouseEnter={() => setHoveredVerse(verse.number)}
               onMouseLeave={() => setHoveredVerse(null)}
-              onClick={() => setSelectedVerse(verse)}
+              onClick={() => {
+                setSelectedVerse(verse);
+                setModalView('reflections');
+              }}
             >
               <div className="text-sm font-bold">6:{verse.number}</div>
               {verse.isHinge && (
