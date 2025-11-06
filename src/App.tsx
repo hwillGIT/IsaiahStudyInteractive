@@ -242,7 +242,7 @@ function App() {
                 <div key={group} className="flex items-start gap-3">
                   <div className={`w-4 h-4 rounded mt-1 flex-shrink-0 ${getColorClass(group)}`}></div>
                   <div className="text-sm">
-                    <div className="font-medium text-gray-800">Group {group}: {getGroupName(group)}</div>
+                    <div className="font-medium text-gray-800">{getGroupName(group)}</div>
                     <div className="text-gray-600 text-xs">{getGroupTransition(group)}</div>
                   </div>
                 </div>
