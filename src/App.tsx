@@ -258,17 +258,17 @@ function App() {
                     <div className="text-gray-600 text-xs mt-1">{getGroupTransition(group)}</div>
                   </div>
                   
-                  {/* Flow arrows - right arrow for items 1-2, 4-5 */}
+                  {/* Flow arrows - right arrow for items 1, 2, 4, 5 */}
                   {(group === 1 || group === 2 || group === 4 || group === 5) && (
                     <div className="hidden md:block absolute -right-5 top-1/2 -translate-y-1/2 text-4xl font-bold text-blue-400 opacity-60 z-10 drop-shadow-sm">
                       →
                     </div>
                   )}
                   
-                  {/* Flow arrows - down arrow for items 3 */}
+                  {/* Flow arrow - curved down-left for item 3 to indicate flow to item 4 */}
                   {group === 3 && (
-                    <div className="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-6 text-4xl font-bold text-blue-400 opacity-60 z-10 drop-shadow-sm">
-                      ↓
+                    <div className="hidden md:block absolute -bottom-6 -left-2 text-3xl font-bold text-blue-400 opacity-60 z-10 drop-shadow-sm">
+                      ↙
                     </div>
                   )}
                 </div>
