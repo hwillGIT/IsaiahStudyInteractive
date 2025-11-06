@@ -213,6 +213,21 @@ const scriptureConnections: Record<number, Connection> = {
     to: ["John 1:4-9 - The true light coming into the world", "John 8:12 - Jesus declaring 'I am the light of the world'"],
     context: "The great light promised here finds its ultimate fulfillment in Christ, who came as the light of the world to shine on those dwelling in spiritual darkness."
   },
+  3: {
+    from: ["Deuteronomy 16:13-15 - The joy of harvest festivals", "Psalm 126:5-6 - Sowing in tears, reaping with joy"],
+    to: ["John 16:20-22 - Sorrow turned to joy", "Revelation 19:6-7 - The wedding supper of the Lamb"],
+    context: "The multiplication of joy points to the Messiah's work transforming mourning into celebration. God's salvation creates overflowing joy like a successful harvest."
+  },
+  4: {
+    from: ["Judges 7:1-25 - The day of Midian when Gideon defeated the oppressors", "Exodus 1:11-14 - Israel under the yoke of Egyptian slavery"],
+    to: ["Galatians 5:1 - Christ has set us free from the yoke of slavery", "Colossians 2:14-15 - Disarming rulers and authorities"],
+    context: "Just as God broke Midian's oppression through Gideon, the Messiah breaks the yoke of sin and death, delivering complete freedom to all who trust Him."
+  },
+  5: {
+    from: ["Psalm 46:8-9 - God makes wars cease to the ends of the earth", "Micah 4:3 - Beating swords into plowshares"],
+    to: ["Ephesians 2:14-17 - Christ our peace, destroying the dividing wall", "Colossians 1:20 - Making peace through His blood"],
+    context: "The burning of battle gear symbolizes the Messiah's complete victory over conflict. His peace is so thorough that instruments of war become useless."
+  },
   6: {
     from: ["2 Samuel 7:12-16 - God's covenant with David about an eternal throne", "Micah 5:2 - The ruler born in Bethlehem"],
     to: ["Luke 2:11 - The birth of Jesus in Bethlehem", "Philippians 2:9-11 - Every knee will bow to His name", "Revelation 19:16 - King of Kings"],
@@ -222,6 +237,76 @@ const scriptureConnections: Record<number, Connection> = {
     from: ["Genesis 49:10 - The scepter shall not depart from Judah", "2 Samuel 7:16 - David's throne established forever"],
     to: ["Luke 1:32-33 - His kingdom will never end", "Revelation 11:15 - The kingdom of our Lord will last forever"],
     context: "This verse establishes the eternal nature of the Messiah's reign. Unlike human kingdoms that rise and fall, Christ's government increases without end, establishing perfect justice and righteousness."
+  },
+  8: {
+    from: ["Isaiah 8:7-8 - God's word of judgment against the northern kingdom", "Amos 3:6-7 - God declares His plans through prophets"],
+    to: ["Matthew 23:37-38 - Jesus weeps over Jerusalem's rejection", "Romans 9:6-8 - Not all Israel is true Israel"],
+    context: "Even in the midst of messianic promise, God remains faithful to confront rebellion. His word of judgment is as certain as His word of blessing."
+  },
+  9: {
+    from: ["Proverbs 16:18 - Pride goes before destruction", "James 4:6 - God opposes the proud"],
+    to: ["Luke 18:9-14 - The proud Pharisee and humble tax collector", "1 Peter 5:5 - Clothe yourselves with humility"],
+    context: "Pride and arrogance prevent people from receiving God's grace. The proud heart refuses to acknowledge need, making it impossible to receive God's help."
+  },
+  10: {
+    from: ["Jeremiah 5:3 - They refused to return despite discipline", "Amos 4:6-11 - Repeated judgments without repentance"],
+    to: ["Luke 13:3-5 - Unless you repent, you will all perish", "Revelation 9:20-21 - Refusing to repent despite plagues"],
+    context: "Self-reliance reveals a heart that trusts in human strength rather than God. True recovery begins with acknowledging dependence on God, not doubling down on our own efforts."
+  },
+  11: {
+    from: ["Deuteronomy 28:49-50 - God raises enemies against disobedient Israel", "Judges 2:14 - The Lord's anger kindled, delivering them into enemies' hands"],
+    to: ["Matthew 22:7 - The king sent his armies to destroy those who rejected the invitation", "Romans 1:24 - God gave them over to their sinful desires"],
+    context: "When people persist in pride, God allows consequences through their own enemies. This is discipline designed to bring them back, not destroy them permanently."
+  },
+  12: {
+    from: ["Exodus 9:12 - God hardened Pharaoh's heart", "Isaiah 5:25 - God's anger burned against His people"],
+    to: ["Romans 2:4-5 - God's patience leads to repentance or stored wrath", "2 Peter 3:9 - God is patient, not wanting any to perish"],
+    context: "The repeated refrain shows God's patience even in judgment. His outstretched hand represents both discipline and invitation—calling people to turn back before it's too late."
+  },
+  13: {
+    from: ["Jeremiah 2:30 - They did not receive correction", "Hosea 7:10 - Israel's pride testifies against them, yet they do not return"],
+    to: ["Acts 7:51 - You always resist the Holy Spirit", "Hebrews 12:5-11 - Do not make light of the Lord's discipline"],
+    context: "Suffering without seeking God hardens the heart further. God's discipline is meant to draw us closer, but pride can turn it into a wall that separates us from Him."
+  },
+  14: {
+    from: ["Jeremiah 23:1-2 - Woe to the shepherds who destroy and scatter", "Ezekiel 34:1-10 - God's judgment on shepherds who feed themselves"],
+    to: ["Matthew 23:13-15 - Woe to the teachers of the law and Pharisees", "2 Timothy 4:3 - People will gather teachers to suit their desires"],
+    context: "God holds leaders accountable for misleading people. When spiritual leaders corrupt the truth, God removes them and their influence."
+  },
+  15: {
+    from: ["Micah 3:5-7 - Prophets who lead people astray", "Ezekiel 13:1-16 - False prophets who see false visions"],
+    to: ["Matthew 7:15 - Beware of false prophets in sheep's clothing", "2 Peter 2:1-3 - False teachers will secretly introduce destructive heresies"],
+    context: "False prophets use their position to spread lies rather than truth. God exposes such deception and removes those who misuse spiritual authority."
+  },
+  16: {
+    from: ["Jeremiah 5:31 - Prophets prophesy lies and people love it", "Hosea 4:6 - My people are destroyed for lack of knowledge"],
+    to: ["Matthew 15:14 - If the blind lead the blind, both fall into a pit", "2 Thessalonians 2:10-12 - Perishing because they refused to love truth"],
+    context: "Following false guidance leads to destruction. Spiritual discernment protects believers from being led astray by those who speak smooth words without truth."
+  },
+  17: {
+    from: ["Psalm 50:21-22 - God rebukes those who think He is like them", "Jeremiah 6:30 - Rejected silver, for the Lord has rejected them"],
+    to: ["Romans 1:28 - God gave them over to a depraved mind", "Hebrews 6:4-8 - Impossible to restore those who have fallen away"],
+    context: "Persistent godlessness leads to a point where even God's compassion seems withdrawn. This is the tragic result of continually rejecting His grace."
+  },
+  18: {
+    from: ["Proverbs 6:27-28 - Can a man carry fire without being burned?", "James 3:5-6 - The tongue is a fire, corrupting the whole body"],
+    to: ["Galatians 6:7-8 - Whatever one sows, that will he also reap", "2 Thessalonians 1:8 - Punishment for those who do not obey the gospel"],
+    context: "Sin spreads like wildfire, consuming everything in its path. What begins as a small compromise grows into a destructive force affecting entire communities."
+  },
+  19: {
+    from: ["Jeremiah 12:13 - They have sown wheat but reaped thorns", "Lamentations 4:10 - Compassionate women cooked their own children"],
+    to: ["Matthew 24:12 - The love of most will grow cold", "Revelation 16:8-9 - Scorched by fierce heat, yet they cursed God"],
+    context: "The ultimate tragedy of sin is that it corrupts everything, even relationships. When God's foundation is removed, society breaks down completely."
+  },
+  20: {
+    from: ["Leviticus 26:29 - In siege you will eat the flesh of your children", "Micah 7:2 - Everyone hunts his brother with a net"],
+    to: ["Mark 13:12 - Brother will betray brother to death", "2 Timothy 3:1-5 - People will be lovers of themselves, without love"],
+    context: "The final stage of moral breakdown is when family bonds dissolve. This shows what happens when people completely reject God's design for relationships."
+  },
+  21: {
+    from: ["Deuteronomy 32:22 - God's anger burns to the depths of Sheol", "2 Chronicles 28:5-8 - Civil war between Judah and Israel with massive casualties"],
+    to: ["Matthew 10:21 - Brother will deliver brother over to death", "Luke 21:16 - You will be betrayed even by parents and brothers"],
+    context: "Even in complete breakdown and civil war, God's outstretched hand remains as an invitation. His anger serves His ultimate purpose of restoration, not destruction."
   }
 };
 
@@ -442,45 +527,40 @@ function App() {
 
                 {activeTab === 'connections' && (
                   <div>
-                    {getConnection(selectedVerse.number) ? (
-                      <div className="space-y-4">
-                        {getConnection(selectedVerse.number)?.from && (
-                          <div>
-                            <h4 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">
-                              <span className="text-blue-600">←</span> This Builds Upon:
-                            </h4>
-                            <ul className="list-disc list-inside space-y-1 text-gray-700">
-                              {getConnection(selectedVerse.number)!.from!.map((ref, idx) => (
-                                <li key={idx} className="text-sm">{ref}</li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-                        {getConnection(selectedVerse.number)?.to && (
-                          <div>
-                            <h4 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">
-                              <span className="text-blue-600">→</span> This Points Forward To:
-                            </h4>
-                            <ul className="list-disc list-inside space-y-1 text-gray-700">
-                              {getConnection(selectedVerse.number)!.to!.map((ref, idx) => (
-                                <li key={idx} className="text-sm">{ref}</li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
+                    <div className="space-y-4">
+                      {getConnection(selectedVerse.number)?.from && (
+                        <div>
+                          <h4 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+                            <span className="text-blue-600">←</span> This Builds Upon:
+                          </h4>
+                          <ul className="list-disc list-inside space-y-1 text-gray-700">
+                            {getConnection(selectedVerse.number)!.from!.map((ref, idx) => (
+                              <li key={idx} className="text-sm">{ref}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                      {getConnection(selectedVerse.number)?.to && (
+                        <div>
+                          <h4 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+                            <span className="text-blue-600">→</span> This Points Forward To:
+                          </h4>
+                          <ul className="list-disc list-inside space-y-1 text-gray-700">
+                            {getConnection(selectedVerse.number)!.to!.map((ref, idx) => (
+                              <li key={idx} className="text-sm">{ref}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                      {getConnection(selectedVerse.number)?.context && (
                         <div className="bg-purple-50 border-l-4 border-purple-600 p-4">
                           <h4 className="font-semibold text-gray-800 mb-2">Theological Context:</h4>
                           <p className="text-gray-700 text-sm leading-relaxed">
                             {getConnection(selectedVerse.number)!.context}
                           </p>
                         </div>
-                      </div>
-                    ) : (
-                      <div className="text-gray-500 text-center py-8">
-                        <p>Scripture connections for this verse are being developed.</p>
-                        <p className="text-sm mt-2">Check back soon for connections to other biblical passages.</p>
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </div>
                 )}
               </div>
