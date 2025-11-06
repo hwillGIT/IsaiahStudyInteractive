@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Chapter2 from './chapters/Chapter2';
 import Chapter6 from './chapters/Chapter6';
 import Chapter9 from './chapters/Chapter9';
 import './App.css';
@@ -8,9 +9,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navigate to="/chapter-6" replace />} />
+        <Route path="/chapter-2" element={<Chapter2 />} />
         <Route path="/chapter-6" element={<Chapter6 />} />
         <Route path="/chapter-9" element={<Chapter9 />} />
-        <Route path="/chapter-2" element={<ComingSoon chapter={2} />} />
         <Route path="/chapter-3" element={<ComingSoon chapter={3} />} />
         <Route path="/chapter-4" element={<ComingSoon chapter={4} />} />
         <Route path="/chapter-5" element={<ComingSoon chapter={5} />} />
