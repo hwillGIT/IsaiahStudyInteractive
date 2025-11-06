@@ -263,6 +263,7 @@ function Chapter2() {
   const [hoveredVerse, setHoveredVerse] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState<'reflections' | 'connections'>('reflections');
   const [activeReflectionMode, setActiveReflectionMode] = useState<'seeing' | 'life' | 'teach'>('seeing');
+  const [showStructureModal, setShowStructureModal] = useState(false);
 
   const getGroupName = (group: number): string => {
     const names = {
@@ -363,11 +364,26 @@ function Chapter2() {
           </div>
         </div>
 
+        <button
+          onClick={() => setShowStructureModal(true)}
+          className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg shadow-md p-4 mb-6 hover:shadow-lg transition-shadow flex items-center justify-between"
+        >
+          <span className="flex items-center gap-2">
+            <span className="text-xl">📖</span>
+            <span className="font-semibold">View Chapter Structure</span>
+          </span>
+          <span className="text-sm opacity-90">See the symmetrical pattern</span>
+        </button>
+
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">Key transformation points</h3>
-          <div className="flex items-center justify-center gap-2 text-sm text-gray-700">
-            <span className="inline-block w-3 h-3 bg-yellow-400 rounded-full"></span>
-            <p>Yellow dot marks the hinge—from future vision to present call to action</p>
+          <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">Key Transformation Points</h3>
+          <div className="space-y-2">
+            {getUniqueHingeTypes().map(hingeType => (
+              <div key={hingeType} className="flex items-start gap-3">
+                <div className={`w-3 h-3 ${getHingeColor(hingeType)} rounded-full mt-1 flex-shrink-0`}></div>
+                <p className="text-sm text-gray-700">{getHingeExplanation(hingeType)}</p>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -483,6 +499,52 @@ function Chapter2() {
                     </div>
                   </div>
                 )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Structure Modal */}
+        {showStructureModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden">
+              <div className="p-6 border-b border-gray-200">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-xl font-bold text-gray-800">Chapter 2 Structure</h3>
+                  <button
+                    onClick={() => setShowStructureModal(false)}
+                    className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+                  >
+                    ×
+                  </button>
+                </div>
+              </div>
+              <div className="p-6 overflow-y-auto">
+                <p className="text-sm text-gray-600 mb-4">This chapter flows from future glory through a present call to action, then shows the judgment that comes from refusing that call:</p>
+                <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
+                  <div className="ml-0 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-yellow-400 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>A (1-4): <span className="font-sans font-semibold text-yellow-700">Future Glory</span> — Mountain exalted, nations streaming</span>
+                  </div>
+                  <div className="ml-4 bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-orange-400 rounded mt-0.5 flex-shrink-0"></div>
+                    <span className="font-sans text-orange-800 font-bold">★ B (5): CENTRAL TURNING POINT — Call to Walk in Light</span>
+                  </div>
+                  <div className="ml-8 text-orange-700 font-sans italic pl-5">"Come, let us walk in the light of the LORD"</div>
+                  <div className="mt-3 ml-4 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-red-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>B' (6-9): <span className="font-sans font-semibold text-red-700">Present Darkness</span> — Idolatry and pride among God's people</span>
+                  </div>
+                  <div className="ml-4 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-purple-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>C' (10-17): <span className="font-sans font-semibold text-purple-700">Coming Judgment</span> — Day of the LORD, all pride brought low</span>
+                  </div>
+                  <div className="ml-0 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-gray-600 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>D' (18-22): <span className="font-sans font-semibold text-gray-700">Idols Abolished</span> — Complete destruction, humanity as mere breath</span>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 mt-4 italic">The central invitation (verse 5) is the turning point—will we walk in God's light, or remain in darkness facing certain judgment?</p>
               </div>
             </div>
           </div>

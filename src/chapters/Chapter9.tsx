@@ -620,7 +620,7 @@ function App() {
             <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden">
               <div className="p-6 border-b border-gray-200">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold text-gray-800">Chapter Structure</h3>
+                  <h3 className="text-xl font-bold text-gray-800">Chapter 9 Structure</h3>
                   <button
                     onClick={() => setShowStructureModal(false)}
                     className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
@@ -634,28 +634,28 @@ function App() {
                 <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
                   <div className="ml-0 flex items-start gap-2">
                     <div className="w-3 h-3 bg-yellow-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>A (1-2): <span className="font-sans font-semibold">Light in Darkness</span> — Darkness to light transformation</span>
+                    <span>A (1-2): <span className="font-sans font-semibold text-yellow-700">Light in Darkness</span> — Darkness to light transformation</span>
                   </div>
                   <div className="ml-4 flex items-start gap-2">
                     <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>B (3-5): <span className="font-sans">Joy and Victory</span> — Yoke broken, weapons burned</span>
+                    <span>B (3-5): <span className="font-sans font-semibold text-orange-700">Joy and Victory</span> — Yoke broken, weapons burned</span>
                   </div>
                   <div className="ml-8 bg-green-100 px-2 py-1 rounded border-l-4 border-green-600 flex items-start gap-2">
                     <div className="w-3 h-3 bg-green-600 rounded mt-0.5 flex-shrink-0"></div>
                     <span className="font-sans text-green-800 font-bold">★ C (6-7): CENTRAL TURNING POINT — Coronation & Government</span>
                   </div>
                   <div className="ml-12 text-green-700 font-sans italic pl-5">Child born, government on His shoulder, endless peace</div>
-                  <div className="mt-3 ml-0 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
+                  <div className="mt-3 ml-8 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
                     <div className="w-3 h-3 bg-gray-600 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>C' (8-12): <span className="font-sans">Judgment I - Pride</span> — Refusal to turn brings adversaries</span>
+                    <span>C' (8-12): <span className="font-sans font-semibold text-gray-700">Judgment I - Pride</span> — Refusal to turn brings adversaries</span>
                   </div>
                   <div className="ml-4 flex items-start gap-2">
                     <div className="w-3 h-3 bg-red-600 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>B' (13-17): <span className="font-sans">Judgment II - Leadership</span> — False guides destroyed</span>
+                    <span>B' (13-17): <span className="font-sans font-semibold text-red-700">Judgment II - Leadership</span> — False guides destroyed</span>
                   </div>
-                  <div className="ml-8 flex items-start gap-2">
+                  <div className="ml-0 flex items-start gap-2">
                     <div className="w-3 h-3 bg-slate-600 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>A' (18-21): <span className="font-sans">Judgment III - Social Collapse</span> — Cannibalism and scorched land</span>
+                    <span>A' (18-21): <span className="font-sans font-semibold text-slate-700">Judgment III - Social Collapse</span> — Cannibalism and scorched land</span>
                   </div>
                 </div>
                 <p className="text-sm text-gray-600 mt-4 italic">The central focus (verses 6-7) is the promised child who brings eternal government and peace—the answer to all the judgment that follows.</p>

@@ -520,7 +520,7 @@ function App() {
             <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden">
               <div className="p-6 border-b border-gray-200">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold text-gray-800">Chapter Structure</h3>
+                  <h3 className="text-xl font-bold text-gray-800">Chapter 6 Structure</h3>
                   <button
                     onClick={() => setShowStructureModal(false)}
                     className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
@@ -534,28 +534,28 @@ function App() {
                 <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
                   <div className="ml-0 flex items-start gap-2">
                     <div className="w-3 h-3 bg-blue-600 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>A (1-4): <span className="font-sans">Seeing God's Throne Room — Overwhelming Holiness</span></span>
+                    <span>A (1-4): <span className="font-sans font-semibold text-blue-700">Seeing God's Throne Room</span> — Overwhelming holiness</span>
                   </div>
                   <div className="ml-4 flex items-start gap-2">
                     <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>B (5-7): <span className="font-sans font-semibold">Confession & Cleansing</span> — Conviction and purification</span>
+                    <span>B (5-7): <span className="font-sans font-semibold text-orange-700">Confession & Cleansing</span> — Conviction and purification</span>
                   </div>
                   <div className="ml-8 bg-teal-100 px-2 py-1 rounded border-l-4 border-teal-500 flex items-start gap-2">
                     <div className="w-3 h-3 bg-teal-500 rounded mt-0.5 flex-shrink-0"></div>
                     <span className="font-sans text-teal-800 font-bold">★ C (8): CENTRAL TURNING POINT — Commission</span>
                   </div>
                   <div className="ml-12 text-gray-600 font-sans italic pl-5">"Here am I; send me"</div>
-                  <div className="ml-8 flex items-start gap-2">
+                  <div className="mt-3 ml-8 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
                     <div className="w-3 h-3 bg-gray-600 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>C' (9-10): <span className="font-sans">The Hardening Message</span> — What Isaiah must declare</span>
+                    <span>C' (9-10): <span className="font-sans font-semibold text-gray-700">The Hardening Message</span> — What Isaiah must declare</span>
                   </div>
                   <div className="ml-4 flex items-start gap-2">
                     <div className="w-3 h-3 bg-red-600 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>B' (11-12): <span className="font-sans">Scope of Judgment</span> — How long discipline continues</span>
+                    <span>B' (11-12): <span className="font-sans font-semibold text-red-700">Scope of Judgment</span> — How long discipline continues</span>
                   </div>
                   <div className="ml-0 flex items-start gap-2">
                     <div className="w-3 h-3 bg-green-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>A' (13): <span className="font-sans font-semibold">Remnant & Holy Seed</span> — Hope for survival</span>
+                    <span>A' (13): <span className="font-sans font-semibold text-green-700">Remnant & Holy Seed</span> — Hope for survival</span>
                   </div>
                 </div>
                 <p className="text-sm text-gray-600 mt-4 italic">The central turning point (verse 8) is Isaiah's response to God's call—moving from personal transformation to public mission.</p>
