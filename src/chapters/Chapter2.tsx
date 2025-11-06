@@ -7,6 +7,7 @@ interface Verse {
   text: string;
   group: number;
   isHinge?: boolean;
+  hingeType?: string;
 }
 
 interface Connection {
@@ -20,7 +21,7 @@ const verses: Verse[] = [
   { number: 2, text: "It shall come to pass in the latter days that the mountain of the house of the LORD shall be established as the highest of the mountains, and shall be lifted up above the hills; and all nations shall flow to it,", group: 1 },
   { number: 3, text: "and many peoples shall come, and say: 'Come, let us go up to the mountain of the LORD, to the house of the God of Jacob, that he may teach us his ways and that we may walk in his paths.' For out of Zion shall go the law, and the word of the LORD from Jerusalem.", group: 1 },
   { number: 4, text: "He shall judge between the nations, and shall decide disputes for many peoples; and they shall beat their swords into plowshares, and their spears into pruning hooks; nation shall not lift up sword against nation, neither shall they learn war anymore.", group: 1 },
-  { number: 5, text: "O house of Jacob, come, let us walk in the light of the LORD.", group: 2, isHinge: true },
+  { number: 5, text: "O house of Jacob, come, let us walk in the light of the LORD.", group: 2, isHinge: true, hingeType: 'invitation' },
   { number: 6, text: "For you have rejected your people, the house of Jacob, because they are full of things from the east and of fortune-tellers like the Philistines, and they strike hands with the children of foreigners.", group: 3 },
   { number: 7, text: "Their land is filled with silver and gold, and there is no end to their treasures; their land is filled with horses, and there is no end to their chariots.", group: 3 },
   { number: 8, text: "Their land is filled with idols; they bow down to the work of their hands, to what their own fingers have made.", group: 3 },
@@ -234,6 +235,27 @@ const scriptureConnections: Record<number, Connection> = {
     to: ["James 4:14 - You are a mist that appears briefly", "1 Peter 1:24 - All flesh is like grass"],
     context: "Human frailty makes trusting in people instead of God supremely foolish. This verse demolishes pride by reminding us we're mere breath, here today and gone tomorrow."
   }
+};
+
+const getHingeColor = (hingeType?: string): string => {
+  const colors: Record<string, string> = {
+    'invitation': 'bg-yellow-400'
+  };
+  return hingeType ? colors[hingeType] || 'bg-yellow-400' : 'bg-yellow-400';
+};
+
+const getHingeExplanation = (hingeType: string): string => {
+  const explanations: Record<string, string> = {
+    'invitation': 'Yellow dots mark the call to walk in God\'s light—the pivot from promise to present obedience.'
+  };
+  return explanations[hingeType] || '';
+};
+
+const getUniqueHingeTypes = (): string[] => {
+  const types = verses
+    .filter(v => v.isHinge && v.hingeType)
+    .map(v => v.hingeType as string);
+  return Array.from(new Set(types));
 };
 
 function Chapter2() {

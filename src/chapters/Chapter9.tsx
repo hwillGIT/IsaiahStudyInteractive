@@ -339,6 +339,7 @@ const scriptureConnections: Record<number, Connection> = {
 
 function App() {
   const [selectedVerse, setSelectedVerse] = useState<Verse | null>(null);
+  const [showStructureModal, setShowStructureModal] = useState(false);
   const [hoveredVerse, setHoveredVerse] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState<'reflections' | 'connections'>('reflections');
   const [activeReflectionMode, setActiveReflectionMode] = useState<'seeing' | 'life' | 'teach'>('seeing');
@@ -409,9 +410,20 @@ function App() {
             </div>
           </div>
 
+          {/* Chapter Structure Button */}
+          <div className="bg-white rounded-lg p-4 shadow-md mb-6">
+            <button
+              onClick={() => setShowStructureModal(true)}
+              className="w-full flex items-center justify-between px-4 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all"
+            >
+              <span className="font-semibold">📖 View Chapter Structure</span>
+              <span className="text-sm opacity-90">See the symmetrical pattern</span>
+            </button>
+          </div>
+
           {/* Transformation Points */}
           <div className="bg-white rounded-lg p-4 shadow-md">
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">Key transformation points</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">Key Transformation Points</h3>
             <div className="space-y-2">
               {getUniqueHingeTypes().map((hingeType) => (
                 <div key={hingeType} className="flex items-start gap-3">
@@ -452,7 +464,7 @@ function App() {
                   {verse.isHinge && (
                     <div className="text-xs text-yellow-300 mt-1 flex items-center gap-1">
                       <div className={`w-2 h-2 ${getHingeColor(verse.hingeType)} rounded-full`}></div>
-                      Chiastic Pivot Point
+                      Key Turning Point
                     </div>
                   )}
                 </div>
@@ -597,6 +609,56 @@ function App() {
                     </div>
                   </div>
                 )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Structure Modal */}
+        {showStructureModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden">
+              <div className="p-6 border-b border-gray-200">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-xl font-bold text-gray-800">Chapter Structure</h3>
+                  <button
+                    onClick={() => setShowStructureModal(false)}
+                    className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+                  >
+                    ×
+                  </button>
+                </div>
+              </div>
+              <div className="p-6 overflow-y-auto">
+                <p className="text-sm text-gray-600 mb-4">This chapter has a two-part structure: Promise (1-7) followed by Warning (8-21), centering on the messianic child:</p>
+                <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
+                  <div className="ml-0 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-yellow-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>A (1-2): <span className="font-sans font-semibold">Light in Darkness</span> — Darkness to light transformation</span>
+                  </div>
+                  <div className="ml-4 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>B (3-5): <span className="font-sans">Joy and Victory</span> — Yoke broken, weapons burned</span>
+                  </div>
+                  <div className="ml-8 bg-green-100 px-2 py-1 rounded border-l-4 border-green-600 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-green-600 rounded mt-0.5 flex-shrink-0"></div>
+                    <span className="font-sans text-green-800 font-bold">★ C (6-7): CENTRAL TURNING POINT — Coronation & Government</span>
+                  </div>
+                  <div className="ml-12 text-green-700 font-sans italic pl-5">Child born, government on His shoulder, endless peace</div>
+                  <div className="mt-3 ml-0 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-gray-600 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>C' (8-12): <span className="font-sans">Judgment I - Pride</span> — Refusal to turn brings adversaries</span>
+                  </div>
+                  <div className="ml-4 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-red-600 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>B' (13-17): <span className="font-sans">Judgment II - Leadership</span> — False guides destroyed</span>
+                  </div>
+                  <div className="ml-8 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-slate-600 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>A' (18-21): <span className="font-sans">Judgment III - Social Collapse</span> — Cannibalism and scorched land</span>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 mt-4 italic">The central focus (verses 6-7) is the promised child who brings eternal government and peace—the answer to all the judgment that follows.</p>
               </div>
             </div>
           </div>
