@@ -247,21 +247,29 @@ function App() {
           <p className="text-lg text-gray-600 mb-4">Encountering God's Holiness and Divine Commissioning</p>
           
           {/* Color Legend */}
-          <div className="bg-white rounded-lg p-4 shadow-md mb-6">
-            <h3 className="text-lg font-semibold text-gray-800 mb-3">Understanding the Vision Sequence</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="bg-white rounded-lg p-6 shadow-md mb-6">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">Understanding the Vision Sequence</h3>
+            <div className="flex flex-col gap-2">
               {Array.from({ length: 6 }, (_, i) => i + 1).map((group) => (
-                <div key={group} className="flex items-start gap-3">
-                  <div className="flex flex-col items-center gap-1 flex-shrink-0">
-                    <div className="w-6 h-6 rounded-full bg-gray-700 text-white text-xs font-bold flex items-center justify-center">
-                      {group}
+                <div key={group}>
+                  <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-2 flex-shrink-0">
+                      <div className="w-8 h-8 rounded-full bg-gray-700 text-white text-sm font-bold flex items-center justify-center">
+                        {group}
+                      </div>
+                      <div className={`w-5 h-5 rounded flex-shrink-0 ${getColorClass(group)}`}></div>
                     </div>
-                    <div className={`w-4 h-4 rounded flex-shrink-0 ${getColorClass(group)}`}></div>
+                    <div className="text-sm flex-1">
+                      <div className="font-semibold text-gray-800">{getGroupName(group)}</div>
+                      <div className="text-gray-600 text-xs">{getGroupTransition(group)}</div>
+                    </div>
                   </div>
-                  <div className="text-sm">
-                    <div className="font-medium text-gray-800">{getGroupName(group)}</div>
-                    <div className="text-gray-600 text-xs">{getGroupTransition(group)}</div>
-                  </div>
+                  {group < 6 && (
+                    <div className="flex items-center gap-3 ml-4 my-1">
+                      <div className="w-px h-6 bg-gradient-to-b from-gray-400 to-gray-300"></div>
+                      <div className="text-gray-400 text-xs">↓</div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
