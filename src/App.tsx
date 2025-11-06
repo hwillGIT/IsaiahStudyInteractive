@@ -51,14 +51,14 @@ const getGroupName = (group: number): string => {
 
 const getGroupTransition = (group: number): string => {
   const transitions: Record<number, string> = {
-    1: 'Encountering God's throne, seraphim, and holy glory',
-    2: 'Recognizing uncleanness and receiving purification',
-    3: 'Responding to God's call with "Here am I; send me"',
-    4: 'Delivering a message that people won't receive',
-    5: 'Understanding the extent and duration of discipline',
-    6: 'Hope for survival through God's faithful remnant'
+    1: "Encountering God's throne, seraphim, and holy glory",
+    2: "Recognizing uncleanness and receiving purification",
+    3: 'Responding to God\'s call with "Here am I; send me"',
+    4: "Delivering a message that people won't receive",
+    5: "Understanding the extent and duration of discipline",
+    6: "Hope for survival through God's faithful remnant"
   };
-  return transitions[group] || 'Transition point in Isaiah's vision';
+  return transitions[group] || "Transition point in Isaiah's vision";
 };
 
 const reflectionContent: Record<number, {seeing: string, life: string, teach: string}> = {
