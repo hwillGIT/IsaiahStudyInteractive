@@ -7,6 +7,7 @@ interface Verse {
   text: string;
   group: number;
   isHinge?: boolean;
+  hingeType?: string;
 }
 
 interface Connection {
@@ -17,7 +18,7 @@ interface Connection {
 
 const verses: Verse[] = [
   { number: 1, text: "And in that day seven women shall take hold of one man, saying, 'We will eat our own bread and wear our own clothes, only let us be called by your name; take away our reproach.'", group: 1 },
-  { number: 2, text: "In that day the branch of the LORD shall be beautiful and glorious, and the fruit of the land shall be the pride and honor of the survivors of Israel.", group: 2, isHinge: true },
+  { number: 2, text: "In that day the branch of the LORD shall be beautiful and glorious, and the fruit of the land shall be the pride and honor of the survivors of Israel.", group: 2, isHinge: true, hingeType: 'restoration' },
   { number: 3, text: "And he who is left in Zion and remains in Jerusalem will be called holy, everyone who has been recorded for life in Jerusalem,", group: 2 },
   { number: 4, text: "when the Lord shall have washed away the filth of the daughters of Zion and cleansed the bloodstains of Jerusalem from its midst by a spirit of judgment and by a spirit of burning.", group: 2 },
   { number: 5, text: "Then the LORD will create over the whole site of Mount Zion and over her assemblies a cloud by day, and smoke and the shining of a flaming fire by night; for over all the glory there will be a canopy.", group: 3 },
@@ -95,6 +96,7 @@ function Chapter4() {
   const [hoveredVerse, setHoveredVerse] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState<'reflections' | 'connections'>('reflections');
   const [activeReflectionMode, setActiveReflectionMode] = useState<'seeing' | 'life' | 'teach'>('seeing');
+  const [showStructureModal, setShowStructureModal] = useState(false);
 
   const getGroupName = (group: number): string => {
     const names = {
@@ -146,6 +148,27 @@ function Chapter4() {
     return scriptureConnections[verseNum as keyof typeof scriptureConnections] || null;
   };
 
+  const getHingeColor = (hingeType?: string): string => {
+    const colors: Record<string, string> = {
+      'restoration': 'bg-green-500'
+    };
+    return hingeType ? colors[hingeType] || 'bg-yellow-400' : 'bg-yellow-400';
+  };
+
+  const getHingeExplanation = (hingeType: string): string => {
+    const explanations: Record<string, string> = {
+      'restoration': 'Green dots mark moments of restoration—where the Branch of the LORD brings beauty and glory after judgment.'
+    };
+    return explanations[hingeType] || '';
+  };
+
+  const getUniqueHingeTypes = (): string[] => {
+    const types = verses
+      .filter(v => v.isHinge && v.hingeType)
+      .map(v => v.hingeType as string);
+    return Array.from(new Set(types));
+  };
+
   const uniqueGroups = Array.from(new Set(verses.map(v => v.group))).sort((a, b) => a - b);
 
   return (
@@ -189,11 +212,27 @@ function Chapter4() {
           </div>
         </div>
 
+        <div className="bg-white rounded-lg shadow-md p-4 mb-6">
+          <button
+            onClick={() => setShowStructureModal(true)}
+            className="w-full flex items-center justify-between px-4 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all"
+          >
+            <span className="font-semibold">View Chapter Structure</span>
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">Key transformation points</h3>
-          <div className="flex items-center justify-center gap-2 text-sm text-gray-700">
-            <span className="inline-block w-3 h-3 bg-yellow-400 rounded-full"></span>
-            <p>Yellow dot marks the turning point—from desperation to restoration through the Branch</p>
+          <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">Key Transformation Points</h3>
+          <div className="space-y-2">
+            {getUniqueHingeTypes().map((hingeType) => (
+              <div key={hingeType} className="flex items-center justify-center gap-2 text-sm text-gray-700">
+                <span className={`inline-block w-3 h-3 rounded-full ${getHingeColor(hingeType)}`}></span>
+                <p>{getHingeExplanation(hingeType)}</p>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -201,7 +240,7 @@ function Chapter4() {
           {verses.map((verse) => (
             <div key={verse.number} className="relative">
               {verse.isHinge && (
-                <div className="absolute -top-2 -left-2 w-4 h-4 bg-yellow-400 rounded-full border-2 border-white shadow-md z-10"></div>
+                <div className={`absolute -top-2 -left-2 w-4 h-4 ${getHingeColor(verse.hingeType)} rounded-full border-2 border-white shadow-md z-10`}></div>
               )}
               <button
                 onClick={() => setSelectedVerse(verse)}
@@ -309,6 +348,77 @@ function Chapter4() {
                     </div>
                   </div>
                 )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {showStructureModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50" onClick={() => setShowStructureModal(false)}>
+            <div className="bg-white rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+              <div className="p-6 border-b border-gray-200 sticky top-0 bg-white z-10">
+                <div className="flex justify-between items-center">
+                  <h2 className="text-3xl font-bold text-gray-800">Chapter 4 Structure</h2>
+                  <button onClick={() => setShowStructureModal(false)} className="text-gray-400 hover:text-gray-600 text-2xl font-bold">&times;</button>
+                </div>
+                <p className="text-gray-600 mt-2">Forward-flowing progression from desperation → restoration → God's presence</p>
+              </div>
+
+              <div className="p-6 space-y-6">
+                <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                  <h3 className="text-xl font-bold text-red-700 mb-3">Group 1: Desperation After Judgment</h3>
+                  <p className="text-gray-700 mb-3 italic">Seven women seeking one man - consequences of judgment</p>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <span className="font-semibold text-red-600 min-w-[3rem]">v. 1</span>
+                      <p className="text-gray-700">Seven women plead to bear one man's name to remove their reproach - showing the desperation and devastation after God's judgment.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
+                  <h3 className="text-xl font-bold text-green-700 mb-3">Group 2: The Branch Brings Restoration</h3>
+                  <p className="text-gray-700 mb-3 italic">The Branch of the LORD - Messiah brings beauty and cleansing</p>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <span className="font-semibold text-green-600 min-w-[3rem]">v. 2 🔄</span>
+                      <p className="text-gray-700"><span className="font-semibold">HINGE (Restoration):</span> The Branch of the LORD appears beautiful and glorious, transforming shame into honor for the remnant.</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="font-semibold text-green-600 min-w-[3rem]">v. 3</span>
+                      <p className="text-gray-700">Those who remain are called holy, recorded for life in Jerusalem.</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="font-semibold text-green-600 min-w-[3rem]">v. 4</span>
+                      <p className="text-gray-700">God cleanses through judgment and burning, washing away filth and bloodstains.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+                  <h3 className="text-xl font-bold text-blue-700 mb-3">Group 3: God's Glorious Presence Returns</h3>
+                  <p className="text-gray-700 mb-3 italic">Cloud and fire return - God's protective presence restored</p>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <span className="font-semibold text-blue-600 min-w-[3rem]">v. 5</span>
+                      <p className="text-gray-700">The LORD creates cloud by day and fire by night over Mount Zion, with a canopy of glory - recalling Exodus.</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="font-semibold text-blue-600 min-w-[3rem]">v. 6</span>
+                      <p className="text-gray-700">God provides complete shelter - shade from heat, refuge from storm and rain.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-r from-red-100 via-green-100 to-blue-100 p-6 rounded-lg border-2 border-gray-300">
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">📖 Theological Flow</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Chapter 4 shows the complete transformation from judgment to glory. It begins with the devastating consequences of judgment (v. 1), 
+                    pivots at the messianic promise of the Branch who brings restoration (v. 2), continues with cleansing of the remnant (vv. 3-4), 
+                    and culminates in God's glorious presence returning to dwell with His purified people (vv. 5-6). This forward progression demonstrates 
+                    that God's ultimate goal is not judgment but restoration and intimate presence with His people.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

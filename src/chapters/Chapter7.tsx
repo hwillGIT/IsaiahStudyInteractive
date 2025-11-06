@@ -7,6 +7,7 @@ interface Verse {
   text: string;
   group: number;
   isHinge?: boolean;
+  hingeType?: string;
 }
 
 interface Connection {
@@ -19,7 +20,7 @@ const verses: Verse[] = [
   { number: 1, text: "In the days of Ahaz the son of Jotham, son of Uzziah, king of Judah, Rezin the king of Syria and Pekah the son of Remaliah the king of Israel came up to Jerusalem to wage war against it, but could not yet mount an attack against it.", group: 1 },
   { number: 2, text: "When the house of David was told, 'Syria is in league with Ephraim,' the heart of Ahaz and the heart of his people shook as the trees of the forest shake before the wind.", group: 1 },
   { number: 3, text: "And the LORD said to Isaiah, 'Go out to meet Ahaz, you and Shear-jashub your son, at the end of the conduit of the upper pool on the highway to the Washer's Field.", group: 1 },
-  { number: 4, text: "And say to him, 'Be careful, be quiet, do not fear, and do not let your heart be faint because of these two smoldering stumps of firebrands, because of the fierce anger of Rezin and Syria and the son of Remaliah.", group: 2, isHinge: true },
+  { number: 4, text: "And say to him, 'Be careful, be quiet, do not fear, and do not let your heart be faint because of these two smoldering stumps of firebrands, because of the fierce anger of Rezin and Syria and the son of Remaliah.", group: 2, isHinge: true, hingeType: 'reassurance' },
   { number: 5, text: "Because Syria, with Ephraim and the son of Remaliah, has devised evil against you, saying,", group: 2 },
   { number: 6, text: "Let us go up against Judah and terrify it, and let us conquer it for ourselves, and set up the son of Tabeel as king in the midst of it,'", group: 2 },
   { number: 7, text: "thus says the Lord GOD: 'It shall not stand, and it shall not come to pass.", group: 2 },
@@ -29,7 +30,7 @@ const verses: Verse[] = [
   { number: 11, text: "\"Ask a sign of the LORD your God; let it be deep as Sheol or high as heaven.\"", group: 3 },
   { number: 12, text: "But Ahaz said, \"I will not ask, and I will not put the LORD to the test.\"", group: 3 },
   { number: 13, text: "And he said, \"Hear then, O house of David! Is it too little for you to weary men, that you weary my God also?", group: 3 },
-  { number: 14, text: "Therefore the Lord himself will give you a sign. Behold, the virgin shall conceive and bear a son, and shall call his name Immanuel.", group: 3, isHinge: true },
+  { number: 14, text: "Therefore the Lord himself will give you a sign. Behold, the virgin shall conceive and bear a son, and shall call his name Immanuel.", group: 3, isHinge: true, hingeType: 'immanuel' },
   { number: 15, text: "He shall eat curds and honey when he knows how to refuse the evil and choose the good.", group: 4 },
   { number: 16, text: "For before the boy knows how to refuse the evil and choose the good, the land whose two kings you dread will be deserted.", group: 4 },
   { number: 17, text: "The LORD will bring upon you and upon your people and upon your father's house such days as have not come since the day that Ephraim departed from Judah—the king of Assyria!\"", group: 4 },
@@ -234,11 +235,35 @@ const scriptureConnections: Record<number, Connection> = {
   }
 };
 
+const getHingeColor = (hingeType?: string): string => {
+  const colors: Record<string, string> = {
+    'reassurance': 'bg-blue-400',
+    'immanuel': 'bg-green-400'
+  };
+  return hingeType ? colors[hingeType] || 'bg-yellow-400' : 'bg-yellow-400';
+};
+
+const getHingeExplanation = (hingeType: string): string => {
+  const explanations: Record<string, string> = {
+    'reassurance': 'Blue dots mark God\'s reassurance to Ahaz—"Do not fear these smoldering stumps."',
+    'immanuel': 'Green dots mark the Immanuel prophecy—God\'s sign of His presence with His people.'
+  };
+  return explanations[hingeType] || '';
+};
+
+const getUniqueHingeTypes = (): string[] => {
+  const types = verses
+    .filter(v => v.isHinge && v.hingeType)
+    .map(v => v.hingeType as string);
+  return Array.from(new Set(types));
+};
+
 function Chapter7() {
   const [selectedVerse, setSelectedVerse] = useState<Verse | null>(null);
   const [hoveredVerse, setHoveredVerse] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState<'reflections' | 'connections'>('reflections');
   const [activeReflectionMode, setActiveReflectionMode] = useState<'seeing' | 'life' | 'teach'>('seeing');
+  const [showStructureModal, setShowStructureModal] = useState(false);
 
   const getGroupName = (group: number): string => {
     const names = {
@@ -342,11 +367,26 @@ function Chapter7() {
           </div>
         </div>
 
+        <button
+          onClick={() => setShowStructureModal(true)}
+          className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg shadow-md p-4 mb-6 hover:shadow-lg transition-shadow flex items-center justify-between"
+        >
+          <span className="flex items-center gap-2">
+            <span className="text-xl">📖</span>
+            <span className="font-semibold">View Chapter Structure</span>
+          </span>
+          <span className="text-sm opacity-90">See the flow from threat to promise</span>
+        </button>
+
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">Key transformation points</h3>
-          <div className="flex items-center justify-center gap-2 text-sm text-gray-700">
-            <span className="inline-block w-3 h-3 bg-yellow-400 rounded-full"></span>
-            <p>Yellow dots mark hinges—God's reassurance and the Immanuel prophecy</p>
+          <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">Key Transformation Points</h3>
+          <div className="space-y-2">
+            {getUniqueHingeTypes().map(hingeType => (
+              <div key={hingeType} className="flex items-start gap-3">
+                <div className={`w-3 h-3 ${getHingeColor(hingeType)} rounded-full mt-1 flex-shrink-0`}></div>
+                <p className="text-sm text-gray-700">{getHingeExplanation(hingeType)}</p>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -354,7 +394,7 @@ function Chapter7() {
           {verses.map((verse) => (
             <div key={verse.number} className="relative">
               {verse.isHinge && (
-                <div className="absolute -top-2 -left-2 w-4 h-4 bg-yellow-400 rounded-full border-2 border-white shadow-md z-10"></div>
+                <div className={`absolute -top-2 -left-2 w-4 h-4 ${getHingeColor(verse.hingeType)} rounded-full border-2 border-white shadow-md z-10`}></div>
               )}
               <button
                 onClick={() => setSelectedVerse(verse)}
@@ -462,6 +502,57 @@ function Chapter7() {
                     </div>
                   </div>
                 )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Structure Modal */}
+        {showStructureModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden">
+              <div className="p-6 border-b border-gray-200">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-xl font-bold text-gray-800">Chapter 7 Structure</h3>
+                  <button
+                    onClick={() => setShowStructureModal(false)}
+                    className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+                  >
+                    ×
+                  </button>
+                </div>
+              </div>
+              <div className="p-6 overflow-y-auto">
+                <p className="text-sm text-gray-600 mb-4">This chapter flows from crisis through divine reassurance to prophetic promise, concluding with warnings of judgment:</p>
+                <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
+                  <div className="ml-0 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-red-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>A (1-3): <span className="font-sans font-semibold text-red-700">The Syro-Ephraimite Threat</span> — Enemy alliance threatens Jerusalem</span>
+                  </div>
+                  <div className="ml-4 bg-blue-100 px-2 py-1 rounded border-l-4 border-blue-500 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-blue-400 rounded mt-0.5 flex-shrink-0"></div>
+                    <span className="font-sans text-blue-800 font-bold">★ B (4-9): FIRST HINGE — God's Reassurance to Ahaz</span>
+                  </div>
+                  <div className="ml-8 text-blue-700 font-sans italic pl-5">"Do not fear... these smoldering stumps of firebrands"</div>
+                  <div className="mt-3 ml-4 bg-green-100 px-2 py-1 rounded border-l-4 border-green-500 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-green-400 rounded mt-0.5 flex-shrink-0"></div>
+                    <span className="font-sans text-green-800 font-bold">★ C (10-14): SECOND HINGE — The Immanuel Sign</span>
+                  </div>
+                  <div className="ml-8 text-green-700 font-sans italic pl-5">"The virgin shall conceive and bear a son, and shall call his name Immanuel"</div>
+                  <div className="mt-3 ml-4 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-purple-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>D (15-17): <span className="font-sans font-semibold text-purple-700">Near and Far Fulfillment</span> — Timeline of deliverance and judgment</span>
+                  </div>
+                  <div className="ml-4 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>E (18-20): <span className="font-sans font-semibold text-orange-700">Assyria: The Hired Razor</span> — God summons nations for judgment</span>
+                  </div>
+                  <div className="ml-0 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-gray-600 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>F (21-25): <span className="font-sans font-semibold text-gray-700">The Land Becomes Wilderness</span> — Agricultural collapse and desolation</span>
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 mt-4 italic">Two hinge verses anchor this chapter: God's reassurance (v. 4) and the Immanuel sign (v. 14). The structure moves from human fear through divine promise to unavoidable consequences of faithless choices.</p>
               </div>
             </div>
           </div>
