@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is an interactive web application for studying Isaiah Chapter 6 from the Bible. The application provides three main views: Scripture text with verse selection, thematic exploration of key concepts, and detailed study notes with commentary. Built with React and TypeScript, it offers an engaging educational experience for biblical study through interactive verse highlighting, keyword exploration, and thematic grouping. The application is designed to help users understand the profound theological themes in Isaiah's vision of God's holiness and his prophetic commission.
+This is an interactive web application for studying Isaiah Chapter 6 from the Bible. The application features a color-coded grid visualization of all 13 verses organized into 6 thematic groups, with interactive hover tooltips and transformation point markers. A two-level modal navigation system provides both reflective study (three viewing modes: Seeing Connections, How This Helps My Life, What This Teaches Us) and Scripture Connections showing how each verse fits into God's larger plan across the entire Bible. Built with React, TypeScript, and Tailwind CSS, it offers an engaging educational experience for understanding Isaiah's vision of God's holiness and his prophetic commission.
 
 ## User Preferences
 
@@ -14,8 +14,8 @@ Preferred communication style: Simple, everyday language.
 
 **Framework**: React 18 with TypeScript
 - **Rationale**: Provides type safety and modern component-based architecture for building interactive UI
-- **Component Structure**: Three main feature components (Isaiah6Text, ThemeExplorer, StudyNotes) managed by a parent App component with tab-based navigation
-- **State Management**: Local component state using React hooks (useState, useEffect)
+- **Component Structure**: Single App component with grid-based verse visualization and modal-based detail view
+- **State Management**: Local component state using React hooks (useState) for verse selection, modal view, and reflection mode
 - **Pros**: Simple state management adequate for current scope, easy to understand and maintain
 - **Cons**: May need state management library (Redux, Zustand) if complexity grows
 
@@ -25,37 +25,38 @@ Preferred communication style: Simple, everyday language.
 - **Pros**: Lightning-fast builds, excellent developer experience
 - **Cons**: None for this use case
 
-**Styling Approach**: Vanilla CSS with component-scoped stylesheets
-- **Rationale**: Simple styling needs don't require CSS-in-JS or utility frameworks
-- **Global Styles**: Gradient background (purple theme), base typography
-- **Component Styles**: Modular CSS files per component
-- **Pros**: No additional dependencies, straightforward maintenance
-- **Cons**: No built-in theming system, manual responsive design
+**Styling Approach**: Tailwind CSS with custom CSS for specific needs
+- **Rationale**: Utility-first CSS framework provides rapid development and consistent design system
+- **Global Styles**: Gradient background (blue to purple), base typography via Tailwind
+- **Component Styles**: Inline utility classes with custom CSS for modal animations
+- **Pros**: Fast iteration, consistent spacing/colors, built-in responsive design
+- **Cons**: Verbose class names in JSX, requires build step
 
 ### Data Architecture
 
 **Data Storage**: Static TypeScript data structures
-- **Location**: `src/data/isaiah6.ts`
+- **Location**: Embedded in `src/App.tsx`
 - **Structure**: 
-  - `Verse` interface with number, text, and keywords
-  - `isaiah6Verses` array containing all 13 verses
-  - `themes` array grouping verses by theological concepts
-  - `studyNotes` array with commentary per verse
+  - `Verse` interface with number, text, group, hinge markers
+  - `verses` array containing all 13 verses
+  - `reflectionContent` object with three perspectives per verse (seeing, life, teach)
+  - `scriptureConnections` object with FROM/TO references and theological context per verse
 - **Rationale**: Content is static biblical text that doesn't change; no need for database
 - **Pros**: Simple, type-safe, no backend required, fast load times
 - **Cons**: Content updates require code changes and redeployment
 
 **Interaction Patterns**:
-- Verse selection state lifted to App component and passed to child components
-- Tab-based navigation for switching between Scripture, Themes, and Study Notes views
-- Click handlers for interactive elements (verses, keywords, themes)
-- Conditional highlighting based on selected state
+- Verse selection triggers modal with two-level navigation
+- Modal tab switching between Reflections and Scripture Connections
+- Reflection mode buttons for switching between three viewing perspectives
+- Hover tooltips for quick verse preview
+- Yellow dots mark key transformation points
 
 ### User Interface Design
 
-**Layout Pattern**: Single-page application with tabbed navigation
+**Layout Pattern**: Single-page application with modal-based navigation
 - **Problem**: Multiple views of the same content without page reloads
-- **Solution**: Tab-based component switching with shared state
+- **Solution**: Two-level modal navigation - first level tabs (Reflections vs Scripture Connections), second level buttons (viewing modes)
 - **Alternatives**: Multi-page with routing (React Router)
 - **Chosen Approach**: Simpler for small scope, no URL management needed
 
