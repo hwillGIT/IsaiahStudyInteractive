@@ -9,6 +9,12 @@ interface Verse {
   hingeType?: string;
 }
 
+interface Connection {
+  from?: string[];
+  to?: string[];
+  context: string;
+}
+
 const verses: Verse[] = [
   { number: 1, text: "In the year that King Uzziah died, I saw the Lord, high and exalted, seated on a throne; and the train of his robe filled the temple.", group: 1 },
   { number: 2, text: "Above him were seraphim, each with six wings: With two wings they covered their faces, with two they covered their feet, and with two they were flying.", group: 1 },
@@ -129,6 +135,74 @@ const reflectionContent: Record<number, {seeing: string, life: string, teach: st
   }
 };
 
+const scriptureConnections: Record<number, Connection> = {
+  1: {
+    from: ["Chapter 1: The vision of Isaiah begins with God's call to see reality from His perspective", "Chapter 5: After the woe judgments, God reveals His throne and holiness"],
+    to: ["Chapter 7-8: The sign of Immanuel comes to test faith in God's sovereign presence", "Chapter 9: The vision of the eternal King on David's throne fulfills this glimpse of God's reign"],
+    context: "This verse bridges human political transitions to eternal divine sovereignty, showing that earthly kingdoms rise and fall but God's throne endures forever."
+  },
+  2: {
+    from: ["Exodus 25: The cherubim on the ark foreshadow these angelic beings guarding God's holiness", "1 Kings 6: Solomon's temple with its cherubim decorations points to this heavenly reality"],
+    to: ["Revelation 4: The living creatures around God's throne continue this pattern of worship"],
+    context: "The seraphim reveal that worship in heaven models what worship should be on earth—reverent, humble, and ready to serve."
+  },
+  3: {
+    from: ["Leviticus 19: 'Be holy for I am holy' is the call that Isaiah now sees fulfilled in God's nature", "Psalm 99: 'Holy is He' echoes through the ages to this throne room vision"],
+    to: ["John 12:41: John reveals that Isaiah saw Christ's glory", "Revelation 4:8: The four living creatures repeat 'Holy, holy, holy' day and night"],
+    context: "This threefold declaration of holiness becomes the foundation for understanding God's character and our need for His grace throughout all Scripture."
+  },
+  4: {
+    from: ["Exodus 19: Mount Sinai shook when God descended to give the Law", "1 Kings 19: Elijah experienced God's powerful presence in the cave"],
+    to: ["Matthew 27: The earth shook when Christ died, the temple veil tore", "Hebrews 12: We approach a throne that cannot be shaken"],
+    context: "Physical creation responds to God's holiness, demonstrating that His presence is not abstract but powerfully real and transformative."
+  },
+  5: {
+    from: ["Chapter 1: Isaiah pronounced woes on others; now he sees his own uncleanness", "Chapter 5: Six woes to the people, now the seventh woe falls on the prophet himself"],
+    to: ["Chapter 53: The unclean lips will prophesy of the Suffering Servant who bears our sins", "Luke 5: Peter's 'Depart from me, I am a sinful man' echoes Isaiah's conviction"],
+    context: "Encountering God's holiness always reveals our sinfulness. This is the necessary first step toward cleansing and commissioning."
+  },
+  6: {
+    from: ["Leviticus 16: The altar of sacrifice provides atonement for sin", "Exodus 30: The altar fire burned continually, ready to cleanse"],
+    to: ["Chapter 53: The Suffering Servant becomes the ultimate sacrifice from God's altar", "Hebrews 9: Christ's blood cleanses our conscience to serve the living God"],
+    context: "The live coal from the altar points to substitutionary atonement—God provides the sacrifice that cleanses us for service."
+  },
+  7: {
+    from: ["Jeremiah 1: God touches Jeremiah's mouth to commission him", "Ezekiel 2: God commands Ezekiel to eat the scroll before speaking"],
+    to: ["Acts 2: Tongues of fire rest on the disciples, empowering them to speak God's word", "1 John 1:9: God is faithful to forgive and cleanse from all unrighteousness"],
+    context: "Complete cleansing precedes effective service. God touches our specific point of need, preparing us for the calling ahead."
+  },
+  8: {
+    from: ["Exodus 3: Moses at the burning bush resisted God's call with excuses", "Judges 6: Gideon questioned his qualification to serve God"],
+    to: ["Jeremiah 20: Jeremiah later regretted saying yes, but remained faithful", "Matthew 28: Jesus commissions disciples with 'Go' after His resurrection"],
+    context: "Only after experiencing God's transforming grace can we genuinely say 'Send me!' Willing service flows from experiencing God's love, not from duty or compulsion."
+  },
+  9: {
+    from: ["Chapter 5: The people rejected God's word repeatedly", "Deuteronomy 29: God warned that persistent rebellion leads to hardened hearts"],
+    to: ["Matthew 13: Jesus quotes this verse to explain why He speaks in parables", "John 12: Despite miracles, many still did not believe in Jesus", "Acts 28: Paul quotes this to explain Jewish rejection of the gospel"],
+    context: "God's word always accomplishes its purpose—it either softens hearts or confirms their hardness. The messenger's job is faithfulness, not results."
+  },
+  10: {
+    from: ["Exodus 7-14: Pharaoh's heart was hardened through persistent rejection", "Proverbs 29:1: Those who remain stiff-necked will suddenly be destroyed"],
+    to: ["Romans 11: Paul explains the partial hardening of Israel and God's ultimate plan", "Hebrews 3-4: Warning against hardening hearts through unbelief"],
+    context: "Spiritual insensitivity develops progressively through repeated resistance to God's truth. Yet God's goal remains healing and restoration for those who will turn."
+  },
+  11: {
+    from: ["Leviticus 26: God warned of exile and desolation if Israel persisted in disobedience", "Deuteronomy 28: The curses for covenant breaking include devastation of the land"],
+    to: ["Chapter 39: The Babylonian exile fulfills this prophecy", "2 Chronicles 36: The land enjoyed its Sabbath rest during 70 years of desolation"],
+    context: "God's discipline is thorough because His love is deep. Judgment is not arbitrary but purposefully continues until it accomplishes restoration."
+  },
+  12: {
+    from: ["2 Kings 17: The northern kingdom experienced exile and abandonment", "Jeremiah 4: Desolation and forsaking are inevitable consequences of persistent sin"],
+    to: ["Ezra 1: God brings a return from exile after 70 years", "Nehemiah 1: The rebuilding begins as God restores His people"],
+    context: "Even in the darkest judgment, God's purpose is ultimately redemptive. He allows us to experience consequences so we'll finally look up and return to Him."
+  },
+  13: {
+    from: ["Chapter 4: The Branch of the LORD will be beautiful and glorious", "Chapter 5: The vineyard that should bear fruit becomes a wasteland"],
+    to: ["Chapter 11: The shoot from the stump of Jesse brings hope and restoration", "Chapter 53: The Suffering Servant is like a root out of dry ground", "Romans 11: The remnant chosen by grace represents God's faithfulness"],
+    context: "God always preserves a remnant. The holy seed points to God's faithfulness and ultimately to Christ, who brings complete restoration from apparent death."
+  }
+};
+
 const viewingModes = [
   { id: 'connections', label: 'Seeing Connections' },
   { id: 'life', label: 'How This Helps My Life' },
@@ -139,6 +213,7 @@ function App() {
   const [activeMode, setActiveMode] = useState('connections');
   const [hoveredVerse, setHoveredVerse] = useState<number | null>(null);
   const [selectedVerse, setSelectedVerse] = useState<Verse | null>(null);
+  const [modalView, setModalView] = useState<'reflections' | 'scripture'>('reflections');
 
   const getCurrentReflection = () => {
     if (!selectedVerse) return '';
@@ -235,11 +310,12 @@ function App() {
           ))}
         </div>
 
-        {/* Detailed Reflection Modal */}
+        {/* Detailed Modal with Two-Level Navigation */}
         {selectedVerse && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto modal-content">
-              <div className="p-6">
+            <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden modal-content flex flex-col">
+              {/* Modal Header */}
+              <div className="p-6 border-b border-gray-200">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-bold text-gray-800">
                     Isaiah 6:{selectedVerse.number} - {getGroupName(selectedVerse.group)}
@@ -256,30 +332,110 @@ function App() {
                   <p className="text-gray-700 italic">{selectedVerse.text}</p>
                 </div>
 
-                <div className="mb-4">
-                  <h4 className="font-semibold text-gray-800 mb-2">
-                    {activeMode === 'connections' && 'Seeing Connections'}
-                    {activeMode === 'life' && 'How This Helps My Life'}
-                    {activeMode === 'teaches' && 'What This Teaches Us'}
-                  </h4>
-                  <p className="text-gray-700 leading-relaxed">{getCurrentReflection()}</p>
+                {/* Main Tab Navigation */}
+                <div className="flex gap-2 border-b border-gray-200 -mb-px">
+                  <button
+                    onClick={() => setModalView('reflections')}
+                    className={`px-4 py-2 font-medium transition-all ${
+                      modalView === 'reflections'
+                        ? 'border-b-2 border-blue-600 text-blue-600'
+                        : 'text-gray-600 hover:text-gray-800'
+                    }`}
+                  >
+                    Reflections
+                  </button>
+                  <button
+                    onClick={() => setModalView('scripture')}
+                    className={`px-4 py-2 font-medium transition-all ${
+                      modalView === 'scripture'
+                        ? 'border-b-2 border-blue-600 text-blue-600'
+                        : 'text-gray-600 hover:text-gray-800'
+                    }`}
+                  >
+                    Scripture Connections
+                  </button>
                 </div>
+              </div>
 
-                <div className="flex gap-2 flex-wrap">
-                  {viewingModes.map((mode) => (
-                    <button
-                      key={mode.id}
-                      onClick={() => setActiveMode(mode.id)}
-                      className={`px-3 py-1 rounded text-sm font-medium ${
-                        activeMode === mode.id
-                          ? 'bg-blue-600 text-white'
-                          : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                      }`}
-                    >
-                      {mode.label}
-                    </button>
-                  ))}
-                </div>
+              {/* Modal Content - Scrollable */}
+              <div className="flex-1 overflow-y-auto p-6">
+                {modalView === 'reflections' ? (
+                  /* Reflections View */
+                  <div>
+                    <div className="mb-4">
+                      <h4 className="font-semibold text-gray-800 mb-2">
+                        {activeMode === 'connections' && 'Seeing Connections'}
+                        {activeMode === 'life' && 'How This Helps My Life'}
+                        {activeMode === 'teaches' && 'What This Teaches Us'}
+                      </h4>
+                      <p className="text-gray-700 leading-relaxed">{getCurrentReflection()}</p>
+                    </div>
+
+                    <div className="flex gap-2 flex-wrap">
+                      {viewingModes.map((mode) => (
+                        <button
+                          key={mode.id}
+                          onClick={() => setActiveMode(mode.id)}
+                          className={`px-3 py-1 rounded text-sm font-medium transition-all ${
+                            activeMode === mode.id
+                              ? 'bg-blue-600 text-white'
+                              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                          }`}
+                        >
+                          {mode.label}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  /* Scripture Connections View */
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-3 text-lg">
+                      How This Verse Fits Into God's Larger Plan
+                    </h4>
+                    
+                    {scriptureConnections[selectedVerse.number].from && (
+                      <div className="mb-4">
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded">FROM</span>
+                          <span className="text-sm text-gray-600">Building on these earlier passages:</span>
+                        </div>
+                        <ul className="space-y-2 ml-4">
+                          {scriptureConnections[selectedVerse.number].from!.map((connection, idx) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <span className="text-blue-600 mt-1">•</span>
+                              <span className="text-gray-700">{connection}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {scriptureConnections[selectedVerse.number].to && (
+                      <div className="mb-4">
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="px-2 py-1 bg-green-100 text-green-800 text-xs font-semibold rounded">TO</span>
+                          <span className="text-sm text-gray-600">Pointing forward to these fulfillments:</span>
+                        </div>
+                        <ul className="space-y-2 ml-4">
+                          {scriptureConnections[selectedVerse.number].to!.map((connection, idx) => (
+                            <li key={idx} className="flex items-start gap-2">
+                              <span className="text-green-600 mt-1">•</span>
+                              <span className="text-gray-700">{connection}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    <div className="mt-4 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                      <h5 className="font-semibold text-purple-900 mb-2">Theological Context</h5>
+                      <p className="text-gray-700 leading-relaxed">
+                        {scriptureConnections[selectedVerse.number].context}
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
