@@ -520,31 +520,41 @@ function Chapter2() {
                 </div>
               </div>
               <div className="p-6 overflow-y-auto">
-                <p className="text-sm text-gray-600 mb-4">This chapter flows from future glory through a present call to action, then shows the judgment that comes from refusing that call:</p>
+                <p className="text-sm text-gray-600 mb-4">This chapter displays a symmetrical pattern contrasting future glory with present pride, both leading to God's terrifying judgment:</p>
                 <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
                   <div className="ml-0 flex items-start gap-2">
                     <div className="w-3 h-3 bg-yellow-400 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>A (1-4): <span className="font-sans font-semibold text-yellow-700">Future Glory</span> — Mountain exalted, nations streaming</span>
-                  </div>
-                  <div className="ml-4 bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-orange-400 rounded mt-0.5 flex-shrink-0"></div>
-                    <span className="font-sans text-orange-800 font-bold">★ B (5): CENTRAL TURNING POINT — Call to Walk in Light</span>
-                  </div>
-                  <div className="ml-8 text-orange-700 font-sans italic pl-5">"Come, let us walk in the light of the LORD"</div>
-                  <div className="mt-3 ml-4 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-red-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>B' (6-9): <span className="font-sans font-semibold text-red-700">Present Darkness</span> — Idolatry and pride among God's people</span>
+                    <span>A (1-5): <span className="font-sans font-semibold text-yellow-700">Mountain Exalted</span> — Nations stream to Zion for God's word</span>
                   </div>
                   <div className="ml-4 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-red-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>B (6-11): <span className="font-sans font-semibold text-red-700">Pride and Idolatry</span> — People filled with foreign ways</span>
+                  </div>
+                  <div className="ml-8 bg-orange-100 px-2 py-1 rounded border-l-4 border-orange-500 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span className="font-sans text-orange-800 font-bold">★ CENTER (10-11): Terror of the LORD — Enter the rock, hide in the dust</span>
+                  </div>
+                  <div className="ml-12 text-orange-700 font-sans italic pl-5">"The LORD alone will be exalted in that day"</div>
+                  <div className="mt-3 ml-4 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
                     <div className="w-3 h-3 bg-purple-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>C' (10-17): <span className="font-sans font-semibold text-purple-700">Coming Judgment</span> — Day of the LORD, all pride brought low</span>
+                    <span>B' (12-17): <span className="font-sans font-semibold text-purple-700">All Pride Abased</span> — Day of the LORD against every high thing</span>
                   </div>
                   <div className="ml-0 flex items-start gap-2">
                     <div className="w-3 h-3 bg-gray-600 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>D' (18-22): <span className="font-sans font-semibold text-gray-700">Idols Abolished</span> — Complete destruction, humanity as mere breath</span>
+                    <span>A' (18-22): <span className="font-sans font-semibold text-gray-700">Idols Abolished</span> — Stop trusting mere humans</span>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 mt-4 italic">The central invitation (verse 5) is the turning point—will we walk in God's light, or remain in darkness facing certain judgment?</p>
+                
+                <div className="mt-4 p-4 bg-blue-50 rounded border-l-4 border-blue-500">
+                  <h4 className="font-bold text-gray-800 mb-3">How the Parallels Connect:</h4>
+                  <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+                    <li><strong>A ↔ A':</strong> The vision opens with the LORD's mountain exalted above all (vv. 1-5) but closes with idols completely abolished (vv. 18-22). God's glory rising means all false gods must fall—only one can be supreme.</li>
+                    <li><strong>B ↔ B':</strong> Human pride and idolatry in Israel (vv. 6-11) finds its answer in God bringing low every proud thing (vv. 12-17). The very things people trust—silver, gold, horses, alliances—become targets of divine judgment.</li>
+                    <li><strong>Center (vv. 10-11):</strong> The repeated phrase "terror of the LORD" appears at the center, showing that God's holiness is both awesome and terrifying. When confronted with His glory, humanity must hide or be humbled—there is no middle ground.</li>
+                  </ul>
+                </div>
+                
+                <p className="text-sm text-gray-600 mt-4 italic">The symmetrical pattern teaches that God's exaltation requires humanity's humbling. In the day of the LORD, every source of human pride will be brought low so that the LORD alone is lifted high.</p>
               </div>
             </div>
           </div>
