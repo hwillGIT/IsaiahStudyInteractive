@@ -94,6 +94,33 @@ const getGroupTransition = (group: number): string => {
   return transitions[group] || 'Transition point in the messianic progression';
 };
 
+const getHingeColor = (hingeType?: string): string => {
+  const colors: Record<string, string> = {
+    'darkness-to-light': 'bg-yellow-400',
+    'disarmament': 'bg-orange-500',
+    'coronation': 'bg-purple-500',
+    'eternal-throne': 'bg-blue-500'
+  };
+  return hingeType ? colors[hingeType] || 'bg-yellow-400' : 'bg-yellow-400';
+};
+
+const getHingeExplanation = (hingeType: string): string => {
+  const explanations: Record<string, string> = {
+    'darkness-to-light': 'Yellow dots mark the transition from darkness to light—the great inversion where hope dawns.',
+    'disarmament': 'Orange dots mark complete peace—where war equipment becomes fuel for warmth.',
+    'coronation': 'Purple dots mark the messianic coronation—the child born with divine titles.',
+    'eternal-throne': 'Blue dots mark the establishment of the eternal kingdom—endless government and peace.'
+  };
+  return explanations[hingeType] || '';
+};
+
+const getUniqueHingeTypes = (): string[] => {
+  const types = verses
+    .filter(v => v.isHinge && v.hingeType)
+    .map(v => v.hingeType as string);
+  return Array.from(new Set(types));
+};
+
 const reflectionContent: Record<number, {seeing: string, life: string, teach: string}> = {
   1: {
     seeing: "This verse announces the great inversion: where there was anguish and contempt, now there is glory. This shows God's pattern of turning our deepest sorrows into His greatest glory, transforming the places that seemed most abandoned by heaven.",
@@ -385,9 +412,13 @@ function App() {
           {/* Transformation Points */}
           <div className="bg-white rounded-lg p-4 shadow-md">
             <h3 className="text-lg font-semibold text-gray-800 mb-2">Key transformation points</h3>
-            <div className="flex items-start gap-3">
-              <div className="w-3 h-3 bg-yellow-400 rounded-full mt-1 flex-shrink-0"></div>
-              <p className="text-sm text-gray-700">Yellow dots mark moments where everything changes—from darkness to light, from war to peace, from limited rule to endless government.</p>
+            <div className="space-y-2">
+              {getUniqueHingeTypes().map((hingeType) => (
+                <div key={hingeType} className="flex items-start gap-3">
+                  <div className={`w-3 h-3 ${getHingeColor(hingeType)} rounded-full mt-1 flex-shrink-0`}></div>
+                  <p className="text-sm text-gray-700">{getHingeExplanation(hingeType)}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -406,7 +437,7 @@ function App() {
             >
               <div className="font-semibold">9:{verse.number}</div>
               {verse.isHinge && (
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-400 rounded-full"></div>
+                <div className={`absolute -top-1 -right-1 w-3 h-3 ${getHingeColor(verse.hingeType)} rounded-full animate-pulse`}></div>
               )}
               {verse.isRefrain && (
                 <div className="absolute -top-1 -left-1 w-3 h-3 bg-red-400 rounded-full"></div>
@@ -419,7 +450,10 @@ function App() {
                   <div className="text-xs text-gray-100 mb-2">{verse.text.substring(0, 150)}{verse.text.length > 150 ? '...' : ''}</div>
                   <div className="text-xs text-blue-300">{getGroupName(verse.group)}</div>
                   {verse.isHinge && (
-                    <div className="text-xs text-yellow-300 mt-1">⦿ Transformation Point</div>
+                    <div className="text-xs text-yellow-300 mt-1 flex items-center gap-1">
+                      <div className={`w-2 h-2 ${getHingeColor(verse.hingeType)} rounded-full`}></div>
+                      Chiastic Pivot Point
+                    </div>
                   )}
                 </div>
               )}
