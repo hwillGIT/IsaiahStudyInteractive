@@ -247,27 +247,28 @@ function App() {
           <p className="text-lg text-gray-600 mb-4">Encountering God's Holiness and Divine Commissioning</p>
           
           {/* Color Legend */}
-          <div className="bg-white rounded-lg p-6 shadow-md mb-6">
-            <h3 className="text-lg font-semibold text-gray-800 mb-4">Understanding the Vision Sequence</h3>
-            <div className="flex flex-col gap-2">
+          <div className="bg-white rounded-lg p-4 shadow-md mb-6">
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">Understanding the Vision Sequence</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 relative">
               {Array.from({ length: 6 }, (_, i) => i + 1).map((group) => (
-                <div key={group}>
-                  <div className="flex items-center gap-3">
-                    <div className="flex items-center gap-2 flex-shrink-0">
-                      <div className="w-8 h-8 rounded-full bg-gray-700 text-white text-sm font-bold flex items-center justify-center">
-                        {group}
-                      </div>
-                      <div className={`w-5 h-5 rounded flex-shrink-0 ${getColorClass(group)}`}></div>
-                    </div>
-                    <div className="text-sm flex-1">
-                      <div className="font-semibold text-gray-800">{getGroupName(group)}</div>
-                      <div className="text-gray-600 text-xs">{getGroupTransition(group)}</div>
-                    </div>
+                <div key={group} className="relative flex items-start gap-3 bg-gradient-to-br from-gray-50 to-white p-3 rounded-lg border border-gray-200">
+                  <div className={`w-5 h-5 rounded flex-shrink-0 ${getColorClass(group)} shadow-sm mt-0.5`}></div>
+                  <div className="text-sm flex-1">
+                    <div className="font-semibold text-gray-800 leading-tight">{getGroupName(group)}</div>
+                    <div className="text-gray-600 text-xs mt-1">{getGroupTransition(group)}</div>
                   </div>
-                  {group < 6 && (
-                    <div className="flex items-center gap-3 ml-4 my-1">
-                      <div className="w-px h-6 bg-gradient-to-b from-gray-400 to-gray-300"></div>
-                      <div className="text-gray-400 text-xs">↓</div>
+                  
+                  {/* Flow arrows - right arrow for items 1-2, 4-5 */}
+                  {(group === 1 || group === 2 || group === 4 || group === 5) && (
+                    <div className="hidden md:block absolute -right-4 top-1/2 -translate-y-1/2 text-3xl text-gray-400 opacity-30 z-10">
+                      →
+                    </div>
+                  )}
+                  
+                  {/* Flow arrows - down arrow for items 3 */}
+                  {group === 3 && (
+                    <div className="hidden md:block absolute left-1/2 -translate-x-1/2 -bottom-5 text-3xl text-gray-400 opacity-30 z-10">
+                      ↓
                     </div>
                   )}
                 </div>
