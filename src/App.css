@@ -1,81 +1,168 @@
-.app {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
+/* Custom styles for Isaiah 6 Interactive Study */
 
-.header {
-  text-align: center;
-  color: white;
-  margin-bottom: 30px;
-  padding: 40px 20px;
-}
-
-.header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  opacity: 0.95;
-}
-
-.nav-tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.tab {
-  padding: 12px 24px;
-  border: none;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-}
-
-.tab:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px);
-}
-
-.tab.active {
-  background: white;
-  color: #667eea;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.main-content {
-  background: white;
-  border-radius: 16px;
-  padding: 30px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  min-height: 500px;
-}
-
-@media (max-width: 768px) {
-  .app {
-    padding: 10px;
+/* Pulse animation for hinge indicators */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
   }
-
-  .header h1 {
-    font-size: 1.8rem;
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
   }
+}
 
-  .subtitle {
-    font-size: 1rem;
-  }
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
 
-  .main-content {
-    padding: 20px;
+/* Fade-in animation for tooltips and modals */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Hover scale animation for verse blocks */
+.verse-block {
+  transition: all 0.2s ease-in-out;
+}
+
+.verse-block:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom scrollbar for modal content */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Enhanced hover effects for verse blocks */
+.verse-grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.verse-grid-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.verse-grid-item:hover::before {
+  left: 100%;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+.verse-grid-item:focus {
+  outline: 2px solid #1e40af;
+  outline-offset: 2px;
+}
+
+/* Custom tooltip positioning */
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1000;
+  max-width: 320px;
+  word-wrap: break-word;
+}
+
+/* Modal backdrop blur effect */
+.modal-backdrop {
+  backdrop-filter: blur(4px);
+}
+
+/* Enhanced grid responsiveness */
+@media (max-width: 640px) {
+  .verse-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .verse-block {
+    padding: 0.75rem;
+  }
+  
+  .tooltip {
+    width: 280px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .verse-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .verse-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+/* Enhanced accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .animate-pulse,
+  .verse-block:hover,
+  .verse-grid-item:hover::before {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+}
+
+/* Modal entrance animations */
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-enter {
+  animation: modalEnter 0.3s ease-out;
 }
