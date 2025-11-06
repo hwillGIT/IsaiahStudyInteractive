@@ -20,7 +20,7 @@
  * 6. Update page title and subtitle
  */
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 
 interface Verse {
@@ -75,18 +75,6 @@ const getGroupName = (group: number): string => {
     6: 'Remnant & Holy Seed'
   };
   return names[group] || 'Unknown Group';
-};
-
-const getSequenceLabel = (group: number): string => {
-  const labels: Record<number, string> = {
-    1: "First:",
-    2: 'Then:',
-    3: 'Next:',
-    4: 'Following:',
-    5: 'After:',
-    6: 'Finally:'
-  };
-  return labels[group] || '';
 };
 
 const getGroupTransition = (group: number): string => {
