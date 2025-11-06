@@ -1,3 +1,25 @@
+/**
+ * INTERACTIVE BIBLE STUDY APPLICATION TEMPLATE
+ * 
+ * This is a reusable template for creating interactive Bible study applications.
+ * See replit.md for complete template documentation and adaptation instructions.
+ * 
+ * Key Components:
+ * - Color-coded verse grid with thematic grouping
+ * - Interactive hover tooltips
+ * - Two-level modal navigation (Reflections + Scripture Connections)
+ * - Three viewing perspectives for deeper study
+ * - Transformation point markers
+ * 
+ * To adapt for a new chapter:
+ * 1. Update verses array with your chapter's content
+ * 2. Customize group names and transitions
+ * 3. Write reflection content for each verse
+ * 4. Add scripture connections (from/to references)
+ * 5. Adjust colors for thematic groups
+ * 6. Update page title and subtitle
+ */
+
 import React, { useState } from 'react';
 import './App.css';
 

@@ -4,6 +4,57 @@
 
 This is an interactive web application for studying Isaiah Chapter 6 from the Bible. The application features a color-coded grid visualization of all 13 verses organized into 6 thematic groups, with interactive hover tooltips and transformation point markers. A two-level modal navigation system provides both reflective study (three viewing modes: Seeing Connections, How This Helps My Life, What This Teaches Us) and Scripture Connections showing how each verse fits into God's larger plan across the entire Bible. Built with React, TypeScript, and Tailwind CSS, it offers an engaging educational experience for understanding Isaiah's vision of God's holiness and his prophetic commission.
 
+---
+
+## 📋 APPLICATION TEMPLATE
+
+**This application serves as a reusable template for creating interactive Bible study applications for any chapter or passage.**
+
+### Template Features
+- Color-coded thematic grouping of verses
+- Interactive verse grid with hover tooltips
+- Two-level modal navigation (Reflections + Scripture Connections)
+- Multiple viewing perspectives for deeper study
+- Transformation/hinge point markers
+- Responsive design for all devices
+- No backend required - fully client-side
+
+### How to Adapt This Template for Other Bible Chapters
+
+**Step 1: Update Content Data**
+- Modify the `verses` array with your chapter's verses
+- Update `getGroupName()` with your thematic group names (avoid "Group N" labels)
+- Update `getGroupTransition()` with short descriptions
+- Assign each verse a `group` number (1-N)
+- Mark key verses with `isHinge: true` for transformation points
+
+**Step 2: Customize Reflection Content**
+- Update `reflectionContent` object with three perspectives per verse:
+  - `seeing`: Observational insights ("Seeing Connections")
+  - `life`: Personal application ("How This Helps My Life")
+  - `teach`: Theological teaching ("What This Teaches Us")
+
+**Step 3: Add Scripture Connections**
+- Update `scriptureConnections` object with:
+  - `from`: Array of earlier passages this verse builds upon
+  - `to`: Array of later passages this verse points toward
+  - `context`: Theological/narrative context explanation
+
+**Step 4: Customize Colors**
+- Update `getColorClass()` with appropriate Tailwind colors for your groups
+- Use distinct, accessible colors (blues, oranges, teals, grays, reds, greens)
+
+**Step 5: Update Page Title & Description**
+- Change header title from "Isaiah Chapter 6" to your passage
+- Update subtitle to reflect the chapter's main theme
+
+### Template Design Principles
+- **Reader-friendly over academic**: Use devotional language, not scholarly jargon
+- **Visual clarity**: Color coding helps identify themes at a glance
+- **Multiple perspectives**: Three viewing modes provide depth without overwhelming
+- **Biblical context**: Scripture connections show how verses fit into God's larger story
+- **Transformation focus**: Yellow dots highlight pivotal moments in the narrative
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
