@@ -69,6 +69,14 @@ Preferred communication style: Simple, everyday language.
 - **Breakpoints**: CSS auto-fit grid for theme cards, centered max-width containers
 - **Mobile Support**: Flex-wrap for navigation tabs, column layouts for verses
 
+**Legend Design Pattern (Template)**:
+- **Layout**: Grid (1 col mobile, 2 col tablet, 3 col desktop) with clean spacing
+- **Visual Elements**: Small color chip (w-4 h-4) on left + text content on right
+- **Sequence Indication**: Inline numbers in light gray ("1.", "2.", etc.) next to titles
+- **Rationale**: Avoids academic "Group N" labels, no oversized icons, no confusing arrows
+- **Reader Experience**: Numbers indicate sequence clearly without being obtrusive; color chips provide visual reference without dominating the content
+- **This template should be maintained**: Clean, compact, and reader-friendly approach
+
 ## External Dependencies
 
 ### Runtime Dependencies
