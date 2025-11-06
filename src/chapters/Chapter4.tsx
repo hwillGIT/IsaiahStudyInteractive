@@ -354,71 +354,37 @@ function Chapter4() {
         )}
 
         {showStructureModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50" onClick={() => setShowStructureModal(false)}>
-            <div className="bg-white rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
-              <div className="p-6 border-b border-gray-200 sticky top-0 bg-white z-10">
-                <div className="flex justify-between items-center">
-                  <h2 className="text-3xl font-bold text-gray-800">Chapter 4 Structure</h2>
-                  <button onClick={() => setShowStructureModal(false)} className="text-gray-400 hover:text-gray-600 text-2xl font-bold">&times;</button>
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden">
+              <div className="p-6 border-b border-gray-200">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-xl font-bold text-gray-800">Chapter 4 Structure</h3>
+                  <button
+                    onClick={() => setShowStructureModal(false)}
+                    className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+                  >
+                    ×
+                  </button>
                 </div>
-                <p className="text-gray-600 mt-2">Forward-flowing progression from desperation → restoration → God's presence</p>
               </div>
-
-              <div className="p-6 space-y-6">
-                <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
-                  <h3 className="text-xl font-bold text-red-700 mb-3">Group 1: Desperation After Judgment</h3>
-                  <p className="text-gray-700 mb-3 italic">Seven women seeking one man - consequences of judgment</p>
-                  <div className="space-y-2">
-                    <div className="flex items-start gap-2">
-                      <span className="font-semibold text-red-600 min-w-[3rem]">v. 1</span>
-                      <p className="text-gray-700">Seven women plead to bear one man's name to remove their reproach - showing the desperation and devastation after God's judgment.</p>
-                    </div>
+              <div className="p-6 overflow-y-auto">
+                <p className="text-sm text-gray-600 mb-4">This chapter flows from desperation through restoration to God's glorious presence:</p>
+                <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
+                  <div className="ml-0 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-red-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>A (1): <span className="font-sans font-semibold text-red-700">Desperation After Judgment</span> — Seven women seeking one man</span>
+                  </div>
+                  <div className="ml-4 bg-green-100 px-2 py-1 rounded border-l-4 border-green-600 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-green-600 rounded mt-0.5 flex-shrink-0"></div>
+                    <span className="font-sans text-green-800 font-bold">★ B (2-4): TURNING POINT — The Branch Brings Restoration</span>
+                  </div>
+                  <div className="ml-8 text-green-700 font-sans italic pl-5">"The Branch of the LORD shall be beautiful and glorious"</div>
+                  <div className="ml-4 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-blue-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>C (5-6): <span className="font-sans font-semibold text-blue-700">God's Glorious Presence Returns</span> — Cloud and fire over Zion</span>
                   </div>
                 </div>
-
-                <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg">
-                  <h3 className="text-xl font-bold text-green-700 mb-3">Group 2: The Branch Brings Restoration</h3>
-                  <p className="text-gray-700 mb-3 italic">The Branch of the LORD - Messiah brings beauty and cleansing</p>
-                  <div className="space-y-2">
-                    <div className="flex items-start gap-2">
-                      <span className="font-semibold text-green-600 min-w-[3rem]">v. 2 🔄</span>
-                      <p className="text-gray-700"><span className="font-semibold">HINGE (Restoration):</span> The Branch of the LORD appears beautiful and glorious, transforming shame into honor for the remnant.</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="font-semibold text-green-600 min-w-[3rem]">v. 3</span>
-                      <p className="text-gray-700">Those who remain are called holy, recorded for life in Jerusalem.</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="font-semibold text-green-600 min-w-[3rem]">v. 4</span>
-                      <p className="text-gray-700">God cleanses through judgment and burning, washing away filth and bloodstains.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
-                  <h3 className="text-xl font-bold text-blue-700 mb-3">Group 3: God's Glorious Presence Returns</h3>
-                  <p className="text-gray-700 mb-3 italic">Cloud and fire return - God's protective presence restored</p>
-                  <div className="space-y-2">
-                    <div className="flex items-start gap-2">
-                      <span className="font-semibold text-blue-600 min-w-[3rem]">v. 5</span>
-                      <p className="text-gray-700">The LORD creates cloud by day and fire by night over Mount Zion, with a canopy of glory - recalling Exodus.</p>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <span className="font-semibold text-blue-600 min-w-[3rem]">v. 6</span>
-                      <p className="text-gray-700">God provides complete shelter - shade from heat, refuge from storm and rain.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-r from-red-100 via-green-100 to-blue-100 p-6 rounded-lg border-2 border-gray-300">
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">📖 Theological Flow</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Chapter 4 shows the complete transformation from judgment to glory. It begins with the devastating consequences of judgment (v. 1), 
-                    pivots at the messianic promise of the Branch who brings restoration (v. 2), continues with cleansing of the remnant (vv. 3-4), 
-                    and culminates in God's glorious presence returning to dwell with His purified people (vv. 5-6). This forward progression demonstrates 
-                    that God's ultimate goal is not judgment but restoration and intimate presence with His people.
-                  </p>
-                </div>
+                <p className="text-sm text-gray-600 mt-4 italic">The turning point (verse 2) introduces the messianic Branch who transforms desperation into glory—moving from judgment's consequences to God's protective presence restored.</p>
               </div>
             </div>
           </div>
