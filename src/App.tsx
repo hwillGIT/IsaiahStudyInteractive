@@ -249,28 +249,17 @@ function App() {
           {/* Color Legend */}
           <div className="bg-white rounded-lg p-4 shadow-md mb-6">
             <h3 className="text-lg font-semibold text-gray-800 mb-3">Understanding the Vision Sequence</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 relative">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
               {Array.from({ length: 6 }, (_, i) => i + 1).map((group) => (
-                <div key={group} className="relative flex items-start gap-3 bg-gradient-to-br from-gray-50 to-white p-3 rounded-lg border border-gray-200">
-                  <div className={`w-5 h-5 rounded flex-shrink-0 ${getColorClass(group)} shadow-sm mt-0.5`}></div>
-                  <div className="text-sm flex-1">
-                    <div className="font-semibold text-gray-800 leading-tight">{getGroupName(group)}</div>
-                    <div className="text-gray-600 text-xs mt-1">{getGroupTransition(group)}</div>
+                <div key={group} className="flex items-start gap-3">
+                  <div className={`w-4 h-4 rounded mt-1 flex-shrink-0 ${getColorClass(group)}`}></div>
+                  <div className="text-sm">
+                    <div className="font-medium text-gray-800">
+                      <span className="text-gray-500 mr-1">{group}.</span>
+                      {getGroupName(group)}
+                    </div>
+                    <div className="text-gray-600 text-xs">{getGroupTransition(group)}</div>
                   </div>
-                  
-                  {/* Flow arrows - right arrow for items 1, 2, 4, 5 */}
-                  {(group === 1 || group === 2 || group === 4 || group === 5) && (
-                    <div className="hidden md:block absolute -right-5 top-1/2 -translate-y-1/2 text-4xl font-bold text-blue-400 opacity-60 z-10 drop-shadow-sm">
-                      →
-                    </div>
-                  )}
-                  
-                  {/* Flow arrow - curved down-left for item 3 to indicate flow to item 4 */}
-                  {group === 3 && (
-                    <div className="hidden md:block absolute -bottom-6 -left-2 text-3xl font-bold text-blue-400 opacity-60 z-10 drop-shadow-sm">
-                      ↙
-                    </div>
-                  )}
                 </div>
               ))}
             </div>
