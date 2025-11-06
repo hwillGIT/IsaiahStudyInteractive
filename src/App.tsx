@@ -252,12 +252,14 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
               {Array.from({ length: 6 }, (_, i) => i + 1).map((group) => (
                 <div key={group} className="flex items-start gap-3">
-                  <div className={`w-4 h-4 rounded mt-1 flex-shrink-0 ${getColorClass(group)}`}></div>
-                  <div className="text-sm">
-                    <div className="font-medium text-gray-800">
-                      <span className="text-gray-500 text-xs mr-1">{getSequenceLabel(group)}</span>
-                      {getGroupName(group)}
+                  <div className="flex flex-col items-center gap-1 flex-shrink-0">
+                    <div className="w-6 h-6 rounded-full bg-gray-700 text-white text-xs font-bold flex items-center justify-center">
+                      {group}
                     </div>
+                    <div className={`w-4 h-4 rounded flex-shrink-0 ${getColorClass(group)}`}></div>
+                  </div>
+                  <div className="text-sm">
+                    <div className="font-medium text-gray-800">{getGroupName(group)}</div>
                     <div className="text-gray-600 text-xs">{getGroupTransition(group)}</div>
                   </div>
                 </div>
