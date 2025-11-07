@@ -523,36 +523,41 @@ function Chapter7() {
                 </div>
               </div>
               <div className="p-6 overflow-y-auto">
-                <p className="text-sm text-gray-600 mb-4">This chapter flows from crisis through divine reassurance to prophetic promise, concluding with warnings of judgment:</p>
+                <p className="text-sm text-gray-600 mb-4">This chapter displays a symmetrical pattern centered on the Immanuel sign, with prophetic word framing the divine promise:</p>
                 <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
                   <div className="ml-0 flex items-start gap-2">
                     <div className="w-3 h-3 bg-red-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>A (1-3): <span className="font-sans font-semibold text-red-700">The Syro-Ephraimite Threat</span> — Enemy alliance threatens Jerusalem</span>
-                  </div>
-                  <div className="ml-4 bg-blue-100 px-2 py-1 rounded border-l-4 border-blue-500 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-blue-400 rounded mt-0.5 flex-shrink-0"></div>
-                    <span className="font-sans text-blue-800 font-bold">★ B (4-9): FIRST HINGE — God's Reassurance to Ahaz</span>
-                  </div>
-                  <div className="ml-8 text-blue-700 font-sans italic pl-5">"Do not fear... these smoldering stumps of firebrands"</div>
-                  <div className="mt-3 ml-4 bg-green-100 px-2 py-1 rounded border-l-4 border-green-500 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-green-400 rounded mt-0.5 flex-shrink-0"></div>
-                    <span className="font-sans text-green-800 font-bold">★ C (10-14): SECOND HINGE — The Immanuel Sign</span>
-                  </div>
-                  <div className="ml-8 text-green-700 font-sans italic pl-5">"The virgin shall conceive and bear a son, and shall call his name Immanuel"</div>
-                  <div className="mt-3 ml-4 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-purple-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>D (15-17): <span className="font-sans font-semibold text-purple-700">Near and Far Fulfillment</span> — Timeline of deliverance and judgment</span>
+                    <span>A (1-9): <span className="font-sans font-semibold text-red-700">Prophetic Reassurance</span> — "Do not fear these smoldering stumps"</span>
                   </div>
                   <div className="ml-4 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>E (18-20): <span className="font-sans font-semibold text-orange-700">Assyria: The Hired Razor</span> — God summons nations for judgment</span>
+                    <div className="w-3 h-3 bg-blue-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>B (10-11): <span className="font-sans font-semibold text-blue-700">Invitation to Ask</span> — "Ask for a sign from the LORD"</span>
+                  </div>
+                  <div className="ml-8 bg-green-100 px-2 py-1 rounded border-l-4 border-green-600 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-green-600 rounded mt-0.5 flex-shrink-0"></div>
+                    <span className="font-sans text-green-800 font-bold">★ CENTER (12-14): The Immanuel Sign</span>
+                  </div>
+                  <div className="ml-12 text-green-700 font-sans italic pl-5">"The virgin shall conceive... God with us"</div>
+                  <div className="mt-3 ml-4 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-blue-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>B' (12): <span className="font-sans font-semibold text-blue-700">Refusal to Ask</span> — "I will not ask, nor test the LORD"</span>
                   </div>
                   <div className="ml-0 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-gray-600 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>F (21-25): <span className="font-sans font-semibold text-gray-700">The Land Becomes Wilderness</span> — Agricultural collapse and desolation</span>
+                    <div className="w-3 h-3 bg-purple-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>A' (15-25): <span className="font-sans font-semibold text-purple-700">Prophetic Judgment</span> — Assyrian invasion and desolation</span>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 mt-4 italic">Two hinge verses anchor this chapter: God's reassurance (v. 4) and the Immanuel sign (v. 14). The structure moves from human fear through divine promise to unavoidable consequences of faithless choices.</p>
+                
+                <div className="mt-4 p-4 bg-blue-50 rounded border-l-4 border-blue-500">
+                  <h4 className="font-bold text-gray-800 mb-3">How the Parallels Connect:</h4>
+                  <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+                    <li><strong>A ↔ A':</strong> The chapter opens with Isaiah's prophetic reassurance—"Do not fear" (vv. 1-9)—but closes with prophetic warnings of judgment through Assyria (vv. 15-25). God offers peace, but rejecting His word brings the very disaster He promised to prevent.</li>
+                    <li><strong>B ↔ B':</strong> God graciously invites Ahaz to ask for any sign (vv. 10-11), but Ahaz piously refuses (v. 12). This seeming humility is actually faithless rebellion—refusing to trust God's promise by refusing to test it. Faith that won't accept confirmation isn't faith at all.</li>
+                    <li><strong>Center (vv. 12-14):</strong> Despite Ahaz's refusal, God gives the sign anyway—Immanuel, "God with us." This is the ultimate promise: God Himself will dwell among His people through a virgin-born son. The sign transcends the immediate crisis, pointing to the Messiah who is both fully divine ("God") and fully present ("with us").</li>
+                  </ul>
+                </div>
+                
+                <p className="text-sm text-gray-600 mt-4 italic">The symmetrical pattern reveals that God's grace persists even when rejected. Ahaz refuses the sign, but God gives it anyway—not just for one crisis, but as the eternal answer to all human need. Immanuel stands at the center, God's unshakeable promise despite human faithlessness.</p>
               </div>
             </div>
           </div>

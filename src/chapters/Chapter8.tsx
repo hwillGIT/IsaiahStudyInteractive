@@ -505,44 +505,41 @@ function Chapter8() {
                 </div>
               </div>
               <div className="p-6 overflow-y-auto">
-                <p className="text-sm text-gray-600 mb-4">This chapter shows the progression from prophetic sign to darkness, with two critical hinges marking rejection and choice:</p>
+                <p className="text-sm text-gray-600 mb-4">This chapter displays a symmetrical pattern centered on "God with us," showing how the same God becomes either sanctuary or stumbling stone:</p>
                 <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
                   <div className="ml-0 flex items-start gap-2">
                     <div className="w-3 h-3 bg-teal-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>A (1-4): <span className="font-sans font-semibold text-teal-700">The Sign of Maher-shalal-hash-baz</span> — Child's name prophesies swift plunder</span>
+                    <span>A (1-4): <span className="font-sans font-semibold text-teal-700">Testimony & Witnesses</span> — Prophetic sign recorded</span>
                   </div>
                   <div className="ml-4 flex items-start gap-2">
                     <div className="w-3 h-3 bg-blue-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>B (5-8): <span className="font-sans font-semibold text-blue-700">Refusing Gentle Waters</span> — Rejecting God's provision brings flood</span>
+                    <span>B (5-8): <span className="font-sans font-semibold text-blue-700">Waters Overflow</span> — Assyrian flood threatens</span>
                   </div>
-                  <div className="ml-8 bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-yellow-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span className="font-sans text-yellow-800 font-bold">★ HINGE (6): Rejection — Refusing gentle waters</span>
+                  <div className="ml-8 bg-green-100 px-2 py-1 rounded border-l-4 border-green-600 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-green-600 rounded mt-0.5 flex-shrink-0"></div>
+                    <span className="font-sans text-green-800 font-bold">★ CENTER (9-10): Immanuel - God With Us</span>
                   </div>
-                  <div className="ml-12 text-yellow-700 font-sans italic pl-5">"This people has refused the waters of Shiloah that flow gently"</div>
-                  <div className="mt-3 ml-8 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-green-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>C (9-10): <span className="font-sans font-semibold text-green-700">Immanuel: God With Us</span> — Despite judgment, God remains present</span>
-                  </div>
-                  <div className="ml-4 flex items-start gap-2">
+                  <div className="ml-12 text-green-700 font-sans italic pl-5">"For God is with us"</div>
+                  <div className="mt-3 ml-4 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
                     <div className="w-3 h-3 bg-purple-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>D (11-15): <span className="font-sans font-semibold text-purple-700">Sanctuary or Stumbling Stone</span> — God becomes refuge or ruin</span>
-                  </div>
-                  <div className="ml-8 bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-500 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-yellow-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span className="font-sans text-yellow-800 font-bold">★ HINGE (14): Sanctuary — God as refuge or stumbling stone</span>
-                  </div>
-                  <div className="ml-12 text-yellow-700 font-sans italic pl-5">"He will become a sanctuary and a stone of offense"</div>
-                  <div className="mt-3 ml-4 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>E (16-18): <span className="font-sans font-semibold text-orange-700">Waiting for the Hidden God</span> — Isaiah waits while God hides His face</span>
+                    <span>B' (11-15): <span className="font-sans font-semibold text-purple-700">Sanctuary or Stumbling Stone</span> — God becomes trap or refuge</span>
                   </div>
                   <div className="ml-0 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-gray-600 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>F (19-22): <span className="font-sans font-semibold text-gray-700">Thick Darkness Before the Light</span> — Total darkness for those who reject God's word</span>
+                    <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>A' (16-20): <span className="font-sans font-semibold text-orange-700">Testimony Sealed</span> — Record preserved among disciples</span>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 mt-4 italic">The two hinges mark critical choices: rejecting God's gentle provision (verse 6) and how we respond to God Himself—as sanctuary or stumbling stone (verse 14). The chapter moves from prophetic sign through rejection to darkness, setting up chapter 9's stunning reversal: "The people walking in darkness have seen a great light."</p>
+                
+                <div className="mt-4 p-4 bg-blue-50 rounded border-l-4 border-blue-500">
+                  <h4 className="font-bold text-gray-800 mb-3">How the Parallels Connect:</h4>
+                  <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+                    <li><strong>A ↔ A':</strong> The chapter opens with testimony and witnesses recorded (vv. 1-4) and closes with the testimony sealed and preserved among disciples (vv. 16-20). God's word is documented and protected—whether people believe it or not, the truth stands forever.</li>
+                    <li><strong>B ↔ B':</strong> The Assyrian flood threatens to overwhelm (vv. 5-8), but God Himself becomes either sanctuary (protection from the flood) or stumbling stone (causing people to fall into it) in verses 11-15. The same disaster that destroys some preserves others—the difference is their response to God.</li>
+                    <li><strong>Center (vv. 9-10):</strong> At the heart stands the proclamation "Immanuel—God is with us." No matter what enemies plot or how overwhelming the threats, God's presence with His people guarantees their survival. This central truth answers all fear: if God is with us, who can stand against us?</li>
+                  </ul>
+                </div>
+                
+                <p className="text-sm text-gray-600 mt-4 italic">The symmetrical pattern reveals a profound truth: God's presence (center) determines everything. The same God who preserves His testimony (outer frame) and confronts His people with disaster (inner frame) becomes either refuge or ruin based entirely on how we respond to Him. Immanuel is the answer—but only for those who make Him their sanctuary.</p>
               </div>
             </div>
           </div>

@@ -577,7 +577,17 @@ function Chapter5() {
                     <span>F (26-30): <span className="font-sans font-semibold text-gray-700">Woe #5 - The Invading Army</span> — God summons distant nations as judgment</span>
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 mt-4 italic">The turning point (verse 7) reveals that the vineyard parable is about Israel—God expected justice but found bloodshed. The five woes that follow detail each specific failure.</p>
+                
+                <div className="mt-4 p-4 bg-blue-50 rounded border-l-4 border-blue-500">
+                  <h4 className="font-bold text-gray-800 mb-3">How This Unfolds:</h4>
+                  <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+                    <li><strong>Before the Turning Point (vv. 1-6):</strong> The vineyard parable presents a puzzle—God did everything right for His vineyard, but it produced only wild grapes. The imagery is beautiful but perplexing. Who is this disappointing vineyard?</li>
+                    <li><strong>Turning Point (v. 7):</strong> The stunning revelation: "The vineyard of the LORD of hosts is the house of Israel." God expected justice but found bloodshed; He expected righteousness but heard cries of distress. The wordplay emphasizes the tragic irony—what sounds similar (justice/bloodshed) reveals how close Israel came, yet how far they fell.</li>
+                    <li><strong>After the Turning Point (vv. 8-30):</strong> The five woes detail exactly how Israel produced "wild grapes." Each woe expands on a specific failure: greed (#1), drunken indifference (#2), mocking God (#3), moral confusion (#4), and corrupt leadership (#5). The final section (vv. 26-30) shows God's response—summoning foreign armies as judgment.</li>
+                  </ul>
+                </div>
+                
+                <p className="text-sm text-gray-600 mt-4 italic">The structure moves from mystery to revelation to specification. The vineyard parable asks "What went wrong?" The turning point answers "Israel failed." The woes detail "Here's exactly how they failed." Together, they paint a comprehensive picture of a nation that received everything but returned nothing.</p>
               </div>
             </div>
           </div>
