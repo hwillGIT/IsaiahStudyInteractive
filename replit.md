@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a comprehensive interactive web application for studying Isaiah Chapters 1-9 from the Bible. Each chapter features a color-coded grid visualization of verses organized into thematic groups, with interactive hover tooltips and transformation point markers. A two-level modal navigation system provides both reflective study (three viewing modes: Seeing Connections, How This Helps My Life, What This Teaches Us) and Scripture Connections showing how each verse fits into God's larger plan across the entire Bible. Built with React, TypeScript, Tailwind CSS, and React Router, the application offers an engaging educational experience across 9 complete chapters with 630 total reflections (3 perspectives per verse) and comprehensive Scripture connections. Features a dedicated home page for easy chapter navigation.
+This is a comprehensive interactive web application for studying Isaiah Chapters 1-9 from the Bible. Each chapter features a color-coded grid visualization of verses organized into thematic groups, with interactive hover tooltips and transformation point markers. A two-level modal navigation system provides both reflective study (three viewing modes: Seeing Connections, How This Helps My Life, What This Teaches Us) and Scripture Connections showing how each verse fits into God's larger plan across the entire Bible. Built with React, TypeScript, Tailwind CSS, and React Router, the application offers an engaging educational experience across 9 complete chapters with 630 total reflections (3 perspectives per verse) and comprehensive Scripture connections. Features a dedicated home page with chapter navigation cards and educational modals explaining the book's structure and how to use the app.
 
 **Completed Chapters**:
 - Chapter 1 (31 verses): The Rebellious Nation and the Invitation to Return
@@ -138,6 +138,14 @@ Preferred communication style: Simple, everyday language.
 - **Rationale**: Avoids academic "Group N" labels, no oversized icons, no confusing arrows
 - **Reader Experience**: Numbers indicate sequence clearly without being obtrusive; color chips provide visual reference without dominating the content
 - **This template should be maintained**: Clean, compact, and reader-friendly approach
+
+**Home Page Educational Modals**:
+- **Purpose**: Provide deeper context without cluttering the home page
+- **Implementation**: Two gradient buttons that trigger full-screen modals
+  - "Understanding the Book of Isaiah": Explains the three major sections (chapters 1-39, 40-55, 56-66) with historical context, key themes, and how they point to Christ
+  - "How to Use This Study App": Tutorial on color-coding, three perspectives, Scripture connections, structure views, and transformation markers
+- **Design**: Modal overlays with scrollable content, organized with color-coded sections matching the app's visual language
+- **Content Philosophy**: Scholarly framework translated into everyday language; no academic jargon or Hebrew terms
 
 ## External Dependencies
 
