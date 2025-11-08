@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../App.css';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 interface Verse {
   number: number;
@@ -17,92 +17,177 @@ interface Connection {
 }
 
 const verses: Verse[] = [
-  { number: 1, text: "And in that day seven women shall take hold of one man, saying, 'We will eat our own bread and wear our own clothes, only let us be called by your name; take away our reproach.'", group: 1 },
-  { number: 2, text: "In that day the branch of the LORD shall be beautiful and glorious, and the fruit of the land shall be the pride and honor of the survivors of Israel.", group: 2, isHinge: true, hingeType: 'restoration' },
-  { number: 3, text: "And he who is left in Zion and remains in Jerusalem will be called holy, everyone who has been recorded for life in Jerusalem,", group: 2 },
-  { number: 4, text: "when the Lord shall have washed away the filth of the daughters of Zion and cleansed the bloodstains of Jerusalem from its midst by a spirit of judgment and by a spirit of burning.", group: 2 },
-  { number: 5, text: "Then the LORD will create over the whole site of Mount Zion and over her assemblies a cloud by day, and smoke and the shining of a flaming fire by night; for over all the glory there will be a canopy.", group: 3 },
-  { number: 6, text: "There will be a booth for shade by day from the heat, and for a refuge and a shelter from the storm and rain.", group: 3 }
+  {
+    number: 1,
+    text: "And in that day seven women shall take hold of one man, saying, 'We will eat our own bread and wear our own clothes, only let us be called by your name; take away our reproach.'",
+    group: 1,
+  },
+  {
+    number: 2,
+    text: "In that day the branch of the LORD shall be beautiful and glorious, and the fruit of the land shall be the pride and honor of the survivors of Israel.",
+    group: 2,
+    isHinge: true,
+    hingeType: "restoration",
+  },
+  {
+    number: 3,
+    text: "And he who is left in Zion and remains in Jerusalem will be called holy, everyone who has been recorded for life in Jerusalem,",
+    group: 2,
+  },
+  {
+    number: 4,
+    text: "when the Lord shall have washed away the filth of the daughters of Zion and cleansed the bloodstains of Jerusalem from its midst by a spirit of judgment and by a spirit of burning.",
+    group: 2,
+  },
+  {
+    number: 5,
+    text: "Then the LORD will create over the whole site of Mount Zion and over her assemblies a cloud by day, and smoke and the shining of a flaming fire by night; for over all the glory there will be a canopy.",
+    group: 3,
+  },
+  {
+    number: 6,
+    text: "There will be a booth for shade by day from the heat, and for a refuge and a shelter from the storm and rain.",
+    group: 3,
+  },
 ];
 
 const reflectionContent = {
   1: {
-    seeing: "This verse describes desperate circumstances—war has decimated the male population, leaving many women competing for one surviving man. Their offer to provide for themselves shows the depth of their shame and desperation.",
+    seeing:
+      "This verse describes desperate circumstances—war has decimated the male population, leaving many women competing for one surviving man. Their offer to provide for themselves shows the depth of their shame and desperation.",
     life: "This picture of desperation reminds us what life looks like when we face judgment without God's intervention. Sometimes we must hit bottom before we're ready for God's restoration.",
-    teach: "The scene of seven women reflects the consequences of God's judgment described in chapter 3. It sets up the contrast with the restoration that follows, showing humanity's need for divine intervention."
+    teach:
+      "The scene of seven women reflects the consequences of God's judgment described in chapter 3. It sets up the contrast with the restoration that follows, showing humanity's need for divine intervention.",
   },
   2: {
-    seeing: "This hinge verse dramatically shifts from human desperation to divine beauty. The 'Branch of the LORD' represents the Messiah, bringing glory and fruitfulness where there was only shame and barrenness.",
+    seeing:
+      "This hinge verse dramatically shifts from human desperation to divine beauty. The 'Branch of the LORD' represents the Messiah, bringing glory and fruitfulness where there was only shame and barrenness.",
     life: "When everything seems hopeless, God's intervention changes everything. The Branch brings beauty to replace ashes, honor to replace shame. What looks dead can bloom again through God's power.",
-    teach: "The Branch of the LORD is a messianic title appearing throughout the prophets. This represents Christ emerging from the stump of David's fallen dynasty, bringing restoration and glory."
+    teach:
+      "The Branch of the LORD is a messianic title appearing throughout the prophets. This represents Christ emerging from the stump of David's fallen dynasty, bringing restoration and glory.",
   },
   3: {
-    seeing: "Those who survive judgment will be called 'holy'—set apart for God. Being 'recorded for life' shows God's sovereign choice and preservation of His remnant people.",
+    seeing:
+      "Those who survive judgment will be called 'holy'—set apart for God. Being 'recorded for life' shows God's sovereign choice and preservation of His remnant people.",
     life: "Holiness isn't achieved by our effort but by God's preservation and calling. If you belong to Christ, you're recorded for life in His book. This isn't about perfection but about God's gracious choice.",
-    teach: "The remnant theology runs throughout Isaiah—not all Israel is lost, but God preserves a faithful remnant. Holiness comes through God's cleansing work, not human achievement."
+    teach:
+      "The remnant theology runs throughout Isaiah—not all Israel is lost, but God preserves a faithful remnant. Holiness comes through God's cleansing work, not human achievement.",
   },
   4: {
-    seeing: "God cleanses through 'a spirit of judgment and burning'—purification that removes filth and bloodstains. This isn't gentle washing but intense purging that burns away impurity.",
+    seeing:
+      "God cleanses through 'a spirit of judgment and burning'—purification that removes filth and bloodstains. This isn't gentle washing but intense purging that burns away impurity.",
     life: "God's cleansing can feel like fire—uncomfortable, even painful. But He burns away what defiles us, removing the stains we cannot remove ourselves. His refining fire is motivated by love.",
-    teach: "Divine cleansing precedes divine presence. God must purify His people before dwelling among them. The spirit of burning represents both judgment on sin and purification of the faithful."
+    teach:
+      "Divine cleansing precedes divine presence. God must purify His people before dwelling among them. The spirit of burning represents both judgment on sin and purification of the faithful.",
   },
   5: {
-    seeing: "God recreates the Exodus imagery—cloud by day, fire by night—showing His protective presence over Zion. The 'canopy' suggests both covering and glory, God's shekinah dwelling with His people.",
+    seeing:
+      "God recreates the Exodus imagery—cloud by day, fire by night—showing His protective presence over Zion. The 'canopy' suggests both covering and glory, God's shekinah dwelling with His people.",
     life: "Just as God guided Israel through the wilderness with cloud and fire, He promises to be present with His restored people. His presence is both our guide and our protection.",
-    teach: "This verse recalls the tabernacle and Exodus journey, but promises something greater—God's permanent dwelling with His purified people. The cloud and fire symbolize divine presence, guidance, and protection."
+    teach:
+      "This verse recalls the tabernacle and Exodus journey, but promises something greater—God's permanent dwelling with His purified people. The cloud and fire symbolize divine presence, guidance, and protection.",
   },
   6: {
-    seeing: "God provides comprehensive shelter—shade from heat, refuge from storms and rain. Every need is met, every threat is countered. This is complete, loving provision from a caring Father.",
+    seeing:
+      "God provides comprehensive shelter—shade from heat, refuge from storms and rain. Every need is met, every threat is countered. This is complete, loving provision from a caring Father.",
     life: "What 'heat,' 'storm,' or 'rain' are you facing? God promises to be your shelter through every difficulty. His presence is both shade in scorching times and refuge in violent storms.",
-    teach: "The booth or tabernacle represents God's dwelling among His people, providing complete protection. This points forward to the ultimate fulfillment when God dwells with humanity in the New Jerusalem."
-  }
+    teach:
+      "The booth or tabernacle represents God's dwelling among His people, providing complete protection. This points forward to the ultimate fulfillment when God dwells with humanity in the New Jerusalem.",
+  },
 };
 
 const scriptureConnections: Record<number, Connection> = {
   1: {
-    from: ["Isaiah 3:25-26 - Men fallen in battle, gates lamenting", "Leviticus 26:26 - Judgment brings scarcity"],
-    to: ["Revelation 2-3 - Seven churches seeking Christ's name", "Luke 14:16-24 - The great banquet and refusal"],
-    context: "This verse shows the low point of judgment before restoration begins. The desperation of verse 1 makes the beauty of verse 2's Branch even more glorious."
+    from: [
+      "Isaiah 3:25-26 - Men fallen in battle, gates lamenting",
+      "Leviticus 26:26 - Judgment brings scarcity",
+    ],
+    to: [
+      "Revelation 2-3 - Seven churches seeking Christ's name",
+      "Luke 14:16-24 - The great banquet and refusal",
+    ],
+    context:
+      "This verse shows the low point of judgment before restoration begins. The desperation of verse 1 makes the beauty of verse 2's Branch even more glorious.",
   },
   2: {
-    from: ["Isaiah 11:1 - Branch from the stump of Jesse", "Jeremiah 23:5 - Righteous Branch raised to David", "Zechariah 3:8 - My Servant the BRANCH"],
-    to: ["John 15:1 - Jesus as the true vine", "Revelation 22:16 - I am the root and offspring of David"],
-    context: "The Branch of the LORD is a messianic title representing Christ's divine origin and humble appearance. He brings beauty and fruitfulness to what seemed dead and barren."
+    from: [
+      "Isaiah 11:1 - Branch from the stump of Jesse",
+      "Jeremiah 23:5 - Righteous Branch raised to David",
+      "Zechariah 3:8 - My Servant the BRANCH",
+    ],
+    to: [
+      "John 15:1 - Jesus as the true vine",
+      "Revelation 22:16 - I am the root and offspring of David",
+    ],
+    context:
+      "The Branch of the LORD is a messianic title representing Christ's divine origin and humble appearance. He brings beauty and fruitfulness to what seemed dead and barren.",
   },
   3: {
-    from: ["Exodus 32:32-33 - Book of life", "Psalm 69:28 - Let them be blotted out of the book of the living"],
-    to: ["Philippians 4:3 - Whose names are in the book of life", "Revelation 21:27 - Only those written in the Lamb's book of life"],
-    context: "Being 'recorded for life' shows God's sovereign preservation of His remnant. Holiness comes not through human effort but through God's cleansing and calling."
+    from: [
+      "Exodus 32:32-33 - Book of life",
+      "Psalm 69:28 - Let them be blotted out of the book of the living",
+    ],
+    to: [
+      "Philippians 4:3 - Whose names are in the book of life",
+      "Revelation 21:27 - Only those written in the Lamb's book of life",
+    ],
+    context:
+      "Being 'recorded for life' shows God's sovereign preservation of His remnant. Holiness comes not through human effort but through God's cleansing and calling.",
   },
   4: {
-    from: ["Malachi 3:2-3 - He is like a refiner's fire", "Zechariah 13:9 - Refine them as silver is refined"],
-    to: ["1 Corinthians 3:13-15 - Fire will test the quality of each person's work", "1 Peter 1:7 - Refined by fire"],
-    context: "God's cleansing burns away impurity through judgment and purification. This painful process is necessary before His holy presence can dwell among His people."
+    from: [
+      "Malachi 3:2-3 - He is like a refiner's fire",
+      "Zechariah 13:9 - Refine them as silver is refined",
+    ],
+    to: [
+      "1 Corinthians 3:13-15 - Fire will test the quality of each person's work",
+      "1 Peter 1:7 - Refined by fire",
+    ],
+    context:
+      "God's cleansing burns away impurity through judgment and purification. This painful process is necessary before His holy presence can dwell among His people.",
   },
   5: {
-    from: ["Exodus 13:21-22 - Pillar of cloud by day, fire by night", "Exodus 40:34-38 - Glory of the LORD filled the tabernacle"],
-    to: ["Revelation 21:3 - God's dwelling place is among the people", "Revelation 21:23 - The glory of God gives it light"],
-    context: "The recreation of Exodus imagery shows God's permanent presence with His restored people. What was temporary in the wilderness becomes eternal in the redeemed Zion."
+    from: [
+      "Exodus 13:21-22 - Pillar of cloud by day, fire by night",
+      "Exodus 40:34-38 - Glory of the LORD filled the tabernacle",
+    ],
+    to: [
+      "Revelation 21:3 - God's dwelling place is among the people",
+      "Revelation 21:23 - The glory of God gives it light",
+    ],
+    context:
+      "The recreation of Exodus imagery shows God's permanent presence with His restored people. What was temporary in the wilderness becomes eternal in the redeemed Zion.",
   },
   6: {
-    from: ["Psalm 27:5 - He will hide me in his shelter", "Psalm 91:1 - He who dwells in the shelter of the Most High"],
-    to: ["John 1:14 - The Word became flesh and dwelt (tabernacled) among us", "Revelation 7:15-16 - He will shelter them, and God will wipe away every tear"],
-    context: "God's shelter provides comprehensive protection from every threat. This points to the ultimate fulfillment when God dwells with humanity, removing all pain and danger."
-  }
+    from: [
+      "Psalm 27:5 - He will hide me in his shelter",
+      "Psalm 91:1 - He who dwells in the shelter of the Most High",
+    ],
+    to: [
+      "John 1:14 - The Word became flesh and dwelt (tabernacled) among us",
+      "Revelation 7:15-16 - He will shelter them, and God will wipe away every tear",
+    ],
+    context:
+      "God's shelter provides comprehensive protection from every threat. This points to the ultimate fulfillment when God dwells with humanity, removing all pain and danger.",
+  },
 };
 
 function Chapter4() {
   const [selectedVerse, setSelectedVerse] = useState<Verse | null>(null);
   const [hoveredVerse, setHoveredVerse] = useState<number | null>(null);
-  const [activeTab, setActiveTab] = useState<'reflections' | 'connections'>('reflections');
-  const [activeReflectionMode, setActiveReflectionMode] = useState<'seeing' | 'life' | 'teach'>('seeing');
+  const [activeTab, setActiveTab] = useState<"reflections" | "connections">(
+    "reflections",
+  );
+  const [activeReflectionMode, setActiveReflectionMode] = useState<
+    "seeing" | "life" | "teach"
+  >("seeing");
   const [showStructureModal, setShowStructureModal] = useState(false);
 
   const getGroupName = (group: number): string => {
     const names = {
       1: "Desperation After Judgment",
       2: "The Branch Brings Restoration",
-      3: "God's Glorious Presence Returns"
+      3: "God's Glorious Presence Returns",
     };
     return names[group as keyof typeof names] || "";
   };
@@ -111,7 +196,7 @@ function Chapter4() {
     const transitions = {
       1: "Seven women seeking one man - consequences of judgment",
       2: "The Branch of the LORD - Messiah brings beauty and cleansing",
-      3: "Cloud and fire return - God's protective presence restored"
+      3: "Cloud and fire return - God's protective presence restored",
     };
     return transitions[group as keyof typeof transitions] || "";
   };
@@ -119,93 +204,162 @@ function Chapter4() {
   const getColorClass = (group: number, isHovered: boolean = false): string => {
     const colors = {
       1: isHovered ? "bg-red-600 border-red-700" : "bg-red-500 border-red-600",
-      2: isHovered ? "bg-green-600 border-green-700" : "bg-green-500 border-green-600",
-      3: isHovered ? "bg-blue-600 border-blue-700" : "bg-blue-500 border-blue-600"
+      2: isHovered
+        ? "bg-green-600 border-green-700"
+        : "bg-green-500 border-green-600",
+      3: isHovered
+        ? "bg-blue-600 border-blue-700"
+        : "bg-blue-500 border-blue-600",
     };
     return colors[group as keyof typeof colors] || "";
   };
 
   const getReflectionContent = (verseNum: number) => {
-    return reflectionContent[verseNum as keyof typeof reflectionContent] || {
-      seeing: "This verse contributes to Isaiah's vision of restoration after judgment.",
-      life: "Consider how this verse speaks to God's work in your life.",
-      teach: "This verse reveals truth about God's character and redemptive plan."
-    };
+    return (
+      reflectionContent[verseNum as keyof typeof reflectionContent] || {
+        seeing:
+          "This verse contributes to Isaiah's vision of restoration after judgment.",
+        life: "Consider how this verse speaks to God's work in your life.",
+        teach:
+          "This verse reveals truth about God's character and redemptive plan.",
+      }
+    );
   };
 
   const getCurrentReflection = () => {
-    if (!selectedVerse) return '';
+    if (!selectedVerse) return "";
     const content = getReflectionContent(selectedVerse.number);
     switch (activeReflectionMode) {
-      case 'seeing': return content.seeing;
-      case 'life': return content.life;
-      case 'teach': return content.teach;
-      default: return content.seeing;
+      case "seeing":
+        return content.seeing;
+      case "life":
+        return content.life;
+      case "teach":
+        return content.teach;
+      default:
+        return content.seeing;
     }
   };
 
   const getConnection = (verseNum: number): Connection | null => {
-    return scriptureConnections[verseNum as keyof typeof scriptureConnections] || null;
+    return (
+      scriptureConnections[verseNum as keyof typeof scriptureConnections] ||
+      null
+    );
   };
 
   const getHingeColor = (hingeType?: string): string => {
     const colors: Record<string, string> = {
-      'restoration': 'bg-green-500'
+      restoration: "bg-green-500",
     };
-    return hingeType ? colors[hingeType] || 'bg-yellow-400' : 'bg-yellow-400';
+    return hingeType ? colors[hingeType] || "bg-yellow-400" : "bg-yellow-400";
   };
 
   const getHingeExplanation = (hingeType: string): string => {
     const explanations: Record<string, string> = {
-      'restoration': 'Green dots mark moments of restoration—where the Branch of the LORD brings beauty and glory after judgment.'
+      restoration:
+        "Green dots mark moments of restoration—where the Branch of the LORD brings beauty and glory after judgment.",
     };
-    return explanations[hingeType] || '';
+    return explanations[hingeType] || "";
   };
 
   const getUniqueHingeTypes = (): string[] => {
     const types = verses
-      .filter(v => v.isHinge && v.hingeType)
-      .map(v => v.hingeType as string);
+      .filter((v) => v.isHinge && v.hingeType)
+      .map((v) => v.hingeType as string);
     return Array.from(new Set(types));
   };
 
-  const uniqueGroups = Array.from(new Set(verses.map(v => v.group))).sort((a, b) => a - b);
+  const uniqueGroups = Array.from(new Set(verses.map((v) => v.group))).sort(
+    (a, b) => a - b,
+  );
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 p-4">
       <div className="max-w-7xl mx-auto">
-        
         <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 bg-white rounded-lg shadow-sm px-4 py-2 text-sm">
             <span className="text-gray-500">Isaiah Studies:</span>
-            <Link to="/chapter-2" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 2</Link>
-            <Link to="/chapter-3" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 3</Link>
-            <span className="text-gray-800 font-semibold px-2 py-1 bg-blue-100 rounded">Ch 4</span>
-            <Link to="/chapter-5" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 5</Link>
-            <Link to="/chapter-6" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 6</Link>
-            <Link to="/chapter-7" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 7</Link>
-            <Link to="/chapter-8" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 8</Link>
-            <Link to="/chapter-9" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 9</Link>
+            <Link
+              to="/chapter-2"
+              className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded"
+            >
+              Ch 2
+            </Link>
+            <Link
+              to="/chapter-3"
+              className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded"
+            >
+              Ch 3
+            </Link>
+            <span className="text-gray-800 font-semibold px-2 py-1 bg-blue-100 rounded">
+              Ch 4
+            </span>
+            <Link
+              to="/chapter-5"
+              className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded"
+            >
+              Ch 5
+            </Link>
+            <Link
+              to="/chapter-6"
+              className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded"
+            >
+              Ch 6
+            </Link>
+            <Link
+              to="/chapter-7"
+              className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded"
+            >
+              Ch 7
+            </Link>
+            <Link
+              to="/chapter-8"
+              className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded"
+            >
+              Ch 8
+            </Link>
+            <Link
+              to="/chapter-9"
+              className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded"
+            >
+              Ch 9
+            </Link>
           </div>
         </div>
 
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-800 mb-2">Isaiah Chapter 4 Interactive Study</h1>
-          <p className="text-lg text-gray-600">The Branch of the LORD and God's Return</p>
+          <h1 className="text-4xl font-bold text-gray-800 mb-2">
+            Isaiah Chapter 4 Interactive Study
+          </h1>
+          <p className="text-lg text-gray-600">
+            The Branch of the LORD and God's Return
+          </p>
         </div>
 
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Understanding the Restoration After Judgment</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">
+            Understanding the Restoration After Judgment
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {uniqueGroups.map(groupNum => (
-              <div key={groupNum} className="flex items-start gap-3 p-3 bg-gray-50 rounded">
-                <div className={`w-4 h-4 rounded mt-1 flex-shrink-0 ${getColorClass(groupNum)}`}></div>
+            {uniqueGroups.map((groupNum) => (
+              <div
+                key={groupNum}
+                className="flex items-start gap-3 p-3 bg-gray-50 rounded"
+              >
+                <div
+                  className={`w-4 h-4 rounded mt-1 flex-shrink-0 ${getColorClass(groupNum)}`}
+                ></div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-baseline gap-2 mb-1">
                     <span className="text-gray-400 text-sm">{groupNum}.</span>
-                    <h3 className="font-semibold text-gray-800">{getGroupName(groupNum)}</h3>
+                    <h3 className="font-semibold text-gray-800">
+                      {getGroupName(groupNum)}
+                    </h3>
                   </div>
-                  <p className="text-sm text-gray-600">{getGroupTransition(groupNum)}</p>
+                  <p className="text-sm text-gray-600">
+                    {getGroupTransition(groupNum)}
+                  </p>
                 </div>
               </div>
             ))}
@@ -217,19 +371,24 @@ function Chapter4() {
             onClick={() => setShowStructureModal(true)}
             className="w-full flex items-center justify-between px-4 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all"
           >
-            <span className="font-semibold">View Chapter Structure</span>
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
+            <span className="font-semibold">📖 View Chapter Structure</span>
+            <span className="text-sm opacity-90">See the symmetric pattern</span>
           </button>
         </div>
 
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">Key Transformation Points</h3>
+          <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">
+            Key Transformation Points
+          </h3>
           <div className="space-y-2">
             {getUniqueHingeTypes().map((hingeType) => (
-              <div key={hingeType} className="flex items-center justify-center gap-2 text-sm text-gray-700">
-                <span className={`inline-block w-3 h-3 rounded-full ${getHingeColor(hingeType)}`}></span>
+              <div
+                key={hingeType}
+                className="flex items-center justify-center gap-2 text-sm text-gray-700"
+              >
+                <span
+                  className={`inline-block w-3 h-3 rounded-full ${getHingeColor(hingeType)}`}
+                ></span>
                 <p>{getHingeExplanation(hingeType)}</p>
               </div>
             ))}
@@ -240,7 +399,9 @@ function Chapter4() {
           {verses.map((verse) => (
             <div key={verse.number} className="relative">
               {verse.isHinge && (
-                <div className={`absolute -top-2 -left-2 w-4 h-4 ${getHingeColor(verse.hingeType)} rounded-full border-2 border-white shadow-md z-10`}></div>
+                <div
+                  className={`absolute -top-2 -left-2 w-4 h-4 ${getHingeColor(verse.hingeType)} rounded-full border-2 border-white shadow-md z-10`}
+                ></div>
               )}
               <button
                 onClick={() => setSelectedVerse(verse)}
@@ -251,7 +412,9 @@ function Chapter4() {
                 <span className="relative z-10">4:{verse.number}</span>
                 {hoveredVerse === verse.number && (
                   <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center p-2">
-                    <span className="text-xs text-white text-center line-clamp-3">{verse.text.substring(0, 60)}...</span>
+                    <span className="text-xs text-white text-center line-clamp-3">
+                      {verse.text.substring(0, 60)}...
+                    </span>
                   </div>
                 )}
               </button>
@@ -260,30 +423,47 @@ function Chapter4() {
         </div>
 
         {selectedVerse && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50" onClick={() => setSelectedVerse(null)}>
-            <div className="bg-white rounded-lg shadow-2xl max-w-3xl w-full max-h-[90vh] flex flex-col" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50"
+            onClick={() => setSelectedVerse(null)}
+          >
+            <div
+              className="bg-white rounded-lg shadow-2xl max-w-3xl w-full max-h-[90vh] flex flex-col"
+              onClick={(e) => e.stopPropagation()}
+            >
               <div className="p-6 border-b border-gray-200">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h2 className="text-2xl font-bold text-gray-800">Verse 4:{selectedVerse.number}</h2>
-                    <p className="text-sm text-gray-500 mt-1">{getGroupName(selectedVerse.group)}</p>
+                    <h2 className="text-2xl font-bold text-gray-800">
+                      Verse 4:{selectedVerse.number}
+                    </h2>
+                    <p className="text-sm text-gray-500 mt-1">
+                      {getGroupName(selectedVerse.group)}
+                    </p>
                   </div>
-                  <button onClick={() => setSelectedVerse(null)} className="text-gray-400 hover:text-gray-600 text-2xl font-bold">&times;</button>
+                  <button
+                    onClick={() => setSelectedVerse(null)}
+                    className="text-gray-400 hover:text-gray-600 text-2xl font-bold"
+                  >
+                    &times;
+                  </button>
                 </div>
-                <p className="text-gray-700 leading-relaxed italic">{selectedVerse.text}</p>
+                <p className="text-gray-700 leading-relaxed italic">
+                  {selectedVerse.text}
+                </p>
               </div>
 
               <div className="border-b border-gray-200">
                 <div className="flex">
                   <button
-                    onClick={() => setActiveTab('reflections')}
-                    className={`flex-1 py-3 px-4 font-semibold transition-colors ${activeTab === 'reflections' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                    onClick={() => setActiveTab("reflections")}
+                    className={`flex-1 py-3 px-4 font-semibold transition-colors ${activeTab === "reflections" ? "bg-blue-500 text-white" : "bg-gray-100 text-gray-600 hover:bg-gray-200"}`}
                   >
                     Reflections
                   </button>
                   <button
-                    onClick={() => setActiveTab('connections')}
-                    className={`flex-1 py-3 px-4 font-semibold transition-colors ${activeTab === 'connections' ? 'bg-green-500 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                    onClick={() => setActiveTab("connections")}
+                    className={`flex-1 py-3 px-4 font-semibold transition-colors ${activeTab === "connections" ? "bg-green-500 text-white" : "bg-gray-100 text-gray-600 hover:bg-gray-200"}`}
                   >
                     Scripture Connections
                   </button>
@@ -291,55 +471,78 @@ function Chapter4() {
               </div>
 
               <div className="flex-1 overflow-y-auto p-6">
-                {activeTab === 'reflections' && (
+                {activeTab === "reflections" && (
                   <div>
                     <div className="flex gap-2 mb-4 flex-wrap">
-                      <button onClick={() => setActiveReflectionMode('seeing')} className={`px-4 py-2 rounded-full font-medium transition-colors ${activeReflectionMode === 'seeing' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}>
+                      <button
+                        onClick={() => setActiveReflectionMode("seeing")}
+                        className={`px-4 py-2 rounded-full font-medium transition-colors ${activeReflectionMode === "seeing" ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`}
+                      >
                         Seeing Connections
                       </button>
-                      <button onClick={() => setActiveReflectionMode('life')} className={`px-4 py-2 rounded-full font-medium transition-colors ${activeReflectionMode === 'life' ? 'bg-purple-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}>
+                      <button
+                        onClick={() => setActiveReflectionMode("life")}
+                        className={`px-4 py-2 rounded-full font-medium transition-colors ${activeReflectionMode === "life" ? "bg-purple-600 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`}
+                      >
                         How This Helps My Life
                       </button>
-                      <button onClick={() => setActiveReflectionMode('teach')} className={`px-4 py-2 rounded-full font-medium transition-colors ${activeReflectionMode === 'teach' ? 'bg-green-600 text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'}`}>
+                      <button
+                        onClick={() => setActiveReflectionMode("teach")}
+                        className={`px-4 py-2 rounded-full font-medium transition-colors ${activeReflectionMode === "teach" ? "bg-green-600 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`}
+                      >
                         What This Teaches Us
                       </button>
                     </div>
                     <div className="prose max-w-none">
-                      <p className="text-gray-700 leading-relaxed">{getCurrentReflection()}</p>
+                      <p className="text-gray-700 leading-relaxed">
+                        {getCurrentReflection()}
+                      </p>
                     </div>
                   </div>
                 )}
 
-                {activeTab === 'connections' && (
+                {activeTab === "connections" && (
                   <div>
                     <div className="space-y-4">
                       {getConnection(selectedVerse.number)?.from && (
                         <div>
                           <h4 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">
-                            <span className="text-blue-600">←</span> This Builds Upon:
+                            <span className="text-blue-600">←</span> This Builds
+                            Upon:
                           </h4>
                           <ul className="list-disc list-inside space-y-1 text-gray-700">
-                            {getConnection(selectedVerse.number)!.from!.map((ref, idx) => (
-                              <li key={idx} className="text-sm">{ref}</li>
-                            ))}
+                            {getConnection(selectedVerse.number)!.from!.map(
+                              (ref, idx) => (
+                                <li key={idx} className="text-sm">
+                                  {ref}
+                                </li>
+                              ),
+                            )}
                           </ul>
                         </div>
                       )}
                       {getConnection(selectedVerse.number)?.to && (
                         <div>
                           <h4 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">
-                            <span className="text-blue-600">→</span> This Points Forward To:
+                            <span className="text-blue-600">→</span> This Points
+                            Forward To:
                           </h4>
                           <ul className="list-disc list-inside space-y-1 text-gray-700">
-                            {getConnection(selectedVerse.number)!.to!.map((ref, idx) => (
-                              <li key={idx} className="text-sm">{ref}</li>
-                            ))}
+                            {getConnection(selectedVerse.number)!.to!.map(
+                              (ref, idx) => (
+                                <li key={idx} className="text-sm">
+                                  {ref}
+                                </li>
+                              ),
+                            )}
                           </ul>
                         </div>
                       )}
                       {getConnection(selectedVerse.number)?.context && (
                         <div className="bg-purple-50 border-l-4 border-purple-600 p-4">
-                          <h4 className="font-semibold text-gray-800 mb-2">Theological Context:</h4>
+                          <h4 className="font-semibold text-gray-800 mb-2">
+                            Theological Context:
+                          </h4>
                           <p className="text-gray-700 text-sm leading-relaxed">
                             {getConnection(selectedVerse.number)!.context}
                           </p>
@@ -358,7 +561,9 @@ function Chapter4() {
             <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden">
               <div className="p-6 border-b border-gray-200">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-bold text-gray-800">Chapter 4 Structure</h3>
+                  <h3 className="text-xl font-bold text-gray-800">
+                    Chapter 4 Structure
+                  </h3>
                   <button
                     onClick={() => setShowStructureModal(false)}
                     className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
@@ -368,41 +573,98 @@ function Chapter4() {
                 </div>
               </div>
               <div className="p-6 overflow-y-auto">
-                <p className="text-sm text-gray-600 mb-4">This chapter shows a symmetrical pattern with restoration at the center, framed by glory revealed:</p>
+                <p className="text-sm text-gray-600 mb-4">
+                  This chapter shows a symmetrical pattern with restoration at
+                  the center, framed by glory revealed:
+                </p>
                 <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
                   <div className="ml-0 flex items-start gap-2">
                     <div className="w-3 h-3 bg-red-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>A (1): <span className="font-sans font-semibold text-red-700">Desperation After Judgment</span> — Seven women seeking one man</span>
+                    <span>
+                      A (1):{" "}
+                      <span className="font-sans font-semibold text-red-700">
+                        Desperation After Judgment
+                      </span>{" "}
+                      — Seven women seeking one man
+                    </span>
                   </div>
                   <div className="ml-4 flex items-start gap-2">
                     <div className="w-3 h-3 bg-green-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>B (2): <span className="font-sans font-semibold text-green-700">The Branch - Glory Revealed</span> — Beautiful and glorious</span>
+                    <span>
+                      B (2):{" "}
+                      <span className="font-sans font-semibold text-green-700">
+                        The Branch - Glory Revealed
+                      </span>{" "}
+                      — Beautiful and glorious
+                    </span>
                   </div>
                   <div className="ml-8 bg-blue-100 px-2 py-1 rounded border-l-4 border-blue-600 flex items-start gap-2">
                     <div className="w-3 h-3 bg-blue-600 rounded mt-0.5 flex-shrink-0"></div>
-                    <span className="font-sans text-blue-800 font-bold">★ CENTER (3-4): Cleansing & Holiness</span>
+                    <span className="font-sans text-blue-800 font-bold">
+                      ★ CENTER (3-4): Cleansing & Holiness
+                    </span>
                   </div>
-                  <div className="ml-12 text-blue-700 font-sans italic pl-5">"Called holy... purges Jerusalem's bloodstains"</div>
+                  <div className="ml-12 text-blue-700 font-sans italic pl-5">
+                    "Called holy... purges Jerusalem's bloodstains"
+                  </div>
                   <div className="mt-3 ml-4 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
                     <div className="w-3 h-3 bg-green-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>B' (5): <span className="font-sans font-semibold text-green-700">God's Glory as Canopy</span> — Cloud and fire over Zion</span>
+                    <span>
+                      B' (5):{" "}
+                      <span className="font-sans font-semibold text-green-700">
+                        God's Glory as Canopy
+                      </span>{" "}
+                      — Cloud and fire over Zion
+                    </span>
                   </div>
                   <div className="ml-0 flex items-start gap-2">
                     <div className="w-3 h-3 bg-blue-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>A' (6): <span className="font-sans font-semibold text-blue-700">Complete Protection</span> — Shelter from all threats</span>
+                    <span>
+                      A' (6):{" "}
+                      <span className="font-sans font-semibold text-blue-700">
+                        Complete Protection
+                      </span>{" "}
+                      — Shelter from all threats
+                    </span>
                   </div>
                 </div>
-                
+
                 <div className="mt-4 p-4 bg-blue-50 rounded border-l-4 border-blue-500">
-                  <h4 className="font-bold text-gray-800 mb-3">How the Parallels Connect:</h4>
+                  <h4 className="font-bold text-gray-800 mb-3">
+                    How the Parallels Connect:
+                  </h4>
                   <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
-                    <li><strong>A ↔ A':</strong> The chapter opens with desperate women seeking protection from one man (v. 1) and closes with God providing complete shelter and protection for His people (v. 6). Human desperation for covering finds its answer in divine covering—God Himself becomes their refuge.</li>
-                    <li><strong>B ↔ B':</strong> The Branch described as "beautiful and glorious" (v. 2) is matched by God's glory appearing as a visible canopy over Zion (v. 5). The messianic figure brings God's glory, and that glory then covers and protects His people.</li>
-                    <li><strong>Center (vv. 3-4):</strong> At the heart stands God's cleansing work—making the remnant holy and washing away bloodstains. This purification is the necessary bridge between judgment (ch. 3) and restoration (ch. 4). Only after cleansing can God's protective presence return.</li>
+                    <li>
+                      <strong>A ↔ A':</strong> The chapter opens with desperate
+                      women seeking protection from one man (v. 1) and closes
+                      with God providing complete shelter and protection for His
+                      people (v. 6). Human desperation for covering finds its
+                      answer in divine covering—God Himself becomes their
+                      refuge.
+                    </li>
+                    <li>
+                      <strong>B ↔ B':</strong> The Branch described as
+                      "beautiful and glorious" (v. 2) is matched by God's glory
+                      appearing as a visible canopy over Zion (v. 5). The
+                      messianic figure brings God's glory, and that glory then
+                      covers and protects His people.
+                    </li>
+                    <li>
+                      <strong>Center (vv. 3-4):</strong> At the heart stands
+                      God's cleansing work—making the remnant holy and washing
+                      away bloodstains. This purification is the necessary
+                      bridge between judgment (ch. 3) and restoration (ch. 4).
+                      Only after cleansing can God's protective presence return.
+                    </li>
                   </ul>
                 </div>
-                
-                <p className="text-sm text-gray-600 mt-4 italic">The symmetrical pattern reveals God's restorative plan: from desperation to divine covering, with cleansing at the center. The Branch brings glory, glory brings purification, and purification enables God's protective presence to return.</p>
+
+                <p className="text-sm text-gray-600 mt-4 italic">
+                  The symmetrical pattern reveals God's restorative plan: from
+                  desperation to divine covering, with cleansing at the center.
+                  The Branch brings glory, glory brings purification, and
+                  purification enables God's protective presence to return.
+                </p>
               </div>
             </div>
           </div>
