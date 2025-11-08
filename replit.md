@@ -1,10 +1,11 @@
-# Isaiah Interactive Study - Chapters 2-9
+# Isaiah Interactive Study - Chapters 1-9
 
 ## Overview
 
-This is a comprehensive interactive web application for studying Isaiah Chapters 2-9 from the Bible. Each chapter features a color-coded grid visualization of verses organized into thematic groups, with interactive hover tooltips and transformation point markers. A two-level modal navigation system provides both reflective study (three viewing modes: Seeing Connections, How This Helps My Life, What This Teaches Us) and Scripture Connections showing how each verse fits into God's larger plan across the entire Bible. Built with React, TypeScript, Tailwind CSS, and React Router, the application offers an engaging educational experience across 8 complete chapters with 537 total reflections (3 perspectives per verse) and comprehensive Scripture connections.
+This is a comprehensive interactive web application for studying Isaiah Chapters 1-9 from the Bible. Each chapter features a color-coded grid visualization of verses organized into thematic groups, with interactive hover tooltips and transformation point markers. A two-level modal navigation system provides both reflective study (three viewing modes: Seeing Connections, How This Helps My Life, What This Teaches Us) and Scripture Connections showing how each verse fits into God's larger plan across the entire Bible. Built with React, TypeScript, Tailwind CSS, and React Router, the application offers an engaging educational experience across 9 complete chapters with 630 total reflections (3 perspectives per verse) and comprehensive Scripture connections. Features a dedicated home page for easy chapter navigation.
 
 **Completed Chapters**:
+- Chapter 1 (31 verses): The Rebellious Nation and the Invitation to Return
 - Chapter 2 (22 verses): God's Mountain, Idolatry, and the Day of the LORD
 - Chapter 3 (25 verses): Judgment on Leaders and Pride
 - Chapter 4 (6 verses): The Branch of the LORD and God's Return
