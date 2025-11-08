@@ -39,5 +39,6 @@ channel = "stable-25_05"
 packages = ["unzip"]
 
 [deployment]
-deploymentTarget = "static"
+deploymentTarget = "autoscale"
 publicDir = "dist"
+build = ["npm", "run", "build"]
