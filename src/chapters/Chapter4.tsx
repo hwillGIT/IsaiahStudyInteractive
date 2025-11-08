@@ -372,7 +372,7 @@ function Chapter4() {
             className="w-full flex items-center justify-between px-4 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all"
           >
             <span className="font-semibold">📖 View Chapter Structure</span>
-            <span className="text-sm opacity-90">See the symmetric pattern</span>
+            <span className="text-sm opacity-90">View the flow from crisis to God's protection</span>
           </button>
         </div>
 
