@@ -323,7 +323,7 @@ function Chapter3() {
         
         <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 bg-white rounded-lg shadow-sm px-4 py-2 text-sm">
-            <Link to="/" className="text-gray-500 hover:text-gray-700 font-medium">Isaiah Studies:</Link>
+            <Link to="/" className="text-gray-500 hover:text-gray-700 font-medium">Introduction:</Link>
             <Link to="/chapter-1" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 1</Link>
             <Link to="/chapter-2" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 2</Link>
             <span className="text-gray-800 font-semibold px-2 py-1 bg-blue-100 rounded">Ch 3</span>
