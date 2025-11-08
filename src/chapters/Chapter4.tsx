@@ -281,6 +281,12 @@ function Chapter4() {
           <div className="inline-flex items-center gap-2 bg-white rounded-lg shadow-sm px-4 py-2 text-sm">
             <span className="text-gray-500">Isaiah Studies:</span>
             <Link
+              to="/chapter-1"
+              className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded"
+            >
+              Ch 1
+            </Link>
+            <Link
               to="/chapter-2"
               className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded"
             >

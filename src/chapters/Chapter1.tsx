@@ -454,10 +454,22 @@ function Chapter1() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 p-6">
       <div className="max-w-6xl mx-auto">
-        <div className="mb-6">
-          <Link to="/" className="text-blue-600 hover:text-blue-800 flex items-center gap-2 mb-4">
-            ← Back to Chapters
-          </Link>
+        <div className="flex justify-center mb-6">
+          <div className="inline-flex items-center gap-2 bg-white rounded-lg shadow-sm px-4 py-2 text-sm">
+            <span className="text-gray-500">Isaiah Studies:</span>
+            <span className="text-gray-800 font-semibold px-2 py-1 bg-blue-100 rounded">Ch 1</span>
+            <Link to="/chapter-2" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 2</Link>
+            <Link to="/chapter-3" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 3</Link>
+            <Link to="/chapter-4" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 4</Link>
+            <Link to="/chapter-5" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 5</Link>
+            <Link to="/chapter-6" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 6</Link>
+            <Link to="/chapter-7" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 7</Link>
+            <Link to="/chapter-8" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 8</Link>
+            <Link to="/chapter-9" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 9</Link>
+          </div>
+        </div>
+
+        <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">Isaiah Chapter 1</h1>
           <p className="text-gray-600 text-lg">The Rebellious Nation and the Invitation to Return</p>
         </div>
