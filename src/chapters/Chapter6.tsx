@@ -43,15 +43,15 @@ const verses: Verse[] = [
   { number: 2, text: "Above him were seraphim, each with six wings: With two wings they covered their faces, with two they covered their feet, and with two they were flying.", group: 1 },
   { number: 3, text: "And they were calling to one another: 'Holy, holy, holy is the LORD Almighty; the whole earth is full of his glory.'", group: 1 },
   { number: 4, text: "At the sound of their voices the doorposts and thresholds shook and the temple was filled with smoke.", group: 1 },
-  { number: 5, text: "'Woe to me!' I cried. 'I am ruined! For I am a man of unclean lips, and I live among a people of unclean lips, and my eyes have seen the King, the LORD Almighty.'", group: 2, isHinge: true, hingeType: 'conviction' },
+  { number: 5, text: "'Woe to me!' I cried. 'I am ruined! For I am a man of unclean lips, and I live among a people of unclean lips, and my eyes have seen the King, the LORD Almighty.'", group: 2 },
   { number: 6, text: "Then one of the seraphim flew to me with a live coal in his hand, which he had taken with tongs from the altar.", group: 2 },
-  { number: 7, text: "With it he touched my mouth and said, 'See, this has touched your lips; your guilt is taken away and your sin atoned for.'", group: 2, isHinge: true, hingeType: 'cleansing' },
-  { number: 8, text: "Then I heard the voice of the Lord saying, 'Whom shall I send? And who will go for us?' And I said, 'Here am I. Send me!'", group: 3, isHinge: true, hingeType: 'commission' },
+  { number: 7, text: "With it he touched my mouth and said, 'See, this has touched your lips; your guilt is taken away and your sin atoned for.'", group: 2, isHinge: true, hingeType: 'center' },
+  { number: 8, text: "Then I heard the voice of the Lord saying, 'Whom shall I send? And who will go for us?' And I said, 'Here am I. Send me!'", group: 3 },
   { number: 9, text: "He said, 'Go and tell this people: \"Be ever hearing, but never understanding; be ever seeing, but never perceiving.\"'", group: 4 },
   { number: 10, text: "Make the heart of this people calloused; make their ears dull and close their eyes. Otherwise they might see with their eyes, hear with their ears, understand with their hearts, and turn and be healed.", group: 4 },
   { number: 11, text: "Then I said, 'For how long, Lord?' And he answered: 'Until the cities lie ruined and without inhabitant, until the houses are left deserted and the fields ruined and ravaged,'", group: 5 },
   { number: 12, text: "until the LORD has sent everyone far away and the land is utterly forsaken.", group: 5 },
-  { number: 13, text: "And though a tenth remains in the land, it will again be laid waste. But as the terebinth and oak leave stumps when they are cut down, so the holy seed will be the stump in the land.", group: 6, isHinge: true, hingeType: 'hope' }
+  { number: 13, text: "And though a tenth remains in the land, it will again be laid waste. But as the terebinth and oak leave stumps when they are cut down, so the holy seed will be the stump in the land.", group: 6 }
 ];
 
 const getColorClass = (group: number): string => {
@@ -101,13 +101,7 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  const explanations: Record<string, string> = {
-    'conviction': 'Red dots mark moments of conviction—recognizing our sinfulness in light of God\'s holiness.',
-    'cleansing': 'Blue dots mark moments of cleansing—receiving God\'s purification and forgiveness.',
-    'commission': 'Yellow dots mark moments of commissioning—responding to God\'s call to service.',
-    'hope': 'Green dots mark moments of hope—discovering promise even in judgment.'
-  };
-  return explanations[hingeType] || '';
+  return 'Yellow dot marks the chiastic center—the coal touching Isaiah\'s lips, guilt removed, sin atoned.';
 };
 
 const getUniqueHingeTypes = (): string[] => {

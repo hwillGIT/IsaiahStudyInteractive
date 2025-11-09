@@ -24,7 +24,7 @@ const verses: Verse[] = [
   { number: 5, text: "And the people will oppress one another, every one his fellow and every one his neighbor; the youth will be insolent to the elder, and the despised to the honorable.", group: 2 },
   { number: 6, text: "For a man will take hold of his brother in the house of his father, saying: 'You have a cloak; you shall be our leader, and this heap of ruins shall be under your rule';", group: 2 },
   { number: 7, text: "in that day he will speak out, saying: 'I will not be a healer; in my house there is neither bread nor cloak; you shall not make me leader of the people.'", group: 2 },
-  { number: 8, text: "For Jerusalem has stumbled, and Judah has fallen, because their speech and their deeds are against the LORD, defying his glorious presence.", group: 3, isHinge: true, hingeType: 'root-cause' },
+  { number: 8, text: "For Jerusalem has stumbled, and Judah has fallen, because their speech and their deeds are against the LORD, defying his glorious presence.", group: 3, isHinge: true, hingeType: 'center' },
   { number: 9, text: "For the look on their faces bears witness against them; they proclaim their sin like Sodom; they do not hide it. Woe to them! For they have brought evil on themselves.", group: 3 },
   { number: 10, text: "Tell the righteous that it shall be well with them, for they shall eat the fruit of their deeds.", group: 3 },
   { number: 11, text: "Woe to the wicked! It shall be ill with them, for what their hands have done shall be done to them.", group: 3 },
@@ -239,10 +239,7 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  const explanations: Record<string, string> = {
-    'root-cause': 'Yellow dot marks the hinge—revealing the root cause of judgment'
-  };
-  return explanations[hingeType] || '';
+  return 'Yellow dot marks the chiastic center—the root cause revealed: defying God\'s glorious presence.';
 };
 
 const getUniqueHingeTypes = (): string[] => {

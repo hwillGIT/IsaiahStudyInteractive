@@ -20,7 +20,7 @@ const verses: Verse[] = [
   { number: 1, text: "In the days of Ahaz the son of Jotham, son of Uzziah, king of Judah, Rezin the king of Syria and Pekah the son of Remaliah the king of Israel came up to Jerusalem to wage war against it, but could not yet mount an attack against it.", group: 1 },
   { number: 2, text: "When the house of David was told, 'Syria is in league with Ephraim,' the heart of Ahaz and the heart of his people shook as the trees of the forest shake before the wind.", group: 1 },
   { number: 3, text: "And the LORD said to Isaiah, 'Go out to meet Ahaz, you and Shear-jashub your son, at the end of the conduit of the upper pool on the highway to the Washer's Field.", group: 1 },
-  { number: 4, text: "And say to him, 'Be careful, be quiet, do not fear, and do not let your heart be faint because of these two smoldering stumps of firebrands, because of the fierce anger of Rezin and Syria and the son of Remaliah.", group: 2, isHinge: true, hingeType: 'reassurance' },
+  { number: 4, text: "And say to him, 'Be careful, be quiet, do not fear, and do not let your heart be faint because of these two smoldering stumps of firebrands, because of the fierce anger of Rezin and Syria and the son of Remaliah.", group: 2 },
   { number: 5, text: "Because Syria, with Ephraim and the son of Remaliah, has devised evil against you, saying,", group: 2 },
   { number: 6, text: "Let us go up against Judah and terrify it, and let us conquer it for ourselves, and set up the son of Tabeel as king in the midst of it,'", group: 2 },
   { number: 7, text: "thus says the Lord GOD: 'It shall not stand, and it shall not come to pass.", group: 2 },
@@ -30,7 +30,7 @@ const verses: Verse[] = [
   { number: 11, text: "\"Ask a sign of the LORD your God; let it be deep as Sheol or high as heaven.\"", group: 3 },
   { number: 12, text: "But Ahaz said, \"I will not ask, and I will not put the LORD to the test.\"", group: 3 },
   { number: 13, text: "And he said, \"Hear then, O house of David! Is it too little for you to weary men, that you weary my God also?", group: 3 },
-  { number: 14, text: "Therefore the Lord himself will give you a sign. Behold, the virgin shall conceive and bear a son, and shall call his name Immanuel.", group: 3, isHinge: true, hingeType: 'immanuel' },
+  { number: 14, text: "Therefore the Lord himself will give you a sign. Behold, the virgin shall conceive and bear a son, and shall call his name Immanuel.", group: 3, isHinge: true, hingeType: 'center' },
   { number: 15, text: "He shall eat curds and honey when he knows how to refuse the evil and choose the good.", group: 4 },
   { number: 16, text: "For before the boy knows how to refuse the evil and choose the good, the land whose two kings you dread will be deserted.", group: 4 },
   { number: 17, text: "The LORD will bring upon you and upon your people and upon your father's house such days as have not come since the day that Ephraim departed from Judah—the king of Assyria!\"", group: 4 },
@@ -244,11 +244,7 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  const explanations: Record<string, string> = {
-    'reassurance': 'Blue dots mark God\'s reassurance to Ahaz—"Do not fear these smoldering stumps."',
-    'immanuel': 'Green dots mark the Immanuel prophecy—God\'s sign of His presence with His people.'
-  };
-  return explanations[hingeType] || '';
+  return 'Yellow dot marks the chiastic center—the sign of Immanuel, God Himself with us.';
 };
 
 const getUniqueHingeTypes = (): string[] => {

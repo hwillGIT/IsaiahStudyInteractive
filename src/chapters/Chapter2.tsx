@@ -21,7 +21,7 @@ const verses: Verse[] = [
   { number: 2, text: "It shall come to pass in the latter days that the mountain of the house of the LORD shall be established as the highest of the mountains, and shall be lifted up above the hills; and all nations shall flow to it,", group: 1 },
   { number: 3, text: "and many peoples shall come, and say: 'Come, let us go up to the mountain of the LORD, to the house of the God of Jacob, that he may teach us his ways and that we may walk in his paths.' For out of Zion shall go the law, and the word of the LORD from Jerusalem.", group: 1 },
   { number: 4, text: "He shall judge between the nations, and shall decide disputes for many peoples; and they shall beat their swords into plowshares, and their spears into pruning hooks; nation shall not lift up sword against nation, neither shall they learn war anymore.", group: 1 },
-  { number: 5, text: "O house of Jacob, come, let us walk in the light of the LORD.", group: 2, isHinge: true, hingeType: 'invitation' },
+  { number: 5, text: "O house of Jacob, come, let us walk in the light of the LORD.", group: 2 },
   { number: 6, text: "For you have rejected your people, the house of Jacob, because they are full of things from the east and of fortune-tellers like the Philistines, and they strike hands with the children of foreigners.", group: 3 },
   { number: 7, text: "Their land is filled with silver and gold, and there is no end to their treasures; their land is filled with horses, and there is no end to their chariots.", group: 3 },
   { number: 8, text: "Their land is filled with idols; they bow down to the work of their hands, to what their own fingers have made.", group: 3 },
@@ -245,10 +245,7 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  const explanations: Record<string, string> = {
-    'invitation': 'Yellow dots mark the call to walk in God\'s light—the pivot from promise to present obedience.'
-  };
-  return explanations[hingeType] || '';
+  return 'Chapter 2 has no marked chiastic center—the structure flows from promise to judgment.';
 };
 
 const getUniqueHingeTypes = (): string[] => {

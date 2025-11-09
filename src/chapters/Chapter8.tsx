@@ -22,7 +22,7 @@ const verses: Verse[] = [
   { number: 3, text: "And I went to the prophetess, and she conceived and bore a son. Then the LORD said to me, 'Call his name Maher-shalal-hash-baz;", group: 1 },
   { number: 4, text: "for before the boy knows how to cry \"My father\" or \"My mother,\" the wealth of Damascus and the spoil of Samaria will be carried away before the king of Assyria.'", group: 1 },
   { number: 5, text: "The LORD spoke to me again:", group: 2 },
-  { number: 6, text: "'Because this people has refused the waters of Shiloah that flow gently, and rejoices over Rezin and the son of Remaliah,", group: 2, isHinge: true, hingeType: 'rejection' },
+  { number: 6, text: "'Because this people has refused the waters of Shiloah that flow gently, and rejoices over Rezin and the son of Remaliah,", group: 2 },
   { number: 7, text: "therefore, behold, the Lord is bringing up against them the waters of the River, mighty and many, the king of Assyria and all his glory. And it will rise over all its channels and go over all its banks,", group: 2 },
   { number: 8, text: "and it will sweep on into Judah, it will overflow and pass on, reaching even to the neck, and its outspread wings will fill the breadth of your land, O Immanuel.'", group: 2 },
   { number: 9, text: "Be broken, you peoples, and be shattered; give ear, all you far countries; strap on your armor and be shattered; strap on your armor and be shattered.", group: 3 },
@@ -30,7 +30,7 @@ const verses: Verse[] = [
   { number: 11, text: "For the LORD spoke thus to me with his strong hand upon me, and warned me not to walk in the way of this people, saying:", group: 4 },
   { number: 12, text: "'Do not call conspiracy all that this people calls conspiracy, and do not fear what they fear, nor be in dread.", group: 4 },
   { number: 13, text: "But the LORD of hosts, him you shall honor as holy. Let him be your fear, and let him be your dread.", group: 4 },
-  { number: 14, text: "And he will become a sanctuary and a stone of offense and a rock of stumbling to both houses of Israel, a trap and a snare to the inhabitants of Jerusalem.", group: 4, isHinge: true, hingeType: 'sanctuary' },
+  { number: 14, text: "And he will become a sanctuary and a stone of offense and a rock of stumbling to both houses of Israel, a trap and a snare to the inhabitants of Jerusalem.", group: 4, isHinge: true, hingeType: 'center' },
   { number: 15, text: "And many shall stumble on it. They shall fall and be broken; they shall be snared and taken.'", group: 4 },
   { number: 16, text: "Bind up the testimony; seal the teaching among my disciples.", group: 5 },
   { number: 17, text: "I will wait for the LORD, who is hiding his face from the house of Jacob, and I will hope in him.", group: 5 },
@@ -226,11 +226,7 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  const explanations: Record<string, string> = {
-    'rejection': 'Yellow dot marks a hinge—rejecting God\'s gentle waters brings judgment',
-    'sanctuary': 'Yellow dot marks a hinge—God becomes either sanctuary or stumbling stone'
-  };
-  return explanations[hingeType] || '';
+  return 'Yellow dot marks the chiastic center—God becomes either sanctuary or stumbling stone.';
 };
 
 const getUniqueHingeTypes = (): string[] => {

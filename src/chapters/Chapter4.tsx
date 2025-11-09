@@ -27,7 +27,7 @@ const verses: Verse[] = [
     text: "In that day the branch of the LORD shall be beautiful and glorious, and the fruit of the land shall be the pride and honor of the survivors of Israel.",
     group: 2,
     isHinge: true,
-    hingeType: "restoration",
+    hingeType: "center",
   },
   {
     number: 3,
@@ -260,12 +260,8 @@ function Chapter4() {
     return hingeType ? colors[hingeType] || "bg-yellow-400" : "bg-yellow-400";
   };
 
-  const getHingeExplanation = (hingeType: string): string => {
-    const explanations: Record<string, string> = {
-      restoration:
-        "Green dots mark moments of restoration—where the Branch of the LORD brings beauty and glory after judgment.",
-    };
-    return explanations[hingeType] || "";
+  const getHingeExplanation = (_hingeType: string): string => {
+    return "Yellow dot marks the chiastic center—the Branch of the LORD bringing beauty after desolation.";
   };
 
   const getUniqueHingeTypes = (): string[] => {

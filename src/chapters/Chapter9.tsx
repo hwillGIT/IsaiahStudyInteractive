@@ -36,12 +36,12 @@ interface Connection {
 
 const verses: Verse[] = [
   { number: 1, text: "But there will be no gloom for her who was in anguish. In the former time he brought into contempt the land of Zebulun and the land of Naphtali, but in the latter time he has made glorious the way of the sea, the land beyond the Jordan, Galilee of the nations.", group: 1 },
-  { number: 2, text: "The people who walked in darkness have seen a great light; those who dwelt in a land of deep darkness, on them has light shone.", group: 1, isHinge: true, hingeType: 'darkness-to-light' },
+  { number: 2, text: "The people who walked in darkness have seen a great light; those who dwelt in a land of deep darkness, on them has light shone.", group: 1 },
   { number: 3, text: "You have multiplied the nation; you have increased its joy; they rejoice before you as with joy at the harvest, as they are glad when they divide the spoil.", group: 2 },
   { number: 4, text: "For the yoke of his burden, and the staff for his shoulder, the rod of his oppressor, you have broken as on the day of Midian.", group: 2 },
-  { number: 5, text: "For every boot of the trampling warrior in battle tumult and every garment rolled in blood will be burned as fuel for the fire.", group: 2, isHinge: true, hingeType: 'disarmament' },
-  { number: 6, text: "For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace.", group: 3, isHinge: true, hingeType: 'coronation' },
-  { number: 7, text: "Of the increase of his government and of peace there will be no end, on the throne of David and over his kingdom, to establish it and to uphold it with justice and with righteousness from this time forth and forevermore. The zeal of the Lord of hosts will do this.", group: 3, isHinge: true, hingeType: 'eternal-throne' },
+  { number: 5, text: "For every boot of the trampling warrior in battle tumult and every garment rolled in blood will be burned as fuel for the fire.", group: 2 },
+  { number: 6, text: "For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace.", group: 3, isHinge: true, hingeType: 'center' },
+  { number: 7, text: "Of the increase of his government and of peace there will be no end, on the throne of David and over his kingdom, to establish it and to uphold it with justice and with righteousness from this time forth and forevermore. The zeal of the Lord of hosts will do this.", group: 3 },
   { number: 8, text: "The Lord has sent a word against Jacob, and it will fall on Israel;", group: 4 },
   { number: 9, text: "and all the people will know, Ephraim and the inhabitants of Samaria, who say in pride and in arrogance of heart:", group: 4 },
   { number: 10, text: "\"The bricks have fallen, but we will build with dressed stones; the sycamores have been cut down, but we will put cedars in their place.\"", group: 4 },
@@ -105,13 +105,7 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  const explanations: Record<string, string> = {
-    'darkness-to-light': 'Yellow dots mark the transition from darkness to light—the great inversion where hope dawns.',
-    'disarmament': 'Orange dots mark complete peace—where war equipment becomes fuel for warmth.',
-    'coronation': 'Purple dots mark the messianic coronation—the child born with divine titles.',
-    'eternal-throne': 'Blue dots mark the establishment of the eternal kingdom—endless government and peace.'
-  };
-  return explanations[hingeType] || '';
+  return 'Yellow dot marks the chiastic center—the child born to us with divine names and eternal government.';
 };
 
 const getUniqueHingeTypes = (): string[] => {

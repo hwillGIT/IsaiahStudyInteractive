@@ -25,7 +25,7 @@ const verses: Verse[] = [
   { number: 6, text: "From the sole of your foot to the top of your head there is no soundness—only wounds and welts and open sores, not cleansed or bandaged or soothed with olive oil.", group: 2 },
   { number: 7, text: "Your country is desolate, your cities burned with fire; your fields are being stripped by foreigners right before you, laid waste as when overthrown by strangers.", group: 2 },
   { number: 8, text: "Daughter Zion is left like a shelter in a vineyard, like a hut in a cucumber field, like a city under siege.", group: 2 },
-  { number: 9, text: "Unless the LORD Almighty had left us some survivors, we would have become like Sodom, we would have been like Gomorrah.", group: 2, isHinge: true, hingeType: 'mercy' },
+  { number: 9, text: "Unless the LORD Almighty had left us some survivors, we would have become like Sodom, we would have been like Gomorrah.", group: 2 },
   { number: 10, text: "Hear the word of the LORD, you rulers of Sodom; listen to the instruction of our God, you people of Gomorrah!", group: 3 },
   { number: 11, text: "'The multitude of your sacrifices—what are they to me?' says the LORD. 'I have more than enough of burnt offerings, of rams and the fat of fattened animals; I have no pleasure in the blood of bulls and lambs and goats.'", group: 3 },
   { number: 12, text: "When you come to appear before me, who has asked this of you, this trampling of my courts?", group: 3 },
@@ -33,15 +33,15 @@ const verses: Verse[] = [
   { number: 14, text: "Your New Moon feasts and your appointed festivals I hate with all my being. They have become a burden to me; I am weary of bearing them.", group: 3 },
   { number: 15, text: "When you spread out your hands in prayer, I hide my eyes from you; even when you offer many prayers, I am not listening. Your hands are full of blood!", group: 3 },
   { number: 16, text: "Wash and make yourselves clean. Take your evil deeds out of my sight; stop doing wrong.", group: 4 },
-  { number: 17, text: "Learn to do right; seek justice. Defend the oppressed. Take up the cause of the fatherless; plead the case of the widow.", group: 4, isHinge: true, hingeType: 'justice' },
-  { number: 18, text: "Come now, let us settle the matter,' says the LORD. 'Though your sins are like scarlet, they shall be as white as snow; though they are red as crimson, they shall be like wool.'", group: 5, isHinge: true, hingeType: 'invitation' },
+  { number: 17, text: "Learn to do right; seek justice. Defend the oppressed. Take up the cause of the fatherless; plead the case of the widow.", group: 4 },
+  { number: 18, text: "Come now, let us settle the matter,' says the LORD. 'Though your sins are like scarlet, they shall be as white as snow; though they are red as crimson, they shall be like wool.'", group: 5, isHinge: true, hingeType: 'center' },
   { number: 19, text: "If you are willing and obedient, you will eat the good things of the land;", group: 5 },
   { number: 20, text: "but if you resist and rebel, you will be devoured by the sword.' For the mouth of the LORD has spoken.", group: 5 },
   { number: 21, text: "See how the faithful city has become a prostitute! She once was full of justice; righteousness used to dwell in her—but now murderers!", group: 6 },
   { number: 22, text: "Your silver has become dross, your choice wine is diluted with water.", group: 6 },
   { number: 23, text: "Your rulers are rebels, partners with thieves; they all love bribes and chase after gifts. They do not defend the cause of the fatherless; the widow's case does not come before them.", group: 6 },
   { number: 24, text: "Therefore the Lord, the LORD Almighty, the Mighty One of Israel, declares: 'Ah! I will vent my wrath on my foes and avenge myself on my enemies.'", group: 7 },
-  { number: 25, text: "I will turn my hand against you; I will thoroughly purge away your dross and remove all your impurities.", group: 7, isHinge: true, hingeType: 'purification' },
+  { number: 25, text: "I will turn my hand against you; I will thoroughly purge away your dross and remove all your impurities.", group: 7 },
   { number: 26, text: "I will restore your leaders as in days of old, your rulers as at the beginning. Afterward you will be called the City of Righteousness, the Faithful City.", group: 7 },
   { number: 27, text: "Zion will be delivered with justice, her penitent ones with righteousness.", group: 8 },
   { number: 28, text: "But rebels and sinners will both be broken, and those who forsake the LORD will perish.", group: 8 },
@@ -93,23 +93,11 @@ const getGroupTransition = (group: number): string => {
 };
 
 const getHingeColor = (hingeType?: string): string => {
-  const colors: Record<string, string> = {
-    'mercy': 'bg-green-500',
-    'justice': 'bg-blue-500',
-    'invitation': 'bg-yellow-400',
-    'purification': 'bg-teal-500'
-  };
-  return hingeType ? colors[hingeType] || 'bg-yellow-400' : 'bg-yellow-400';
+  return 'bg-yellow-400';
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  const explanations: Record<string, string> = {
-    'mercy': 'Green dots mark moments of mercy—God preserving a remnant when total destruction was deserved.',
-    'justice': 'Blue dots mark moments calling for justice—defending the oppressed and vulnerable.',
-    'invitation': 'Yellow dots mark the divine invitation—God offering complete forgiveness and restoration.',
-    'purification': 'Teal dots mark moments of purification—God refining His people to remove impurities.'
-  };
-  return explanations[hingeType] || '';
+  return 'Yellow dot marks the chiastic center—God's invitation to settle the matter and receive complete forgiveness.';
 };
 
 const getUniqueHingeTypes = (): string[] => {

@@ -23,7 +23,7 @@ const verses: Verse[] = [
   { number: 4, text: "What more was there to do for my vineyard, that I have not done in it? When I looked for it to yield grapes, why did it yield wild grapes?", group: 1 },
   { number: 5, text: "And now I will tell you what I will do to my vineyard. I will remove its hedge, and it shall be devoured; I will break down its wall, and it shall be trampled down.", group: 1 },
   { number: 6, text: "I will make it a waste; it shall not be pruned or hoed, and briers and thorns shall grow up; I will also command the clouds that they rain no rain upon it.", group: 1 },
-  { number: 7, text: "For the vineyard of the LORD of hosts is the house of Israel, and the men of Judah are his pleasant planting; and he looked for justice, but behold, bloodshed; for righteousness, but behold, an outcry!", group: 1, isHinge: true, hingeType: 'verdict' },
+  { number: 7, text: "For the vineyard of the LORD of hosts is the house of Israel, and the men of Judah are his pleasant planting; and he looked for justice, but behold, bloodshed; for righteousness, but behold, an outcry!", group: 1, isHinge: true, hingeType: 'center' },
   { number: 8, text: "Woe to those who join house to house, who add field to field, until there is no more room, and you are made to dwell alone in the midst of the land.", group: 2 },
   { number: 9, text: "The LORD of hosts has sworn in my hearing: 'Surely many houses shall be desolate, large and beautiful houses, without inhabitant.", group: 2 },
   { number: 10, text: "For ten acres of vineyard shall yield but one bath, and a homer of seed shall yield but an ephah.'", group: 2 },
@@ -338,11 +338,8 @@ function Chapter5() {
     return hingeType ? colors[hingeType] || 'bg-yellow-400' : 'bg-yellow-400';
   };
 
-  const getHingeExplanation = (hingeType: string): string => {
-    const explanations: Record<string, string> = {
-      'verdict': 'Yellow dots mark the reveal—the vineyard is Israel, justice became bloodshed.'
-    };
-    return explanations[hingeType] || '';
+  const getHingeExplanation = (_hingeType: string): string => {
+    return 'Yellow dot marks the chiastic center—the verdict revealing Israel produced bloodshed instead of justice.';
   };
 
   const getUniqueHingeTypes = (): string[] => {
