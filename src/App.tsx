@@ -14,6 +14,7 @@ import './App.css';
 function Home() {
   const [showBookStructure, setShowBookStructure] = useState(false);
   const [showHowToUse, setShowHowToUse] = useState(false);
+  const [showPropheticWorld, setShowPropheticWorld] = useState(false);
 
   const chapters = [
     { num: 1, title: "The Rebellious Nation and the Invitation to Return", verses: 31, theme: "God's covenant lawsuit centers on the divine invitation: 'Though your sins are like scarlet, they shall be as white as snow'" },
@@ -53,13 +54,21 @@ function Home() {
           ))}
         </div>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <button
             onClick={() => setShowBookStructure(true)}
             className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all text-left"
           >
             <h3 className="text-xl font-bold mb-2">📖 Understanding the Book of Isaiah</h3>
             <p className="text-sm opacity-90">Discover how chapters 1-39, 40-55, and 56-66 form a unified message across different periods</p>
+          </button>
+
+          <button
+            onClick={() => setShowPropheticWorld(true)}
+            className="bg-gradient-to-r from-green-600 to-teal-600 text-white rounded-lg shadow-md p-6 hover:shadow-xl transition-all text-left"
+          >
+            <h3 className="text-xl font-bold mb-2">🌍 Isaiah's Prophetic World</h3>
+            <p className="text-sm opacity-90">Explore the culture, calling, and courageous ministry of prophets in ancient Judah</p>
           </button>
 
           <button
@@ -219,6 +228,125 @@ function Home() {
                   <div className="bg-purple-50 rounded-lg p-4 mt-4">
                     <p className="text-sm text-gray-700 leading-relaxed">
                       <strong>Pro tip:</strong> Start by reading the chapter structure to understand the big picture, then click individual verses to explore deeper meanings. The color coding helps you see how verses cluster around themes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Prophetic World Modal */}
+        {showPropheticWorld && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col">
+              <div className="p-6 border-b border-gray-200">
+                <div className="flex justify-between items-start">
+                  <h3 className="text-2xl font-bold text-gray-800">Isaiah's Prophetic World</h3>
+                  <button
+                    onClick={() => setShowPropheticWorld(false)}
+                    className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+                  >
+                    ×
+                  </button>
+                </div>
+              </div>
+              <div className="p-6 overflow-y-auto">
+                <div className="space-y-6">
+                  <div>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                      To understand Isaiah's message, it helps to step into his world—8th century BC Judah, where prophets were the moral conscience of society, speaking God's truth to kings and common people alike. Prophets weren't fortune-tellers or mystics; they were God's authorized spokespeople, calling the nation back to covenant faithfulness and proclaiming both judgment and hope.
+                    </p>
+                  </div>
+
+                  <div className="bg-blue-50 rounded-lg p-5 border-l-4 border-blue-600">
+                    <h4 className="text-lg font-bold text-blue-900 mb-3">Isaiah's World: Society and Power</h4>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      <strong>Political setting:</strong> Judah and Israel were small kingdoms caught between superpowers—Assyria, Egypt, and later Babylon. Kings faced constant pressure to form alliances for survival. Society was hierarchical: king, nobles and priests, landowners, peasants, artisans, and slaves.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      <strong>Religious life:</strong> Worship centered on the Jerusalem Temple with its sacrifices, festivals, and purity rituals managed by priests. Prophets stood outside this system as independent voices, interpreting God's will for the nation's moral and spiritual life.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed">
+                      <strong>Social dynamics:</strong> Strong collective identity meant sin and blessing affected the whole community. Public rebuke was shocking in an honor-shame culture, making prophetic ministry particularly courageous and costly.
+                    </p>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-5 border-l-4 border-green-600">
+                    <h4 className="text-lg font-bold text-green-900 mb-3">What Prophets Did (and Didn't Do)</h4>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      <strong>God's spokespeople:</strong> Prophets were called and commissioned by God to deliver His message—not their own opinions or predictions. Think of them as God's microphone or messenger. The Hebrew word for prophet means "one who is called" or "spokesperson."
+                    </p>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      <strong>Not fortune-tellers:</strong> While prophets sometimes announced future events, that wasn't their main job. Their primary role was calling people back to faithfulness, explaining current crises as moral consequences, and pointing to God's character and purposes.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed">
+                      <strong>Covenant lawyers:</strong> Prophets functioned like prosecutors in God's covenant lawsuit—"You agreed to follow God's ways. Here's how you've broken that agreement. Here are the consequences. But here's also the path back to restoration."
+                    </p>
+                  </div>
+
+                  <div className="bg-purple-50 rounded-lg p-5 border-l-4 border-purple-600">
+                    <h4 className="text-lg font-bold text-purple-900 mb-3">Prophets vs. Priests vs. Sages</h4>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      <strong>Priests:</strong> Focused on temple ritual, sacrifices, and ceremonial purity. Their domain was worship—making sure people followed correct procedures. Think Leviticus and the book of ritual law.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      <strong>Sages (Wisdom teachers):</strong> Offered practical wisdom for daily life—how to raise children, manage money, build relationships. Their domain was family and community. Think Proverbs and everyday guidance.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      <strong>Prophets:</strong> Addressed covenant fidelity and public justice. Their domain was national morality and faithfulness to God. Isaiah rebuked empty ritualism: "Stop bringing meaningless offerings! Learn to do right; seek justice" (1:13, 17).
+                    </p>
+                    <p className="text-gray-700 leading-relaxed">
+                      All three roles were needed, but prophets uniquely challenged the nation to align worship with justice, ritual with righteousness.
+                    </p>
+                  </div>
+
+                  <div className="bg-teal-50 rounded-lg p-5 border-l-4 border-teal-600">
+                    <h4 className="text-lg font-bold text-teal-900 mb-3">How Prophets Communicated</h4>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      Prophets were master communicators, using multiple methods to get God's message across:
+                    </p>
+                    <ul className="text-gray-700 space-y-2 ml-4">
+                      <li><strong>Oracles:</strong> Compact poetic declarations—"Thus says the LORD"—delivered with authority and memorable rhythm</li>
+                      <li><strong>Symbolic actions:</strong> Isaiah walked barefoot for three years to prefigure Egypt's humiliation (20:2-4); dramatic acts that people couldn't ignore</li>
+                      <li><strong>Songs and laments:</strong> The "Song of the Vineyard" (5:1-7) used familiar imagery to convey heartbreak over Israel's failure</li>
+                      <li><strong>Woes and blessings:</strong> Legal-style verdicts announcing consequences—"Woe to those who…" (5:8-23)</li>
+                      <li><strong>Vision reports:</strong> Heavenly throne room scenes (chapter 6) that authorized the message with divine authority</li>
+                    </ul>
+                    <p className="text-gray-700 leading-relaxed mt-3">
+                      This combination of public performance and moral philosophy moved crowds and confronted kings.
+                    </p>
+                  </div>
+
+                  <div className="bg-orange-50 rounded-lg p-5 border-l-4 border-orange-600">
+                    <h4 className="text-lg font-bold text-orange-900 mb-3">Isaiah's Distinctive Profile</h4>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      <strong>Name meaning:</strong> "Yahweh is salvation"—his very name proclaimed hope even amid judgment.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      <strong>Unique position:</strong> Isaiah had access to the royal court (advising kings like Ahaz and Hezekiah) while maintaining independent moral critique. He combined court prophet functions with fearless truth-telling.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      <strong>Poetic mastery:</strong> Isaiah's Hebrew is considered among the Bible's finest—vivid imagery, emotional power, theological depth (see the vineyard song in chapter 5 or the invitation in 1:18).
+                    </p>
+                    <p className="text-gray-700 leading-relaxed">
+                      <strong>Universal vision:</strong> While addressing Judah specifically, Isaiah envisioned God's salvation reaching all nations (19:25; 56:6-7), anticipating the gospel's worldwide scope.
+                    </p>
+                  </div>
+
+                  <div className="bg-red-50 rounded-lg p-5 border-l-4 border-red-600">
+                    <h4 className="text-lg font-bold text-red-900 mb-3">The Cost of Speaking Truth</h4>
+                    <p className="text-gray-700 leading-relaxed mb-3">
+                      Prophetic ministry was dangerous work. Speaking God's truth to power often meant facing ridicule, exile, imprisonment, or execution. Because prophetic words contradicted royal propaganda and challenged comfortable religion, true prophets were frequently marginalized.
+                    </p>
+                    <p className="text-gray-700 leading-relaxed">
+                      Tradition holds that Isaiah was martyred under King Manasseh (see Hebrews 11:37's reference to prophets "sawn in two"). His courage to speak truth regardless of personal cost makes his message all the more powerful—and challenges us to consider what truths we're called to speak in our own time.
+                    </p>
+                  </div>
+
+                  <div className="bg-gray-50 rounded-lg p-5">
+                    <p className="text-gray-700 leading-relaxed italic">
+                      As you read Isaiah's words, remember you're hearing a message delivered at great personal risk by someone who had seen God's holiness firsthand (chapter 6). This prophet spoke to kings and peasants alike, combining poetic beauty with prophetic power, calling God's people to align their worship with justice and their rituals with righteousness. His world was different from ours, but his core message remains: God demands more than religious ceremony—He calls for hearts transformed and lives that reflect His justice and mercy.
                     </p>
                   </div>
                 </div>
