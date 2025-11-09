@@ -15,6 +15,10 @@ This is a comprehensive interactive web application for studying Isaiah Chapters
 - Chapter 8 (22 verses): Sanctuary or Stumbling Stone
 - Chapter 9 (21 verses): The Light in the Darkness and the Prince of Peace
 
+## Recent Changes
+
+**November 2025**: Improved UX by conditionally hiding the Scripture Connections tab when verses lack connections. Previously, clicking a verse without connections would show a blank "Scripture Connections" tab that looked like a loading failure. Now, the tab only appears when the verse has documented connections (either `from` or `to` arrays), providing a cleaner interface with less reading required.
+
 ---
 
 ## 📋 APPLICATION TEMPLATE
