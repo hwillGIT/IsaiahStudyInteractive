@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChapterNavigation } from '../components/ChapterNavigation';
+import { StructureButton } from '../components/StructureButton';
 
 interface Verse {
   number: number;
@@ -196,12 +197,10 @@ function Chapter10() {
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">Thematic Groups</h2>
               <p className="text-sm text-gray-600">Click any verse to explore deeper reflections and connections</p>
             </div>
-            <button
+            <StructureButton 
               onClick={() => setShowStructureModal(true)}
-              className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
-            >
-              View Chapter Structure
-            </button>
+              subtitle="See divine sovereignty over empires"
+            />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
