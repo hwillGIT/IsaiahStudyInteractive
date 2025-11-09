@@ -367,6 +367,11 @@ function App() {
     return scriptureConnections[verseNum as keyof typeof scriptureConnections] || null;
   };
 
+  const hasConnections = (verseNum: number): boolean => {
+    const connection = getConnection(verseNum);
+    return !!(connection?.from?.length || connection?.to?.length);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100 p-4">
       <div className="max-w-7xl mx-auto">
@@ -508,16 +513,18 @@ function App() {
                   >
                     Reflections
                   </button>
-                  <button
-                    onClick={() => setActiveTab('connections')}
-                    className={`flex-1 px-6 py-3 font-medium transition-colors ${
-                      activeTab === 'connections'
-                        ? 'bg-white text-blue-600 border-b-2 border-blue-600'
-                        : 'text-gray-600 hover:text-gray-800 hover:bg-gray-100'
-                    }`}
-                  >
-                    Scripture Connections
-                  </button>
+                  {hasConnections(selectedVerse.number) && (
+                    <button
+                      onClick={() => setActiveTab('connections')}
+                      className={`flex-1 px-6 py-3 font-medium transition-colors ${
+                        activeTab === 'connections'
+                          ? 'bg-white text-blue-600 border-b-2 border-blue-600'
+                          : 'text-gray-600 hover:text-gray-800 hover:bg-gray-100'
+                      }`}
+                    >
+                      Scripture Connections
+                    </button>
+                  )}
                 </div>
               </div>
 

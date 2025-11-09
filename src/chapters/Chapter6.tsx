@@ -277,6 +277,11 @@ function App() {
     }
   };
 
+  const hasConnections = (verseNum: number): boolean => {
+    const connection = scriptureConnections[verseNum];
+    return !!(connection?.from?.length || connection?.to?.length);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 p-4">
       <div className="max-w-7xl mx-auto">
@@ -418,16 +423,18 @@ function App() {
                   >
                     Reflections
                   </button>
-                  <button
-                    onClick={() => setModalView('scripture')}
-                    className={`px-4 py-2 font-medium transition-all ${
-                      modalView === 'scripture'
-                        ? 'border-b-2 border-blue-600 text-blue-600'
-                        : 'text-gray-600 hover:text-gray-800'
-                    }`}
-                  >
-                    Scripture Connections
-                  </button>
+                  {hasConnections(selectedVerse.number) && (
+                    <button
+                      onClick={() => setModalView('scripture')}
+                      className={`px-4 py-2 font-medium transition-all ${
+                        modalView === 'scripture'
+                          ? 'border-b-2 border-blue-600 text-blue-600'
+                          : 'text-gray-600 hover:text-gray-800'
+                      }`}
+                    >
+                      Scripture Connections
+                    </button>
+                  )}
                 </div>
               </div>
 

@@ -315,6 +315,11 @@ function Chapter3() {
     return scriptureConnections[verseNum as keyof typeof scriptureConnections] || null;
   };
 
+  const hasConnections = (verseNum: number): boolean => {
+    const connection = getConnection(verseNum);
+    return !!(connection?.from?.length || connection?.to?.length);
+  };
+
   const uniqueGroups = Array.from(new Set(verses.map(v => v.group))).sort((a, b) => a - b);
 
   return (
@@ -427,12 +432,14 @@ function Chapter3() {
                   >
                     Reflections
                   </button>
-                  <button
-                    onClick={() => setActiveTab('connections')}
-                    className={`flex-1 py-3 px-4 font-semibold transition-colors ${activeTab === 'connections' ? 'bg-green-500 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
-                  >
-                    Scripture Connections
-                  </button>
+                  {hasConnections(selectedVerse.number) && (
+                    <button
+                      onClick={() => setActiveTab('connections')}
+                      className={`flex-1 py-3 px-4 font-semibold transition-colors ${activeTab === 'connections' ? 'bg-green-500 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
+                    >
+                      Scripture Connections
+                    </button>
+                  )}
                 </div>
               </div>
 
