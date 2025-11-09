@@ -20,6 +20,8 @@ This is a comprehensive interactive web application for studying Isaiah Chapters
 
 ## Recent Changes
 
+**November 9, 2025**: Standardized "View Chapter Structure" buttons across all 12 chapters. Created reusable `StructureButton` component that provides consistent visual styling (purple-to-blue gradient, book emoji, chapter-specific subtitle). Previously chapters 1, 10, 11, and 12 had plain purple buttons while chapters 2-9 had the enhanced gradient style. Now all chapters share the same polished appearance.
+
 **November 9, 2025**: Completed chapters 10-12, finishing the entire "Book of Immanuel" section (chapters 7-12) and the opening division of Isaiah (chapters 1-12). Each new chapter follows the established pattern: thematic groups with descriptive names, exactly three structural markers with specific analytical descriptions, comprehensive reflections for key verses, and Scripture connections. Home page updated to display all 12 chapters with proper navigation integration.
 
 **November 9, 2025**: Corrected structural markers to reflect true chiastic centers. Each chapter now has exactly ONE yellow dot marking its true chiastic pivot (or none if structure doesn't have a clear symmetrical center). Previous markers that were actually narrative transitions, thematic climaxes, or dramatic turns have been removed. Hinge explanations updated to be uniform and succinct across all chapters. Chapter 8 corrected from 2 hinges to 1 (verse 14: sanctuary OR stumbling stone).
