@@ -43,4 +43,3 @@ packages = ["unzip"]
 deploymentTarget = "autoscale"
 publicDir = "dist"
 build = ["npm", "run", "build"]
-run = ["npm", "run", "preview"]
