@@ -16,7 +16,7 @@
  */
 
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { ChapterNavigation } from '../components/ChapterNavigation';
 import '../App.css';
 
 interface Verse {
@@ -375,20 +375,7 @@ function App() {
       <div className="max-w-7xl mx-auto">
         
         {/* Navigation Bar */}
-        <div className="flex justify-center mb-6">
-          <div className="inline-flex items-center gap-2 bg-white rounded-lg shadow-sm px-4 py-2 text-sm">
-            <Link to="/" className="text-gray-500 hover:text-gray-700 font-medium">Introduction:</Link>
-            <Link to="/chapter-1" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 1</Link>
-            <Link to="/chapter-2" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 2</Link>
-            <Link to="/chapter-3" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 3</Link>
-            <Link to="/chapter-4" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 4</Link>
-            <Link to="/chapter-5" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 5</Link>
-            <Link to="/chapter-6" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 6</Link>
-            <Link to="/chapter-7" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 7</Link>
-            <Link to="/chapter-8" className="text-blue-600 hover:text-blue-800 font-medium px-2 py-1 hover:bg-blue-50 rounded">Ch 8</Link>
-            <span className="text-gray-800 font-semibold px-2 py-1 bg-blue-100 rounded">Ch 9</span>
-          </div>
-        </div>
+        <ChapterNavigation currentChapter={9} />
 
         {/* Header */}
         <div className="text-center mb-8">
