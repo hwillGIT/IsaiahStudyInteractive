@@ -97,7 +97,7 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  return 'Yellow dot marks the chiastic center—God's invitation to settle the matter and receive complete forgiveness.';
+  return 'Yellow dot marks the chiastic center—God\'s invitation to settle the matter and receive complete forgiveness.';
 };
 
 const getUniqueHingeTypes = (): string[] => {
