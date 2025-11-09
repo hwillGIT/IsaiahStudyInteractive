@@ -20,6 +20,8 @@ This is a comprehensive interactive web application for studying Isaiah Chapters
 
 ## Recent Changes
 
+**November 9, 2025**: Implemented proper chiastic structure modals for chapters 10, 11, and 12 with visual indentation patterns matching chapters 1-9. Each structure modal now displays the literary chiasm using visual indentation (ml-0, ml-4, ml-8, ml-12 Tailwind classes) showing symmetrical patterns (A-B-C-X-C'-B'-A'). Chapter 10 features a 7-layer chiasm centered on v12 (God's sovereignty), Chapter 11 has a 5-layer chiasm centered on v10 (Root of Jesse as banner to nations), and Chapter 12 has a 3-part structure centered on v3 (wells of salvation). All verse metadata, hinge explanations, and reflection content now align with the correct chiastic centers.
+
 **November 9, 2025**: Completed standardization of "View Chapter Structure" buttons across all 12 chapters. All chapters now use the reusable `StructureButton` component (`src/components/StructureButton.tsx`) with consistent visual styling (purple-to-blue gradient, book emoji, chapter-specific subtitle) and placement. The button appears consistently between the thematic groups legend card and the transformation points/verse grid section in every chapter, ensuring a unified user experience throughout the application.
 
 **November 9, 2025**: Completed chapters 10-12, finishing the entire "Book of Immanuel" section (chapters 7-12) and the opening division of Isaiah (chapters 1-12). Each new chapter follows the established pattern: thematic groups with descriptive names, exactly three structural markers with specific analytical descriptions, comprehensive reflections for key verses, and Scripture connections. Home page updated to display all 12 chapters with proper navigation integration.
