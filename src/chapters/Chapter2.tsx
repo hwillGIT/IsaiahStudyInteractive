@@ -245,7 +245,11 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  return 'Chapter 2 has no marked chiastic center—the structure flows from promise to judgment.';
+  const explanations: Record<string, string> = {
+    'hinge': 'Chiastic Center (v5) — The invitation pivot: having seen God\'s future glory, walk in His light now',
+    'turn-judgment': 'Dramatic Turn (v11) — From idolatry\'s pride to the Day of the LORD\'s terror against all arrogance'
+  };
+  return explanations[hingeType] || 'Structural transition point';
 };
 
 const getUniqueHingeTypes = (): string[] => {
