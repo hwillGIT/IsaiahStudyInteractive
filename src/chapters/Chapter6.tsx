@@ -43,10 +43,10 @@ const verses: Verse[] = [
   { number: 2, text: "Above him were seraphim, each with six wings: With two wings they covered their faces, with two they covered their feet, and with two they were flying.", group: 1 },
   { number: 3, text: "And they were calling to one another: 'Holy, holy, holy is the LORD Almighty; the whole earth is full of his glory.'", group: 1 },
   { number: 4, text: "At the sound of their voices the doorposts and thresholds shook and the temple was filled with smoke.", group: 1 },
-  { number: 5, text: "'Woe to me!' I cried. 'I am ruined! For I am a man of unclean lips, and I live among a people of unclean lips, and my eyes have seen the King, the LORD Almighty.'", group: 2 },
+  { number: 5, text: "'Woe to me!' I cried. 'I am ruined! For I am a man of unclean lips, and I live among a people of unclean lips, and my eyes have seen the King, the LORD Almighty.'", group: 2, isHinge: true, hingeType: 'turn-conviction' },
   { number: 6, text: "Then one of the seraphim flew to me with a live coal in his hand, which he had taken with tongs from the altar.", group: 2 },
-  { number: 7, text: "With it he touched my mouth and said, 'See, this has touched your lips; your guilt is taken away and your sin atoned for.'", group: 2, isHinge: true, hingeType: 'center' },
-  { number: 8, text: "Then I heard the voice of the Lord saying, 'Whom shall I send? And who will go for us?' And I said, 'Here am I. Send me!'", group: 3 },
+  { number: 7, text: "With it he touched my mouth and said, 'See, this has touched your lips; your guilt is taken away and your sin atoned for.'", group: 2, isHinge: true, hingeType: 'hinge' },
+  { number: 8, text: "Then I heard the voice of the Lord saying, 'Whom shall I send? And who will go for us?' And I said, 'Here am I. Send me!'", group: 3, isHinge: true, hingeType: 'turn-commission' },
   { number: 9, text: "He said, 'Go and tell this people: \"Be ever hearing, but never understanding; be ever seeing, but never perceiving.\"'", group: 4 },
   { number: 10, text: "Make the heart of this people calloused; make their ears dull and close their eyes. Otherwise they might see with their eyes, hear with their ears, understand with their hearts, and turn and be healed.", group: 4 },
   { number: 11, text: "Then I said, 'For how long, Lord?' And he answered: 'Until the cities lie ruined and without inhabitant, until the houses are left deserted and the fields ruined and ravaged,'", group: 5 },
@@ -518,10 +518,10 @@ function App() {
 
         {/* Structure Modal */}
         {showStructureModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden">
-              <div className="p-6 border-b border-gray-200">
-                <div className="flex justify-between items-start mb-4">
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+            <div className="bg-white rounded-lg max-w-3xl w-full my-8">
+              <div className="p-6 border-b border-gray-200 bg-white rounded-t-lg">
+                <div className="flex justify-between items-start">
                   <h3 className="text-xl font-bold text-gray-800">Chapter 6 Structure</h3>
                   <button
                     onClick={() => setShowStructureModal(false)}
@@ -531,7 +531,7 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className="p-6 overflow-y-auto">
+              <div className="p-6">
                 <p className="text-sm text-gray-600 mb-4">This chapter follows a symmetrical pattern where each section mirrors another, with verse 8 at the center as the divine commissioning:</p>
                 <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
                   <div className="ml-0 flex items-start gap-2">

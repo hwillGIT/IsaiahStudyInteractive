@@ -29,7 +29,7 @@ const verses: Verse[] = [
   { number: 10, text: "Tell the righteous that it shall be well with them, for they shall eat the fruit of their deeds.", group: 3 },
   { number: 11, text: "Woe to the wicked! It shall be ill with them, for what their hands have done shall be done to them.", group: 3 },
   { number: 12, text: "My people—infants are their oppressors, and women rule over them. O my people, your guides mislead you and they have swallowed up the course of your paths.", group: 4 },
-  { number: 13, text: "The LORD has taken his place to contend; he stands to judge peoples.", group: 4 },
+  { number: 13, text: "The LORD has taken his place to contend; he stands to judge peoples.", group: 4, isHinge: true, hingeType: 'transition-courtroom' },
   { number: 14, text: "The LORD will enter into judgment with the elders and princes of his people: 'It is you who have devoured the vineyard, the spoil of the poor is in your houses.", group: 4 },
   { number: 15, text: "What do you mean by crushing my people, by grinding the face of the poor?' declares the Lord GOD of hosts.", group: 4 },
   { number: 16, text: "The LORD said: Because the daughters of Zion are haughty and walk with outstretched necks, glancing wantonly with their eyes, mincing along as they go, tinkling with their feet,", group: 5 },
@@ -505,10 +505,10 @@ function Chapter3() {
 
         {/* Structure Modal */}
         {showStructureModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden">
-              <div className="p-6 border-b border-gray-200">
-                <div className="flex justify-between items-start mb-4">
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+            <div className="bg-white rounded-lg max-w-3xl w-full my-8">
+              <div className="p-6 border-b border-gray-200 bg-white rounded-t-lg">
+                <div className="flex justify-between items-start">
                   <h3 className="text-xl font-bold text-gray-800">Chapter 3 Structure</h3>
                   <button
                     onClick={() => setShowStructureModal(false)}
@@ -518,7 +518,7 @@ function Chapter3() {
                   </button>
                 </div>
               </div>
-              <div className="p-6 overflow-y-auto">
+              <div className="p-6">
                 <p className="text-sm text-gray-600 mb-4">This chapter displays a symmetrical pattern showing how defying God's presence leads from leadership crisis to complete societal breakdown:</p>
                 <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
                   <div className="ml-0 flex items-start gap-2">

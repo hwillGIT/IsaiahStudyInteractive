@@ -21,13 +21,13 @@ const verses: Verse[] = [
   { number: 2, text: "It shall come to pass in the latter days that the mountain of the house of the LORD shall be established as the highest of the mountains, and shall be lifted up above the hills; and all nations shall flow to it,", group: 1 },
   { number: 3, text: "and many peoples shall come, and say: 'Come, let us go up to the mountain of the LORD, to the house of the God of Jacob, that he may teach us his ways and that we may walk in his paths.' For out of Zion shall go the law, and the word of the LORD from Jerusalem.", group: 1 },
   { number: 4, text: "He shall judge between the nations, and shall decide disputes for many peoples; and they shall beat their swords into plowshares, and their spears into pruning hooks; nation shall not lift up sword against nation, neither shall they learn war anymore.", group: 1 },
-  { number: 5, text: "O house of Jacob, come, let us walk in the light of the LORD.", group: 2 },
+  { number: 5, text: "O house of Jacob, come, let us walk in the light of the LORD.", group: 2, isHinge: true, hingeType: 'hinge' },
   { number: 6, text: "For you have rejected your people, the house of Jacob, because they are full of things from the east and of fortune-tellers like the Philistines, and they strike hands with the children of foreigners.", group: 3 },
   { number: 7, text: "Their land is filled with silver and gold, and there is no end to their treasures; their land is filled with horses, and there is no end to their chariots.", group: 3 },
   { number: 8, text: "Their land is filled with idols; they bow down to the work of their hands, to what their own fingers have made.", group: 3 },
   { number: 9, text: "So man is humbled, and each one is brought low—do not forgive them!", group: 3 },
   { number: 10, text: "Enter into the rock and hide in the dust from before the terror of the LORD, and from the splendor of his majesty.", group: 4 },
-  { number: 11, text: "The haughty looks of man shall be brought low, and the lofty pride of men shall be humbled, and the LORD alone will be exalted in that day.", group: 4 },
+  { number: 11, text: "The haughty looks of man shall be brought low, and the lofty pride of men shall be humbled, and the LORD alone will be exalted in that day.", group: 4, isHinge: true, hingeType: 'turn-judgment' },
   { number: 12, text: "For the LORD of hosts has a day against all that is proud and lofty, against all that is lifted up—and it shall be brought low;", group: 4 },
   { number: 13, text: "against all the cedars of Lebanon, lofty and lifted up; and against all the oaks of Bashan;", group: 4 },
   { number: 14, text: "against all the lofty mountains, and against all the uplifted hills;", group: 4 },
@@ -511,10 +511,10 @@ function Chapter2() {
 
         {/* Structure Modal */}
         {showStructureModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden">
-              <div className="p-6 border-b border-gray-200">
-                <div className="flex justify-between items-start mb-4">
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+            <div className="bg-white rounded-lg max-w-3xl w-full my-8">
+              <div className="p-6 border-b border-gray-200 bg-white rounded-t-lg">
+                <div className="flex justify-between items-start">
                   <h3 className="text-xl font-bold text-gray-800">Chapter 2 Structure</h3>
                   <button
                     onClick={() => setShowStructureModal(false)}
@@ -524,7 +524,7 @@ function Chapter2() {
                   </button>
                 </div>
               </div>
-              <div className="p-6 overflow-y-auto">
+              <div className="p-6">
                 <p className="text-sm text-gray-600 mb-4">This chapter displays a symmetrical pattern contrasting future glory with present pride, both leading to God's terrifying judgment:</p>
                 <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
                   <div className="ml-0 flex items-start gap-2">

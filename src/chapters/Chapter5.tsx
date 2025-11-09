@@ -40,7 +40,7 @@ const verses: Verse[] = [
   { number: 21, text: "Woe to those who are wise in their own eyes, and shrewd in their own sight!", group: 4 },
   { number: 22, text: "Woe to those who are heroes at drinking wine, and valiant men in mixing strong drink,", group: 5 },
   { number: 23, text: "who acquit the guilty for a bribe, and deprive the innocent of his right!", group: 5 },
-  { number: 24, text: "Therefore, as the tongue of fire devours the stubble, and as dry grass sinks down in the flame, so their root will be as rottenness, and their blossom go up like dust; for they have rejected the law of the LORD of hosts, and have despised the word of the Holy One of Israel.", group: 5 },
+  { number: 24, text: "Therefore, as the tongue of fire devours the stubble, and as dry grass sinks down in the flame, so their root will be as rottenness, and their blossom go up like dust; for they have rejected the law of the LORD of hosts, and have despised the word of the Holy One of Israel.", group: 5, isHinge: true, hingeType: 'climax-woes' },
   { number: 25, text: "Therefore the anger of the LORD was kindled against his people, and he stretched out his hand against them and struck them, and the mountains quaked; and their corpses were as refuse in the midst of the streets. For all this his anger has not turned away, and his hand is stretched out still.", group: 5 },
   { number: 26, text: "He will raise a signal for nations far away, and whistle for them from the ends of the earth; and behold, quickly, speedily they come!", group: 6 },
   { number: 27, text: "None is weary, none stumbles, none slumbers or sleeps, not a waistband is loose, not a sandal strap broken;", group: 6 },
@@ -536,10 +536,10 @@ function Chapter5() {
 
         {/* Structure Modal */}
         {showStructureModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden">
-              <div className="p-6 border-b border-gray-200">
-                <div className="flex justify-between items-start mb-4">
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+            <div className="bg-white rounded-lg max-w-3xl w-full my-8">
+              <div className="p-6 border-b border-gray-200 bg-white rounded-t-lg">
+                <div className="flex justify-between items-start">
                   <h3 className="text-xl font-bold text-gray-800">Chapter 5 Structure</h3>
                   <button
                     onClick={() => setShowStructureModal(false)}
@@ -549,7 +549,7 @@ function Chapter5() {
                   </button>
                 </div>
               </div>
-              <div className="p-6 overflow-y-auto">
+              <div className="p-6">
                 <p className="text-sm text-gray-600 mb-4">This chapter shows a vineyard parable followed by five woe pronouncements, with verse 7 as the hinge revealing the vineyard's identity:</p>
                 <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
                   <div className="ml-0 flex items-start gap-2">

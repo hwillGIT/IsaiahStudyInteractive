@@ -566,10 +566,10 @@ function Chapter4() {
         )}
 
         {showStructureModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white rounded-lg max-w-3xl w-full max-h-[85vh] overflow-hidden">
-              <div className="p-6 border-b border-gray-200">
-                <div className="flex justify-between items-start mb-4">
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+            <div className="bg-white rounded-lg max-w-3xl w-full my-8">
+              <div className="p-6 border-b border-gray-200 bg-white rounded-t-lg">
+                <div className="flex justify-between items-start">
                   <h3 className="text-xl font-bold text-gray-800">
                     Chapter 4 Structure
                   </h3>
@@ -581,7 +581,7 @@ function Chapter4() {
                   </button>
                 </div>
               </div>
-              <div className="p-6 overflow-y-auto">
+              <div className="p-6">
                 <p className="text-sm text-gray-600 mb-4">
                   This chapter shows a symmetrical pattern with restoration at
                   the center, framed by glory revealed:
