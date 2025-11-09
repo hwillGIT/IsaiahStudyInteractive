@@ -385,15 +385,10 @@ function Chapter5() {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-          <button
-            onClick={() => setShowStructureModal(true)}
-            className="w-full flex items-center justify-between px-4 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all"
-          >
-            <span className="font-semibold">📖 View Chapter Structure</span>
-            <span className="text-sm opacity-90">See the vineyard parable and woe pattern</span>
-          </button>
-        </div>
+        <StructureButton 
+          onClick={() => setShowStructureModal(true)}
+          subtitle="See from love song to judgment"
+        />
 
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
           <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">Key Transformation Points</h3>

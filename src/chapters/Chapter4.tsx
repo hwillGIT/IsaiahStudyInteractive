@@ -322,15 +322,10 @@ function Chapter4() {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg shadow-md p-4 mb-6">
-          <button
-            onClick={() => setShowStructureModal(true)}
-            className="w-full flex items-center justify-between px-4 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all"
-          >
-            <span className="font-semibold">📖 View Chapter Structure</span>
-            <span className="text-sm opacity-90">View the flow from crisis to God's protection</span>
-          </button>
-        </div>
+        <StructureButton 
+          onClick={() => setShowStructureModal(true)}
+          subtitle="See God's glorious restoration"
+        />
 
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
           <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">
