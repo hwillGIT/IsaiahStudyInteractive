@@ -1,8 +1,8 @@
-# Isaiah Interactive Study - Chapters 1-9
+# Isaiah Interactive Study - Chapters 1-12
 
 ## Overview
 
-This is a comprehensive interactive web application for studying Isaiah Chapters 1-9 from the Bible. Each chapter features a color-coded grid visualization of verses organized into thematic groups, with interactive hover tooltips and transformation point markers. A two-level modal navigation system provides both reflective study (three viewing modes: Seeing Connections, How This Helps My Life, What This Teaches Us) and Scripture Connections showing how each verse fits into God's larger plan across the entire Bible. Built with React, TypeScript, Tailwind CSS, and React Router, the application offers an engaging educational experience across 9 complete chapters with 630 total reflections (3 perspectives per verse) and comprehensive Scripture connections. Features a dedicated home page with chapter navigation cards and educational modals explaining the book's structure and how to use the app.
+This is a comprehensive interactive web application for studying Isaiah Chapters 1-12 from the Bible (the complete "Book of Immanuel" section). Each chapter features a color-coded grid visualization of verses organized into thematic groups, with interactive hover tooltips and transformation point markers. A two-level modal navigation system provides both reflective study (three viewing modes: Seeing Connections, How This Helps My Life, What This Teaches Us) and Scripture Connections showing how each verse fits into God's larger plan across the entire Bible. Built with React, TypeScript, Tailwind CSS, and React Router, the application offers an engaging educational experience across 12 complete chapters with comprehensive reflections and Scripture connections. Features a dedicated home page with chapter navigation cards and educational modals explaining the book's structure and how to use the app.
 
 **Completed Chapters**:
 - Chapter 1 (31 verses): The Rebellious Nation and the Invitation to Return
@@ -14,8 +14,13 @@ This is a comprehensive interactive web application for studying Isaiah Chapters
 - Chapter 7 (25 verses): The Sign of Immanuel - God With Us
 - Chapter 8 (22 verses): Sanctuary or Stumbling Stone
 - Chapter 9 (21 verses): The Light in the Darkness and the Prince of Peace
+- Chapter 10 (34 verses): Assyria: God's Rod and the Remnant's Return
+- Chapter 11 (16 verses): The Messiah's Reign and the Peaceable Kingdom
+- Chapter 12 (6 verses): Song of Thanksgiving and Praise
 
 ## Recent Changes
+
+**November 9, 2025**: Completed chapters 10-12, finishing the entire "Book of Immanuel" section (chapters 7-12) and the opening division of Isaiah (chapters 1-12). Each new chapter follows the established pattern: thematic groups with descriptive names, exactly three structural markers with specific analytical descriptions, comprehensive reflections for key verses, and Scripture connections. Home page updated to display all 12 chapters with proper navigation integration.
 
 **November 9, 2025**: Corrected structural markers to reflect true chiastic centers. Each chapter now has exactly ONE yellow dot marking its true chiastic pivot (or none if structure doesn't have a clear symmetrical center). Previous markers that were actually narrative transitions, thematic climaxes, or dramatic turns have been removed. Hinge explanations updated to be uniform and succinct across all chapters. Chapter 8 corrected from 2 hinges to 1 (verse 14: sanctuary OR stumbling stone).
 
