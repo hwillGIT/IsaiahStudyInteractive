@@ -9,6 +9,9 @@ import Chapter6 from './chapters/Chapter6';
 import Chapter7 from './chapters/Chapter7';
 import Chapter8 from './chapters/Chapter8';
 import Chapter9 from './chapters/Chapter9';
+import Chapter10 from './chapters/Chapter10';
+import Chapter11 from './chapters/Chapter11';
+import Chapter12 from './chapters/Chapter12';
 import './App.css';
 
 function Home() {
@@ -25,7 +28,10 @@ function Home() {
     { num: 6, title: "Encountering God's Holiness and Divine Commissioning", verses: 13, theme: "Isaiah's throne room vision: conviction, cleansing, commission, and the promise of a holy remnant" },
     { num: 7, title: "The Sign of Immanuel - God With Us", verses: 25, theme: "When human fear meets divine promise, God offers the ultimate sign: Immanuel, God with us" },
     { num: 8, title: "Sanctuary or Stumbling Stone", verses: 22, theme: "The same God becomes either sanctuary for those who trust or stumbling stone for those who fear" },
-    { num: 9, title: "The Light in the Darkness and the Prince of Peace", verses: 21, theme: "From deep darkness to great light—the child born to us will establish endless peace and justice" }
+    { num: 9, title: "The Light in the Darkness and the Prince of Peace", verses: 21, theme: "From deep darkness to great light—the child born to us will establish endless peace and justice" },
+    { num: 10, title: "Assyria: God's Rod and the Remnant's Return", verses: 34, theme: "God uses Assyria as His rod of anger, then judges their pride—sovereignly orchestrating history while preserving a faithful remnant" },
+    { num: 11, title: "The Messiah's Reign and the Peaceable Kingdom", verses: 16, theme: "From Jesse's stump emerges the Spirit-empowered Messiah bringing righteous judgment, universal peace, and restoration for all nations" },
+    { num: 12, title: "Song of Thanksgiving and Praise", verses: 6, theme: "The Book of Immanuel concludes with joyful thanksgiving: drawing from wells of salvation and proclaiming God's deeds among all peoples" }
   ];
 
   return (
@@ -33,7 +39,7 @@ function Home() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-5xl font-bold text-gray-800 mb-3">Isaiah Interactive Study</h1>
-          <p className="text-xl text-gray-600">Chapters 1-9: Exploring God's Message Through Color-Coded Themes</p>
+          <p className="text-xl text-gray-600">Chapters 1-12: Exploring God's Message Through Color-Coded Themes</p>
           <p className="text-sm text-gray-500 mt-2">Click any chapter to begin your study journey</p>
         </div>
 
@@ -373,6 +379,9 @@ function App() {
         <Route path="/chapter-7" element={<Chapter7 />} />
         <Route path="/chapter-8" element={<Chapter8 />} />
         <Route path="/chapter-9" element={<Chapter9 />} />
+        <Route path="/chapter-10" element={<Chapter10 />} />
+        <Route path="/chapter-11" element={<Chapter11 />} />
+        <Route path="/chapter-12" element={<Chapter12 />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
