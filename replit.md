@@ -17,6 +17,8 @@ This is a comprehensive interactive web application for studying Isaiah Chapters
 
 ## Recent Changes
 
+**November 9, 2025**: Corrected structural markers to reflect true chiastic centers. Each chapter now has exactly ONE yellow dot marking its true chiastic pivot (or none if structure doesn't have a clear symmetrical center). Previous markers that were actually narrative transitions, thematic climaxes, or dramatic turns have been removed. Hinge explanations updated to be uniform and succinct across all chapters. Chapter 8 corrected from 2 hinges to 1 (verse 14: sanctuary OR stumbling stone).
+
 **November 2025**: Improved UX by conditionally hiding the Scripture Connections tab when verses lack connections. Previously, clicking a verse without connections would show a blank "Scripture Connections" tab that looked like a loading failure. Now, the tab only appears when the verse has documented connections (either `from` or `to` arrays), providing a cleaner interface with less reading required.
 
 ---
