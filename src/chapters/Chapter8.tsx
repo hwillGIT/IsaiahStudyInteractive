@@ -227,8 +227,8 @@ const getHingeColor = (hingeType?: string): string => {
 
 const getHingeExplanation = (hingeType: string): string => {
   const explanations: Record<string, string> = {
-    'rejection': 'Yellow dot marks the hinge—rejecting God\'s gentle waters brings judgment',
-    'sanctuary': 'Yellow dot marks the hinge—God becomes sanctuary or stumbling stone'
+    'rejection': 'Yellow dot marks a hinge—rejecting God\'s gentle waters brings judgment',
+    'sanctuary': 'Yellow dot marks a hinge—God becomes either sanctuary or stumbling stone'
   };
   return explanations[hingeType] || '';
 };
@@ -363,7 +363,7 @@ function Chapter8() {
             <span className="text-xl">📖</span>
             <span className="font-semibold">View Chapter Structure</span>
           </span>
-          <span className="text-sm opacity-90">See the flow from sign to darkness</span>
+          <span className="text-sm opacity-90">See the flow from prophetic sign to darkness</span>
         </button>
 
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
