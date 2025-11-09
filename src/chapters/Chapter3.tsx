@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChapterNavigation } from '../components/ChapterNavigation';
+import { StructureButton } from '../components/StructureButton';
 import '../App.css';
 
 interface Verse {
@@ -352,16 +353,10 @@ function Chapter3() {
           </div>
         </div>
 
-        <button
+        <StructureButton 
           onClick={() => setShowStructureModal(true)}
-          className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg shadow-md p-4 mb-6 hover:shadow-lg transition-shadow flex items-center justify-between"
-        >
-          <span className="flex items-center gap-2">
-            <span className="text-xl">📖</span>
-            <span className="font-semibold">View Chapter Structure</span>
-          </span>
-          <span className="text-sm opacity-90">See the flow from leadership to judgment</span>
-        </button>
+          subtitle="See how pride leads to downfall"
+        />
 
         <div className="bg-white rounded-lg shadow-md p-6 mb-6">
           <h3 className="text-xl font-semibold text-gray-800 mb-3 text-center">Key Transformation Points</h3>

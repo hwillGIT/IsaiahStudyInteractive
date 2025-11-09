@@ -168,18 +168,10 @@ function Chapter12() {
         </div>
 
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <div className="flex justify-between items-start mb-6">
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">Thematic Groups</h2>
-              <p className="text-sm text-gray-600">Click any verse to explore deeper reflections and connections</p>
-            </div>
-            <StructureButton 
-              onClick={() => setShowStructureModal(true)}
-              subtitle="See the song of salvation"
-            />
-          </div>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-2">Thematic Groups</h2>
+          <p className="text-sm text-gray-600 mb-6">Click any verse to explore deeper reflections and connections</p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {Array.from(new Set(verses.map(v => v.group))).map(group => (
               <div key={group} className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
                 <div className={`w-4 h-4 ${getColorClass(group)} rounded mt-0.5 flex-shrink-0`}></div>
@@ -190,7 +182,14 @@ function Chapter12() {
               </div>
             ))}
           </div>
+        </div>
 
+        <StructureButton 
+          onClick={() => setShowStructureModal(true)}
+          subtitle="See the song of salvation"
+        />
+
+        <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
           {getUniqueHingeTypes().length > 0 && (
             <div className="mb-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
               <h3 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">

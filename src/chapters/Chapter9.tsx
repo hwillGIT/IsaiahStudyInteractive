@@ -17,6 +17,7 @@
 
 import { useState } from 'react';
 import { ChapterNavigation } from '../components/ChapterNavigation';
+import { StructureButton } from '../components/StructureButton';
 import '../App.css';
 
 interface Verse {
