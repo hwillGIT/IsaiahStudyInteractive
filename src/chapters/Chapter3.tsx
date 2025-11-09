@@ -239,7 +239,11 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  return 'Yellow dot marks the chiastic center—the root cause revealed: defying God\'s glorious presence.';
+  const explanations: Record<string, string> = {
+    'center': 'Chiastic Center (v8) — The diagnostic core: Jerusalem stumbled because their words and deeds defy God\'s glorious presence',
+    'transition-courtroom': 'Narrative Transition (v13) — From societal chaos to divine courtroom: God takes His place to contend and judge'
+  };
+  return explanations[hingeType] || 'Structural transition point';
 };
 
 const getUniqueHingeTypes = (): string[] => {

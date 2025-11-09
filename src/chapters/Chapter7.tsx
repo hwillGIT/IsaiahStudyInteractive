@@ -244,7 +244,11 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  return 'Yellow dot marks the chiastic center—the sign of Immanuel, God Himself with us.';
+  const explanations: Record<string, string> = {
+    'transition-faith': 'Narrative Transition (v4) — From fear to faith: God commands Ahaz to be quiet, not fear these "smoldering stumps"',
+    'hinge': 'Chiastic Center (v14) — The sign of Immanuel: a virgin conceives, God Himself dwelling with us in human form'
+  };
+  return explanations[hingeType] || 'Structural transition point';
 };
 
 const getUniqueHingeTypes = (): string[] => {

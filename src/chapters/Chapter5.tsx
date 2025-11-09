@@ -338,8 +338,12 @@ function Chapter5() {
     return hingeType ? colors[hingeType] || 'bg-yellow-400' : 'bg-yellow-400';
   };
 
-  const getHingeExplanation = (_hingeType: string): string => {
-    return 'Yellow dot marks the chiastic center—the verdict revealing Israel produced bloodshed instead of justice.';
+  const getHingeExplanation = (hingeType: string): string => {
+    const explanations: Record<string, string> = {
+      'center': 'Chiastic Center (v7) — The verdict exposed: God expected justice but found bloodshed, righteousness but heard cries',
+      'climax-woes': 'Thematic Climax (v24) — The fiery conclusion: rejection of God\'s law brings consuming judgment like stubble in flame'
+    };
+    return explanations[hingeType] || 'Structural transition point';
   };
 
   const getUniqueHingeTypes = (): string[] => {

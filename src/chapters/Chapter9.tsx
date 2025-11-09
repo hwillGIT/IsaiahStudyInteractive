@@ -105,7 +105,11 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  return 'Yellow dot marks the chiastic center—the child born to us with divine names and eternal government.';
+  const explanations: Record<string, string> = {
+    'turn-darkness-to-light': 'Dramatic Turn (v2) — The great reversal: those walking in darkness see a great light breaking forth',
+    'hinge': 'Chiastic Center (v6) — The child born to us: Wonderful Counselor, Mighty God, establishing endless peace on David\'s throne'
+  };
+  return explanations[hingeType] || 'Structural transition point';
 };
 
 const getUniqueHingeTypes = (): string[] => {

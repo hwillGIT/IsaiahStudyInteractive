@@ -101,7 +101,12 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  return 'Yellow dot marks the chiastic center—the coal touching Isaiah\'s lips, guilt removed, sin atoned.';
+  const explanations: Record<string, string> = {
+    'turn-conviction': 'Dramatic Turn (v5) — From seeing God\'s glory to recognizing personal uncleanness: "Woe to me! I am ruined!"',
+    'hinge': 'Chiastic Center (v7) — The coal touches Isaiah\'s lips: guilt removed, sin atoned, cleansing complete',
+    'turn-commission': 'Narrative Transition (v8) — From cleansing to commission: "Here am I. Send me!" marks readiness to serve'
+  };
+  return explanations[hingeType] || 'Structural transition point';
 };
 
 const getUniqueHingeTypes = (): string[] => {

@@ -260,8 +260,11 @@ function Chapter4() {
     return hingeType ? colors[hingeType] || "bg-yellow-400" : "bg-yellow-400";
   };
 
-  const getHingeExplanation = (_hingeType: string): string => {
-    return "Yellow dot marks the chiastic center—the Branch of the LORD bringing beauty after desolation.";
+  const getHingeExplanation = (hingeType: string): string => {
+    const explanations: Record<string, string> = {
+      'center': 'Chiastic Center (v2) — The Branch of the LORD bringing beauty and glory after judgment\'s purification'
+    };
+    return explanations[hingeType] || 'Structural transition point';
   };
 
   const getUniqueHingeTypes = (): string[] => {

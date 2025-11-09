@@ -226,7 +226,11 @@ const getHingeColor = (hingeType?: string): string => {
 };
 
 const getHingeExplanation = (hingeType: string): string => {
-  return 'Yellow dot marks the chiastic center—God becomes either sanctuary or stumbling stone.';
+  const explanations: Record<string, string> = {
+    'climax-rejection': 'Thematic Climax (v6) — The fatal choice: refusing gentle waters of Shiloah brings the Assyrian flood',
+    'hinge': 'Chiastic Center (v14) — The divine paradox: God becomes either sanctuary for those who trust or stumbling stone for those who fear'
+  };
+  return explanations[hingeType] || 'Structural transition point';
 };
 
 const getUniqueHingeTypes = (): string[] => {
