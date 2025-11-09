@@ -21,12 +21,12 @@ const verses: Verse[] = [
   { number: 2, text: "And the Spirit of the LORD shall rest upon him, the Spirit of wisdom and understanding, the Spirit of counsel and might, the Spirit of knowledge and the fear of the LORD.", group: 1 },
   { number: 3, text: "And his delight shall be in the fear of the LORD. He shall not judge by what his eyes see, or decide disputes by what his ears hear,", group: 1 },
   { number: 4, text: "but with righteousness he shall judge the poor, and decide with equity for the meek of the earth; and he shall strike the earth with the rod of his mouth, and with the breath of his lips he shall kill the wicked.", group: 1 },
-  { number: 5, text: "Righteousness shall be the belt of his waist, and faithfulness the belt of his loins.", group: 1, isHinge: true, hingeType: 'hinge' },
+  { number: 5, text: "Righteousness shall be the belt of his waist, and faithfulness the belt of his loins.", group: 1, isHinge: true, hingeType: 'foundation' },
   { number: 6, text: "The wolf shall dwell with the lamb, and the leopard shall lie down with the young goat, and the calf and the lion and the fattened calf together; and a little child shall lead them.", group: 2 },
   { number: 7, text: "The cow and the bear shall graze; their young shall lie down together; and the lion shall eat straw like the ox.", group: 2 },
   { number: 8, text: "The nursing child shall play over the hole of the cobra, and the weaned child shall put his hand on the adder's den.", group: 2 },
   { number: 9, text: "They shall not hurt or destroy in all my holy mountain; for the earth shall be full of the knowledge of the LORD as the waters cover the sea.", group: 2 },
-  { number: 10, text: "In that day the root of Jesse, who shall stand as a signal for the peoples—of him shall the nations inquire, and his resting place shall be glorious.", group: 3, isHinge: true, hingeType: 'turn-nations' },
+  { number: 10, text: "In that day the root of Jesse, who shall stand as a signal for the peoples—of him shall the nations inquire, and his resting place shall be glorious.", group: 3, isHinge: true, hingeType: 'hinge' },
   { number: 11, text: "In that day the Lord will extend his hand yet a second time to recover the remnant that remains of his people, from Assyria, from Egypt, from Pathros, from Cush, from Elam, from Shinar, from Hamath, and from the coastlands of the sea.", group: 4 },
   { number: 12, text: "He will raise a signal for the nations and will assemble the banished of Israel, and gather the dispersed of Judah from the four corners of the earth.", group: 4 },
   { number: 13, text: "The jealousy of Ephraim shall depart, and those who harass Judah shall be cut off; Ephraim shall not be jealous of Judah, and Judah shall not harass Ephraim.", group: 4 },
@@ -68,8 +68,8 @@ const getColorClass = (group: number): string => {
 const getHingeColor = (hingeType?: string): string => {
   const colors: Record<string, string> = {
     'turn-messiah': 'bg-purple-400',
-    'hinge': 'bg-yellow-400',
-    'turn-nations': 'bg-blue-400'
+    'foundation': 'bg-purple-300',
+    'hinge': 'bg-blue-400'
   };
   return hingeType ? colors[hingeType] || 'bg-yellow-400' : 'bg-yellow-400';
 };
@@ -77,8 +77,8 @@ const getHingeColor = (hingeType?: string): string => {
 const getHingeExplanation = (hingeType: string): string => {
   const explanations: Record<string, string> = {
     'turn-messiah': 'Narrative Transition (v1) — From judgment\'s stump to new life: a shoot from Jesse brings messianic hope',
-    'hinge': 'Chiastic Center (v5) — The foundation of His reign: righteousness and faithfulness define the Messiah\'s character',
-    'turn-nations': 'Dramatic Turn (v10) — From Israel\'s king to world\'s hope: the root of Jesse becomes a banner for all peoples'
+    'foundation': 'Transition Point (v5) — Righteousness and faithfulness: the foundation of the Messiah\'s character',
+    'hinge': 'Chiastic Center (v10) — From Israel\'s king to world\'s hope: the root of Jesse becomes a banner for all peoples'
   };
   return explanations[hingeType] || 'Structural transition point';
 };
@@ -99,7 +99,7 @@ const reflectionContent: Record<number, {seeing: string, life: string, teach: st
   5: {
     seeing: "This verse describes the Messiah's essential character: righteousness as His belt (holds everything together) and faithfulness as His foundation. These aren't just qualities He has—they define everything He does.",
     life: "What 'belts' hold your life together? The Messiah's core is righteousness and faithfulness. When these become your foundation, everything else in life aligns properly around them.",
-    teach: "The chiastic center reveals what matters most: not the Messiah's power or miracles, but His righteous and faithful character. Power without righteousness corrupts; miracles without faithfulness mislead. Character is central."
+    teach: "This verse reveals the foundation of messianic authority: not the Messiah's power or miracles, but His righteous and faithful character. Power without righteousness corrupts; miracles without faithfulness mislead. Character grounds everything that follows."
   },
   10: {
     seeing: "The 'root of Jesse' now stands as a 'signal for the peoples'—a dramatic expansion from Israel's king to the nations' hope. Paul quotes this verse in Romans 15:12 to explain the gospel going to Gentiles.",
@@ -363,29 +363,42 @@ function Chapter11() {
                 </div>
               </div>
 
-              <div className="p-6 space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">The Messianic King</h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    Chapter 11 is one of Scripture's most comprehensive messianic prophecies. From a cut-down stump (David's fallen dynasty) emerges a shoot—the Messiah empowered by God's Spirit. His reign brings both perfect justice and universal peace, expanding from Israel to become a banner for all nations. The chapter concludes with a second exodus, gathering God's people from earth's four corners. This prophecy bridges testaments, finding fulfillment in Jesus Christ.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">Thematic Progression</h3>
-                  <div className="space-y-3">
-                    {Array.from(new Set(verses.map(v => v.group))).map((group, index) => (
-                      <div key={group} className="flex items-start gap-3">
-                        <span className="text-gray-500 font-mono text-sm mt-1">{index + 1}.</span>
-                        <div className={`w-3 h-3 ${getColorClass(group)} rounded mt-1.5 flex-shrink-0`}></div>
-                        <div className="flex-1">
-                          <div className="font-semibold text-gray-800">{getGroupName(group)}</div>
-                          <div className="text-sm text-gray-600">{getGroupTransition(group)}</div>
-                        </div>
-                      </div>
-                    ))}
+              <div className="p-6">
+                <p className="text-sm text-gray-600 mb-4">This chapter displays a symmetrical pattern centered on the Messiah as banner to the nations. From Israel's king to the world's hope, the structure expands outward to embrace all peoples:</p>
+                <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
+                  <div className="ml-0 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-purple-600 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>A (1-5): <span className="font-sans font-semibold text-purple-700">The Messiah's Character</span> — Spirit-filled shoot from Jesse, righteous judge</span>
+                  </div>
+                  <div className="ml-4 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-green-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>B (6-9): <span className="font-sans font-semibold text-green-700">The Peaceable Kingdom</span> — Wolf with lamb, earth full of God's knowledge</span>
+                  </div>
+                  <div className="ml-8 bg-blue-100 px-2 py-1 rounded border-l-4 border-blue-600 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-blue-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span className="font-sans text-blue-800 font-bold">★ CENTER (10): Banner to the Nations</span>
+                  </div>
+                  <div className="ml-12 text-blue-700 font-sans italic pl-5">"Root of Jesse stands as signal—nations shall inquire of him"</div>
+                  <div className="mt-3 ml-4 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>B' (11-13): <span className="font-sans font-semibold text-orange-700">Unity & Gathering</span> — Second exodus, Ephraim/Judah reunited, scattered assembled</span>
+                  </div>
+                  <div className="ml-0 flex items-start gap-2">
+                    <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
+                    <span>A' (14-16): <span className="font-sans font-semibold text-orange-700">God's Power Manifested</span> — Enemies defeated, highway from Assyria like exodus from Egypt</span>
                   </div>
                 </div>
+                
+                <div className="mt-4 p-4 bg-blue-50 rounded border-l-4 border-blue-500">
+                  <h4 className="font-bold text-gray-800 mb-3">How the Parallels Connect:</h4>
+                  <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+                    <li><strong>A ↔ A':</strong> The Messiah empowered by God's Spirit (vv. 1-5) finds its parallel in God's outstretched hand wielding power (vv. 14-16). Both sections emphasize divine enabling—the Messiah equipped with seven-fold Spirit, and God's arm creating highways through impossible obstacles. The shoot becomes the strength.</li>
+                    <li><strong>B ↔ B':</strong> The peaceable kingdom where predators dwell with prey (vv. 6-9) mirrors the reunification of divided Israel (vv. 11-13). Just as the wolf lies with the lamb, Ephraim's jealousy of Judah departs. External peace in creation reflects internal peace among God's people—both require supernatural transformation.</li>
+                    <li><strong>Center (v. 10):</strong> The pivot declares that the "root of Jesse" becomes a "signal for the peoples." This is the theological hinge: what began as Israel's messianic king (A) expands to become the nations' banner (center). The vision shifts from Jewish Messiah to Gentile hope. Verse 10's "nations shall inquire of him" unlocks everything that follows—the global regathering (B') and worldwide victory (A').</li>
+                  </ul>
+                </div>
+                
+                <p className="text-sm text-gray-600 mt-4 italic">The symmetrical pattern reveals the gospel's movement: from one nation's king to all nations' hope. The Messiah who brings peace to creation (B) gathers scattered peoples (B'), empowered by God's Spirit (A) and manifested through God's mighty hand (A'). Verse 10 is the key—when the root of Jesse stands as a banner, the whole world is invited home.</p>
               </div>
             </div>
           </div>
