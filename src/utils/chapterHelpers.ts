@@ -2,18 +2,53 @@
 
 import { Verse } from '../hooks/useChapterData';
 
-// Standardized color palette for verse groups
-export const getColorClass = (group: number): string => {
+// Extended color palette including custom colors for special cases
+export const COLOR_PALETTE = {
+  red: 'bg-red-600',
+  redLight: 'bg-red-500',
+  orange: 'bg-orange-500',
+  yellow: 'bg-yellow-500',
+  yellowLight: 'bg-yellow-400',
+  gray: 'bg-gray-600',
+  slate: 'bg-slate-600',
+  blue: 'bg-blue-500',
+  blueDeep: 'bg-blue-600',
+  green: 'bg-green-500',
+  greenDeep: 'bg-green-600',
+  purple: 'bg-purple-500',
+  purpleDeep: 'bg-purple-600',
+  teal: 'bg-teal-500',
+  pink: 'bg-pink-500',
+  pinkDeep: 'bg-pink-600',
+  indigo: 'bg-indigo-500'
+};
+
+// Standardized color palette for verse groups (default mapping)
+// 
+// Usage:
+//   Basic: getColorClass(1) → 'bg-red-600'
+//   Custom: getColorClass(1, { 1: COLOR_PALETTE.yellow }) → 'bg-yellow-500'
+// 
+// Chapters can override default colors by passing a custom mapping object:
+//   const customColors = { 1: COLOR_PALETTE.yellowLight, 3: COLOR_PALETTE.yellow };
+//   getColorClass(verse.group, customColors)
+export const getColorClass = (group: number, customMapping?: Record<number, string>): string => {
+  // If custom mapping provided, check there first
+  if (customMapping && customMapping[group]) {
+    return customMapping[group];
+  }
+  
+  // Default color mapping
   const colors: Record<number, string> = {
-    1: 'bg-red-600',
-    2: 'bg-orange-500',
-    3: 'bg-gray-600',
-    4: 'bg-blue-500',
-    5: 'bg-green-600',
-    6: 'bg-purple-500',
-    7: 'bg-teal-500',
-    8: 'bg-pink-600',
-    9: 'bg-indigo-500'
+    1: COLOR_PALETTE.red,
+    2: COLOR_PALETTE.orange,
+    3: COLOR_PALETTE.gray,
+    4: COLOR_PALETTE.blue,
+    5: COLOR_PALETTE.greenDeep,
+    6: COLOR_PALETTE.purple,
+    7: COLOR_PALETTE.teal,
+    8: COLOR_PALETTE.pinkDeep,
+    9: COLOR_PALETTE.indigo
   };
   return colors[group] || 'bg-gray-400';
 };
