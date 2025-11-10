@@ -7,6 +7,14 @@ This specification defines the design pattern for implementing chiastic (symmetr
 
 ### Chapter-by-Chapter Analysis
 
+**Chapter 1** (1:1-31 - Lawsuit pattern)
+- A (1:2-9): Heaven and earth as witnesses → Desolation
+- B (1:10-17): Worthless sacrifices vs. true justice
+- C (1:18): "Come now, let us reason together" - Invitation to return
+- B' (1:19-23): Obedience vs. rebellion + corrupt city
+- A' (1:24-31): God will purge dross → Restoration or destruction
+- **Connection**: Witness/desolation (A-A'), false worship vs. justice (B-B'), center = God's gracious invitation
+
 **Chapter 2** (Part of 2:1-4:6 chiasm)
 - A (2:1-5): Mt. Zion's Future Glory
 - B (2:6-11): Idolatrous Pride → Terror of the LORD
@@ -60,12 +68,38 @@ This specification defines the design pattern for implementing chiastic (symmetr
 - A' (8:16-20): Record folded, sealed among disciples
 - **Connection**: Testimony preserved (A-A'), disasters (B-B'), center = God with us
 
-**Chapter 9** (8:21-9:6 combined unit - Darkness to light)
-- A (8:21-23a): Distress and darkness
-- B (8:23b): Glorified the land
-- A' (9:1-4): People in darkness see great light
-- B' (9:5-6): Upon his shoulder dominion rests
-- **Connection**: Darkness (A) transformed to light (A'), glory revealed (B-B')
+**Chapter 9** (9:1-21 - Light, Child, and Judgment)
+- A (9:1-7): Light breaks through darkness → Child born
+- B (9:8-12): God's hand stretched out in anger
+- C (9:13-17): People refuse to turn back
+- B' (9:18-21): Wickedness devours like fire
+- **Connection**: Hope of the Child (A) contrasts with rebellion's consequences (B-C-B')
+
+**Chapter 10** (10:1-34 - Assyria as God's rod)
+- A (10:1-4): Woe to unjust lawmakers
+- B (10:5-11): Assyria: God's rod of anger
+- C (10:12-15): God will punish Assyria's pride
+- D (10:16-19): The forest consumed
+- E (10:20-23): Remnant will return
+- D' (10:24-27): Do not fear Assyria
+- C' (10:28-32): Assyria's advance described
+- B' (10:33-34): The LORD will lop the boughs
+- A' (implied in remnant theme): Justice through judgment
+- **Connection**: Human injustice (A) judged through Assyria (B), God judges Assyria's pride (C center), remnant preserved (E), deliverance promised (B'-A')
+
+**Chapter 11** (11:1-16 - Messiah's reign and remnant's return)
+- A (11:1-5): Branch from Jesse's stump → Righteousness
+- B (11:6-9): Peaceable kingdom → Earth full of knowledge of LORD
+- C (11:10): Root of Jesse as banner to nations - CENTER
+- B' (11:11-14): LORD gathers His people → Nations joined
+- A' (11:15-16): Highway from Assyria → New exodus
+- **Connection**: Messianic reign (A-A'), universal peace/gathering (B-B'), center = Root of Jesse draws all peoples
+
+**Chapter 12** (12:1-6 - Song of thanksgiving)
+- A (12:1-2): "You were angry, but Your anger turned away"
+- B (12:3): "With joy you will draw water from wells of salvation" - CENTER
+- A' (12:4-6): "Give thanks, proclaim His name among the nations"
+- **Connection**: Personal thanksgiving (A) flows into corporate worship (A'), centered on salvation's joy (B)
 
 ## Design Pattern for Structure Modals
 
