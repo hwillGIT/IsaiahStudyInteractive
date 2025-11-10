@@ -10,28 +10,33 @@ import { ChapterNavigation } from '../components/ChapterNavigation';
 import { StructureButton } from '../components/StructureButton';
 import { Chapter3StructureModal } from '../components/Chapter3StructureModal';
 import { useChapterData } from '../hooks/useChapterData';
-import { getColorClass, getUniqueHingeTypes } from '../utils/chapterHelpers';
+import { getColorClass, getUniqueHingeTypes, COLOR_PALETTE } from '../utils/chapterHelpers';
 import '../App.css';
+
+// Custom color mapping: Group 10 → yellow (for CENTER)
+const CUSTOM_COLORS: Record<number, string> = {
+  10: COLOR_PALETTE.yellow
+};
 
 // Chapter-specific metadata (UI presentation layer)
 const getGroupName = (group: number): string => {
   const names: Record<number, string> = {
-    1: 'Leaders Removed',
-    2: 'Social Collapse',
-    3: 'Root Cause: Defying God',
-    4: 'God\'s Courtroom',
-    5: 'Pride and Vanity Judged'
+    2: 'Leaders Removed',
+    1: 'Root Cause: Defying God',
+    10: 'God\'s Courtroom',
+    6: 'Judgment on Pride',
+    8: 'Pride and Vanity Judged'
   };
   return names[group] || 'Unknown Group';
 };
 
 const getGroupTransition = (group: number): string => {
   const transitions: Record<number, string> = {
-    1: "God removes all competent leadership as judgment",
-    2: "Society descends into chaos and oppression",
-    3: "Revealed: open defiance of God's presence brought this",
-    4: "God formally prosecutes oppressive leaders",
-    5: "Daughters of Zion's pride turned to shame"
+    2: "God removes all competent leadership as judgment and society descends into chaos",
+    1: "Revealed: open defiance of God's presence brought this judgment",
+    10: "God formally prosecutes oppressive leaders in His courtroom",
+    6: "Judgment pronounced on the daughters of Zion",
+    8: "Daughters of Zion's pride turned to shame and destruction"
   };
   return transitions[group] || "Transition point in Isaiah's vision";
 };
@@ -105,7 +110,7 @@ function Chapter3() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {groups.map((group) => (
               <div key={group} className="flex items-start gap-3">
-                <div className={`w-4 h-4 ${getColorClass(group)} rounded mt-1 flex-shrink-0`}></div>
+                <div className={`w-4 h-4 ${getColorClass(group, CUSTOM_COLORS)} rounded mt-1 flex-shrink-0`}></div>
                 <div>
                   <div className="font-semibold text-gray-800 text-sm">
                     <span className="text-gray-400 mr-1">{group}.</span>
@@ -145,7 +150,7 @@ function Chapter3() {
             <div
               key={verse.number}
               onClick={() => setSelectedVerse(verse.number)}
-              className={`relative ${getColorClass(verse.group)} text-white p-4 rounded-lg cursor-pointer hover:opacity-80 transition-opacity group`}
+              className={`relative ${getColorClass(verse.group, CUSTOM_COLORS)} text-white p-4 rounded-lg cursor-pointer hover:opacity-80 transition-opacity group`}
             >
               <div className="text-sm font-bold">3:{verse.number}</div>
               {verse.isHinge && (
