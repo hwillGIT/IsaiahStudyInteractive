@@ -118,7 +118,7 @@ function Home() {
                       <strong>Key themes:</strong> God's holiness, the coming Messiah, warnings against idolatry, the faithful remnant, and "Immanuel—God with us."
                     </p>
                     <p className="text-gray-700 leading-relaxed">
-                      <strong>These chapters (1-9):</strong> Open with God's lawsuit against rebellious Israel, followed by visions of future glory, warnings about pride and empty religion, and promises of the coming Prince of Peace.
+                      <strong>These chapters (1-12):</strong> Form the "Book of Immanuel," opening with God's lawsuit against rebellious Israel, Isaiah's throne room commissioning, the sign of Immanuel ("God with us"), prophecies of the coming Prince of Peace and Messiah's reign, warnings about pride and idolatry, and the promise of a faithful remnant, concluding with songs of thanksgiving for God's salvation.
                     </p>
                   </div>
 
