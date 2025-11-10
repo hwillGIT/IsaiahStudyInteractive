@@ -68,7 +68,7 @@ channel = "stable-25_05"
 packages = ["unzip"]
 
 [deployment]
-deploymentTarget = "vm"
-publicDir = "dist"
+deploymentTarget = "gce"
 build = ["npm", "run", "build"]
 run = ["npm", "start"]
+ignorePorts = true
