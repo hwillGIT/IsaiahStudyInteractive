@@ -27,27 +27,27 @@
     {
       "number": 5,
       "text": "Why should you be beaten anymore? Why do you persist in rebellion? Your whole head is injured, your whole heart afflicted.",
-      "group": 1
+      "group": 2
     },
     {
       "number": 6,
       "text": "From the sole of your foot to the top of your head there is no soundness—only wounds and welts and open sores, not cleansed or bandaged or soothed with olive oil.",
-      "group": 1
+      "group": 2
     },
     {
       "number": 7,
       "text": "Your country is desolate, your cities burned with fire; your fields are being stripped by foreigners right before you, laid waste as when overthrown by strangers.",
-      "group": 1
+      "group": 2
     },
     {
       "number": 8,
       "text": "Daughter Zion is left like a shelter in a vineyard, like a hut in a cucumber field, like a city under siege.",
-      "group": 1
+      "group": 2
     },
     {
       "number": 9,
       "text": "Unless the LORD Almighty had left us some survivors, we would have become like Sodom, we would have been like Gomorrah.",
-      "group": 1,
+      "group": 2,
       "isHinge": true,
       "hingeType": "transition-preservation"
     },
