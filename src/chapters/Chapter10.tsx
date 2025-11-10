@@ -413,10 +413,9 @@ function Chapter10() {
                   </div>
                   <div className="ml-12 bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-600 flex items-start gap-2">
                     <div className="w-3 h-3 bg-yellow-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span className="font-sans text-yellow-800 font-bold">★ CENTER (12-15): Divine Timing</span>
+                    <span className="font-sans text-yellow-800 font-bold">★ CENTER (12-15): Divine Timing — "When the Lord has finished all his work...he will punish"</span>
                   </div>
-                  <div className="ml-16 text-yellow-700 font-sans italic pl-5">"When the Lord has finished all his work...he will punish" (v12)</div>
-                  <div className="mt-3 ml-8 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
+                  <div className="ml-8 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
                     <div className="w-3 h-3 bg-red-500 rounded mt-0.5 flex-shrink-0"></div>
                     <span>C' (16-19): <span className="font-sans font-semibold text-red-700">Fire Consumes the Mighty</span> — Assyria's forest burned, glory destroyed</span>
                   </div>

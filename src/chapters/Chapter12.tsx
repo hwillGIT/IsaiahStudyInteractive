@@ -381,10 +381,9 @@ function Chapter12() {
                   </div>
                   <div className="ml-4 bg-yellow-100 px-2 py-1 rounded border-l-4 border-yellow-600 flex items-start gap-2">
                     <div className="w-3 h-3 bg-yellow-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span className="font-sans text-yellow-800 font-bold">★ CENTER (3): Wells of Salvation</span>
+                    <span className="font-sans text-yellow-800 font-bold">★ CENTER (3): Wells of Salvation — "With joy you will draw water from the wells of salvation"</span>
                   </div>
-                  <div className="ml-8 text-yellow-700 font-sans italic pl-5">"With joy you will draw water from the wells of salvation"</div>
-                  <div className="mt-3 ml-0 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
+                  <div className="ml-0 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
                     <div className="w-3 h-3 bg-green-500 rounded mt-0.5 flex-shrink-0"></div>
                     <span>A' (4-6): <span className="font-sans font-semibold text-green-700">Corporate Proclamation</span> — "Make known His deeds among the peoples"</span>
                   </div>

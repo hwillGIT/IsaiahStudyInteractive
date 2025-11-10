@@ -376,10 +376,9 @@ function Chapter11() {
                   </div>
                   <div className="ml-8 bg-blue-100 px-2 py-1 rounded border-l-4 border-blue-600 flex items-start gap-2">
                     <div className="w-3 h-3 bg-blue-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span className="font-sans text-blue-800 font-bold">★ CENTER (10): Banner to the Nations</span>
+                    <span className="font-sans text-blue-800 font-bold">★ CENTER (10): Banner to the Nations — "Root of Jesse stands as signal—nations shall inquire of him"</span>
                   </div>
-                  <div className="ml-12 text-blue-700 font-sans italic pl-5">"Root of Jesse stands as signal—nations shall inquire of him"</div>
-                  <div className="mt-3 ml-4 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
+                  <div className="ml-4 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
                     <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
                     <span>B' (11-13): <span className="font-sans font-semibold text-orange-700">Unity & Gathering</span> — Second exodus, Ephraim/Judah reunited, scattered assembled</span>
                   </div>
