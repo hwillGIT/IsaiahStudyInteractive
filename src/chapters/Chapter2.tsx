@@ -16,22 +16,22 @@ import '../App.css';
 // Chapter-specific metadata (UI presentation layer)
 const getGroupName = (group: number): string => {
   const names: Record<number, string> = {
-    10: 'Mountain Exalted',
-    1: 'Pride & Idolatry',
+    1: 'Mountain Exalted',
     2: 'Invitation to Walk',
-    6: 'Day of Reckoning',
-    3: 'Terror & Flight'
+    3: 'Pride & Idolatry',
+    4: 'Day of the LORD Reckoning',
+    5: 'Terror & Flight from Idols'
   };
   return names[group] || 'Unknown Group';
 };
 
 const getGroupTransition = (group: number): string => {
   const transitions: Record<number, string> = {
-    10: "Future vision: God's mountain above all, nations streaming to learn His ways",
-    1: "Current corruption: Israel filled with idols, wealth, and foreign practices",
+    1: "Future vision: God's mountain above all, nations streaming to learn His ways",
     2: "Present call: Walk in God's light now in response to the promised future",
-    6: "Coming judgment: The Day of the LORD against all human pride and arrogance",
-    3: "Final outcome: People fleeing to caves, idols cast away as worthless"
+    3: "Current corruption: Israel filled with idols, wealth, and foreign practices",
+    4: "Coming judgment: The Day of the LORD against all human pride and arrogance",
+    5: "Final outcome: People fleeing to caves, idols cast away as worthless"
   };
   return transitions[group] || "Transition point in Isaiah's vision";
 };

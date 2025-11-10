@@ -16,22 +16,22 @@ import '../App.css';
 // Chapter-specific metadata (UI presentation layer)
 const getGroupName = (group: number): string => {
   const names: Record<number, string> = {
-    2: 'Leaders Removed',
-    1: 'Root Cause: Defying God',
-    10: 'God\'s Courtroom',
-    6: 'Judgment on Pride',
-    8: 'Pride and Vanity Judged'
+    1: 'Supports Removed',
+    2: 'Leadership Vacuum & Chaos',
+    3: 'Root Cause: Defying God',
+    4: 'God\'s Courtroom Against Oppressors',
+    5: 'Daughters of Zion Humbled'
   };
   return names[group] || 'Unknown Group';
 };
 
 const getGroupTransition = (group: number): string => {
   const transitions: Record<number, string> = {
-    2: "God removes all competent leadership as judgment and society descends into chaos",
-    1: "Revealed: open defiance of God's presence brought this judgment",
-    10: "God formally prosecutes oppressive leaders in His courtroom",
-    6: "Judgment pronounced on the daughters of Zion",
-    8: "Daughters of Zion's pride turned to shame and destruction"
+    1: "God removes all support and competent leadership from Jerusalem and Judah",
+    2: "Society descends into chaos with boys as princes and people oppressing one another",
+    3: "Revealed: open defiance of God's presence brought this judgment",
+    4: "God formally prosecutes oppressive leaders in His courtroom",
+    5: "Daughters of Zion's pride turned to shame and destruction"
   };
   return transitions[group] || "Transition point in Isaiah's vision";
 };
