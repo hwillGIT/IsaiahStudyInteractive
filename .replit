@@ -70,5 +70,5 @@ packages = ["unzip"]
 [deployment]
 deploymentTarget = "vm"
 build = ["npm", "run", "build"]
-run = ["npm", "start"]
+run = ["npm"]
 ignorePorts = true
