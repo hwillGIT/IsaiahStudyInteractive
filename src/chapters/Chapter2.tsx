@@ -44,9 +44,13 @@ const getHingeExplanation = (hingeType: string): string => {
   return explanations[hingeType] || 'Structural transition point';
 };
 
-// Chapter 2 uses standard yellow for all hinges
-const getHingeColorOverride = (_hingeType?: string): string => {
-  return 'bg-yellow-400';
+// Color-code transformation points by type
+const getHingeColorOverride = (hingeType?: string): string => {
+  const colors: Record<string, string> = {
+    'hinge': 'bg-blue-500',
+    'turn-judgment': 'bg-red-500'
+  };
+  return hingeType ? colors[hingeType] || 'bg-yellow-400' : 'bg-yellow-400';
 };
 
 function Chapter2() {
@@ -96,8 +100,8 @@ function Chapter2() {
         <ChapterNavigation currentChapter={2} />
         
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-2 text-white">Isaiah Chapter 2</h1>
-          <p className="text-xl text-white">God's Mountain, Idolatry, and the Day of the LORD</p>
+          <h1 className="text-4xl font-bold mb-2 text-gray-800">Isaiah Chapter 2</h1>
+          <p className="text-xl text-gray-600">God's Mountain, Idolatry, and the Day of the LORD</p>
         </div>
 
         <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-6 mb-6">
@@ -124,12 +128,9 @@ function Chapter2() {
         />
 
         {uniqueHingeTypes.length > 0 && (
-          <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg shadow-lg p-6 mb-6 border-l-4 border-yellow-400">
-            <h2 className="text-xl font-bold mb-4 text-gray-800 flex items-center gap-2">
-              <span>⭐</span>
-              <span>Transformation Points</span>
-            </h2>
-            <div className="space-y-3">
+          <div className="bg-white rounded-lg p-4 shadow-md mb-6">
+            <h3 className="text-lg font-semibold text-gray-800 mb-3">Key Transformation Points</h3>
+            <div className="space-y-2">
               {uniqueHingeTypes.map((hingeType) => (
                 <div key={hingeType} className="flex items-start gap-3">
                   <div className={`w-3 h-3 ${getHingeColorOverride(hingeType)} rounded-full mt-1 flex-shrink-0`}></div>
