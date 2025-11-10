@@ -20,15 +20,66 @@ This interactive web application facilitates the study of Isaiah Chapters 1-12, 
 
 ## Recent Changes
 
+**November 10, 2025 (Multi-App File Structure)**: **PROJECT REORGANIZATION FOR SCALABILITY** - Reorganized file structure to support hosting multiple apps on a single VM deployment. Created `docs/` folder for all documentation and examples. Restructured `src/` to separate app-specific code from shared utilities:
+- `src/isaiah/` - All Isaiah app code (chapters/, components/, hooks/, utils/, App.tsx, App.css, main.tsx)
+- `src/shared/` - Shared utilities and components usable across future apps (lib/)
+- `src/main.tsx` - Root entry point that bootstraps individual apps
+- Files use relative imports, so no path updates needed
+- Vite `@` alias still points to `./src` for convenience
+This structure enables adding future apps under `src/<app-name>/` with independent main.tsx files while sharing common utilities. All apps would be served from the same Express server via hostname-based routing or URL paths.
+
 **November 10, 2025 (Secure Content Deployment)**: **UNIFIED SERVER ARCHITECTURE** - Configured for VM deployment to protect content from easy extraction. Express server serves both the API (with chapter data on server) and the built React frontend. Content remains secure on the backend, accessible only through API endpoints. Port binding uses `process.env.PORT` for Replit's deployment. This architecture ensures study content is not exposed in browser-accessible JavaScript bundles.
 
-**November 10, 2025**: **MAJOR ARCHITECTURE REFACTORING** - Migrated all chapter content from hardcoded arrays to backend API. Created Express server (`server/index.ts`) serving JSON files (`server/data/chapter1.json` through `chapter12.json`) with in-memory caching. All 12 chapters now fetch data via `useChapterData` hook from `src/hooks/useChapterData.ts`. Created shared utilities (`src/utils/chapterHelpers.ts`) for color classes and hinge type extraction. Extracted all structure modals into separate components (`Chapter1StructureModal.tsx` through `Chapter12StructureModal.tsx`). This separation of content from presentation enables easier content updates, consistent data structure, and potential future features like search, bookmarking, or user notes. Both workflows (Backend API Server on port 3001, Frontend on port 5000) run concurrently with Vite proxy forwarding `/api` requests to backend.
+**November 10, 2025**: **MAJOR ARCHITECTURE REFACTORING** - Migrated all chapter content from hardcoded arrays to backend API. Created Express server (`server/index.ts`) serving JSON files (`server/data/chapter1.json` through `chapter12.json`) with in-memory caching. All 12 chapters now fetch data via `useChapterData` hook from `src/isaiah/hooks/useChapterData.ts`. Created shared utilities (`src/isaiah/utils/chapterHelpers.ts`) for color classes and hinge type extraction. Extracted all structure modals into separate components (`Chapter1StructureModal.tsx` through `Chapter12StructureModal.tsx`). This separation of content from presentation enables easier content updates, consistent data structure, and potential future features like search, bookmarking, or user notes. Both workflows (Backend API Server on port 3001, Frontend on port 5000) run concurrently with Vite proxy forwarding `/api` requests to backend.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
 
 ## System Architecture
+
+### Project File Structure (Multi-App)
+
+**Organization for Scalability**: The project is structured to host multiple apps on a single VM deployment ($20/month) with the following organization:
+
+```
+project-root/
+├── docs/                           # All documentation and examples
+│   ├── examples/                   # Example code and demos
+│   └── *.md                        # Architecture docs and guides
+├── server/                         # Backend Express server
+│   ├── data/                       # JSON data files per app
+│   │   └── isaiah/                 # Isaiah app data
+│   └── index.ts                    # Unified server for all apps
+├── src/                            # Frontend source code
+│   ├── main.tsx                    # Root entry point (bootstraps apps)
+│   ├── index.css                   # Global styles
+│   ├── isaiah/                     # Isaiah app (example)
+│   │   ├── chapters/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── utils/
+│   │   ├── App.tsx
+│   │   ├── App.css
+│   │   └── main.tsx                # Isaiah app component export
+│   └── shared/                     # Shared utilities across apps
+│       └── lib/                    # Utility functions (cn, etc.)
+└── dist/                           # Production build output
+```
+
+**Adding Future Apps**:
+1. Create new folder under `src/<app-name>/` with its own App.tsx, main.tsx, components/, etc.
+2. Update `src/main.tsx` to import and conditionally render the new app
+3. Add app data to `server/data/<app-name>/`
+4. Update Express server to handle new app routes (hostname-based or URL path-based)
+5. Both apps republish together on the same VM (no downtime during republish)
+6. Use custom domain with subdomains for different app URLs (e.g., `isaiah.yourdomain.com`, `other.yourdomain.com`)
+
+**Benefits of Multi-App Structure**:
+- Single $20/month VM hosts multiple apps (vs. $20 per app on separate VMs)
+- Shared utilities and components in `src/shared/` reduce code duplication
+- All apps update together during republish (no downtime)
+- Clean separation between app-specific code and shared infrastructure
 
 ### Frontend Architecture
 
