@@ -1,40 +1,19 @@
+/**
+ * Chapter 11: The Messiah's Reign and the Peaceable Kingdom
+ * 
+ * This component fetches chapter data from the backend API instead of using hardcoded arrays.
+ * The backend serves verses, reflections, and scripture connections from JSON files.
+ */
+
 import { useState } from 'react';
 import { ChapterNavigation } from '../components/ChapterNavigation';
 import { StructureButton } from '../components/StructureButton';
+import { Chapter11StructureModal } from '../components/Chapter11StructureModal';
+import { useChapterData } from '../hooks/useChapterData';
+import { getColorClass, getUniqueHingeTypes } from '../utils/chapterHelpers';
+import '../App.css';
 
-interface Verse {
-  number: number;
-  text: string;
-  group: number;
-  isHinge?: boolean;
-  hingeType?: string;
-}
-
-interface Connection {
-  from?: string[];
-  to?: string[];
-  context?: string;
-}
-
-const verses: Verse[] = [
-  { number: 1, text: "There shall come forth a shoot from the stump of Jesse, and a branch from his roots shall bear fruit.", group: 1, isHinge: true, hingeType: 'turn-messiah' },
-  { number: 2, text: "And the Spirit of the LORD shall rest upon him, the Spirit of wisdom and understanding, the Spirit of counsel and might, the Spirit of knowledge and the fear of the LORD.", group: 1 },
-  { number: 3, text: "And his delight shall be in the fear of the LORD. He shall not judge by what his eyes see, or decide disputes by what his ears hear,", group: 1 },
-  { number: 4, text: "but with righteousness he shall judge the poor, and decide with equity for the meek of the earth; and he shall strike the earth with the rod of his mouth, and with the breath of his lips he shall kill the wicked.", group: 1 },
-  { number: 5, text: "Righteousness shall be the belt of his waist, and faithfulness the belt of his loins.", group: 1, isHinge: true, hingeType: 'foundation' },
-  { number: 6, text: "The wolf shall dwell with the lamb, and the leopard shall lie down with the young goat, and the calf and the lion and the fattened calf together; and a little child shall lead them.", group: 2 },
-  { number: 7, text: "The cow and the bear shall graze; their young shall lie down together; and the lion shall eat straw like the ox.", group: 2 },
-  { number: 8, text: "The nursing child shall play over the hole of the cobra, and the weaned child shall put his hand on the adder's den.", group: 2 },
-  { number: 9, text: "They shall not hurt or destroy in all my holy mountain; for the earth shall be full of the knowledge of the LORD as the waters cover the sea.", group: 2 },
-  { number: 10, text: "In that day the root of Jesse, who shall stand as a signal for the peoples—of him shall the nations inquire, and his resting place shall be glorious.", group: 3, isHinge: true, hingeType: 'hinge' },
-  { number: 11, text: "In that day the Lord will extend his hand yet a second time to recover the remnant that remains of his people, from Assyria, from Egypt, from Pathros, from Cush, from Elam, from Shinar, from Hamath, and from the coastlands of the sea.", group: 4 },
-  { number: 12, text: "He will raise a signal for the nations and will assemble the banished of Israel, and gather the dispersed of Judah from the four corners of the earth.", group: 4 },
-  { number: 13, text: "The jealousy of Ephraim shall depart, and those who harass Judah shall be cut off; Ephraim shall not be jealous of Judah, and Judah shall not harass Ephraim.", group: 4 },
-  { number: 14, text: "But they shall swoop down on the shoulder of the Philistines in the west, and together they shall plunder the people of the east. They shall put out their hand against Edom and Moab, and the Ammonites shall obey them.", group: 4 },
-  { number: 15, text: "And the LORD will utterly destroy the tongue of the Sea of Egypt, and will wave his hand over the River with his scorching breath, and strike it into seven channels, and he will lead people across in sandals.", group: 4 },
-  { number: 16, text: "And there will be a highway from Assyria for the remnant that remains of his people, as there was for Israel when they came up from the land of Egypt.", group: 4 },
-];
-
+// Chapter-specific metadata (UI presentation layer)
 const getGroupName = (group: number): string => {
   const names: Record<number, string> = {
     1: 'The Messiah\'s Character',
@@ -55,25 +34,6 @@ const getGroupTransition = (group: number): string => {
   return transitions[group] || 'Transition in messianic vision';
 };
 
-const getColorClass = (group: number): string => {
-  const colors: Record<number, string> = {
-    1: 'bg-purple-600',
-    2: 'bg-green-500',
-    3: 'bg-blue-500',
-    4: 'bg-orange-500'
-  };
-  return colors[group] || 'bg-gray-400';
-};
-
-const getHingeColor = (hingeType?: string): string => {
-  const colors: Record<string, string> = {
-    'turn-messiah': 'bg-purple-400',
-    'foundation': 'bg-purple-300',
-    'hinge': 'bg-blue-400'
-  };
-  return hingeType ? colors[hingeType] || 'bg-yellow-400' : 'bg-yellow-400';
-};
-
 const getHingeExplanation = (hingeType: string): string => {
   const explanations: Record<string, string> = {
     'turn-messiah': 'Narrative Transition (v1) — From judgment\'s stump to new life: a shoot from Jesse brings messianic hope',
@@ -83,92 +43,74 @@ const getHingeExplanation = (hingeType: string): string => {
   return explanations[hingeType] || 'Structural transition point';
 };
 
-const getUniqueHingeTypes = (): string[] => {
-  const types = verses
-    .filter(v => v.isHinge && v.hingeType)
-    .map(v => v.hingeType as string);
-  return Array.from(new Set(types));
-};
-
-const reflectionContent: Record<number, {seeing: string, life: string, teach: string}> = {
-  1: {
-    seeing: "The 'stump of Jesse' is a cut-down tree—the Davidic dynasty appeared dead after Babylon's conquest. Yet God promises a new shoot will emerge. Naming Jesse (David's father) emphasizes humble beginnings over royal grandeur.",
-    life: "When everything seems cut off—career, relationships, hopes—God can bring new life from dead stumps. The Messiah came from a dynasty that looked finished. Your dead ends might be God's new beginnings.",
-    teach: "The Messiah's lineage was prophesied to appear dead before His arrival. This 'stump theology' shows God's pattern: resurrection life springs from apparent death, fulfilling promises when circumstances suggest impossibility."
-  },
-  5: {
-    seeing: "This verse describes the Messiah's essential character: righteousness as His belt (holds everything together) and faithfulness as His foundation. These aren't just qualities He has—they define everything He does.",
-    life: "What 'belts' hold your life together? The Messiah's core is righteousness and faithfulness. When these become your foundation, everything else in life aligns properly around them.",
-    teach: "This verse reveals the foundation of messianic authority: not the Messiah's power or miracles, but His righteous and faithful character. Power without righteousness corrupts; miracles without faithfulness mislead. Character grounds everything that follows."
-  },
-  10: {
-    seeing: "The 'root of Jesse' now stands as a 'signal for the peoples'—a dramatic expansion from Israel's king to the nations' hope. Paul quotes this verse in Romans 15:12 to explain the gospel going to Gentiles.",
-    life: "Jesus didn't come just for one group but as hope for all. This verse invites you to see beyond tribal boundaries—God's salvation plan includes every nation, tongue, and people seeking the root of Jesse.",
-    teach: "The Messiah's mission has two phases: first to Israel as promised, then as a banner to all nations. This verse bridges the testaments, showing God's covenant faithfulness to Israel fulfilled in cosmic salvation."
-  }
-};
-
-const scriptureConnections: Record<number, Connection> = {
-  1: {
-    from: ["2 Samuel 7:12-16 - Your house and kingdom shall endure forever", "Jeremiah 23:5 - I will raise up for David a righteous Branch"],
-    to: ["Matthew 1:1 - The book of the genealogy of Jesus Christ, the son of David", "Revelation 5:5 - The Lion of Judah, the Root of David, has conquered"],
-    context: "The shoot from Jesse's stump is Jesus. Matthew and Revelation both identify Christ as this promised Branch from David's line, emerging after the dynasty appeared cut off."
-  },
-  5: {
-    from: ["Psalm 89:14 - Righteousness and justice are the foundation of Your throne", "Jeremiah 23:6 - This is His name: The LORD is our righteousness"],
-    to: ["Ephesians 6:14 - Stand therefore, having fastened on the belt of truth", "Philippians 2:8 - He humbled himself by becoming obedient to death"],
-    context: "Righteousness and faithfulness aren't just traits but the Messiah's very essence. Jesus embodied this perfectly, and Paul calls believers to 'put on' these same qualities as spiritual armor."
-  },
-  10: {
-    from: ["Numbers 21:8-9 - Set up a banner, and everyone who sees it shall live", "Isaiah 49:6 - I will make you as a light for the nations"],
-    to: ["Romans 15:12 - The root of Jesse will come, to rule the Gentiles", "John 12:32 - If I am lifted up, I will draw all people to myself"],
-    context: "Isaiah's prophecy that the root of Jesse would become a banner for the nations is fulfilled as Jesus draws all peoples to Himself. Paul quotes this verse to explain Gentile inclusion in God's plan."
-  }
+// Chapter 11 uses standard yellow for all hinges
+const getHingeColorOverride = (_hingeType?: string): string => {
+  return 'bg-yellow-400';
 };
 
 function Chapter11() {
-  const [selectedVerse, setSelectedVerse] = useState<Verse | null>(null);
+  const [selectedVerse, setSelectedVerse] = useState<number | null>(null);
   const [showStructureModal, setShowStructureModal] = useState(false);
-  const [activeTab, setActiveTab] = useState<'reflections' | 'connections'>('reflections');
-  const [activeReflectionMode, setActiveReflectionMode] = useState<'seeing' | 'life' | 'teach'>('seeing');
+  const [reflectionMode, setReflectionMode] = useState<'seeing' | 'life' | 'teach'>('seeing');
+  const [modalView, setModalView] = useState<'reflection' | 'connections'>('reflection');
 
-  const getCurrentReflection = (): string => {
-    if (!selectedVerse) return '';
-    const content = reflectionContent[selectedVerse.number];
-    if (!content) return 'Reflection coming soon for this verse.';
-    return content[activeReflectionMode];
-  };
+  // Fetch data from backend
+  const { data, loading, error } = useChapterData(11);
 
-  const getConnection = (verseNum: number): Connection | undefined => {
-    return scriptureConnections[verseNum];
-  };
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-xl text-gray-600">Loading Chapter 11...</div>
+      </div>
+    );
+  }
 
-  const hasConnections = (verseNum: number): boolean => {
-    const connection = scriptureConnections[verseNum];
-    return !!(connection?.from?.length || connection?.to?.length);
-  };
+  if (error) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-xl text-red-600">Error loading chapter: {error}</div>
+      </div>
+    );
+  }
+
+  if (!data || !data.verses || data.verses.length === 0) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-xl text-gray-600">No verses found</div>
+      </div>
+    );
+  }
+
+  const { verses, reflections, scriptureConnections } = data;
+  const uniqueHingeTypes = getUniqueHingeTypes(verses);
+  const groups = Array.from(new Set(verses.map(v => v.group))).sort((a, b) => a - b);
+
+  const getConnection = (verseNum: number) => scriptureConnections?.[verseNum];
+  const getReflection = (verseNum: number) => reflections?.[verseNum];
+  const getSelectedVerse = () => verses.find(v => v.number === selectedVerse);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 p-6">
+    <div className="min-h-screen p-8">
       <div className="max-w-6xl mx-auto">
         <ChapterNavigation currentChapter={11} />
-
+        
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-800 mb-2">Isaiah Chapter 11</h1>
-          <p className="text-gray-600 text-lg">The Messiah's Reign and the Peaceable Kingdom</p>
+          <h1 className="text-4xl font-bold mb-2 text-white">Isaiah Chapter 11</h1>
+          <p className="text-xl text-gray-200">The Messiah's Reign and the Peaceable Kingdom</p>
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-2">Thematic Groups</h2>
-          <p className="text-sm text-gray-600 mb-6">Click any verse to explore deeper reflections and connections</p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {Array.from(new Set(verses.map(v => v.group))).map(group => (
-              <div key={group} className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
-                <div className={`w-4 h-4 ${getColorClass(group)} rounded mt-0.5 flex-shrink-0`}></div>
+        <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-6 mb-6">
+          <h2 className="text-xl font-bold mb-4 text-gray-800">Chapter Themes</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {groups.map((group) => (
+              <div key={group} className="flex items-start gap-3">
+                <div className={`w-4 h-4 ${getColorClass(group)} rounded mt-1 flex-shrink-0`}></div>
                 <div>
-                  <div className="font-semibold text-gray-800 text-sm">{getGroupName(group)}</div>
-                  <div className="text-xs text-gray-600">{getGroupTransition(group)}</div>
+                  <div className="font-semibold text-gray-800 text-sm">
+                    <span className="text-gray-400 mr-1">{group}.</span>
+                    {getGroupName(group)}
+                  </div>
+                  <p className="text-xs text-gray-600 mt-1">{getGroupTransition(group)}</p>
                 </div>
               </div>
             ))}
@@ -177,90 +119,87 @@ function Chapter11() {
 
         <StructureButton 
           onClick={() => setShowStructureModal(true)}
-          subtitle="See the messianic kingdom unfold"
+          subtitle={data.structureSubtitle}
         />
 
-        <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          {getUniqueHingeTypes().length > 0 && (
-            <div className="mb-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded">
-              <h3 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">
-                <span className="text-yellow-600">★</span> Key Structural Points
-              </h3>
-              <div className="space-y-1">
-                {getUniqueHingeTypes().map(type => (
-                  <div key={type} className="flex items-start gap-2 text-sm text-gray-700">
-                    <div className={`w-3 h-3 ${getHingeColor(type)} rounded mt-0.5 flex-shrink-0`}></div>
-                    <span>{getHingeExplanation(type)}</span>
+        {uniqueHingeTypes.length > 0 && (
+          <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg shadow-lg p-6 mb-6 border-l-4 border-yellow-400">
+            <h2 className="text-xl font-bold mb-4 text-gray-800 flex items-center gap-2">
+              <span>⭐</span>
+              <span>Transformation Points</span>
+            </h2>
+            <div className="space-y-3">
+              {uniqueHingeTypes.map((hingeType) => (
+                <div key={hingeType} className="flex items-start gap-3">
+                  <div className={`w-3 h-3 ${getHingeColorOverride(hingeType)} rounded-full mt-1 flex-shrink-0`}></div>
+                  <p className="text-sm text-gray-700">{getHingeExplanation(hingeType)}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-8">
+          {verses.map((verse) => (
+            <div
+              key={verse.number}
+              onClick={() => setSelectedVerse(verse.number)}
+              className={`relative ${getColorClass(verse.group)} text-white p-4 rounded-lg cursor-pointer hover:opacity-80 transition-opacity group`}
+            >
+              <div className="text-sm font-bold">11:{verse.number}</div>
+              {verse.isHinge && (
+                <div className={`absolute -top-1 -right-1 w-3 h-3 ${getHingeColorOverride(verse.hingeType)} rounded-full animate-pulse`}></div>
+              )}
+              
+              <div className="hidden group-hover:block absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-gray-900 text-white text-xs rounded py-2 px-3 z-10">
+                <div className="font-bold mb-1">Verse 11:{verse.number}</div>
+                <div className="line-clamp-3">{verse.text}</div>
+                {verse.isHinge && (
+                  <div className="text-xs text-yellow-300 mt-1 flex items-center gap-1">
+                    <div className={`w-2 h-2 ${getHingeColorOverride(verse.hingeType)} rounded-full`}></div>
+                    Key Turning Point
                   </div>
-                ))}
+                )}
               </div>
             </div>
-          )}
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
-            {verses.map((verse) => (
-              <div key={verse.number} className="relative">
-                <button
-                  onClick={() => setSelectedVerse(verse)}
-                  className={`w-full p-3 rounded-lg border-2 transition-all ${getColorClass(verse.group)} border-opacity-50 hover:shadow-md hover:scale-105 text-white font-semibold relative`}
-                  title={verse.text.substring(0, 100) + '...'}
-                >
-                  {verse.number}
-                  {verse.isHinge && (
-                    <div className={`absolute -top-1 -right-1 w-3 h-3 ${getHingeColor(verse.hingeType)} rounded-full animate-pulse`}></div>
-                  )}
-                </button>
-              </div>
-            ))}
-          </div>
+          ))}
         </div>
 
-        {/* Verse Detail Modal */}
-        {selectedVerse && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-            <div className="bg-white rounded-lg shadow-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
-              <div className="sticky top-0 bg-white border-b border-gray-200 p-6 z-10">
-                <div className="flex justify-between items-start">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className={`${getColorClass(selectedVerse.group)} text-white px-3 py-1 rounded-full font-semibold`}>
-                        Verse {selectedVerse.number}
-                      </span>
-                      {selectedVerse.isHinge && (
-                        <div className="flex items-center gap-1">
-                          <div className={`w-2 h-2 ${getHingeColor(selectedVerse.hingeType)} rounded-full`}></div>
-                          <span className="text-xs text-gray-600">Key Point</span>
-                        </div>
-                      )}
-                    </div>
-                    <p className="text-gray-700 italic text-lg leading-relaxed">{selectedVerse.text}</p>
-                  </div>
+        {selectedVerse && getSelectedVerse() && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+            <div className="bg-white rounded-lg max-w-2xl w-full my-8">
+              <div className="p-6 border-b border-gray-200 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-t-lg">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-2xl font-bold">Isaiah 11:{selectedVerse}</h3>
                   <button
                     onClick={() => setSelectedVerse(null)}
-                    className="text-gray-400 hover:text-gray-600 text-2xl ml-4"
+                    className="text-white hover:text-gray-200 text-2xl font-bold"
                   >
                     ×
                   </button>
                 </div>
+                <p className="text-lg leading-relaxed">{getSelectedVerse()?.text}</p>
+              </div>
 
-                <div className="flex gap-2 mt-4 border-t pt-4">
+              <div className="border-b border-gray-200">
+                <div className="flex">
                   <button
-                    onClick={() => setActiveTab('reflections')}
-                    className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-                      activeTab === 'reflections'
-                        ? 'bg-purple-600 text-white'
-                        : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    onClick={() => setModalView('reflection')}
+                    className={`flex-1 px-6 py-3 font-semibold transition-colors ${
+                      modalView === 'reflection'
+                        ? 'bg-white text-purple-600 border-b-2 border-purple-600'
+                        : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
                     }`}
                   >
                     Reflections
                   </button>
-                  {hasConnections(selectedVerse.number) && (
+                  {getConnection(selectedVerse) && (
                     <button
-                      onClick={() => setActiveTab('connections')}
-                      className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-                        activeTab === 'connections'
-                          ? 'bg-purple-600 text-white'
-                          : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                      onClick={() => setModalView('connections')}
+                      className={`flex-1 px-6 py-3 font-semibold transition-colors ${
+                        modalView === 'connections'
+                          ? 'bg-white text-purple-600 border-b-2 border-purple-600'
+                          : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
                       }`}
                     >
                       Scripture Connections
@@ -270,73 +209,81 @@ function Chapter11() {
               </div>
 
               <div className="p-6">
-                {activeTab === 'reflections' && (
+                {modalView === 'reflection' && (
                   <div>
-                    <div className="flex gap-2 mb-4">
+                    <div className="flex gap-2 mb-4 flex-wrap">
                       <button
-                        onClick={() => setActiveReflectionMode('seeing')}
-                        className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
-                          activeReflectionMode === 'seeing'
-                            ? 'bg-blue-100 text-blue-700'
-                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                        onClick={() => setReflectionMode('seeing')}
+                        className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
+                          reflectionMode === 'seeing'
+                            ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white'
+                            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                         }`}
                       >
                         Seeing Connections
                       </button>
                       <button
-                        onClick={() => setActiveReflectionMode('life')}
-                        className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
-                          activeReflectionMode === 'life'
-                            ? 'bg-green-100 text-green-700'
-                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                        onClick={() => setReflectionMode('life')}
+                        className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
+                          reflectionMode === 'life'
+                            ? 'bg-gradient-to-r from-green-600 to-green-700 text-white'
+                            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                         }`}
                       >
                         How This Helps My Life
                       </button>
                       <button
-                        onClick={() => setActiveReflectionMode('teach')}
-                        className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
-                          activeReflectionMode === 'teach'
-                            ? 'bg-purple-100 text-purple-700'
-                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                        onClick={() => setReflectionMode('teach')}
+                        className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
+                          reflectionMode === 'teach'
+                            ? 'bg-gradient-to-r from-purple-600 to-purple-700 text-white'
+                            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                         }`}
                       >
                         What This Teaches Us
                       </button>
                     </div>
-                    <div className="prose max-w-none">
-                      <p className="text-gray-700 leading-relaxed">{getCurrentReflection()}</p>
-                    </div>
+                    <p className="text-gray-700 leading-relaxed">
+                      {getReflection(selectedVerse)?.[reflectionMode] || 'No reflection available for this verse.'}
+                    </p>
                   </div>
                 )}
 
-                {activeTab === 'connections' && (
+                {modalView === 'connections' && getConnection(selectedVerse) && (
                   <div className="space-y-4">
-                    {getConnection(selectedVerse.number)?.from && (
+                    {getConnection(selectedVerse)?.from && getConnection(selectedVerse)!.from!.length > 0 && (
                       <div>
-                        <h3 className="font-semibold text-gray-800 mb-2">Building From:</h3>
-                        <ul className="space-y-1">
-                          {getConnection(selectedVerse.number)!.from!.map((ref, i) => (
-                            <li key={i} className="text-sm text-gray-700">→ {ref}</li>
+                        <h4 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+                          <span className="text-blue-600">←</span>
+                          What This Verse Builds Upon
+                        </h4>
+                        <ul className="list-disc list-inside space-y-1 text-gray-700">
+                          {getConnection(selectedVerse)?.from?.map((ref, idx) => (
+                            <li key={idx}>{ref}</li>
                           ))}
                         </ul>
                       </div>
                     )}
-                    {getConnection(selectedVerse.number)?.to && (
+                    
+                    {getConnection(selectedVerse)?.to && getConnection(selectedVerse)!.to!.length > 0 && (
                       <div>
-                        <h3 className="font-semibold text-gray-800 mb-2">Pointing To:</h3>
-                        <ul className="space-y-1">
-                          {getConnection(selectedVerse.number)!.to!.map((ref, i) => (
-                            <li key={i} className="text-sm text-gray-700">→ {ref}</li>
+                        <h4 className="font-semibold text-gray-800 mb-2 flex items-center gap-2">
+                          <span className="text-green-600">→</span>
+                          What This Verse Points Toward
+                        </h4>
+                        <ul className="list-disc list-inside space-y-1 text-gray-700">
+                          {getConnection(selectedVerse)?.to?.map((ref, idx) => (
+                            <li key={idx}>{ref}</li>
                           ))}
                         </ul>
                       </div>
                     )}
-                    {getConnection(selectedVerse.number)?.context && (
-                      <div className="bg-purple-50 p-4 rounded-lg mt-4">
-                        <h3 className="font-semibold text-gray-800 mb-2">Context:</h3>
-                        <p className="text-sm text-gray-700 leading-relaxed">
-                          {getConnection(selectedVerse.number)!.context}
+                    
+                    {getConnection(selectedVerse)?.context && (
+                      <div>
+                        <h4 className="font-semibold text-gray-800 mb-2">How It Fits God's Story</h4>
+                        <p className="text-gray-700 leading-relaxed">
+                          {getConnection(selectedVerse)?.context}
                         </p>
                       </div>
                     )}
@@ -347,61 +294,10 @@ function Chapter11() {
           </div>
         )}
 
-        {/* Structure Modal */}
-        {showStructureModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-            <div className="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-              <div className="sticky top-0 bg-white border-b border-gray-200 p-6 z-10">
-                <div className="flex justify-between items-start">
-                  <h2 className="text-2xl font-bold text-gray-800">Chapter 11 Structure</h2>
-                  <button
-                    onClick={() => setShowStructureModal(false)}
-                    className="text-gray-400 hover:text-gray-600 text-2xl"
-                  >
-                    ×
-                  </button>
-                </div>
-              </div>
-
-              <div className="p-6">
-                <p className="text-sm text-gray-600 mb-4">This chapter displays a symmetrical pattern centered on the Messiah as banner to the nations. From Israel's king to the world's hope, the structure expands outward to embrace all peoples:</p>
-                <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
-                  <div className="ml-0 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-purple-600 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>A (1-5): <span className="font-sans font-semibold text-purple-700">The Messiah's Character</span> — Spirit-filled shoot from Jesse, righteous judge</span>
-                  </div>
-                  <div className="ml-4 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-green-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>B (6-9): <span className="font-sans font-semibold text-green-700">The Peaceable Kingdom</span> — Wolf with lamb, earth full of God's knowledge</span>
-                  </div>
-                  <div className="ml-8 bg-blue-100 px-2 py-1 rounded border-l-4 border-blue-600 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-blue-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span className="font-sans text-blue-800 font-bold">★ CENTER (10): Banner to the Nations — "Root of Jesse stands as signal—nations shall inquire of him"</span>
-                  </div>
-                  <div className="ml-4 border-t-2 border-gray-300 pt-2 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>B' (11-13): <span className="font-sans font-semibold text-orange-700">Unity & Gathering</span> — Second exodus, Ephraim/Judah reunited, scattered assembled</span>
-                  </div>
-                  <div className="ml-0 flex items-start gap-2">
-                    <div className="w-3 h-3 bg-orange-500 rounded mt-0.5 flex-shrink-0"></div>
-                    <span>A' (14-16): <span className="font-sans font-semibold text-orange-700">God's Power Manifested</span> — Enemies defeated, highway from Assyria like exodus from Egypt</span>
-                  </div>
-                </div>
-                
-                <div className="mt-4 p-4 bg-blue-50 rounded border-l-4 border-blue-500">
-                  <h4 className="font-bold text-gray-800 mb-3">How the Parallels Connect:</h4>
-                  <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
-                    <li><strong>A ↔ A':</strong> The Messiah empowered by God's Spirit (vv. 1-5) finds its parallel in God's outstretched hand wielding power (vv. 14-16). Both sections emphasize divine enabling—the Messiah equipped with seven-fold Spirit, and God's arm creating highways through impossible obstacles. The shoot becomes the strength.</li>
-                    <li><strong>B ↔ B':</strong> The peaceable kingdom where predators dwell with prey (vv. 6-9) mirrors the reunification of divided Israel (vv. 11-13). Just as the wolf lies with the lamb, Ephraim's jealousy of Judah departs. External peace in creation reflects internal peace among God's people—both require supernatural transformation.</li>
-                    <li><strong>Center (v. 10):</strong> The pivot declares that the "root of Jesse" becomes a "signal for the peoples." This is the theological hinge: what began as Israel's messianic king (A) expands to become the nations' banner (center). The vision shifts from Jewish Messiah to Gentile hope. Verse 10's "nations shall inquire of him" unlocks everything that follows—the global regathering (B') and worldwide victory (A').</li>
-                  </ul>
-                </div>
-                
-                <p className="text-sm text-gray-600 mt-4 italic">The symmetrical pattern reveals the gospel's movement: from one nation's king to all nations' hope. The Messiah who brings peace to creation (B) gathers scattered peoples (B'), empowered by God's Spirit (A) and manifested through God's mighty hand (A'). Verse 10 is the key—when the root of Jesse stands as a banner, the whole world is invited home.</p>
-              </div>
-            </div>
-          </div>
-        )}
+        <Chapter11StructureModal 
+          isOpen={showStructureModal} 
+          onClose={() => setShowStructureModal(false)} 
+        />
       </div>
     </div>
   );

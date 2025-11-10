@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a comprehensive interactive web application for studying Isaiah Chapters 1-12 from the Bible (the complete "Book of Immanuel" section). Each chapter features a color-coded grid visualization of verses organized into thematic groups, with interactive hover tooltips and transformation point markers. A two-level modal navigation system provides both reflective study (three viewing modes: Seeing Connections, How This Helps My Life, What This Teaches Us) and Scripture Connections showing how each verse fits into God's larger plan across the entire Bible. Built with React, TypeScript, Tailwind CSS, and React Router, the application offers an engaging educational experience across 12 complete chapters with comprehensive reflections and Scripture connections. Features a dedicated home page with chapter navigation cards and educational modals explaining the book's structure and how to use the app.
+This interactive web application facilitates the study of Isaiah Chapters 1-12, known as the "Book of Immanuel." It features a color-coded grid visualization of verses grouped thematically, with interactive hover tooltips and transformation point markers. The application provides a two-level modal navigation system for both reflective study (through "Seeing Connections," "How This Helps My Life," and "What This Teaches Us" modes) and "Scripture Connections," which illustrate how each verse integrates into the broader biblical narrative. Built with React, TypeScript, Tailwind CSS, React Router, and an Express backend API, it offers an engaging educational experience across 12 chapters, complete with detailed reflections and inter-biblical connections. A dedicated home page includes chapter navigation cards and educational modals explaining the book's structure and app usage.
 
 **Completed Chapters**:
 - Chapter 1 (31 verses): The Rebellious Nation and the Invitation to Return
@@ -20,66 +20,7 @@ This is a comprehensive interactive web application for studying Isaiah Chapters
 
 ## Recent Changes
 
-**November 9, 2025**: Implemented proper chiastic structure modals for chapters 10, 11, and 12 with visual indentation patterns matching chapters 1-9. Each structure modal now displays the literary chiasm using visual indentation (ml-0, ml-4, ml-8, ml-12 Tailwind classes) showing symmetrical patterns (A-B-C-X-C'-B'-A'). Chapter 10 features a 7-layer chiasm centered on v12 (God's sovereignty), Chapter 11 has a 5-layer chiasm centered on v10 (Root of Jesse as banner to nations), and Chapter 12 has a 3-part structure centered on v3 (wells of salvation). All verse metadata, hinge explanations, and reflection content now align with the correct chiastic centers.
-
-**November 9, 2025**: Completed standardization of "View Chapter Structure" buttons across all 12 chapters. All chapters now use the reusable `StructureButton` component (`src/components/StructureButton.tsx`) with consistent visual styling (purple-to-blue gradient, book emoji, chapter-specific subtitle) and placement. The button appears consistently between the thematic groups legend card and the transformation points/verse grid section in every chapter, ensuring a unified user experience throughout the application.
-
-**November 9, 2025**: Completed chapters 10-12, finishing the entire "Book of Immanuel" section (chapters 7-12) and the opening division of Isaiah (chapters 1-12). Each new chapter follows the established pattern: thematic groups with descriptive names, exactly three structural markers with specific analytical descriptions, comprehensive reflections for key verses, and Scripture connections. Home page updated to display all 12 chapters with proper navigation integration.
-
-**November 9, 2025**: Corrected structural markers to reflect true chiastic centers. Each chapter now has exactly ONE yellow dot marking its true chiastic pivot (or none if structure doesn't have a clear symmetrical center). Previous markers that were actually narrative transitions, thematic climaxes, or dramatic turns have been removed. Hinge explanations updated to be uniform and succinct across all chapters. Chapter 8 corrected from 2 hinges to 1 (verse 14: sanctuary OR stumbling stone).
-
-**November 2025**: Improved UX by conditionally hiding the Scripture Connections tab when verses lack connections. Previously, clicking a verse without connections would show a blank "Scripture Connections" tab that looked like a loading failure. Now, the tab only appears when the verse has documented connections (either `from` or `to` arrays), providing a cleaner interface with less reading required.
-
----
-
-## 📋 APPLICATION TEMPLATE
-
-**This application serves as a reusable template for creating interactive Bible study applications for any chapter or passage.**
-
-### Template Features
-- Color-coded thematic grouping of verses
-- Interactive verse grid with hover tooltips
-- Two-level modal navigation (Reflections + Scripture Connections)
-- Multiple viewing perspectives for deeper study
-- Transformation/hinge point markers
-- Responsive design for all devices
-- No backend required - fully client-side
-
-### How to Adapt This Template for Other Bible Chapters
-
-**Step 1: Update Content Data**
-- Modify the `verses` array with your chapter's verses
-- Update `getGroupName()` with your thematic group names (avoid "Group N" labels)
-- Update `getGroupTransition()` with short descriptions
-- Assign each verse a `group` number (1-N)
-- Mark key verses with `isHinge: true` for transformation points
-
-**Step 2: Customize Reflection Content**
-- Update `reflectionContent` object with three perspectives per verse:
-  - `seeing`: Observational insights ("Seeing Connections")
-  - `life`: Personal application ("How This Helps My Life")
-  - `teach`: Theological teaching ("What This Teaches Us")
-
-**Step 3: Add Scripture Connections**
-- Update `scriptureConnections` object with:
-  - `from`: Array of earlier passages this verse builds upon
-  - `to`: Array of later passages this verse points toward
-  - `context`: Theological/narrative context explanation
-
-**Step 4: Customize Colors**
-- Update `getColorClass()` with appropriate Tailwind colors for your groups
-- Use distinct, accessible colors (blues, oranges, teals, grays, reds, greens)
-
-**Step 5: Update Page Title & Description**
-- Change header title from "Isaiah Chapter 6" to your passage
-- Update subtitle to reflect the chapter's main theme
-
-### Template Design Principles
-- **Reader-friendly over academic**: Use devotional language, not scholarly jargon
-- **Visual clarity**: Color coding helps identify themes at a glance
-- **Multiple perspectives**: Three viewing modes provide depth without overwhelming
-- **Biblical context**: Scripture connections show how verses fit into God's larger story
-- **Transformation focus**: Yellow dots highlight pivotal moments in the narrative
+**November 10, 2025**: **MAJOR ARCHITECTURE REFACTORING** - Migrated all chapter content from hardcoded arrays to backend API. Created Express server (`server/index.ts`) serving JSON files (`server/data/chapter1.json` through `chapter12.json`) with in-memory caching. All 12 chapters now fetch data via `useChapterData` hook from `src/hooks/useChapterData.ts`. Created shared utilities (`src/utils/chapterHelpers.ts`) for color classes and hinge type extraction. Extracted all structure modals into separate components (`Chapter1StructureModal.tsx` through `Chapter12StructureModal.tsx`). This separation of content from presentation enables easier content updates, consistent data structure, and potential future features like search, bookmarking, or user notes. Both workflows (Backend API Server on port 3001, Frontend on port 5000) run concurrently with Vite proxy forwarding `/api` requests to backend.
 
 ## User Preferences
 
@@ -89,108 +30,50 @@ Preferred communication style: Simple, everyday language.
 
 ### Frontend Architecture
 
-**Framework**: React 18 with TypeScript
-- **Rationale**: Provides type safety and modern component-based architecture for building interactive UI
-- **Component Structure**: App component with React Router for chapter navigation; each chapter is a separate component with grid-based verse visualization and modal-based detail view
-- **State Management**: Local component state using React hooks (useState) for verse selection, modal view, and reflection mode within each chapter
-- **Routing**: React Router DOM provides seamless navigation between chapters with URL-based routing
-- **Pros**: Simple state management adequate for current scope, easy to understand and maintain, modular chapter components
-- **Cons**: May need state management library (Redux, Zustand) if complexity grows
-
-**Build Tool**: Vite 6
-- **Rationale**: Fast development server with hot module replacement, optimized for React applications
-- **Configuration**: Configured for host 0.0.0.0 on port 5000 for Replit compatibility
-- **Pros**: Lightning-fast builds, excellent developer experience
-- **Cons**: None for this use case
-
-**Styling Approach**: Tailwind CSS with custom CSS for specific needs
-- **Rationale**: Utility-first CSS framework provides rapid development and consistent design system
-- **Global Styles**: Gradient background (blue to purple), base typography via Tailwind
-- **Component Styles**: Inline utility classes with custom CSS for modal animations
-- **Pros**: Fast iteration, consistent spacing/colors, built-in responsive design
-- **Cons**: Verbose class names in JSX, requires build step
+**Framework**: React 18 with TypeScript for type safety and a component-based UI. State is managed locally using React hooks, and React Router DOM handles navigation.
+**Build Tool**: Vite 6, chosen for its fast development server and optimized builds.
+**Styling**: Tailwind CSS for rapid, utility-first development and consistent design, supplemented by custom CSS for specific elements.
 
 ### Data Architecture
 
-**Data Storage**: Static TypeScript data structures
-- **Location**: Embedded in each chapter component (`src/chapters/Chapter2.tsx`, `src/chapters/Chapter3.tsx`, etc.)
-- **Structure**: 
-  - `Verse` interface with number, text, group, hinge markers
-  - `verses` array containing all verses for that chapter
-  - `reflectionContent` object with three perspectives per verse (seeing, life, teach)
-  - `scriptureConnections` object with FROM/TO references and theological context per verse
-- **Rationale**: Content is static biblical text that doesn't change; no need for database
-- **Pros**: Simple, type-safe, no backend required, fast load times
-- **Cons**: Content updates require code changes and redeployment
-
-**Interaction Patterns**:
-- Verse selection triggers modal with two-level navigation
-- Modal tab switching between Reflections and Scripture Connections
-- Reflection mode buttons for switching between three viewing perspectives
-- Hover tooltips for quick verse preview
-- Yellow dots mark key transformation points
+**Backend API Server**: An Express server (`server/index.ts`) serves chapter data from JSON files (`server/data/chapterN.json`) with in-memory caching. Endpoints include `GET /api/chapters/:id` for specific chapter data and `GET /health`. Each chapter JSON adheres to a defined contract including `chapterNumber`, `title`, `subtitle`, `verses`, `reflections`, and `scriptureConnections`.
+**Frontend Data Layer**: A custom React hook `useChapterData(chapterNumber)` fetches chapter data. Shared utility functions are located in `src/utils/chapterHelpers.ts`. Chapter components manage loading, error states, and chapter-specific metadata functions.
+**Interaction Patterns**: Verse selection opens a modal with two-level navigation. Users can switch between Reflection and Scripture Connection tabs and various reflection modes. Hover tooltips provide quick verse previews, and yellow dots highlight key transformation points.
 
 ### User Interface Design
 
-**Layout Pattern**: Multi-chapter application with routing and modal-based detail views
-- **Problem**: Navigate between multiple chapters while providing detailed views of individual verses
-- **Solution**: React Router for chapter navigation + two-level modal navigation within chapters (first level tabs for Reflections vs Scripture Connections, second level buttons for viewing modes)
-- **Benefits**: URL-based navigation allows bookmarking specific chapters, back/forward browser buttons work naturally, each chapter is independently loadable
-
-**Visual Theme**: Purple gradient background with white/light gray content cards
-- **Design Language**: Clean, modern, focused on readability
-- **Interactive Elements**: Hover states, click states, smooth transitions
-- **Accessibility**: Color contrast, clickable areas, semantic HTML
-
-**Responsive Design**: Flexible grid and flexbox layouts
-- **Breakpoints**: CSS auto-fit grid for theme cards, centered max-width containers
-- **Mobile Support**: Flex-wrap for navigation tabs, column layouts for verses
-
-**Legend Design Pattern (Template)**:
-- **Layout**: Grid (1 col mobile, 2 col tablet, 3 col desktop) with clean spacing
-- **Visual Elements**: Small color chip (w-4 h-4) on left + text content on right
-- **Sequence Indication**: Inline numbers in light gray ("1.", "2.", etc.) next to titles
-- **Rationale**: Avoids academic "Group N" labels, no oversized icons, no confusing arrows
-- **Reader Experience**: Numbers indicate sequence clearly without being obtrusive; color chips provide visual reference without dominating the content
-- **This template should be maintained**: Clean, compact, and reader-friendly approach
-
-**Home Page Educational Modals**:
-- **Purpose**: Provide deeper context without cluttering the home page
-- **Implementation**: Two gradient buttons that trigger full-screen modals
-  - "Understanding the Book of Isaiah": Explains the three major sections (chapters 1-39, 40-55, 56-66) with historical context, key themes, and how they point to Christ
-  - "How to Use This Study App": Tutorial on color-coding, three perspectives, Scripture connections, structure views, and transformation markers
-- **Design**: Modal overlays with scrollable content, organized with color-coded sections matching the app's visual language
-- **Content Philosophy**: Scholarly framework translated into everyday language; no academic jargon or Hebrew terms
+**Layout**: Multi-chapter application utilizing React Router for navigation between chapters and a two-level modal system for detailed verse views.
+**Visual Theme**: A clean, modern design featuring a purple gradient background with white/light gray content cards, focused on readability. Interactive elements include hover states and smooth transitions.
+**Responsive Design**: Flexible grid and flexbox layouts with CSS auto-fit and centered max-width containers ensure mobile compatibility.
+**Legend Design Pattern**: Thematic group legends utilize a clean, compact grid layout with color chips and inline numbering for clarity, avoiding academic jargon or obtrusive icons.
+**Home Page Educational Modals**: Two full-screen modals ("Understanding the Book of Isaiah" and "How to Use This Study App") provide contextual information and app tutorials, designed with a scholarly framework translated into everyday language.
 
 ## External Dependencies
 
-### Runtime Dependencies
+**Frontend Runtime Dependencies**:
+- `react` (^18.3.1): Core UI library
+- `react-dom` (^18.3.1): React DOM renderer
+- `react-router-dom`: Client-side routing between chapters
 
-**react** (^18.3.1): Core UI library
-- Purpose: Component rendering and state management
-- Used throughout application for all UI components
+**Backend Runtime Dependencies**:
+- `express`: Web server framework for API endpoints
+- `cors`: Enable cross-origin requests from frontend
+- `@neondatabase/serverless`: PostgreSQL database driver (future use)
+- `drizzle-orm`: TypeScript ORM for database (future use)
 
-**react-dom** (^18.3.1): React DOM renderer
-- Purpose: Mounting React components to browser DOM
-- Entry point in `src/main.tsx`
+**Development Dependencies**:
+- `TypeScript` (~5.6.2): Static type checking
+- `@vitejs/plugin-react` (^4.3.4): Vite plugin for React
+- `@types/react`, `@types/react-dom`, `@types/express`, `@types/cors`, `@types/node`: TypeScript definitions
+- `vite` (^6.0.3): Build tool and development server
+- `ts-node`, `tsx`: TypeScript execution for backend
+- `tailwindcss`: Utility-first CSS framework
+- `drizzle-kit`: Database migration tool (future use)
 
-### Development Dependencies
+## Deployment Configuration
 
-**TypeScript** (~5.6.2): Type system for JavaScript
-- Purpose: Static type checking, improved developer experience
-- Configuration: Strict mode enabled, ES2020 target
+**Workflows**:
+1. **Backend API Server**: `npm run server` - Express server on port 3001
+2. **Isaiah 6 Study App**: `npm run dev` - Vite frontend on port 5000 with proxy to backend
 
-**@vitejs/plugin-react** (^4.3.4): Vite plugin for React
-- Purpose: Enable JSX transformation and fast refresh in Vite
-- Integrated in `vite.config.ts`
-
-**@types/react** & **@types/react-dom**: TypeScript definitions
-- Purpose: Type definitions for React APIs
-
-**vite** (^6.0.3): Build tool and development server
-- Purpose: Development server, production builds, asset handling
-- Custom configuration for Replit hosting environment
-
-### No Backend Services
-
-This application runs entirely client-side with no external API calls, databases, or authentication systems. All content is embedded in the application code as static data structures.
+**Vite Proxy Configuration** (`vite.config.ts`): All `/api` requests forwarded to `http://localhost:3001` to connect frontend with backend during development.
