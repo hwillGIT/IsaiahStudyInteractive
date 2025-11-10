@@ -160,7 +160,7 @@ function Home() {
 
                   <div className="bg-gray-50 rounded-lg p-5">
                     <p className="text-gray-700 leading-relaxed italic">
-                      As you study these opening chapters, remember you're reading the beginning of a grand story—God's people have rebelled, judgment is coming, yet God offers stunning mercy: "Though your sins are like scarlet, they shall be as white as snow" (1:18). This tension between holiness and grace runs through all 66 chapters and finds its resolution in Jesus Christ.
+                      As you study these opening chapters, remember you're reading the beginning of a grand story—God's people have rebelled, judgment is coming, yet God offers stunning mercy: "Though your sins are like scarlet, they shall be as white as snow" (1:18). This tension between holiness and grace runs through all 66 chapters and finds its resolution in the promised Messiah—the Suffering Servant who would bear our sins and bring lasting peace.
                     </p>
                   </div>
                 </div>
