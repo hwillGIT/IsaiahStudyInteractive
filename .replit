@@ -15,6 +15,10 @@ author = "agent"
 task = "workflow.run"
 args = "Isaiah 6 Study App"
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Backend API Server"
+
 [[workflows.workflow]]
 name = "Isaiah 6 Study App"
 author = "agent"
@@ -27,6 +31,18 @@ waitForPort = 5000
 [workflows.workflow.metadata]
 outputType = "webview"
 
+[[workflows.workflow]]
+name = "Backend API Server"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run server"
+waitForPort = 3001
+
+[workflows.workflow.metadata]
+outputType = "console"
+
 [[ports]]
 localPort = 5000
 externalPort = 80
@@ -36,11 +52,11 @@ localPort = 5001
 externalPort = 3000
 
 [[ports]]
-localPort = 42835
-externalPort = 3002
+localPort = 45125
+externalPort = 3001
 
 [[ports]]
-localPort = 45125
+localPort = 3001
 externalPort = 3001
 
 [nix]

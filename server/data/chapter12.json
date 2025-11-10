@@ -1,0 +1,133 @@
+{
+  "chapterNumber": 12,
+  "title": "Isaiah Chapter 12",
+  "subtitle": "Song of Thanksgiving and Praise",
+  "structureSubtitle": "See the song of salvation",
+  "verses": [
+    {
+      "number": 1,
+      "text": "You will say in that day: 'I will give thanks to you, O LORD, for though you were angry with me, your anger turned away, that you might comfort me.'",
+      "group": 1,
+      "isHinge": true,
+      "hingeType": "turn-thanksgiving"
+    },
+    {
+      "number": 2,
+      "text": "'Behold, God is my salvation; I will trust, and will not be afraid; for the LORD GOD is my strength and my song, and he has become my salvation.'",
+      "group": 1
+    },
+    {
+      "number": 3,
+      "text": "With joy you will draw water from the wells of salvation.",
+      "group": 1,
+      "isHinge": true,
+      "hingeType": "hinge"
+    },
+    {
+      "number": 4,
+      "text": "And you will say in that day: 'Give thanks to the LORD, call upon his name, make known his deeds among the peoples, proclaim that his name is exalted.'",
+      "group": 2,
+      "isHinge": true,
+      "hingeType": "turn-proclamation"
+    },
+    {
+      "number": 5,
+      "text": "'Sing praises to the LORD, for he has done gloriously; let this be made known in all the earth.'",
+      "group": 2
+    },
+    {
+      "number": 6,
+      "text": "'Shout, and sing for joy, O inhabitant of Zion, for great in your midst is the Holy One of Israel.'",
+      "group": 2
+    }
+  ],
+  "reflections": {
+    "1": {
+      "seeing": "This verse moves from past anger to present comfort. The thanksgiving isn't despite God's anger but because His anger 'turned away.' The remnant recognizes both God's righteous judgment and His merciful restoration.",
+      "life": "Can you thank God for discipline that led to healing? This verse shows mature faith: acknowledging God's justified anger while celebrating His comfort. Past correction becomes cause for present gratitude.",
+      "teach": "True thanksgiving includes the whole story—God's anger against sin AND His comfort in restoration. Shallow praise ignores our need for judgment; deep thanksgiving embraces both discipline and deliverance."
+    },
+    "2": {
+      "seeing": "This verse echoes Exodus 15:2 (Moses' song after Red Sea deliverance), showing this anticipated deliverance is like a second exodus. 'God is my salvation' replaces fear with trust, anxiety with confidence.",
+      "life": "What replaces 'I will not be afraid' in your life? This verse gives the antidote to fear: God as salvation, strength, and song. When He becomes these, fear loses its grip.",
+      "teach": "Salvation produces a three-fold result: trust (I will trust), courage (not be afraid), and joy (my song). God doesn't just save us FROM something but FOR relationship with Him as our strength and delight."
+    },
+    "3": {
+      "seeing": "The chiastic center uses the metaphor of drawing water—essential, refreshing, life-giving. 'With joy' emphasizes the attitude; salvation isn't just received but celebrated. Wells suggest abundant, ongoing supply.",
+      "life": "Are you drawing from salvation's wells with joy or duty? This verse invites delight in God's provision. Salvation isn't a one-time event but an ongoing source you can draw from daily.",
+      "teach": "The 'wells of salvation' (plural) suggest multiple dimensions of God's deliverance—spiritual, emotional, physical. Joy characterizes the drawing, showing salvation brings not just relief but celebration."
+    },
+    "4": {
+      "seeing": "The dramatic shift from 'you' (v1-3, individual) to 'you' (v4-6, plural/corporate) marks the transition from personal testimony to communal mission. Thanksgiving must become proclamation—God's deeds must be made known among peoples.",
+      "life": "Does your thanksgiving stay private or become proclamation? This verse challenges you to move from closet worship to global witness. Personal salvation has public implications.",
+      "teach": "True thanksgiving is missional. If God's salvation is real, it can't stay secret. The redeemed community has a mandate: make His name known, proclaim His exaltation among all peoples."
+    },
+    "5": {
+      "seeing": "'He has done gloriously'—the verb tense matters. Past accomplishment becomes present praise and future proclamation. The call is for earth-wide testimony: 'let this be made known in all the earth.'",
+      "life": "Who needs to hear what God has done in your life? This verse gives you permission to celebrate loudly—God's glorious deeds deserve global announcement, not polite whispers.",
+      "teach": "Worship is inherently evangelistic. When we sing praises for what God 'has done gloriously,' we're testifying to the watching world. Praise becomes witness; worship becomes mission."
+    },
+    "6": {
+      "seeing": "The final verse crescendos: shout, sing for joy! The reason: 'great in your midst is the Holy One of Israel.' God's presence (Immanuel, chapters 7-12) completes the Book of Immanuel. He dwells among His people.",
+      "life": "The Holy One isn't distant but 'in your midst.' Does this reality make you want to shout? This verse invites exuberant joy because God Himself lives among His people.",
+      "teach": "The culmination of Isaiah 1-12: God's presence with His people (Immanuel) produces irrepressible joy. The Holy One dwelling in Zion is the ultimate cause for celebration—our salvation rests in His proximity."
+    }
+  },
+  "scriptureConnections": {
+    "1": {
+      "from": [
+        "Psalm 30:5 - His anger is but for a moment, His favor is for a lifetime",
+        "Isaiah 54:7-8 - For a brief moment I forsook you, but with great compassion I will gather you"
+      ],
+      "to": [
+        "2 Corinthians 5:18-19 - God was reconciling the world to Himself through Christ",
+        "Romans 5:9-10 - If while we were enemies we were reconciled, how much more saved by His life"
+      ],
+      "context": "God's anger serves restoration, not destruction. This theme reaches fulfillment in Christ, who bore God's wrath so His anger could turn away from us permanently."
+    },
+    "2": {
+      "from": [
+        "Exodus 15:2 - The LORD is my strength and my song; He has become my salvation",
+        "Psalm 118:14 - The LORD is my strength and my song; He has become my salvation"
+      ],
+      "to": [
+        "Philippians 4:13 - I can do all things through Christ who strengthens me",
+        "Revelation 15:3 - They sing the song of Moses and the song of the Lamb"
+      ],
+      "context": "Isaiah's song echoes Moses' Red Sea song and anticipates Revelation's final victory song. The same God who delivered Israel from Egypt delivers His people through Christ, the ultimate exodus."
+    },
+    "3": {
+      "from": [
+        "John 4:10-14 - Whoever drinks of the water I give will never thirst",
+        "Jeremiah 2:13 - They have forsaken Me, the fountain of living waters"
+      ],
+      "to": [
+        "John 7:37-39 - If anyone thirsts, let him come to Me and drink; out of his heart will flow rivers",
+        "Revelation 22:17 - Let the one who is thirsty come; let the one who desires take the water of life"
+      ],
+      "context": "The wells of salvation find fulfillment in Jesus, who offers living water. What Isaiah anticipates, Jesus provides—eternal springs of salvation for all who come and drink."
+    },
+    "4": {
+      "from": [
+        "Psalm 105:1 - Give thanks, call upon His name, make known His deeds among the peoples",
+        "1 Chronicles 16:8 - Give thanks, call upon His name, make known His deeds"
+      ],
+      "to": [
+        "Matthew 28:19-20 - Go and make disciples of all nations",
+        "Acts 1:8 - You will be My witnesses to the ends of the earth"
+      ],
+      "context": "The call to 'make known His deeds among the peoples' becomes the Great Commission. What Israel was called to proclaim finds global fulfillment in the church's missionary mandate."
+    },
+    "6": {
+      "from": [
+        "Exodus 25:8 - Let them make Me a sanctuary that I may dwell among them",
+        "Ezekiel 37:27 - My dwelling place shall be with them"
+      ],
+      "to": [
+        "John 1:14 - The Word became flesh and dwelt among us",
+        "Revelation 21:3 - Behold, the dwelling place of God is with man"
+      ],
+      "context": "The Holy One dwelling in Zion points to Immanuel (God with us) in Jesus and culminates in Revelation's new creation where God dwells eternally with His people. The arc from Exodus to Revelation centers on divine presence."
+    }
+  }
+}
