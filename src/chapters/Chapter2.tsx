@@ -10,13 +10,8 @@ import { ChapterNavigation } from '../components/ChapterNavigation';
 import { StructureButton } from '../components/StructureButton';
 import { Chapter2StructureModal } from '../components/Chapter2StructureModal';
 import { useChapterData } from '../hooks/useChapterData';
-import { getColorClass, getUniqueHingeTypes, COLOR_PALETTE } from '../utils/chapterHelpers';
+import { getColorClass, getUniqueHingeTypes } from '../utils/chapterHelpers';
 import '../App.css';
-
-// Custom color mapping: Group 10 → yellow (for section A)
-const CUSTOM_COLORS: Record<number, string> = {
-  10: COLOR_PALETTE.yellowLight
-};
 
 // Chapter-specific metadata (UI presentation layer)
 const getGroupName = (group: number): string => {
@@ -110,7 +105,7 @@ function Chapter2() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {groups.map((group) => (
               <div key={group} className="flex items-start gap-3">
-                <div className={`w-4 h-4 ${getColorClass(group, CUSTOM_COLORS)} rounded mt-1 flex-shrink-0`}></div>
+                <div className={`w-4 h-4 ${getColorClass(group)} rounded mt-1 flex-shrink-0`}></div>
                 <div>
                   <div className="font-semibold text-gray-800 text-sm">
                     <span className="text-gray-400 mr-1">{group}.</span>
@@ -150,7 +145,7 @@ function Chapter2() {
             <div
               key={verse.number}
               onClick={() => setSelectedVerse(verse.number)}
-              className={`relative ${getColorClass(verse.group, CUSTOM_COLORS)} text-white p-4 rounded-lg cursor-pointer hover:opacity-80 transition-opacity group`}
+              className={`relative ${getColorClass(verse.group)} text-white p-4 rounded-lg cursor-pointer hover:opacity-80 transition-opacity group`}
             >
               <div className="text-sm font-bold">2:{verse.number}</div>
               {verse.isHinge && (

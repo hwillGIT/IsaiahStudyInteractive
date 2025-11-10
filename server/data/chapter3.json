@@ -7,17 +7,17 @@
     {
       "number": 1,
       "text": "For behold, the Lord GOD of hosts is taking away from Jerusalem and from Judah support and supply, all support of bread, and all support of water;",
-      "group": 2
+      "group": 1
     },
     {
       "number": 2,
       "text": "the mighty man and the soldier, the judge and the prophet, the diviner and the elder,",
-      "group": 2
+      "group": 1
     },
     {
       "number": 3,
       "text": "the captain of fifty and the man of rank, the counselor and the skillful magician and the expert in charms.",
-      "group": 2
+      "group": 1
     },
     {
       "number": 4,
@@ -42,101 +42,101 @@
     {
       "number": 8,
       "text": "For Jerusalem has stumbled, and Judah has fallen, because their speech and their deeds are against the LORD, defying his glorious presence.",
-      "group": 1,
+      "group": 3,
       "isHinge": true,
       "hingeType": "center"
     },
     {
       "number": 9,
       "text": "For the look on their faces bears witness against them; they proclaim their sin like Sodom; they do not hide it. Woe to them! For they have brought evil on themselves.",
-      "group": 1
+      "group": 3
     },
     {
       "number": 10,
       "text": "Tell the righteous that it shall be well with them, for they shall eat the fruit of their deeds.",
-      "group": 1
+      "group": 3
     },
     {
       "number": 11,
       "text": "Woe to the wicked! It shall be ill with them, for what their hands have done shall be done to them.",
-      "group": 1
+      "group": 3
     },
     {
       "number": 12,
       "text": "My people—infants are their oppressors, and women rule over them. O my people, your guides mislead you and they have swallowed up the course of your paths.",
-      "group": 1
+      "group": 4
     },
     {
       "number": 13,
       "text": "The LORD has taken his place to contend; he stands to judge peoples.",
-      "group": 10,
+      "group": 4,
       "isHinge": true,
       "hingeType": "transition-courtroom"
     },
     {
       "number": 14,
       "text": "The LORD will enter into judgment with the elders and princes of his people: 'It is you who have devoured the vineyard, the spoil of the poor is in your houses.",
-      "group": 10
+      "group": 4
     },
     {
       "number": 15,
       "text": "What do you mean by crushing my people, by grinding the face of the poor?' declares the Lord GOD of hosts.",
-      "group": 10
+      "group": 4
     },
     {
       "number": 16,
       "text": "The LORD said: Because the daughters of Zion are haughty and walk with outstretched necks, glancing wantonly with their eyes, mincing along as they go, tinkling with their feet,",
-      "group": 6
+      "group": 5
     },
     {
       "number": 17,
       "text": "therefore the Lord will strike with a scab the heads of the daughters of Zion, and the LORD will lay bare their secret parts.",
-      "group": 6
+      "group": 5
     },
     {
       "number": 18,
       "text": "In that day the Lord will take away the finery of the anklets, the headbands, and the crescents;",
-      "group": 8
+      "group": 5
     },
     {
       "number": 19,
       "text": "the pendants, the bracelets, and the scarves;",
-      "group": 8
+      "group": 5
     },
     {
       "number": 20,
       "text": "the headdresses, the armlets, the sashes, the perfume boxes, and the amulets;",
-      "group": 8
+      "group": 5
     },
     {
       "number": 21,
       "text": "the signet rings and nose rings;",
-      "group": 8
+      "group": 5
     },
     {
       "number": 22,
       "text": "the festal robes, the mantles, the cloaks, and the handbags;",
-      "group": 8
+      "group": 5
     },
     {
       "number": 23,
       "text": "the mirrors, the linen garments, the turbans, and the veils.",
-      "group": 8
+      "group": 5
     },
     {
       "number": 24,
       "text": "Instead of perfume there will be rottenness; and instead of a belt, a rope; and instead of well-set hair, baldness; and instead of a rich robe, a skirt of sackcloth; and branding instead of beauty.",
-      "group": 8
+      "group": 5
     },
     {
       "number": 25,
       "text": "Your men shall fall by the sword and your mighty men in battle.",
-      "group": 8
+      "group": 5
     },
     {
       "number": 26,
       "text": "And her gates shall lament and mourn; empty, she shall sit on the ground.",
-      "group": 8
+      "group": 5
     }
   ],
   "reflections": {

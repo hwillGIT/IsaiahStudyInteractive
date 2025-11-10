@@ -12,29 +12,29 @@
     {
       "number": 2,
       "text": "In that day the branch of the LORD shall be beautiful and glorious, and the fruit of the land shall be the pride and honor of the survivors of Israel.",
-      "group": 5,
+      "group": 2,
       "isHinge": true,
       "hingeType": "center"
     },
     {
       "number": 3,
       "text": "And he who is left in Zion and remains in Jerusalem will be called holy, everyone who has been recorded for life in Jerusalem,",
-      "group": 4
+      "group": 2
     },
     {
       "number": 4,
       "text": "when the Lord shall have washed away the filth of the daughters of Zion and cleansed the bloodstains of Jerusalem from its midst by a spirit of judgment and by a spirit of burning.",
-      "group": 4
+      "group": 2
     },
     {
       "number": 5,
       "text": "Then the LORD will create over the whole site of Mount Zion and over her assemblies a cloud by day, and smoke and the shining of a flaming fire by night; for over all the glory there will be a canopy.",
-      "group": 5
+      "group": 3
     },
     {
       "number": 6,
       "text": "There will be a booth for shade by day from the heat, and for a refuge and a shelter from the storm and rain.",
-      "group": 4
+      "group": 3
     }
   ],
   "reflections": {
