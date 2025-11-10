@@ -36,7 +36,7 @@ Preferred communication style: Simple, everyday language.
 
 ### Data Architecture
 
-**Backend API Server**: An Express server (`server/index.ts`) serves chapter data from JSON files (`server/data/chapterN.json`) with in-memory caching. Endpoints include `GET /api/chapters/:id` for specific chapter data and `GET /health`. Each chapter JSON adheres to a defined contract including `chapterNumber`, `title`, `subtitle`, `verses`, `reflections`, and `scriptureConnections`.
+**Backend API Server**: An Express server (`server/index.ts`) serves chapter data from JSON files (`server/data/chapterN.json`) with in-memory caching. Endpoints include `GET /api/chapters/:id` for specific chapter data and `GET /health`. Each chapter JSON adheres to a defined contract including `chapterNumber`, `title`, `subtitle`, `structureSubtitle`, `verses`, `reflections`, and `scriptureConnections`. Verses may include optional `isHinge` and `hingeType` properties for transformation point markers.
 **Frontend Data Layer**: A custom React hook `useChapterData(chapterNumber)` fetches chapter data. Shared utility functions are located in `src/utils/chapterHelpers.ts`. Chapter components manage loading, error states, and chapter-specific metadata functions.
 **Interaction Patterns**: Verse selection opens a modal with two-level navigation. Users can switch between Reflection and Scripture Connection tabs and various reflection modes. Hover tooltips provide quick verse previews, and yellow dots highlight key transformation points.
 
@@ -54,20 +54,23 @@ Preferred communication style: Simple, everyday language.
 - `react` (^18.3.1): Core UI library
 - `react-dom` (^18.3.1): React DOM renderer
 - `react-router-dom`: Client-side routing between chapters
+- `clsx`: Conditional class name utility
+- `tailwind-merge`: Tailwind CSS class merger
 
 **Backend Runtime Dependencies**:
 - `express`: Web server framework for API endpoints
 - `cors`: Enable cross-origin requests from frontend
+- `ts-node`, `tsx`: TypeScript execution for backend server
 - `@neondatabase/serverless`: PostgreSQL database driver (future use)
 - `drizzle-orm`: TypeScript ORM for database (future use)
 
 **Development Dependencies**:
 - `TypeScript` (~5.6.2): Static type checking
 - `@vitejs/plugin-react` (^4.3.4): Vite plugin for React
-- `@types/react`, `@types/react-dom`, `@types/express`, `@types/cors`, `@types/node`: TypeScript definitions
+- `@types/react`, `@types/react-dom`, `@types/express`, `@types/cors`, `@types/node`, `@types/ws`: TypeScript definitions
 - `vite` (^6.0.3): Build tool and development server
-- `ts-node`, `tsx`: TypeScript execution for backend
 - `tailwindcss`: Utility-first CSS framework
+- `autoprefixer`, `postcss`: CSS processing tools
 - `drizzle-kit`: Database migration tool (future use)
 
 ## Deployment Configuration
