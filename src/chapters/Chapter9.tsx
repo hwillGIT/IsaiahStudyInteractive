@@ -99,7 +99,7 @@ function Chapter9() {
         
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-2 text-white">Isaiah Chapter 9</h1>
-          <p className="text-xl text-gray-200">The Light in the Darkness and the Prince of Peace</p>
+          <p className="text-xl text-white">The Light in the Darkness and the Prince of Peace</p>
         </div>
 
         <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-6 mb-6">

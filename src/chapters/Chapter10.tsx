@@ -106,7 +106,7 @@ function Chapter10() {
         
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-2 text-white">Isaiah Chapter 10</h1>
-          <p className="text-xl text-gray-200">Assyria: God's Rod and the Remnant's Return</p>
+          <p className="text-xl text-white">Assyria: God's Rod and the Remnant's Return</p>
         </div>
 
         <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-6 mb-6">

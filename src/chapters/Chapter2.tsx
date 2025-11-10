@@ -102,7 +102,7 @@ function Chapter2() {
         
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-2 text-white">Isaiah Chapter 2</h1>
-          <p className="text-xl text-gray-200">God's Mountain, Idolatry, and the Day of the LORD</p>
+          <p className="text-xl text-white">God's Mountain, Idolatry, and the Day of the LORD</p>
         </div>
 
         <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-6 mb-6">

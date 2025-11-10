@@ -105,7 +105,7 @@ function Chapter1() {
         
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-2 text-white">Isaiah Chapter 1</h1>
-          <p className="text-xl text-gray-200">The Rebellious Nation and the Invitation to Return</p>
+          <p className="text-xl text-white">The Rebellious Nation and the Invitation to Return</p>
         </div>
 
         <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-lg p-6 mb-6">
