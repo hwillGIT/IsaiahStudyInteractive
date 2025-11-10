@@ -20,6 +20,8 @@ This interactive web application facilitates the study of Isaiah Chapters 1-12, 
 
 ## Recent Changes
 
+**November 10, 2025 (Production Deployment Fix)**: **UNIFIED SERVER ARCHITECTURE** - Consolidated Express server to serve both the API and built React frontend for production deployment. The server now serves static files from the `dist` directory and handles React Router's client-side navigation with a catch-all route. Changed port binding to use `process.env.PORT` for Replit's VM deployment. Updated deployment configuration to use `vm` deployment target with `npm start` command. This enables the app to run as a single unified process in production with both frontend and backend operational.
+
 **November 10, 2025**: **MAJOR ARCHITECTURE REFACTORING** - Migrated all chapter content from hardcoded arrays to backend API. Created Express server (`server/index.ts`) serving JSON files (`server/data/chapter1.json` through `chapter12.json`) with in-memory caching. All 12 chapters now fetch data via `useChapterData` hook from `src/hooks/useChapterData.ts`. Created shared utilities (`src/utils/chapterHelpers.ts`) for color classes and hinge type extraction. Extracted all structure modals into separate components (`Chapter1StructureModal.tsx` through `Chapter12StructureModal.tsx`). This separation of content from presentation enables easier content updates, consistent data structure, and potential future features like search, bookmarking, or user notes. Both workflows (Backend API Server on port 3001, Frontend on port 5000) run concurrently with Vite proxy forwarding `/api` requests to backend.
 
 ## User Preferences
@@ -75,8 +77,16 @@ Preferred communication style: Simple, everyday language.
 
 ## Deployment Configuration
 
-**Workflows**:
+**Development Workflows**:
 1. **Backend API Server**: `npm run server` - Express server on port 3001
 2. **Isaiah 6 Study App**: `npm run dev` - Vite frontend on port 5000 with proxy to backend
 
 **Vite Proxy Configuration** (`vite.config.ts`): All `/api` requests forwarded to `http://localhost:3001` to connect frontend with backend during development.
+
+**Production Deployment**:
+- **Deployment Target**: VM (always-on server)
+- **Build Command**: `npm run build` - Compiles TypeScript and builds Vite frontend to `dist/`
+- **Start Command**: `npm start` - Runs unified Express server serving both API and built frontend
+- **Port Binding**: Server binds to `process.env.PORT` (Replit-assigned) or falls back to 3001
+- **Static File Serving**: Express serves built React app from `dist/` directory
+- **React Router Support**: Catch-all route ensures client-side routing works in production

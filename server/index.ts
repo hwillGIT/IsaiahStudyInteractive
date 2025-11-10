@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const app = express();
-const PORT = 3001;
+const PORT = parseInt(process.env.PORT || '3001', 10);
 
 // In-memory cache for chapter data
 const chapterCache: Record<number, any> = {};
@@ -35,6 +35,11 @@ loadChapters();
 app.use(cors());
 app.use(express.json());
 
+// Serve static files from the React app build directory
+const distPath = join(__dirname, '..', 'dist');
+app.use(express.static(distPath));
+
+// API Routes
 app.get('/api/chapters/:chapterNumber', (req, res) => {
   const chapterNumber = parseInt(req.params.chapterNumber);
   
@@ -57,7 +62,13 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Backend server running on http://localhost:${PORT}`);
+// Catch-all handler: serve index.html for all other routes (React Router)
+app.use((req, res) => {
+  res.sendFile(join(distPath, 'index.html'));
+});
+
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🚀 Server running on http://0.0.0.0:${PORT}`);
   console.log(`📖 Serving ${Object.keys(chapterCache).length} chapters from memory`);
+  console.log(`🌐 Frontend served from: ${distPath}`);
 });

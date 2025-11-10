@@ -60,6 +60,10 @@ localPort = 33649
 externalPort = 3002
 
 [[ports]]
+localPort = 43709
+externalPort = 3003
+
+[[ports]]
 localPort = 45125
 externalPort = 3001
 
@@ -68,6 +72,7 @@ channel = "stable-25_05"
 packages = ["unzip"]
 
 [deployment]
-deploymentTarget = "autoscale"
+deploymentTarget = "vm"
 publicDir = "dist"
 build = ["npm", "run", "build"]
+run = ["npm", "start"]
