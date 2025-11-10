@@ -15,12 +15,28 @@ This specification defines the design pattern for implementing chiastic (symmetr
 - A' (1:24-31): God will purge dross → Restoration or destruction
 - **Connection**: Witness/desolation (A-A'), false worship vs. justice (B-B'), center = God's gracious invitation
 
+**Structure Modal Colors** (chiastic sections):
+- A: RED (bg-red-600) - Rebellion & Devastation
+- B: GRAY (bg-gray-600) - Empty Worship
+- C: BLUE (bg-blue-500) - Call to Justice
+- CENTER: GREEN (bg-green-600) - Divine Invitation
+- C': PURPLE (bg-purple-500) - Corruption Exposed
+- B': TEAL (bg-teal-500) - Purification Promise
+- A': PINK (bg-pink-600) - Redemption & Judgment
+
 **Chapter 2** (Part of 2:1-4:6 chiasm)
 - A (2:1-5): Mt. Zion's Future Glory
 - B (2:6-11): Idolatrous Pride → Terror of the LORD
 - A' (2:12-16): Human Pride Abased
 - B' (2:17-22): Terror of the LORD
 - **Connection**: Future glory (A-A') frames judgment on pride (B-B')
+
+**Structure Modal Colors** (chiastic sections):
+- A: YELLOW (bg-yellow-400) - Mountain Exalted
+- B: RED (bg-red-500) - Pride and Idolatry
+- CENTER: ORANGE (bg-orange-500) - Terror of the LORD
+- B': PURPLE (bg-purple-500) - All Pride Abased
+- A': GRAY (bg-gray-600) - Idols Abolished
 
 **Chapter 3** (3:1-4:1)
 - A (3:1-7): No bread or clothing
@@ -30,12 +46,25 @@ This specification defines the design pattern for implementing chiastic (symmetr
 - A' (3:18-4:1): We will eat our own food
 - **Connection**: Material crisis (A-A') frames spiritual judgment (B-C-B')
 
+**Structure Modal Colors** (chiastic sections):
+- A: ORANGE (bg-orange-500) - Material Crisis
+- B: RED (bg-red-500) - Jerusalem Crumbling
+- CENTER: YELLOW (bg-yellow-500) - The LORD's Courtroom
+- B': PURPLE (bg-purple-500) - Pride Judged
+- A': PINK (bg-pink-500) - Luxury Stripped
+
 **Chapter 4** (4:2-6 - Restoration focus)
 - A (4:2): Branch will be luster and glory
 - B (4:3): Called holy in Zion
 - B' (4:4): Purges Jerusalem's blood
 - A' (4:5-6): Glory as canopy
 - **Connection**: Glory revealed (A-A') through purification (B-B')
+
+**Structure Modal Colors** (chiastic sections):
+- A: RED (bg-red-500) - Desperation After Judgment
+- CENTER: GREEN (bg-green-500) - The Branch Brings Restoration
+- B': BLUE (bg-blue-600) - Purification
+- A': BLUE (bg-blue-500) - God's Glorious Presence Returns
 
 **Chapter 5** (5:1-30 - Linear with hinge)
 - A (5:1-7): Vineyard song → Judgment
