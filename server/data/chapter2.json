@@ -408,5 +408,39 @@
       ],
       "context": "Human frailty makes trusting in people instead of God supremely foolish. This verse demolishes pride by reminding us we're mere breath, here today and gone tomorrow."
     }
-  }
+  },
+  "theme": "From exaltation to humiliation: God's mountain above all vs. humanity bowing to idols",
+  "groupMetadata": {
+    "1": {
+      "name": "Mountain Exalted",
+      "transition": "Future vision: God's mountain above all, nations streaming to learn His ways"
+    },
+    "2": {
+      "name": "Invitation to Walk",
+      "transition": "Present call: Walk in God's light now in response to the promised future"
+    },
+    "3": {
+      "name": "Pride & Idolatry",
+      "transition": "Current corruption: Israel filled with idols, wealth, and foreign practices"
+    },
+    "4": {
+      "name": "Day of the LORD Reckoning",
+      "transition": "Coming judgment: The Day of the LORD against all human pride and arrogance"
+    },
+    "5": {
+      "name": "Terror & Flight from Idols",
+      "transition": "Final outcome: People fleeing to caves, idols cast away as worthless"
+    }
+  },
+  "hingeMetadata": {
+    "hinge": {
+      "explanation": "Chiastic Center (v5) — Walk in the light of the LORD now",
+      "color": "bg-blue-500"
+    },
+    "turn-judgment": {
+      "explanation": "Dramatic Turn (v11) — From present corruption to future judgment",
+      "color": "bg-red-500"
+    }
+  },
+  "structureModal": null
 }

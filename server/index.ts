@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import { readFileSync } from 'fs';
+import { readFileSync, readdirSync } from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -10,20 +10,23 @@ const __dirname = dirname(__filename);
 const app = express();
 const PORT = parseInt(process.env.PORT || '3001', 10);
 
-// In-memory cache for chapter data
 const chapterCache: Record<number, any> = {};
 
-// Load all chapters into memory at startup
 function loadChapters() {
   console.log('📚 Loading chapter data into memory...');
-  for (let i = 1; i <= 12; i++) {
+  const dataDir = join(__dirname, 'data');
+  const files = readdirSync(dataDir);
+  for (const file of files) {
+    const match = /^chapter(\d+)\.json$/i.exec(file);
+    if (!match) continue;
+    const chapterNumber = parseInt(match[1], 10);
     try {
-      const dataPath = join(__dirname, 'data', `chapter${i}.json`);
+      const dataPath = join(dataDir, file);
       const data = readFileSync(dataPath, 'utf-8');
-      chapterCache[i] = JSON.parse(data);
-      console.log(`   ✅ Loaded Chapter ${i}`);
+      chapterCache[chapterNumber] = JSON.parse(data);
+      console.log(`   ✅ Loaded Chapter ${chapterNumber}`);
     } catch (error) {
-      console.error(`   ❌ Failed to load Chapter ${i}:`, error);
+      console.error(`   ❌ Failed to load Chapter ${chapterNumber}:`, error);
     }
   }
   console.log(`✨ ${Object.keys(chapterCache).length} chapters loaded successfully\n`);
@@ -40,11 +43,29 @@ const distPath = join(__dirname, '..', 'dist');
 app.use(express.static(distPath));
 
 // API Routes
+
+app.get('/api/chapters', (req, res) => {
+  const availableChapters = Object.keys(chapterCache)
+    .map(Number)
+    .sort((a, b) => a - b)
+    .map(num => {
+      const ch = chapterCache[num];
+      return {
+        chapterNumber: num,
+        title: ch.title || `Isaiah Chapter ${num}`,
+        subtitle: ch.subtitle || '',
+        verseCount: ch.verses?.length || 0,
+        theme: ch.theme || ''
+      };
+    });
+  res.json(availableChapters);
+});
+
 app.get('/api/chapters/:chapterNumber', (req, res) => {
   const chapterNumber = parseInt(req.params.chapterNumber);
   
-  if (!chapterNumber || chapterNumber < 1 || chapterNumber > 12) {
-    return res.status(400).json({ error: 'Invalid chapter number. Must be between 1 and 12.' });
+  if (!chapterNumber || chapterNumber < 1) {
+    return res.status(400).json({ error: 'Invalid chapter number.' });
   }
   
   const chapter = chapterCache[chapterNumber];

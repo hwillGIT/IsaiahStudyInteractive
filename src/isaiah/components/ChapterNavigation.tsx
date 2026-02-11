@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom';
 
 interface ChapterNavigationProps {
   currentChapter?: number;
+  maxChapter?: number;
 }
 
-export function ChapterNavigation({ currentChapter }: ChapterNavigationProps) {
-  const chapters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+export function ChapterNavigation({ currentChapter, maxChapter = 12 }: ChapterNavigationProps) {
+  const chapters = Array.from({ length: maxChapter }, (_, i) => i + 1);
 
   return (
     <div className="flex justify-center mb-6">

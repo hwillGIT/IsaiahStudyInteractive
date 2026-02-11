@@ -20,6 +20,13 @@ This interactive web application facilitates the study of Isaiah Chapters 1-12, 
 
 ## Recent Changes
 
+**February 11, 2026 (Dynamic Chapter Support)**: **UNLOCKING CHAPTERS BEYOND 12** - Implemented A1/A2/A3/A4 changes to support adding chapters beyond 12 without code changes:
+- **A1 - Backend**: Server now dynamically scans `server/data/` for chapter JSON files instead of hardcoding 1-12. Added `GET /api/chapters` endpoint returning available chapters list with metadata.
+- **A2 - JSON Data Contract**: Extended all 12 chapter JSON files with `theme`, `groupMetadata` (group names/transitions), `hingeMetadata` (explanations/colors), and `structureModal` (null for existing chapters) fields.
+- **A3 - ChapterTemplate**: Created reusable `src/isaiah/components/ChapterTemplate.tsx` that renders any chapter from JSON data alone, matching the full polished UI (color grid, modals, reflections, scripture connections, hover tooltips, transformation points).
+- **A4 - Dynamic Routing**: Added `/chapter/:chapterNumber` route via `ChapterDynamic.tsx` that routes to custom components for chapters 1-12 and ChapterTemplate for 13+. Updated `ChapterNavigation` with dynamic `maxChapter` prop. All existing `/chapter-N` routes preserved for backward compatibility.
+- **To add a new chapter**: Simply create `server/data/chapter13.json` (following the established data contract) and restart the server. No code changes needed.
+
 **November 10, 2025 (Multi-App File Structure)**: **PROJECT REORGANIZATION FOR SCALABILITY** - Reorganized file structure to support hosting multiple apps on a single VM deployment. Created `docs/` folder for all documentation and examples. Restructured `src/` to separate app-specific code from shared utilities:
 - `src/isaiah/` - All Isaiah app code (chapters/, components/, hooks/, utils/, App.tsx, App.css, main.tsx)
 - `src/shared/` - Shared utilities and components usable across future apps (lib/)

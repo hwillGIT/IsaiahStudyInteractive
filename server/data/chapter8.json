@@ -364,5 +364,43 @@
       ],
       "context": "The chapter ends in total darkness—looking anywhere reveals only distress and gloom. Those who rejected God's light are thrust into thick darkness. This sets up chapter 9's stunning contrast: 'The people walking in darkness have seen a great light' (Christ)."
     }
-  }
+  },
+  "theme": "The same God becomes either sanctuary for those who trust or stumbling stone for those who fear",
+  "groupMetadata": {
+    "1": {
+      "name": "The Sign of Maher-shalal-hash-baz",
+      "transition": "Child's name prophesies swift plunder of Syria and Israel"
+    },
+    "2": {
+      "name": "Refusing Gentle Waters",
+      "transition": "Rejecting God's gentle provision brings Assyria's flood"
+    },
+    "3": {
+      "name": "Immanuel: God With Us",
+      "transition": "Despite judgment, God remains with His land"
+    },
+    "4": {
+      "name": "Sanctuary or Stumbling Stone",
+      "transition": "God becomes either sanctuary or stumbling stone"
+    },
+    "5": {
+      "name": "Waiting for the Hidden God",
+      "transition": "Isaiah waits while God hides His face from Israel"
+    },
+    "6": {
+      "name": "Thick Darkness Before the Light",
+      "transition": "Rejecting God's word leads to total darkness"
+    }
+  },
+  "hingeMetadata": {
+    "climax-rejection": {
+      "explanation": "Thematic Climax (v6) — The fatal choice: refusing gentle waters of Shiloah brings the Assyrian flood",
+      "color": "bg-purple-500"
+    },
+    "hinge": {
+      "explanation": "Chiastic Center (v14) — The divine paradox: God becomes either sanctuary for those who trust or stumbling stone for those who fear",
+      "color": "bg-blue-500"
+    }
+  },
+  "structureModal": null
 }

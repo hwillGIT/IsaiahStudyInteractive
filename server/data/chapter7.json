@@ -394,5 +394,43 @@
       ],
       "context": "The chapter ends with complete agricultural collapse. Carefully cultivated hillside terraces are abandoned, reverting to rough pasture. This pictures total judgment on productivity without God's blessing."
     }
-  }
+  },
+  "theme": "When human fear meets divine promise, God offers the ultimate sign: Immanuel, God with us",
+  "groupMetadata": {
+    "1": {
+      "name": "The Syro-Ephraimite Threat",
+      "transition": "Enemy alliance threatens Jerusalem, fear grips the royal house"
+    },
+    "2": {
+      "name": "God's Reassurance to Ahaz",
+      "transition": "Trust God, not fear - enemies are just smoldering stumps"
+    },
+    "3": {
+      "name": "The Immanuel Sign",
+      "transition": "Ahaz refuses a sign, God gives Immanuel anyway"
+    },
+    "4": {
+      "name": "Near and Far Fulfillment",
+      "transition": "Child's timeline reveals immediate deliverance, future judgment"
+    },
+    "5": {
+      "name": "Assyria: The Hired Razor",
+      "transition": "Assyria summoned like insects to execute God's judgment"
+    },
+    "6": {
+      "name": "The Land Becomes Wilderness",
+      "transition": "Cultivated land becomes thornland, civilization to wilderness"
+    }
+  },
+  "hingeMetadata": {
+    "hinge": {
+      "explanation": "Chiastic Center (v14) — The sign of Immanuel: a virgin conceives, God Himself dwelling with us in human form",
+      "color": "bg-blue-500"
+    },
+    "transition-faith": {
+      "explanation": "Narrative Transition (v4) — From fear to faith: God commands Ahaz to be quiet, not fear these \"smoldering stumps\"",
+      "color": "bg-yellow-400"
+    }
+  },
+  "structureModal": null
 }

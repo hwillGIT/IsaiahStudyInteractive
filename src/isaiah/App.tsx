@@ -12,6 +12,7 @@ import Chapter9 from './chapters/Chapter9';
 import Chapter10 from './chapters/Chapter10';
 import Chapter11 from './chapters/Chapter11';
 import Chapter12 from './chapters/Chapter12';
+import ChapterDynamic from './chapters/ChapterDynamic';
 import './App.css';
 
 function Home() {
@@ -382,6 +383,7 @@ function App() {
         <Route path="/chapter-10" element={<Chapter10 />} />
         <Route path="/chapter-11" element={<Chapter11 />} />
         <Route path="/chapter-12" element={<Chapter12 />} />
+        <Route path="/chapter/:chapterNumber" element={<ChapterDynamic />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

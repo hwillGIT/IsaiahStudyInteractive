@@ -382,5 +382,39 @@
       ],
       "context": "Personifying Jerusalem's gates as mourning shows even inanimate structures grieve the judgment. Sitting empty on the ground depicts complete defeat, desolation, and mourning."
     }
-  }
+  },
+  "theme": "When leaders fail, society crumbles—God removes props to expose dependence on Him",
+  "groupMetadata": {
+    "1": {
+      "name": "Supports Removed",
+      "transition": "God removes all support and competent leadership from Jerusalem and Judah"
+    },
+    "2": {
+      "name": "Leadership Vacuum & Chaos",
+      "transition": "Society descends into chaos with boys as princes and people oppressing one another"
+    },
+    "3": {
+      "name": "Root Cause: Defying God",
+      "transition": "Revealed: open defiance of God's presence brought this judgment"
+    },
+    "4": {
+      "name": "God's Courtroom Against Oppressors",
+      "transition": "God formally prosecutes oppressive leaders in His courtroom"
+    },
+    "5": {
+      "name": "Daughters of Zion Humbled",
+      "transition": "Daughters of Zion's pride turned to shame and destruction"
+    }
+  },
+  "hingeMetadata": {
+    "center": {
+      "explanation": "Chiastic Center (v8) — The diagnostic core: Jerusalem stumbled because their words and deeds defy God's glorious presence",
+      "color": "bg-blue-500"
+    },
+    "transition-courtroom": {
+      "explanation": "Narrative Transition (v13) — From societal chaos to divine courtroom: God takes His place to contend and judge",
+      "color": "bg-yellow-400"
+    }
+  },
+  "structureModal": null
 }
