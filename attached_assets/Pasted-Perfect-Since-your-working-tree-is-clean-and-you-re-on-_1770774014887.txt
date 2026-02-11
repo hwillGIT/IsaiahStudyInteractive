@@ -1,0 +1,173 @@
+Perfect. Since your working tree is clean and you’re on unlock-isaiah-a1-a3, we’ll now apply everything in one controlled, safe patch.
+
+Below is a unified git patch that implements:
+
+• A1 — Backend dynamic chapter loading
+• A2 — Dynamic /chapter/:chapterNumber route
+• A3 — Reusable ChapterTemplate component
+• Navigation updated to support dynamic chapters
+
+You will:
+	1.	Save this as unlock-a1-a3.patch
+	2.	Apply it with git apply
+	3.	Build + test
+	4.	Commit + push
+
+⸻
+
+Step 1 — Create the patch file
+
+From your repo root:
+
+cat > unlock-a1-a3.patch <<'EOF'
+
+Then paste everything below, and finish with EOF on its own line.
+
+⸻
+
+[BEGIN PATCH CONTENT]
+
+diff --git a/server/index.ts b/server/index.ts
+index 0000000..1111111 100644
+--- a/server/index.ts
++++ b/server/index.ts
+@@
+-import { readFileSync } from 'fs';
++import { readFileSync, readdirSync } from 'fs';
+
+-// Load chapters 1-12
+-for (let i = 1; i <= 12; i++) {
+-  try {
+-    const dataPath = join(__dirname, 'data', `chapter${i}.json`);
+-    const data = readFileSync(dataPath, 'utf-8');
+-    chapterCache[i] = JSON.parse(data);
+-  } catch {}
+-}
++function loadChapters() {
++  const dataDir = join(__dirname, 'data');
++  const files = readdirSync(dataDir);
++  for (const file of files) {
++    const match = /^chapter(\d+)\.json$/i.exec(file);
++    if (!match) continue;
++    const chapterNumber = parseInt(match[1], 10);
++    const dataPath = join(dataDir, file);
++    const data = readFileSync(dataPath, 'utf-8');
++    chapterCache[chapterNumber] = JSON.parse(data);
++  }
++}
++
++loadChapters();
+
+diff --git a/src/chapters/ChapterDynamic.tsx b/src/chapters/ChapterDynamic.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/chapters/ChapterDynamic.tsx
+@@
++import { useParams, Navigate } from 'react-router-dom';
++import Chapter1 from './Chapter1';
++import Chapter2 from './Chapter2';
++import Chapter3 from './Chapter3';
++import Chapter4 from './Chapter4';
++import Chapter5 from './Chapter5';
++import Chapter6 from './Chapter6';
++import Chapter7 from './Chapter7';
++import Chapter8 from './Chapter8';
++import Chapter9 from './Chapter9';
++import Chapter10 from './Chapter10';
++import Chapter11 from './Chapter11';
++import Chapter12 from './Chapter12';
++import { ChapterTemplate } from '../components/ChapterTemplate';
++
++const chapterMap: Record<number, React.ComponentType> = {
++  1: Chapter1,
++  2: Chapter2,
++  3: Chapter3,
++  4: Chapter4,
++  5: Chapter5,
++  6: Chapter6,
++  7: Chapter7,
++  8: Chapter8,
++  9: Chapter9,
++  10: Chapter10,
++  11: Chapter11,
++  12: Chapter12,
++};
++
++export default function ChapterDynamic() {
++  const params = useParams();
++  const chapterNumber = parseInt(params.chapterNumber || '', 10);
++  if (!Number.isFinite(chapterNumber) || chapterNumber < 1) {
++    return <Navigate to="/" replace />;
++  }
++  const Existing = chapterMap[chapterNumber];
++  if (Existing) return <Existing />;
++  return <ChapterTemplate chapterNumber={chapterNumber} maxChapter={66} />;
++}
+
+diff --git a/src/components/ChapterTemplate.tsx b/src/components/ChapterTemplate.tsx
+new file mode 100644
+--- /dev/null
++++ b/src/components/ChapterTemplate.tsx
+@@
++import { useChapterData } from '../hooks/useChapterData';
++import { ChapterNavigation } from './ChapterNavigation';
++
++export function ChapterTemplate({ chapterNumber, maxChapter = 66 }: { chapterNumber: number; maxChapter?: number }) {
++  const { data, loading, error } = useChapterData(chapterNumber);
++  if (loading) return <div>Loading...</div>;
++  if (error || !data) return <div>Error loading chapter</div>;
++  return (
++    <div>
++      <ChapterNavigation currentChapter={chapterNumber} maxChapter={maxChapter} basePath="/chapter" />
++      <h1>{data.title}</h1>
++      <p>{data.subtitle}</p>
++    </div>
++  );
++}
+
+diff --git a/src/App.tsx b/src/App.tsx
+@@
++import ChapterDynamic from './chapters/ChapterDynamic';
+@@
++<Route path="/chapter/:chapterNumber" element={<ChapterDynamic />} />
+
+[END PATCH CONTENT]
+
+⸻
+
+After pasting that content, finish the file with:
+
+EOF
+
+
+⸻
+
+Step 2 — Apply the patch
+
+git apply unlock-a1-a3.patch
+
+If it applies cleanly:
+
+npm run build
+
+If build succeeds:
+
+git add -A
+git commit -m "Unlock chapters beyond 12 (A1/A2/A3)"
+git push origin unlock-isaiah-a1-a3
+
+
+⸻
+
+Step 3 — Test
+
+Start server + dev and test:
+	•	/chapter/1 still works
+	•	/chapter/13 gives 404 JSON (until we add chapter13.json)
+	•	Existing /chapter-1 still works
+
+⸻
+
+Once that’s confirmed, we’ll move to refining A3 to fully match your current polished Chapter 6 UI instead of the simplified template.
+
+Proceed with the patch and tell me what git apply says.
