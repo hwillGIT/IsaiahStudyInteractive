@@ -16,6 +16,8 @@ This interactive web application facilitates the study of Isaiah Chapters 1-55, 
 
 ## Recent Changes
 
+**February 13, 2026 (Structure Modals for Chapters 13-55)**: **COMPLETE STRUCTURE MODALS** - Added `structureModal` data to all 43 chapter JSON files (13-55) with chiastic/concentric/linear literary pattern visualizations. Each structure modal includes title, subtitle, intro description, color-coded sections with labels and indentation, parallels explaining how mirroring sections connect, and closing summaries. Updated ChapterTemplate.tsx to render structure modals from JSON data with proper TypeScript types (StructureSection, StructureParallel, StructureModalData). All chapters now show the "View Chapter Structure" button matching the established pattern from chapters 1-12.
+
 **February 13, 2026 (Chapters 13-55 Complete)**: **FULL FIRST AND SECOND ISAIAH** - Created all 43 new chapter JSON files (13-55) with complete content: NIV verse texts, thematic groups with metadata, transformation points, three-part reflections for every verse, and scripture connections. Updated home page with section-organized chapter cards (6 color-coded sections) and redesigned ChapterNavigation with collapsible section groups for 55 chapters.
 
 **February 11, 2026 (Dynamic Chapter Support)**: **UNLOCKING CHAPTERS BEYOND 12** - Implemented A1/A2/A3/A4 changes to support adding chapters beyond 12 without code changes:
