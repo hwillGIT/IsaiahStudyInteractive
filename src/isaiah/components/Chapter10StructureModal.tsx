@@ -7,9 +7,9 @@ export function Chapter10StructureModal({ isOpen, onClose }: Props) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
-      <div className="bg-white rounded-lg max-w-4xl w-full my-8">
-        <div className="p-6 border-b border-gray-200 bg-white rounded-t-lg">
+    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center overflow-y-auto">
+      <div className="bg-white rounded-lg max-w-4xl w-full my-8 flex flex-col max-h-[90vh] mx-4">
+        <div className="p-6 border-b border-gray-200 bg-white rounded-t-lg flex-shrink-0">
           <div className="flex justify-between items-start">
             <div>
               <h3 className="text-xl font-bold text-gray-800">Chapter 10 Structure</h3>
@@ -17,13 +17,13 @@ export function Chapter10StructureModal({ isOpen, onClose }: Props) {
             </div>
             <button
               onClick={onClose}
-              className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+              className="text-gray-500 hover:text-gray-700 text-2xl font-bold ml-4"
             >
               ×
             </button>
           </div>
         </div>
-        <div className="p-6">
+        <div className="p-6 overflow-y-auto">
           <p className="text-sm text-gray-600 mb-4">This chapter displays a symmetrical pattern centered on God's sovereign timing: He will finish His work on Zion, THEN judge Assyria's pride. The structure reveals how God uses even arrogant empires as His instruments while holding them accountable:</p>
           <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
             <div className="ml-0 flex items-start gap-2">

@@ -165,14 +165,14 @@ function ChapterTemplate({ chapterNumber }: ChapterTemplateProps) {
         </div>
 
         {selectedVerse && getSelectedVerse() && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
-            <div className="bg-white rounded-lg max-w-2xl w-full my-8">
-              <div className="p-6 border-b border-gray-200 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-t-lg">
+          <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center overflow-y-auto">
+            <div className="bg-white rounded-lg max-w-2xl w-full my-8 flex flex-col max-h-[90vh] mx-4">
+              <div className="p-6 border-b border-gray-200 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-t-lg flex-shrink-0">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-2xl font-bold">Isaiah {chapterNumber}:{selectedVerse}</h3>
                   <button
                     onClick={() => setSelectedVerse(null)}
-                    className="text-white hover:text-gray-200 text-2xl font-bold"
+                    className="text-white hover:text-gray-200 text-2xl font-bold ml-4"
                   >
                     ×
                   </button>
@@ -207,7 +207,7 @@ function ChapterTemplate({ chapterNumber }: ChapterTemplateProps) {
                 </div>
               </div>
 
-              <div className="p-6">
+              <div className="p-6 overflow-y-auto">
                 {modalView === 'reflection' && (
                   <div>
                     <div className="flex gap-2 mb-4 flex-wrap">
@@ -309,9 +309,9 @@ function ChapterTemplate({ chapterNumber }: ChapterTemplateProps) {
           const centerIndex = sm.sections.findIndex((s: StructureSection) => s.isCenter);
 
           return (
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
-              <div className="bg-white rounded-lg max-w-3xl w-full my-8">
-                <div className="p-6 border-b border-gray-200 bg-white rounded-t-lg">
+            <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center overflow-y-auto">
+              <div className="bg-white rounded-lg max-w-3xl w-full mx-4 my-8 flex flex-col max-h-[90vh]">
+                <div className="p-6 border-b border-gray-200 bg-white rounded-t-lg flex-shrink-0">
                   <div className="flex justify-between items-start">
                     <div>
                       <h3 className="text-xl font-bold text-gray-800">{sm.title}</h3>
@@ -319,13 +319,13 @@ function ChapterTemplate({ chapterNumber }: ChapterTemplateProps) {
                     </div>
                     <button
                       onClick={() => setShowStructureModal(false)}
-                      className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+                      className="text-gray-500 hover:text-gray-700 text-2xl font-bold ml-4"
                     >
                       ×
                     </button>
                   </div>
                 </div>
-                <div className="p-6">
+                <div className="p-6 overflow-y-auto">
                   {sm.intro && <p className="text-sm text-gray-600 mb-4">{sm.intro}</p>}
                   <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
                     {sm.sections.map((section: StructureSection, idx: number) => {
