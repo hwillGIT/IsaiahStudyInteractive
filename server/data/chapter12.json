@@ -129,5 +129,31 @@
       ],
       "context": "The Holy One dwelling in Zion points to Immanuel (God with us) in Jesus and culminates in Revelation's new creation where God dwells eternally with His people. The arc from Exodus to Revelation centers on divine presence."
     }
-  }
+  },
+  "theme": "The Book of Immanuel concludes with joyful thanksgiving: drawing from wells of salvation and proclaiming God's deeds among all peoples",
+  "groupMetadata": {
+    "1": {
+      "name": "Personal Thanksgiving",
+      "transition": "Individual praise—God's anger turned to comfort, drawing from wells of salvation"
+    },
+    "2": {
+      "name": "Corporate Proclamation",
+      "transition": "Communal witness—proclaim His name, shout for joy, the Holy One dwells in Zion"
+    }
+  },
+  "hingeMetadata": {
+    "hinge": {
+      "explanation": "Chiastic Center (v3) — The heart of salvation: with joy drawing water from wells of deliverance",
+      "color": "bg-blue-500"
+    },
+    "turn-proclamation": {
+      "explanation": "Dramatic Turn (v4) — From personal praise to global mission: make His deeds known among all peoples",
+      "color": "bg-red-500"
+    },
+    "turn-thanksgiving": {
+      "explanation": "Narrative Transition (v1) — From God's anger to His comfort: thanksgiving for turned-away wrath",
+      "color": "bg-red-500"
+    }
+  },
+  "structureModal": null
 }

@@ -1,0 +1,793 @@
+{
+  "chapterNumber": 40,
+  "title": "Isaiah Chapter 40",
+  "subtitle": "Comfort My People",
+  "structureSubtitle": "See the God who never grows weary",
+  "verses": [
+    {
+      "number": 1,
+      "text": "Comfort, comfort my people, says your God.",
+      "group": 1,
+      "isHinge": true,
+      "hingeType": "foundation"
+    },
+    {
+      "number": 2,
+      "text": "Speak tenderly to Jerusalem, and proclaim to her that her hard service has been completed, that her sin has been paid for, that she has received from the LORD's hand double for all her sins.",
+      "group": 1
+    },
+    {
+      "number": 3,
+      "text": "A voice of one calling: \"In the wilderness prepare the way for the LORD; make straight in the desert a highway for our God.\"",
+      "group": 2
+    },
+    {
+      "number": 4,
+      "text": "Every valley shall be raised up, every mountain and hill made low; the rough ground shall become level, the rugged places a plain.",
+      "group": 2
+    },
+    {
+      "number": 5,
+      "text": "And the glory of the LORD will be revealed, and all people will see it together. For the mouth of the LORD has spoken.",
+      "group": 2
+    },
+    {
+      "number": 6,
+      "text": "A voice says, \"Cry out.\" And I said, \"What shall I cry?\" \"All people are like grass, and all their faithfulness is like the flowers of the field.\"",
+      "group": 3
+    },
+    {
+      "number": 7,
+      "text": "The grass withers and the flowers fall, because the breath of the LORD blows on them. Surely the people are grass.",
+      "group": 3
+    },
+    {
+      "number": 8,
+      "text": "The grass withers and the flowers fall, but the word of our God endures forever.",
+      "group": 3,
+      "isHinge": true,
+      "hingeType": "hinge"
+    },
+    {
+      "number": 9,
+      "text": "You who bring good news to Zion, go up on a high mountain. You who bring good news to Jerusalem, lift up your voice with a shout, lift it up, do not be afraid; say to the towns of Judah, \"Here is your God!\"",
+      "group": 4
+    },
+    {
+      "number": 10,
+      "text": "See, the Sovereign LORD comes with power, and he rules with a mighty arm. See, his reward is with him, and his recompense accompanies him.",
+      "group": 4
+    },
+    {
+      "number": 11,
+      "text": "He tends his flock like a shepherd: He gathers the lambs in his arms and carries them close to his heart; he gently leads those that have young.",
+      "group": 4
+    },
+    {
+      "number": 12,
+      "text": "Who has measured the waters in the hollow of his hand, or with the breadth of his hand marked off the heavens? Who has held the dust of the earth in a basket, or weighed the mountains on the scales and the hills in a balance?",
+      "group": 5
+    },
+    {
+      "number": 13,
+      "text": "Who can fathom the Spirit of the LORD, or instruct the LORD as his counselor?",
+      "group": 5
+    },
+    {
+      "number": 14,
+      "text": "Whom did the LORD consult to enlighten him, and who taught him the right way? Who was it that taught him knowledge, or showed him the path of understanding?",
+      "group": 5
+    },
+    {
+      "number": 15,
+      "text": "Surely the nations are like a drop in a bucket; they are regarded as dust on the scales; he weighs the islands as though they were fine dust.",
+      "group": 5
+    },
+    {
+      "number": 16,
+      "text": "Lebanon is not sufficient for altar fires, nor its animals enough for burnt offerings.",
+      "group": 5
+    },
+    {
+      "number": 17,
+      "text": "Before him all the nations are as nothing; they are regarded by him as worthless and less than nothing.",
+      "group": 5
+    },
+    {
+      "number": 18,
+      "text": "With whom, then, will you compare God? To what image will you liken him?",
+      "group": 5
+    },
+    {
+      "number": 19,
+      "text": "As for an idol, a metalworker casts it, and a goldsmith overlays it with gold and fashions silver chains for it.",
+      "group": 5
+    },
+    {
+      "number": 20,
+      "text": "A person too poor to present such an offering selects wood that will not rot; they look for a skilled worker to set up an idol that will not topple.",
+      "group": 5
+    },
+    {
+      "number": 21,
+      "text": "Do you not know? Have you not heard? Has it not been told you from the beginning? Have you not understood since the earth was founded?",
+      "group": 6
+    },
+    {
+      "number": 22,
+      "text": "He sits enthroned above the circle of the earth, and its people are like grasshoppers. He stretches out the heavens like a canopy, and spreads them out like a tent to live in.",
+      "group": 6
+    },
+    {
+      "number": 23,
+      "text": "He brings princes to naught and reduces the rulers of this world to nothing.",
+      "group": 6
+    },
+    {
+      "number": 24,
+      "text": "No sooner are they planted, no sooner are they sown, no sooner do they take root in the ground, than he blows on them and they wither, and a whirlwind sweeps them away like chaff.",
+      "group": 6
+    },
+    {
+      "number": 25,
+      "text": "\"To whom will you compare me? Or who is my equal?\" says the Holy One.",
+      "group": 6
+    },
+    {
+      "number": 26,
+      "text": "Lift up your eyes and look to the heavens: Who created all these? He who brings out the starry host one by one and calls forth each of them by name. Because of his great power and mighty strength, not one of them is missing.",
+      "group": 6
+    },
+    {
+      "number": 27,
+      "text": "Why do you complain, Jacob? Why do you say, Israel, \"My way is hidden from the LORD; my cause is disregarded by my God\"?",
+      "group": 7
+    },
+    {
+      "number": 28,
+      "text": "Do you not know? Have you not heard? The LORD is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary, and his understanding no one can fathom.",
+      "group": 7
+    },
+    {
+      "number": 29,
+      "text": "He gives strength to the weary and increases the power of the weak.",
+      "group": 7
+    },
+    {
+      "number": 30,
+      "text": "Even youths grow tired and weary, and young men stumble and fall;",
+      "group": 7
+    },
+    {
+      "number": 31,
+      "text": "but those who hope in the LORD will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.",
+      "group": 7,
+      "isHinge": true,
+      "hingeType": "climax"
+    }
+  ],
+  "reflections": {
+    "1": {
+      "seeing": "The doubled imperative 'Comfort, comfort' signals urgency and intensity — God is not casually suggesting comfort but commanding it with passionate insistence. This is the opening word of Second Isaiah, a dramatic shift from judgment to restoration. God calls Israel 'my people,' reaffirming covenant relationship after chapters of warning.",
+      "life": "When life has been hard and you feel like God is distant, hear this: He commands comfort for you. Not advice, not rebuke — comfort. Whatever 'hard service' you have endured, God sees it and speaks tenderly. Let this double command sink in: He really does want you comforted.",
+      "teach": "The repetition 'comfort, comfort' is a Hebrew intensifier expressing urgency and completeness. This verse marks the beginning of Second Isaiah (chapters 40-55), shifting from judgment oracles to salvation oracles. God initiates the comfort — it flows from His character, not Israel's merit."
+    },
+    "2": {
+      "seeing": "Three proclamations define Jerusalem's new reality: her hard service is completed, her sin is paid for, and she has received double from the LORD's hand. The language is legal and financial — debts settled, sentences served, accounts closed. 'Speak tenderly' literally means 'speak to her heart.'",
+      "life": "Do you still carry guilt for sins already forgiven? God says the account is closed — paid in full. He doesn't whisper accusations but speaks tenderly to your heart. Your spiritual warfare has an end point, and God Himself announces when it arrives.",
+      "teach": "The phrase 'speak tenderly' (literally 'speak to the heart') echoes Hosea 2:14 where God woos unfaithful Israel. 'Double for all her sins' has been debated — it may mean full punishment received, or generous restoration beyond what was deserved. Either way, the debt is settled."
+    },
+    "3": {
+      "seeing": "A mysterious voice calls out to prepare a highway in the wilderness for God's arrival. The imagery recalls ancient Near Eastern practice of building roads for a king's procession. The wilderness — place of Israel's wandering and testing — becomes the setting for God's grand entrance.",
+      "life": "What valleys and mountains need leveling in your life to make way for God? This verse asks: are there obstacles — pride, despair, stubbornness — blocking God's path to your heart? Preparing the way means clearing out whatever hinders His arrival.",
+      "teach": "All four Gospels apply this verse to John the Baptist (Matthew 3:3, Mark 1:3, Luke 3:4, John 1:23), making it one of the most important prophetic texts in the New Testament. The 'wilderness' highway becomes the path of repentance that prepares for Messiah."
+    },
+    "4": {
+      "seeing": "The landscape itself transforms: valleys rise, mountains sink, rough ground smooths out. This is cosmic renovation — creation responding to its Creator's approach. Nothing can obstruct God's coming; every barrier, natural or spiritual, must give way before Him.",
+      "life": "God specializes in leveling what seems impossible. The valley of your depression can be raised; the mountain of your obstacle can be brought low. He doesn't ask you to move them yourself — His coming transforms the landscape. Trust the process of divine renovation.",
+      "teach": "The highway imagery draws from Babylonian processional roads but subverts them: Israel's God needs no human-built road — He reshapes creation itself. The leveling of terrain symbolizes the removal of all barriers between God and His exiled people."
+    },
+    "5": {
+      "seeing": "The climax of the wilderness preparation: God's glory — His weighty, radiant presence — will be visible to all humanity together. This isn't a private revelation but a public, universal unveiling. The phrase 'the mouth of the LORD has spoken' seals it as irrevocable decree.",
+      "life": "God's glory isn't hidden from you — it will be revealed, and 'all people will see it together.' You aren't excluded from this vision. When God acts in your life, it becomes visible testimony that others can see. His glory isn't just for prophets; it's for everyone.",
+      "teach": "The universal scope — 'all people will see it together' — anticipates the global reach of God's salvation. 'The mouth of the LORD has spoken' is a prophetic authentication formula, guaranteeing fulfillment. Luke 3:6 extends this to 'all people will see God's salvation.'"
+    },
+    "6": {
+      "seeing": "A second voice commands the prophet to cry out, and the prophet asks what to proclaim. The answer is startling: all human achievement and loyalty is temporary, like wildflowers that bloom beautifully but briefly. This isn't cynicism but honest assessment of human frailty against divine permanence.",
+      "life": "Human promises fade. Careers end. Health fails. Relationships change. This verse isn't meant to depress you but to redirect your trust. When you stop building on grass and start building on God's word, you find something that actually lasts.",
+      "teach": "The Hebrew word translated 'faithfulness' (hesed) can also mean 'beauty' or 'lovingkindness.' Even humanity's best qualities — loyalty, beauty, goodness — are transient. First Peter 1:24-25 quotes this passage directly, applying it to the enduring gospel message."
+    },
+    "7": {
+      "seeing": "The withering isn't random — it happens 'because the breath of the LORD blows on them.' God's own breath (ruach — wind, spirit, breath) causes the fading. The declaration 'surely the people are grass' is blunt and universal. No exceptions, no exemptions — all human power is temporary.",
+      "life": "This feels harsh until you realize the point: if you're grass, stop pretending to be a mountain. Accepting your fragility isn't weakness — it's wisdom. The same God whose breath withers the grass is the one who offers you His eternal word in the very next verse.",
+      "teach": "The 'breath of the LORD' (ruach YHWH) is the same word used for God's Spirit in creation (Genesis 1:2). The Spirit that gives life also reveals the limits of mortal life. James 4:14 echoes this: 'You are a mist that appears for a little while and then vanishes.'"
+    },
+    "8": {
+      "seeing": "After establishing human frailty (grass withers, flowers fall), this verse delivers the thundering contrast: 'but the word of our God endures forever.' This is the theological hinge of the chapter — everything before shows what fades; everything after reveals what lasts. The possessive 'our God' makes it personal and covenantal.",
+      "life": "When everything around you is changing — jobs, health, relationships, culture — one thing remains unshakable: God's word. Not your feelings about God's word, not your interpretation of it, but the word itself. Build your life on the thing that cannot wither.",
+      "teach": "This verse is the theological anchor of Isaiah 40. First Peter 1:24-25 quotes it directly and identifies the 'word' with the gospel preached to believers. Jesus echoes the theme: 'Heaven and earth will pass away, but my words will never pass away' (Matthew 24:35)."
+    },
+    "9": {
+      "seeing": "The herald climbs a high mountain to shout good news to Zion — 'Here is your God!' The command is emphatic: lift up your voice, shout, don't be afraid. After exile's silence and shame, this is the announcement that changes everything. God hasn't abandoned His people; He's arriving.",
+      "life": "The best news you'll ever hear is three words: 'Here is your God.' Not 'here is your program' or 'here is your solution' — here is your God. When He shows up, everything changes. Don't be afraid to proclaim this loudly in your own life and to others.",
+      "teach": "The Hebrew mevasseret (feminine participle) suggests Zion herself is the herald, or that a female messenger brings the news. This is one of the Old Testament's clearest 'gospel' passages — the root word (basar) is the same word behind the Greek euangelion (good news/gospel)."
+    },
+    "10": {
+      "seeing": "God arrives with two hands: power in one ('he rules with a mighty arm') and reward in the other ('his reward is with him'). The Sovereign LORD comes not just to judge but to recompense — to give back what was lost. His strength serves His generosity.",
+      "life": "God's power isn't threatening when you belong to Him — it's reassuring. The same mighty arm that conquers is the arm that carries (v11). His reward isn't earned by your performance; it's something He brings with Him. He arrives already holding your blessing.",
+      "teach": "The 'mighty arm' is exodus language (Deuteronomy 4:34), suggesting a new deliverance. 'His reward is with him' anticipates Revelation 22:12 where Christ says, 'I am coming soon! My reward is with me.' The sovereign warrior-king is also the generous benefactor."
+    },
+    "11": {
+      "seeing": "One of Scripture's most tender images: the mighty God of verse 10 is now a shepherd gathering lambs to his chest and gently leading nursing ewes. Power and tenderness merge. He doesn't drive the flock; he carries the vulnerable and paces himself for the weak.",
+      "life": "If you feel like a struggling lamb today, this verse is for you. God doesn't demand you keep up — He picks you up. He carries you close to His heart, not at arm's length. His gentleness with those 'that have young' shows He understands your burdens and adjusts His pace for you.",
+      "teach": "This verse profoundly shapes the Good Shepherd imagery of Psalm 23, Ezekiel 34, and John 10. Jesus explicitly identifies Himself as this shepherd (John 10:11). The contrast between v10 (mighty warrior) and v11 (gentle shepherd) reveals God's complete character — omnipotent yet intimate."
+    },
+    "12": {
+      "seeing": "A series of rhetorical questions begins: Who measured the oceans in His palm? Who marked off the heavens with His hand-span? Who weighed mountains on scales? The answer is obvious — only God. The questions aren't seeking information; they're provoking awe at the Creator's incomprehensible scale.",
+      "life": "The God who holds the oceans in His hand is holding your situation too. If mountains fit on His scales, your problems aren't too heavy for Him. These questions aren't meant to make you feel small — they're meant to make your God feel big. Let that reframe your worry.",
+      "teach": "The rhetorical questions echo Job 38-41 where God interrogates Job from the whirlwind. The measurements — hollow of hand, breadth of hand, basket, scales — use human tools to highlight divine transcendence. What takes human effort, God does casually."
+    },
+    "13": {
+      "seeing": "Now the questions turn from physical creation to divine wisdom: who has directed God's Spirit or served as His advisor? The implied answer is emphatic: no one. God's understanding is entirely self-sufficient — He consulted no committee, hired no consultant, needed no counsel.",
+      "life": "Stop trying to advise God on how to run your life. He doesn't need your input on His plan — not because He's dismissive, but because His wisdom is infinitely beyond yours. The relief in this is enormous: the One directing your life actually knows what He's doing.",
+      "teach": "Paul quotes this verse in Romans 11:34 at the climax of his discussion of God's sovereign plan for Israel and the Gentiles. The rhetorical question establishes God's aseity — His complete self-sufficiency in wisdom, counsel, and understanding."
+    },
+    "14": {
+      "seeing": "The questions intensify: Who taught God the right way? Who showed Him understanding? The repetition drives home the point — God's knowledge isn't learned, borrowed, or secondhand. He is the original source of all wisdom, truth, and understanding. Everything wise comes from Him, not to Him.",
+      "life": "When you're confused and don't understand God's ways, remember: He's not confused. No one taught Him — He is understanding itself. Your inability to comprehend His plan doesn't mean He lacks one. Rest in the gap between your understanding and His.",
+      "teach": "These verses dismantle any notion of God as a 'first among equals' in a divine council who receives input from other beings. Isaiah asserts radical monotheism: God's wisdom is original, underived, and incomparable. This directly challenged Babylonian polytheism."
+    },
+    "15": {
+      "seeing": "The scale shifts to nations: mighty empires that terrify Israel are merely a drop in a bucket to God, dust on scales so small it doesn't even register. Islands — representing the farthest reaches of the known world — are fine dust He could blow away. The political powers exiles feared are cosmically insignificant.",
+      "life": "Whatever superpower or system intimidates you — a government, a corporation, a cultural force — is a drop in God's bucket. This isn't denial of their earthly power; it's perspective on their cosmic insignificance. Don't let a drop in a bucket determine your destiny.",
+      "teach": "The 'drop in a bucket' has become proverbial in English, originating from this verse. The imagery systematically dismantles Babylonian imperial theology that claimed universal sovereignty. For Jewish exiles in Babylon, this was revolutionary reassurance."
+    },
+    "16": {
+      "seeing": "Even Lebanon's vast cedar forests couldn't fuel enough altar fires, and all its animals couldn't provide adequate burnt offerings for this God. The grandest worship humanity could offer would fall laughably short. The point isn't that God rejects worship but that He transcends any offering we could imagine.",
+      "life": "You can never out-give God or impress Him with your sacrifices. This isn't discouraging — it's freeing. Your worship doesn't need to be spectacular to be accepted. He's not measuring your offering against His worthiness; He receives what you bring with grace.",
+      "teach": "Lebanon was renowned for its cedars (used in Solomon's temple) and abundant wildlife. Saying even Lebanon is insufficient emphasizes God's transcendence beyond all material worship. This anticipates the New Testament shift from temple sacrifice to spiritual worship (Romans 12:1)."
+    },
+    "17": {
+      "seeing": "The verdict is absolute: all nations together amount to nothing before God — 'worthless and less than nothing.' This isn't ethnic dismissal but theological proportion. Against infinite greatness, even the sum total of human civilization registers as zero. The mathematics of divine transcendence.",
+      "life": "If nations are nothing before God, then no human power can ultimately thwart His plans for you. The empires that seem to control the world are 'less than nothing' to the One who controls the empires. Let that recalibrate your fear and your faith.",
+      "teach": "The Hebrew tohu ('formless, void') echoes Genesis 1:2 — nations are as formless and empty as the pre-creation chaos. Before God, human power returns to its raw, unformed state. This is not nihilism but theocentric perspective."
+    },
+    "18": {
+      "seeing": "The rhetorical question pivots from God's power to God's incomparability: to what can you possibly compare Him? The question exposes the absurdity of idolatry — you cannot reduce the infinite to a likeness. Any image diminishes rather than represents.",
+      "life": "What mental images of God are too small? We all create functional idols — reducing God to a concept, a feeling, a theological system. This verse challenges every tidy box you've put God in. He's asking: is your idea of Me big enough?",
+      "teach": "This question launches the idol polemic (v18-20) that becomes a major theme in Second Isaiah (44:9-20, 46:1-7). The incomparability of YHWH is the theological foundation for monotheism — if nothing compares, nothing competes."
+    },
+    "19": {
+      "seeing": "The prophet sarcastically describes idol construction: a metalworker casts it, a goldsmith gilds it with gold and decorates it with silver chains. The craftsmanship is real, the artistry genuine — but the product is a manufactured deity. The irony: humans creating their own 'creator.'",
+      "life": "We still craft gods — not from metal, but from money, success, image, or ideology. Anything you construct and then bow down to functions as an idol. The irony is always the same: you made it, so how can it save you?",
+      "teach": "Isaiah's idol satire is both theological argument and social commentary. The goldsmith's craft mirrors Babylonian idol-making rituals (the mis pi ceremony) that Isaiah's audience would have witnessed in exile. The polemic demystifies what Babylon reverenced."
+    },
+    "20": {
+      "seeing": "Even the poor participate in idolatry — choosing rot-resistant wood and hiring a craftsman to make a stable idol. The tragic irony: the idol must be engineered not to fall over. A god that needs human engineering to stay upright exposes the bankruptcy of idolatry at every economic level.",
+      "life": "We spend enormous energy propping up false securities. How much effort goes into maintaining things that can't ultimately sustain you — image, control, self-sufficiency? A god you have to keep from toppling isn't a god worth worshipping.",
+      "teach": "The detail about selecting wood 'that will not rot' and ensuring the idol 'will not topple' is devastating satire. The worshiper must guarantee the stability of the deity — a complete inversion of the divine-human relationship. The true God sustains us; false gods need us to sustain them."
+    },
+    "21": {
+      "seeing": "Four rapid-fire questions challenge the audience: Don't you know? Haven't you heard? Hasn't it been told to you? Haven't you understood? The problem isn't lack of evidence but failure to recognize what's been plain since creation. God's greatness has been on display from the beginning.",
+      "life": "Sometimes you don't need new information — you need to remember what you already know. God has been revealing His power since the foundation of the earth. When doubt creeps in, this verse says: go back to what has been 'told you from the beginning.'",
+      "teach": "The four questions create an escalating challenge to willful ignorance. 'From the beginning' and 'since the earth was founded' ground God's revelation in creation itself (natural theology). Paul develops this in Romans 1:19-20: God's nature is clearly seen from what has been made."
+    },
+    "22": {
+      "seeing": "One of Scripture's most majestic images: God enthroned above the circle of the earth, humans appearing as grasshoppers below. He stretches out the heavens like a curtain, spreads them like a tent. The cosmos is His living room; the sky is His canopy. Scale beyond comprehension.",
+      "life": "You are a grasshopper to the God who uses the sky as a tent canopy. But here's the wonder: this same God knows you by name (v26) and carries you close to His heart (v11). Your smallness doesn't mean insignificance — it means you're held by Someone immeasurably great.",
+      "teach": "The 'circle of the earth' (hug ha'aretz) has generated much discussion about ancient cosmology. Whether referring to the horizon circle or earth's curvature, the point is God's transcendent vantage point. The tent/canopy imagery recalls Genesis 1's creation of the firmament."
+    },
+    "23": {
+      "seeing": "God doesn't merely limit rulers — He 'brings princes to naught' and 'reduces rulers to nothing.' The verbs are active: God Himself dethrones the powerful. This is direct comfort to exiles under Babylonian domination: your oppressors serve at God's pleasure, and their tenure is limited.",
+      "life": "The leaders and systems that seem immovable are subject to God's sovereign will. He has been toppling empires since history began. When political realities feel overwhelming, remember: God brings princes to naught. No human power has the final word.",
+      "teach": "This verse connects to Daniel's theme of God removing and establishing kings (Daniel 2:21). For exiles under Nebuchadnezzar, this was both comfort and subversion — the most powerful king on earth was 'nothing' before Israel's God."
+    },
+    "24": {
+      "seeing": "The imagery is vivid: rulers are like plants barely rooted before God blows on them and they wither, swept away like chaff. The 'no sooner... no sooner... no sooner' creates breathless urgency — their power is so brief it barely begins before it ends. A whirlwind finishes them.",
+      "life": "Human power has an expiration date. Every tyrant in history has fallen. This verse reminds you that the systems and people who seem permanently powerful are 'barely planted' in God's timeline. Don't invest your hope in what a single divine breath can scatter.",
+      "teach": "The plant metaphor echoes v6-8 (grass withers) but applies it specifically to political rulers. The 'whirlwind' (se'arah) is associated with divine theophany and judgment throughout the prophets (Nahum 1:3, Jeremiah 23:19). God's breath is both life-giving and judgment-bringing."
+    },
+    "25": {
+      "seeing": "Now God Himself speaks directly: 'To whom will you compare me? Or who is my equal?' The Holy One (qadosh) issues the challenge personally. After the prophet demonstrated God's incomparability through argument (v12-24), God Himself demands the verdict. The answer is silence — there is no equal.",
+      "life": "When God asks 'who is my equal?' — let it settle every comparison, every rival allegiance, every competing loyalty in your heart. Nothing and no one compares. This isn't arrogance; it's reality. And it's the most comforting reality possible, because your God has no competitor.",
+      "teach": "God's self-designation as 'the Holy One' connects to Isaiah 6's vision of divine holiness. The direct speech — God asking the question Himself rather than through the prophet — adds dramatic weight. This is the climax of the incomparability argument begun in v18."
+    },
+    "26": {
+      "seeing": "The invitation is breathtaking: look up at the stars. God created every one, brings them out like a commander mustering an army, calls each by name, and not one is missing. The God who manages billions of stars with personal attention manages your life with the same care.",
+      "life": "If God calls every star by name, He knows yours too. The next time you feel lost in the crowd or invisible to heaven, go outside and look up. The God who hasn't lost a single star hasn't lost track of you either. His 'great power and mighty strength' guarantees it.",
+      "teach": "Ancient Near Eastern cultures worshiped stars as deities. Isaiah subverts this: stars aren't gods — they're God's army, mustered and named by their Commander. 'Not one of them is missing' emphasizes both God's power (maintaining cosmic order) and His personal attention (knowing each by name)."
+    },
+    "27": {
+      "seeing": "After establishing God's cosmic greatness, Isaiah turns to the people's complaint: 'My way is hidden from the LORD; my cause is disregarded by my God.' The exile has made them feel invisible and forgotten. Their theological knowledge (God is great) hasn't reached their emotional reality (God seems absent).",
+      "life": "Have you ever felt like God can't see your struggle or doesn't care about your situation? You're in good company — Israel felt the same way. This verse validates the feeling without validating the conclusion. It's okay to feel hidden; it's not okay to believe you are.",
+      "teach": "The name 'Jacob/Israel' invokes covenant identity — God's chosen people feel abandoned by their choosing God. The parallel between 'my way is hidden' and 'my cause is disregarded' reveals a crisis of faith rooted in exile's suffering. Isaiah addresses theology meeting lived experience."
+    },
+    "28": {
+      "seeing": "Isaiah's answer to the complaint is majestic: The LORD is the everlasting God, Creator of earth's ends, who never tires or grows weary, whose understanding is unsearchable. Every attribute answers a fear: everlasting (He won't expire), Creator (He has authority), unwearied (He won't burn out), unfathomable (His plan exceeds your comprehension).",
+      "life": "When you're exhausted, God isn't. When you're confused, He understands perfectly. When you feel like your situation will outlast God's patience, remember: He is the everlasting God. He doesn't grow tired of you, tired of your prayers, or tired of your problems. He simply does not weary.",
+      "teach": "The title 'everlasting God' (El Olam) echoes Genesis 21:33 where Abraham calls on this name. 'Creator of the ends of the earth' bookends with v12's creation rhetoric. 'His understanding no one can fathom' echoes v13-14's rhetorical questions about God's unsearchable wisdom."
+    },
+    "29": {
+      "seeing": "The transfer begins: the God who never grows weary gives His inexhaustible strength to those who are weary. He increases power for the weak — not the strong, not the self-sufficient, but the powerless. This is grace in its purest form: divine strength flowing to human weakness.",
+      "life": "You don't have to generate your own strength. God gives it to the weary — that's you on your worst day. He increases power for the weak — that's you when you've hit bottom. The qualification for receiving God's strength isn't being strong; it's admitting you're weak.",
+      "teach": "Paul's 'when I am weak, then I am strong' (2 Corinthians 12:10) is a direct theological descendant of this verse. God's power flows to weakness, not to self-sufficiency. The Hebrew natan (gives) emphasizes this as gift, not reward."
+    },
+    "30": {
+      "seeing": "Even the best human specimens — youths in their prime, young men at peak strength — grow tired, stumble, and fall. The point demolishes the last refuge of self-reliance: if the strongest among us falter, then no amount of natural strength is sufficient. Human resources have a ceiling.",
+      "life": "Youth and energy aren't enough. Hustle and determination have limits. This verse is for every driven person who thought willpower could carry them forever. You will stumble. You will fall. And that's not failure — it's the necessary prelude to verse 31's promise.",
+      "teach": "The Hebrew na'ar (youth) and bahur (young men/chosen ones) represent the pinnacle of human vitality. Their stumbling isn't moral failure but physical limitation — a universal truth that sets up the supernatural alternative in v31."
+    },
+    "31": {
+      "seeing": "The chapter's glorious climax: those who 'hope in' (qavah — wait for, eagerly expect) the LORD receive supernatural renewal. The progression is significant — soaring, running, walking. Not ascending from walking to flying, but descending from ecstasy to endurance. The greatest miracle isn't the eagle flight; it's walking without fainting through the long, ordinary days.",
+      "life": "Soaring is spectacular. Running is exhilarating. But walking without fainting? That's where most of life happens. God promises strength for the mundane marathon, not just the dramatic moments. Waiting on the LORD isn't passive — it's the most active form of trust, and it renews everything.",
+      "teach": "The verb qavah (hope/wait) means to bind together, like twisting strands into a rope — intertwining your life with God's strength. The descending order (soar, run, walk) has puzzled commentators but likely reflects the truth that sustained, daily faithfulness requires more divine power than occasional bursts of spiritual ecstasy."
+    }
+  },
+  "scriptureConnections": {
+    "1": {
+      "from": [
+        "Psalm 23:4 - Even though I walk through the darkest valley, I will fear no evil, for you are with me; your rod and your staff, they comfort me",
+        "Lamentations 1:2 - She has none to comfort her among all her lovers; all her friends have betrayed her"
+      ],
+      "to": [
+        "2 Corinthians 1:3-4 - The God of all comfort, who comforts us in all our troubles so that we can comfort those in any trouble",
+        "Matthew 5:4 - Blessed are those who mourn, for they will be comforted"
+      ],
+      "context": "God's command to comfort His people launches Second Isaiah and finds fulfillment in Jesus' beatitude promise and Paul's theology of comfort flowing from God to His people and through them to others."
+    },
+    "2": {
+      "from": [
+        "Leviticus 26:34 - The land will enjoy its sabbath rest while it lies desolate and you are in the country of your enemies",
+        "Jeremiah 31:34 - For I will forgive their wickedness and will remember their sins no more"
+      ],
+      "to": [
+        "Colossians 2:13-14 - He forgave us all our sins, having canceled the charge of our legal indebtedness, nailing it to the cross",
+        "Romans 6:23 - For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord"
+      ],
+      "context": "Jerusalem's sin 'paid for' and 'hard service completed' anticipate the New Testament's proclamation that Christ's death fully settles humanity's debt before God. The exile's end foreshadows the ultimate liberation from sin."
+    },
+    "3": {
+      "from": [
+        "Exodus 23:20 - I am sending an angel ahead of you to guard you along the way and to bring you to the place I have prepared",
+        "Malachi 3:1 - I will send my messenger, who will prepare the way before me"
+      ],
+      "to": [
+        "Matthew 3:3 - This is he who was spoken of through the prophet Isaiah: A voice of one calling in the wilderness",
+        "John 1:23 - John replied in the words of Isaiah the prophet, I am the voice of one calling in the wilderness"
+      ],
+      "context": "All four Gospels identify John the Baptist as the fulfillment of this voice. The wilderness highway for God becomes the baptismal call to repentance that prepares for Jesus — the very presence of God walking among His people."
+    },
+    "4": {
+      "from": [
+        "Isaiah 35:8 - A highway will be there; it will be called the Way of Holiness",
+        "Psalm 68:4 - Sing to God, sing in praise of his name, extol him who rides on the clouds"
+      ],
+      "to": [
+        "Luke 3:5 - Every valley shall be filled in, every mountain and hill made low",
+        "Philippians 2:10-11 - At the name of Jesus every knee should bow, in heaven and on earth and under the earth"
+      ],
+      "context": "Luke quotes this verse directly in his account of John the Baptist's ministry. The leveling of terrain symbolizes how every barrier to God's kingdom — social, spiritual, physical — is overcome in Christ's coming."
+    },
+    "5": {
+      "from": [
+        "Exodus 16:10 - They looked toward the desert, and there was the glory of the LORD appearing in the cloud",
+        "Psalm 97:6 - The heavens proclaim his righteousness, and all peoples see his glory"
+      ],
+      "to": [
+        "John 1:14 - The Word became flesh and made his dwelling among us. We have seen his glory, the glory of the one and only Son",
+        "Luke 2:30-32 - My eyes have seen your salvation, which you have prepared in the sight of all nations, a light for revelation to the Gentiles"
+      ],
+      "context": "The universal revelation of God's glory finds its ultimate expression in the incarnation. What Isaiah promised — all people seeing God's glory — John declares fulfilled in Jesus, the Word made flesh dwelling among humanity."
+    },
+    "6": {
+      "from": [
+        "Psalm 103:15-16 - The life of mortals is like grass, they flourish like a flower of the field; the wind blows over it and it is gone",
+        "Job 14:1-2 - Mortals, born of woman, are of few days and full of trouble. They spring up like flowers and wither away"
+      ],
+      "to": [
+        "James 1:10-11 - The rich should take pride in their humiliation, since they will pass away like a wild flower",
+        "1 Peter 1:24 - All people are like grass, and all their glory is like the flowers of the field; the grass withers and the flowers fall"
+      ],
+      "context": "The transience of human life is a consistent biblical theme from Job through James. Peter directly quotes this passage to contrast the perishable with the imperishable word of God that brings new birth."
+    },
+    "7": {
+      "from": [
+        "Psalm 90:5-6 - Yet you sweep people away in the sleep of death; they are like the new grass of the morning — in the morning it springs up new, but by evening it is dry and withered",
+        "Isaiah 37:27 - Their people, drained of power, are dismayed and put to shame. They are like plants in the field, like tender green shoots"
+      ],
+      "to": [
+        "James 4:14 - Why, you do not even know what will happen tomorrow. What is your life? You are a mist that appears for a little while and then vanishes",
+        "1 Peter 1:24-25 - The grass withers and the flowers fall, but the word of the Lord endures forever"
+      ],
+      "context": "The breath of the LORD that withers grass connects to the Spirit's role in both judgment and renewal. Peter and James apply this human frailty to encourage believers to anchor their hope in something permanent — God's enduring word."
+    },
+    "8": {
+      "from": [
+        "Psalm 119:89 - Your word, LORD, is eternal; it stands firm in the heavens",
+        "Isaiah 55:10-11 - So is my word that goes out from my mouth: It will not return to me empty, but will accomplish what I desire"
+      ],
+      "to": [
+        "Matthew 24:35 - Heaven and earth will pass away, but my words will never pass away",
+        "1 Peter 1:25 - But the word of the Lord endures forever. And this is the word that was preached to you"
+      ],
+      "context": "The eternal word of God becomes the theological backbone of biblical faith. Jesus applies this permanence to His own words, and Peter identifies Isaiah's enduring word with the gospel message — the same word that outlasts all creation."
+    },
+    "9": {
+      "from": [
+        "Isaiah 52:7 - How beautiful on the mountains are the feet of those who bring good news, who proclaim peace",
+        "Nahum 1:15 - Look, there on the mountains, the feet of one who brings good news, who proclaims peace"
+      ],
+      "to": [
+        "Romans 10:15 - How beautiful are the feet of those who bring good news!",
+        "Luke 2:10 - The angel said to them, Do not be afraid. I bring you good news that will cause great joy for all the people"
+      ],
+      "context": "The herald's 'good news' (basar) becomes euangelion in Greek — the root of 'gospel' and 'evangelize.' The angel's announcement to shepherds at Jesus' birth echoes this verse: good news, do not be afraid, here is your God incarnate."
+    },
+    "10": {
+      "from": [
+        "Deuteronomy 4:34 - Has any god ever tried to take for himself one nation out of another nation, by testings, by signs and wonders, by war, by a mighty hand and an outstretched arm",
+        "Psalm 62:12 - And with you, Lord, is unfailing love; and You reward everyone according to what they have done"
+      ],
+      "to": [
+        "Revelation 22:12 - Look, I am coming soon! My reward is with me, and I will give to each person according to what they have done",
+        "Titus 2:13 - While we wait for the blessed hope — the appearing of the glory of our great God and Savior, Jesus Christ"
+      ],
+      "context": "Christ's second coming language directly echoes this verse — coming with power, reward in hand. What Isaiah described as God's arrival to rescue exiles, Revelation applies to Christ's final return to establish His kingdom."
+    },
+    "11": {
+      "from": [
+        "Psalm 23:1-2 - The LORD is my shepherd, I lack nothing. He makes me lie down in green pastures, he leads me beside quiet waters",
+        "Ezekiel 34:15-16 - I myself will tend my sheep and have them lie down, declares the Sovereign LORD. I will search for the lost and bring back the strays"
+      ],
+      "to": [
+        "John 10:11 - I am the good shepherd. The good shepherd lays down his life for the sheep",
+        "1 Peter 2:25 - For you were like sheep going astray, but now you have returned to the Shepherd and Overseer of your souls"
+      ],
+      "context": "The tender shepherd image runs from David's psalm through Ezekiel's prophecy to Jesus' self-identification as the Good Shepherd. God's personal, gentle care for His flock reaches its fullest expression in Christ, who carries His lambs and lays down His life for them."
+    },
+    "12": {
+      "from": [
+        "Job 38:4-5 - Where were you when I laid the earth's foundation? Tell me, if you understand. Who marked off its dimensions?",
+        "Proverbs 30:4 - Who has gone up to heaven and come down? Whose hands have gathered up the wind? Who has wrapped up the waters in a cloak?"
+      ],
+      "to": [
+        "Romans 11:33 - Oh, the depth of the riches of the wisdom and knowledge of God! How unsearchable his judgments, and his paths beyond tracing out!",
+        "Colossians 1:16-17 - For in him all things were created: things in heaven and on earth. He is before all things, and in him all things hold together"
+      ],
+      "context": "The rhetorical questions about creation find their New Testament answer in Christ, through whom and for whom all things were created. Paul's awe at God's unsearchable wisdom directly echoes Isaiah's challenge to comprehend the Creator."
+    },
+    "13": {
+      "from": [
+        "Job 21:22 - Can anyone teach knowledge to God, since he judges even the highest?",
+        "Proverbs 8:22-27 - The LORD brought me forth as the first of his works; I was there when he set the heavens in place"
+      ],
+      "to": [
+        "Romans 11:34 - Who has known the mind of the Lord? Or who has been his counselor?",
+        "1 Corinthians 2:16 - For who has known the mind of the Lord so as to instruct him? But we have the mind of Christ"
+      ],
+      "context": "Paul quotes this verse directly in Romans 11:34 to conclude his argument about God's sovereign plan. Remarkably, 1 Corinthians 2:16 says believers actually do have access to God's mind — through Christ and the Spirit."
+    },
+    "14": {
+      "from": [
+        "Job 36:22 - God is exalted in his power. Who is a teacher like him?",
+        "1 Kings 8:39 - For you alone know every human heart"
+      ],
+      "to": [
+        "Ephesians 1:11 - In him we were also chosen, having been predestined according to the plan of him who works out everything in conformity with the purpose of his will",
+        "Colossians 2:3 - In whom are hidden all the treasures of wisdom and knowledge"
+      ],
+      "context": "God's underived wisdom, needing no teacher, finds its New Testament expression in Christ, in whom all treasures of wisdom and knowledge are hidden. What Isaiah declares about God, Paul reveals about Christ."
+    },
+    "15": {
+      "from": [
+        "Psalm 2:1-4 - Why do the nations conspire? The One enthroned in heaven laughs; the Lord scoffs at them",
+        "Deuteronomy 32:8 - When the Most High gave the nations their inheritance, when he divided all mankind"
+      ],
+      "to": [
+        "Acts 17:26 - From one man he made all the nations, that they should inhabit the whole earth; and he marked out their appointed times and boundaries",
+        "Revelation 11:15 - The kingdom of the world has become the kingdom of our Lord and of his Messiah, and he will reign for ever and ever"
+      ],
+      "context": "Nations as a 'drop in a bucket' before God finds fulfillment in Acts' declaration that God determines nations' times and boundaries, and Revelation's vision of all kingdoms becoming Christ's kingdom. Human empire is always under divine sovereignty."
+    },
+    "16": {
+      "from": [
+        "Psalm 50:9-12 - I have no need of a bull from your stall or of goats from your pens, for every animal of the forest is mine",
+        "1 Kings 4:33 - He spoke about plant life, from the cedar of Lebanon to the hyssop that grows out of walls"
+      ],
+      "to": [
+        "Hebrews 10:4-5 - It is impossible for the blood of bulls and goats to take away sins. Therefore, when Christ came into the world, he said: Sacrifice and offering you did not desire",
+        "Romans 12:1 - Offer your bodies as a living sacrifice, holy and pleasing to God — this is your true and proper worship"
+      ],
+      "context": "If all of Lebanon's resources can't adequately worship God, then no material sacrifice ever could. Hebrews declares this truth explicitly: animal sacrifice was always insufficient. Only Christ's self-offering and our living sacrifice of surrender truly honor God."
+    },
+    "17": {
+      "from": [
+        "Daniel 4:35 - All the peoples of the earth are regarded as nothing. He does as he pleases with the powers of heaven and the peoples of the earth",
+        "Psalm 33:10 - The LORD foils the plans of the nations; he thwarts the purposes of the peoples"
+      ],
+      "to": [
+        "Acts 4:25-28 - Indeed Herod and Pontius Pilate met together with the Gentiles and the people of Israel to conspire against your holy servant Jesus. They did what your power and will had decided beforehand should happen",
+        "1 Corinthians 1:28 - God chose the lowly things of this world and the despised things — and the things that are not — to nullify the things that are"
+      ],
+      "context": "Nations as 'nothing' before God doesn't mean they're purposeless — Acts shows even hostile nations fulfill God's plan. Paul's theology of God choosing 'things that are not' to nullify 'things that are' echoes Isaiah's radical reframing of power."
+    },
+    "18": {
+      "from": [
+        "Exodus 20:4 - You shall not make for yourself an image in the form of anything in heaven above or on the earth beneath",
+        "Deuteronomy 4:15-16 - You saw no form of any kind the day the LORD spoke to you at Horeb. Therefore watch yourselves very carefully so that you do not become corrupt and make for yourselves an idol"
+      ],
+      "to": [
+        "Acts 17:29 - We should not think that the divine being is like gold or silver or stone — an image made by human design and skill",
+        "Romans 1:23 - They exchanged the glory of the immortal God for images made to look like a mortal human being and birds and animals and reptiles"
+      ],
+      "context": "Isaiah's challenge to idol-making anticipates Paul's Areopagus sermon and Romans' indictment of idolatry. The incomparable God cannot be captured in any image, and attempts to do so exchange His glory for a lie."
+    },
+    "19": {
+      "from": [
+        "Isaiah 44:9-10 - All who make idols are nothing, and the things they treasure are worthless. Those who would speak up for them are blind",
+        "Jeremiah 10:3-5 - The practices of the peoples are worthless; they cut a tree out of the forest, and a craftsman shapes it with his chisel"
+      ],
+      "to": [
+        "Acts 19:26 - Paul has convinced and led astray large numbers of people here in Ephesus. He says that gods made by human hands are no gods at all",
+        "1 John 5:21 - Dear children, keep yourselves from idols"
+      ],
+      "context": "Isaiah's satire on idol manufacturing echoes through Scripture's consistent polemic against crafted gods. In Ephesus, this teaching caused a riot (Acts 19) because it threatened the idol industry — truth about God always disrupts false worship economies."
+    },
+    "20": {
+      "from": [
+        "Isaiah 46:7 - They lift it to their shoulders and carry it; they set it up in its place, and there it stands. From that spot it cannot move",
+        "Habakkuk 2:18-19 - Of what value is an idol carved by a craftsman? Or an image that teaches lies? For the one who makes it trusts in his own creation"
+      ],
+      "to": [
+        "1 Corinthians 8:4 - We know that an idol is nothing at all in the world and that there is no God but one",
+        "1 Thessalonians 1:9 - You turned to God from idols to serve the living and true God"
+      ],
+      "context": "An idol that must be engineered not to topple is the ultimate self-defeating worship. Paul's converts 'turned from idols to serve the living God' — from propped-up statues to the God who holds the universe in His hands."
+    },
+    "21": {
+      "from": [
+        "Psalm 19:1-2 - The heavens declare the glory of God; the skies proclaim the work of his hands. Day after day they pour forth speech",
+        "Job 38:4 - Where were you when I laid the earth's foundation? Tell me, if you understand"
+      ],
+      "to": [
+        "Romans 1:19-20 - Since the creation of the world God's invisible qualities — his eternal power and divine nature — have been clearly seen, being understood from what has been made",
+        "Hebrews 1:10 - In the beginning, Lord, you laid the foundations of the earth, and the heavens are the work of your hands"
+      ],
+      "context": "Isaiah's four questions assume God's existence has been evident since creation. Paul develops this into formal natural theology in Romans 1: creation itself is sufficient evidence that humanity is 'without excuse' in ignoring God."
+    },
+    "22": {
+      "from": [
+        "Psalm 104:2 - The LORD wraps himself in light as with a garment; he stretches out the heavens like a tent",
+        "Job 22:14 - Thick clouds veil him, so he does not see us as he goes about in the vaulted heavens"
+      ],
+      "to": [
+        "Hebrews 1:10-12 - In the beginning, Lord, you laid the foundations of the earth; they will perish, but you remain; they will all wear out like a garment",
+        "Revelation 4:2 - At once I was in the Spirit, and there before me was a throne in heaven with someone sitting on it"
+      ],
+      "context": "God enthroned above creation — stretching heavens like a tent — anticipates John's throne-room vision in Revelation 4. The Creator who dwarfs His creation is the same God who sits on heaven's throne surrounded by worship."
+    },
+    "23": {
+      "from": [
+        "Psalm 107:40 - He who pours contempt on nobles made them wander in a trackless waste",
+        "Daniel 2:21 - He changes times and seasons; he deposes kings and raises up others"
+      ],
+      "to": [
+        "Luke 1:52 - He has brought down rulers from their thrones but has lifted up the humble",
+        "1 Corinthians 2:6 - We do, however, speak a message of wisdom among the mature, but not the wisdom of this age or of the rulers of this age, who are coming to nothing"
+      ],
+      "context": "Mary's Magnificat directly echoes this verse — God toppling the powerful and lifting the humble. Paul declares the 'rulers of this age are coming to nothing,' using Isaiah's exact theology of divine sovereignty over human power."
+    },
+    "24": {
+      "from": [
+        "Psalm 1:4 - Not so the wicked! They are like chaff that the wind blows away",
+        "Isaiah 17:13 - Although the peoples roar like the roar of surging waters, when he rebukes them they flee far away, driven before the wind like chaff on the hills"
+      ],
+      "to": [
+        "Matthew 3:12 - His winnowing fork is in his hand, and he will clear his threshing floor, gathering his wheat into the barn and burning up the chaff with unquenchable fire",
+        "Revelation 6:15-17 - Then the kings of the earth, the princes, the generals hid in caves and called to the mountains: Fall on us and hide us from the face of him who sits on the throne"
+      ],
+      "context": "The chaff imagery connects Isaiah's prophecy to John the Baptist's description of Messiah's judgment and Revelation's vision of earthly rulers terrified before God's throne. No political power survives God's winnowing wind."
+    },
+    "25": {
+      "from": [
+        "Exodus 15:11 - Who among the gods is like you, LORD? Who is like you — majestic in holiness, awesome in glory, working wonders?",
+        "1 Samuel 2:2 - There is no one holy like the LORD; there is no one besides you; there is no Rock like our God"
+      ],
+      "to": [
+        "Philippians 2:9-10 - Therefore God exalted him to the highest place and gave him the name that is above every name, that at the name of Jesus every knee should bow",
+        "Revelation 15:4 - Who will not fear you, Lord, and bring glory to your name? For you alone are holy"
+      ],
+      "context": "The Holy One's challenge — 'who is my equal?' — reverberates from Moses' Red Sea song through Hannah's prayer to Revelation's worship. The answer across Scripture is unanimous: no one compares, and in Christ, God's unmatched glory is fully revealed."
+    },
+    "26": {
+      "from": [
+        "Psalm 147:4 - He determines the number of the stars and calls them each by name",
+        "Genesis 15:5 - He took him outside and said, Look up at the sky and count the stars — if indeed you can count them. So shall your offspring be"
+      ],
+      "to": [
+        "Colossians 1:16-17 - For in him all things were created: things in heaven and on earth, visible and invisible. He is before all things, and in him all things hold together",
+        "Hebrews 1:3 - The Son is the radiance of God's glory and the exact representation of his being, sustaining all things by his powerful word"
+      ],
+      "context": "God naming and sustaining every star reveals both His creative power and personal attention. The New Testament attributes this same sustaining power to Christ — the one through whom all things hold together, the word that sustains all things."
+    },
+    "27": {
+      "from": [
+        "Psalm 13:1 - How long, LORD? Will you forget me forever? How long will you hide your face from me?",
+        "Lamentations 3:8 - Even when I call out or cry for help, he shuts out my prayer"
+      ],
+      "to": [
+        "Romans 8:31-32 - If God is for us, who can be against us? He who did not spare his own Son, how will he not also, along with him, graciously give us all things?",
+        "Hebrews 13:5 - Never will I leave you; never will I forsake you"
+      ],
+      "context": "Israel's complaint — my way is hidden from God — echoes the psalmist's anguish and Lamentations' grief. Paul's answer in Romans 8 is definitive: nothing can separate us from God's love. The feeling of abandonment is real, but God's presence is more real."
+    },
+    "28": {
+      "from": [
+        "Genesis 21:33 - Abraham planted a tamarisk tree in Beersheba, and there he called on the name of the LORD, the Eternal God",
+        "Deuteronomy 33:27 - The eternal God is your refuge, and underneath are the everlasting arms"
+      ],
+      "to": [
+        "Hebrews 13:8 - Jesus Christ is the same yesterday and today and forever",
+        "Romans 11:33 - Oh, the depth of the riches of the wisdom and knowledge of God! How unsearchable his judgments, and his paths beyond tracing out!"
+      ],
+      "context": "The everlasting God of Abraham, whose arms are underneath His people, is revealed in the New Testament as Jesus Christ — the same yesterday, today, and forever. God's unwearying nature guarantees His eternal faithfulness to every generation."
+    },
+    "29": {
+      "from": [
+        "Psalm 73:26 - My flesh and my heart may fail, but God is the strength of my heart and my portion forever",
+        "Psalm 29:11 - The LORD gives strength to his people; the LORD blesses his people with peace"
+      ],
+      "to": [
+        "2 Corinthians 12:9-10 - My grace is sufficient for you, for my power is made perfect in weakness. That is why, for Christ's sake, I delight in weaknesses",
+        "Philippians 4:13 - I can do all this through him who gives me strength"
+      ],
+      "context": "God giving strength to the weary becomes Paul's theology of power perfected in weakness. What Isaiah promises corporately to Israel, Paul experiences personally in Christ — divine strength flowing precisely into human exhaustion."
+    },
+    "30": {
+      "from": [
+        "Ecclesiastes 12:1 - Remember your Creator in the days of your youth, before the days of trouble come",
+        "Psalm 39:5 - You have made my days a mere handbreadth; the span of my years is as nothing before you. Everyone is but a breath, even those who seem secure"
+      ],
+      "to": [
+        "2 Corinthians 4:16 - Though outwardly we are wasting away, yet inwardly we are being renewed day by day",
+        "Galatians 6:9 - Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up"
+      ],
+      "context": "Even youth's strength fails — a truth that redirects hope from human resources to divine renewal. Paul transforms this observation into hope: outward wasting away coincides with inward daily renewal, and perseverance through weariness leads to harvest."
+    },
+    "31": {
+      "from": [
+        "Psalm 103:5 - Who satisfies your desires with good things so that your youth is renewed like the eagle's",
+        "Deuteronomy 32:11 - Like an eagle that stirs up its nest and hovers over its young, that spreads its wings to catch them and carries them aloft"
+      ],
+      "to": [
+        "Philippians 3:13-14 - Forgetting what is behind and straining toward what is ahead, I press on toward the goal to win the prize for which God has called me heavenward",
+        "Hebrews 12:1-2 - Let us run with perseverance the race marked out for us, fixing our eyes on Jesus, the pioneer and perfecter of faith"
+      ],
+      "context": "Soaring on eagles' wings, running without weariness, walking without fainting — this promise climaxes Isaiah 40 and fuels all subsequent biblical endurance language. Hebrews' call to 'run with perseverance' draws directly from this well of divine renewal through hopeful, patient trust."
+    }
+  },
+  "theme": "The God who commands comfort, whose word endures forever, and who renews the strength of those who wait on Him — the magnificent opening of Second Isaiah",
+  "groupMetadata": {
+    "1": {
+      "name": "Comfort, Comfort My People",
+      "transition": "Speak tenderly to Jerusalem — her warfare is ended, her sin paid for"
+    },
+    "2": {
+      "name": "A Voice in the Wilderness",
+      "transition": "Prepare the way of the LORD — every valley lifted, every mountain made low"
+    },
+    "3": {
+      "name": "The Word Stands Forever",
+      "transition": "All flesh is grass, but the word of our God endures forever"
+    },
+    "4": {
+      "name": "Behold Your God!",
+      "transition": "Good tidings: God comes with power yet tends His flock like a shepherd"
+    },
+    "5": {
+      "name": "The Incomparable Creator",
+      "transition": "Who has measured the waters? Nations are a drop in a bucket"
+    },
+    "6": {
+      "name": "God Sits Above the Circle of the Earth",
+      "transition": "Princes become nothing; God stretches out the heavens"
+    },
+    "7": {
+      "name": "Those Who Wait on the LORD",
+      "transition": "Why do you say your way is hidden? He who created the ends of the earth does not grow weary"
+    }
+  },
+  "hingeMetadata": {
+    "foundation": {
+      "explanation": "Foundation (v1) — 'Comfort, comfort my people' — the opening word of Second Isaiah, God's passionate command to console His exiled people",
+      "color": "bg-green-500"
+    },
+    "hinge": {
+      "explanation": "Theological Anchor (v8) — 'The word of our God endures forever' — the permanent truth that outlasts all human frailty and earthly power",
+      "color": "bg-blue-500"
+    },
+    "climax": {
+      "explanation": "Glorious Climax (v31) — 'They will soar on wings like eagles' — the promise of supernatural renewal for all who wait on the LORD",
+      "color": "bg-purple-500"
+    }
+  },
+  "structureModal": {
+    "title": "Chapter 40 Structure",
+    "subtitle": "Comfort My People",
+    "intro": "Isaiah 40 opens the second major division of the book with a sweeping chiastic structure that moves from God's tender comfort inward to the eternal word, then outward to God's incomparable greatness. The center — 'Here is your God!' — is the heartbeat of the chapter: everything before prepares for His arrival, and everything after reveals His majesty. The structure mirrors the journey from human weakness to divine strength, beginning and ending with comfort for the weary.",
+    "sections": [
+      {
+        "label": "A (v1-2)",
+        "name": "Comfort Proclaimed",
+        "description": "God commands double comfort for Jerusalem — her hard service is over, her sin is paid for, and He speaks tenderly to her heart",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v3-5)",
+        "name": "Prepare the Way",
+        "description": "A voice calls to build a highway in the wilderness — valleys raised, mountains lowered — so God's glory can be revealed to all people",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "C (v6-8)",
+        "name": "The Eternal Word",
+        "description": "All people are like grass that withers, but God's word endures forever — the great hinge between human frailty and divine permanence",
+        "color": "purple",
+        "indent": 2,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v9-11)",
+        "name": "Here Is Your God!",
+        "description": "The herald shouts the best news possible — God arrives with power in one hand and tenderness in the other, ruling like a king yet carrying His lambs close to His heart",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "Here is your God! He tends his flock like a shepherd: He gathers the lambs in his arms and carries them close to his heart"
+      },
+      {
+        "label": "C' (v12-20)",
+        "name": "The Incomparable Creator",
+        "description": "Rhetorical questions reveal God's unmatched greatness — He measured the oceans in His palm, nations are a drop in a bucket, and idols are handmade jokes that need nailing down to stay upright",
+        "color": "purple",
+        "indent": 2,
+        "isCenter": false
+      },
+      {
+        "label": "B' (v21-26)",
+        "name": "God Enthroned Above All",
+        "description": "Do you not know? God sits above the circle of the earth, stretches out the heavens like a tent, and calls every star by name — nothing escapes His notice",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v27-31)",
+        "name": "Strength for the Weary",
+        "description": "The chapter circles back to the weary — God never grows tired, He gives strength to the weak, and those who hope in Him will soar on wings like eagles",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with God commanding comfort for His exhausted people whose 'hard service' is over (A), and closes with God giving strength to the weary so they will 'run and not grow weary' (A'). Both sections address human exhaustion — the first declares the struggle is over, the last promises supernatural renewal. The God who ends your suffering also renews your strength."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "The wilderness highway prepares for God's glory to be revealed to 'all people' (B), and God enthroned above creation calls every star by name with none missing (B'). Both sections show God's glory on display — first through landscape transformation, then through cosmic sovereignty. The God who reshapes valleys and mountains also stretches out the heavens."
+      },
+      {
+        "pair": "C ↔ C'",
+        "explanation": "Human frailty — 'all people are like grass' that withers and falls (C) — is matched by God's infinite greatness over nations, wisdom, and idol-makers (C'). Both sections contrast human smallness with divine permanence. The grass withers, but the God who made it holds oceans in His palm."
+      }
+    ],
+    "closing": "Isaiah 40 wraps exhausted exiles in a structure that begins and ends with comfort, moving inward to the eternal word and outward to the incomparable God. At the center stands the announcement every weary heart needs: 'Here is your God!' — mighty enough to rule the nations yet gentle enough to carry a lamb against His chest."
+  }
+}

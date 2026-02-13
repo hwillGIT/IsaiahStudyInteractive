@@ -454,5 +454,43 @@
       ],
       "context": "Even in complete breakdown and civil war, God's outstretched hand remains as an invitation. His anger serves His ultimate purpose of restoration, not destruction."
     }
-  }
+  },
+  "theme": "From deep darkness to great light—the child born to us will establish endless peace and justice",
+  "groupMetadata": {
+    "1": {
+      "name": "Light in Darkness",
+      "transition": "Dawn breaks after anguish - great light in Galilee"
+    },
+    "2": {
+      "name": "Joy and Victory",
+      "transition": "National joy escalates - harvest celebration and Midianite victory"
+    },
+    "3": {
+      "name": "Coronation and Government",
+      "transition": "Royal enthronement - child born with titles, eternal throne established"
+    },
+    "4": {
+      "name": "Judgment I - Pride and Adversaries",
+      "transition": "God confronts pride - adversaries devour, refrain marks persistent judgment"
+    },
+    "5": {
+      "name": "Judgment II - Leadership Excision",
+      "transition": "Leadership removed - head and tail cut off, false guides exposed"
+    },
+    "6": {
+      "name": "Judgment III - Social Cannibalism",
+      "transition": "Social breakdown complete - cannibalism and scorched land"
+    }
+  },
+  "hingeMetadata": {
+    "hinge": {
+      "explanation": "Chiastic Center (v6) — The child born to us: Wonderful Counselor, Mighty God, establishing endless peace on David's throne",
+      "color": "bg-blue-500"
+    },
+    "turn-darkness-to-light": {
+      "explanation": "Dramatic Turn (v2) — The great reversal: those walking in darkness see a great light breaking forth",
+      "color": "bg-red-500"
+    }
+  },
+  "structureModal": null
 }

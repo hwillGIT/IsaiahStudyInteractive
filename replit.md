@@ -1,24 +1,31 @@
-# Isaiah Interactive Study - Chapters 1-12
+# Isaiah Interactive Study - Chapters 1-55
 
 ## Overview
 
-This interactive web application facilitates the study of Isaiah Chapters 1-12, known as the "Book of Immanuel." It features a color-coded grid visualization of verses grouped thematically, with interactive hover tooltips and transformation point markers. The application provides a two-level modal navigation system for both reflective study (through "Seeing Connections," "How This Helps My Life," and "What This Teaches Us" modes) and "Scripture Connections," which illustrate how each verse integrates into the broader biblical narrative. Built with React, TypeScript, Tailwind CSS, React Router, and an Express backend API, it offers an engaging educational experience across 12 chapters, complete with detailed reflections and inter-biblical connections. A dedicated home page includes chapter navigation cards and educational modals explaining the book's structure and app usage.
+This interactive web application facilitates the study of Isaiah Chapters 1-55, covering First Isaiah (Book of Immanuel, Oracles Against Nations, Isaiah Apocalypse, Woe Oracles, Historical Narrative) and Second Isaiah (Comfort and Redemption). It features a color-coded grid visualization of verses grouped thematically, with interactive hover tooltips and transformation point markers. The application provides a two-level modal navigation system for both reflective study (through "Seeing Connections," "How This Helps My Life," and "What This Teaches Us" modes) and "Scripture Connections," which illustrate how each verse integrates into the broader biblical narrative. Built with React, TypeScript, Tailwind CSS, React Router, and an Express backend API, it offers an engaging educational experience across 55 chapters, complete with detailed reflections and inter-biblical connections. A dedicated home page includes chapter navigation cards organized by section and educational modals explaining the book's structure and app usage.
 
-**Completed Chapters**:
-- Chapter 1 (31 verses): The Rebellious Nation and the Invitation to Return
-- Chapter 2 (22 verses): God's Mountain, Idolatry, and the Day of the LORD
-- Chapter 3 (25 verses): Judgment on Leaders and Pride
-- Chapter 4 (6 verses): The Branch of the LORD and God's Return
-- Chapter 5 (30 verses): The Song of the Vineyard and Six Woes
-- Chapter 6 (13 verses): Encountering God's Holiness and Divine Commissioning
-- Chapter 7 (25 verses): The Sign of Immanuel - God With Us
-- Chapter 8 (22 verses): Sanctuary or Stumbling Stone
-- Chapter 9 (21 verses): The Light in the Darkness and the Prince of Peace
-- Chapter 10 (34 verses): Assyria: God's Rod and the Remnant's Return
-- Chapter 11 (16 verses): The Messiah's Reign and the Peaceable Kingdom
-- Chapter 12 (6 verses): Song of Thanksgiving and Praise
+**Completed Chapters (55 total)**:
+- **The Book of Immanuel (Chapters 1-12)**: From God's covenant lawsuit through the Prince of Peace to songs of thanksgiving
+- **Oracles Against the Nations (Chapters 13-23)**: Babylon, Philistia, Moab, Damascus, Cush, Egypt, Edom, Arabia, Jerusalem, Tyre
+- **The Isaiah Apocalypse (Chapters 24-27)**: Cosmic judgment, praise for salvation, songs of trust, Israel's deliverance
+- **Woe Oracles (Chapters 28-33)**: Warnings against leaders, Jerusalem, obstinate nation, reliance on Egypt
+- **Judgment, Hope, and Historical Narrative (Chapters 34-39)**: Edom's judgment, the ransomed return, Sennacherib's threat, Hezekiah's prayer/illness, Babylonian envoys
+- **Second Isaiah: Comfort and Redemption (Chapters 40-55)**: Comfort my people, Servant Songs, Cyrus, fall of Babylon, suffering servant, everlasting invitation
+
+**Third Isaiah (Chapters 56-66)**: Deferred for future work.
 
 ## Recent Changes
+
+**February 13, 2026 (Structure Modals for Chapters 13-55)**: **COMPLETE STRUCTURE MODALS** - Added `structureModal` data to all 43 chapter JSON files (13-55) with chiastic/concentric/linear literary pattern visualizations. Each structure modal includes title, subtitle, intro description, color-coded sections with labels and indentation, parallels explaining how mirroring sections connect, and closing summaries. Updated ChapterTemplate.tsx to render structure modals from JSON data with proper TypeScript types (StructureSection, StructureParallel, StructureModalData). All chapters now show the "View Chapter Structure" button matching the established pattern from chapters 1-12.
+
+**February 13, 2026 (Chapters 13-55 Complete)**: **FULL FIRST AND SECOND ISAIAH** - Created all 43 new chapter JSON files (13-55) with complete content: NIV verse texts, thematic groups with metadata, transformation points, three-part reflections for every verse, and scripture connections. Updated home page with section-organized chapter cards (6 color-coded sections) and redesigned ChapterNavigation with collapsible section groups for 55 chapters.
+
+**February 11, 2026 (Dynamic Chapter Support)**: **UNLOCKING CHAPTERS BEYOND 12** - Implemented A1/A2/A3/A4 changes to support adding chapters beyond 12 without code changes:
+- **A1 - Backend**: Server now dynamically scans `server/data/` for chapter JSON files instead of hardcoding 1-12. Added `GET /api/chapters` endpoint returning available chapters list with metadata.
+- **A2 - JSON Data Contract**: Extended all 12 chapter JSON files with `theme`, `groupMetadata` (group names/transitions), `hingeMetadata` (explanations/colors), and `structureModal` (null for existing chapters) fields.
+- **A3 - ChapterTemplate**: Created reusable `src/isaiah/components/ChapterTemplate.tsx` that renders any chapter from JSON data alone, matching the full polished UI (color grid, modals, reflections, scripture connections, hover tooltips, transformation points).
+- **A4 - Dynamic Routing**: Added `/chapter/:chapterNumber` route via `ChapterDynamic.tsx` that routes to custom components for chapters 1-12 and ChapterTemplate for 13+. Updated `ChapterNavigation` with dynamic `maxChapter` prop. All existing `/chapter-N` routes preserved for backward compatibility.
+- **To add a new chapter**: Simply create `server/data/chapter13.json` (following the established data contract) and restart the server. No code changes needed.
 
 **November 10, 2025 (Multi-App File Structure)**: **PROJECT REORGANIZATION FOR SCALABILITY** - Reorganized file structure to support hosting multiple apps on a single VM deployment. Created `docs/` folder for all documentation and examples. Restructured `src/` to separate app-specific code from shared utilities:
 - `src/isaiah/` - All Isaiah app code (chapters/, components/, hooks/, utils/, App.tsx, App.css, main.tsx)

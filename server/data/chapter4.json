@@ -137,5 +137,27 @@
       ],
       "context": "God's shelter provides comprehensive protection from every threat. This points to the ultimate fulfillment when God dwells with humanity, removing all pain and danger."
     }
-  }
+  },
+  "theme": "After judgment comes cleansing—God's glory returns to shelter His purified people",
+  "groupMetadata": {
+    "1": {
+      "name": "Desperation After Judgment",
+      "transition": "Seven women seeking one man - consequences of judgment"
+    },
+    "2": {
+      "name": "The Branch Brings Restoration",
+      "transition": "The Branch of the LORD - Messiah brings beauty and cleansing"
+    },
+    "3": {
+      "name": "God's Glorious Presence Returns",
+      "transition": "Cloud and fire return - God's protective presence restored"
+    }
+  },
+  "hingeMetadata": {
+    "center": {
+      "explanation": "Chiastic Center (v2) — The Branch of the LORD bringing beauty and glory after judgment's purification",
+      "color": "bg-blue-500"
+    }
+  },
+  "structureModal": null
 }

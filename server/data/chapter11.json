@@ -207,5 +207,39 @@
       ],
       "context": "Isaiah's prophecy that the root of Jesse would become a banner for the nations is fulfilled as Jesus draws all peoples to Himself. Paul quotes this verse to explain Gentile inclusion in God's plan."
     }
-  }
+  },
+  "theme": "From Jesse's stump emerges the Spirit-empowered Messiah bringing righteous judgment, universal peace, and restoration for all nations",
+  "groupMetadata": {
+    "1": {
+      "name": "The Messiah's Character",
+      "transition": "A shoot from Jesse's stump—Spirit-empowered, righteous judge"
+    },
+    "2": {
+      "name": "The Peaceable Kingdom",
+      "transition": "Predator and prey at peace—knowledge of God fills the earth"
+    },
+    "3": {
+      "name": "Banner to the Nations",
+      "transition": "Root of Jesse stands as signal—nations seek Him"
+    },
+    "4": {
+      "name": "Restoration & Regathering",
+      "transition": "Second exodus—remnant gathered from earth's four corners"
+    }
+  },
+  "hingeMetadata": {
+    "foundation": {
+      "explanation": "Transition Point (v5) — Righteousness and faithfulness: the foundation of the Messiah's character",
+      "color": "bg-green-500"
+    },
+    "hinge": {
+      "explanation": "Chiastic Center (v10) — From Israel's king to world's hope: the root of Jesse becomes a banner for all peoples",
+      "color": "bg-blue-500"
+    },
+    "turn-messiah": {
+      "explanation": "Narrative Transition (v1) — From judgment's stump to new life: a shoot from Jesse brings messianic hope",
+      "color": "bg-red-500"
+    }
+  },
+  "structureModal": null
 }

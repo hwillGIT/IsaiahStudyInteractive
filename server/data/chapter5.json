@@ -433,5 +433,43 @@
       ],
       "context": "Sin leads to darkness and distress. The chapter ends in total darkness—the final result of rejecting God's light. Even light itself is darkened by judgment's clouds."
     }
-  }
+  },
+  "theme": "God's vineyard produces wild grapes—justice turns to bloodshed, righteousness to cries of distress",
+  "groupMetadata": {
+    "1": {
+      "name": "Song of the Vineyard",
+      "transition": "God's perfect care produces wild grapes - justice becomes bloodshed"
+    },
+    "2": {
+      "name": "Woe to the Greedy",
+      "transition": "Land-grabbers who accumulate without end face desolation"
+    },
+    "3": {
+      "name": "Woe to Drunkards",
+      "transition": "Those who pursue drunkenness ignore God's works and face exile"
+    },
+    "4": {
+      "name": "Woe to Mockers and Moral Confusion",
+      "transition": "Mocking God and inverting morality brings certain judgment"
+    },
+    "5": {
+      "name": "Woe to Corrupt Judges",
+      "transition": "Corrupt judges who take bribes will be consumed like stubble"
+    },
+    "6": {
+      "name": "The Invading Army",
+      "transition": "God summons distant nations as His unstoppable army"
+    }
+  },
+  "hingeMetadata": {
+    "center": {
+      "explanation": "Chiastic Center (v7) — The verdict exposed: God expected justice but found bloodshed, righteousness but heard cries",
+      "color": "bg-blue-500"
+    },
+    "climax-woes": {
+      "explanation": "Thematic Climax (v24) — The fiery conclusion: rejection of God's law brings consuming judgment like stubble in flame",
+      "color": "bg-purple-500"
+    }
+  },
+  "structureModal": null
 }

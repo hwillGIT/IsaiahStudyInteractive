@@ -667,5 +667,59 @@
       ],
       "context": "Unquenchable fire represents final judgment. John the Baptist and Paul both warn of consuming fire for those who reject God—building on Isaiah's foundation."
     }
-  }
+  },
+  "theme": "God's covenant lawsuit centers on the divine invitation: 'Though your sins are like scarlet, they shall be as white as snow'",
+  "groupMetadata": {
+    "1": {
+      "name": "Rebellious Children",
+      "transition": "God summons heaven and earth to witness Israel's rebellion"
+    },
+    "2": {
+      "name": "Devastation & Remnant",
+      "transition": "Consequences of sin bring devastation, yet God preserves a remnant"
+    },
+    "3": {
+      "name": "Empty Worship Rejected",
+      "transition": "Religious rituals without justice are worthless to God"
+    },
+    "4": {
+      "name": "Call to Justice",
+      "transition": "True worship requires turning from evil and pursuing justice"
+    },
+    "5": {
+      "name": "Divine Invitation",
+      "transition": "God offers complete forgiveness despite scarlet sins"
+    },
+    "6": {
+      "name": "Faithful City Corrupted",
+      "transition": "Once-faithful Jerusalem is corrupted by murderers and bribes"
+    },
+    "7": {
+      "name": "Purification Promise",
+      "transition": "God promises to purify His people like refining silver"
+    },
+    "8": {
+      "name": "Final Verdict",
+      "transition": "Justice will restore the penitent; judgment will consume rebels"
+    }
+  },
+  "hingeMetadata": {
+    "climax-purification": {
+      "explanation": "Thematic Climax (v25) — God's purifying refining fire removes all impurities",
+      "color": "bg-purple-500"
+    },
+    "hinge": {
+      "explanation": "Chiastic Center (v18) — God's invitation to settle the matter and receive complete forgiveness",
+      "color": "bg-blue-500"
+    },
+    "transition-preservation": {
+      "explanation": "Narrative Transition (v9) — From devastation to hope: God preserves a remnant",
+      "color": "bg-yellow-400"
+    },
+    "turn-to-action": {
+      "explanation": "Dramatic Turn (v17) — From rejecting empty worship to calling for justice and action",
+      "color": "bg-red-500"
+    }
+  },
+  "structureModal": null
 }

@@ -288,5 +288,47 @@
       ],
       "context": "God always preserves a remnant. The holy seed points to God's faithfulness and ultimately to Christ, who brings complete restoration from apparent death."
     }
-  }
+  },
+  "theme": "Isaiah's throne room vision: conviction, cleansing, commission, and the promise of a holy remnant",
+  "groupMetadata": {
+    "1": {
+      "name": "God's Holy Throne Room",
+      "transition": "Encountering God's throne, seraphim, and holy glory"
+    },
+    "2": {
+      "name": "Confession & Cleansing",
+      "transition": "Recognizing uncleanness and receiving purification"
+    },
+    "3": {
+      "name": "Divine Commissioning",
+      "transition": "Responding to God's call with \"Here am I; send me\""
+    },
+    "4": {
+      "name": "The Hardening Message",
+      "transition": "Delivering a message that people won't receive"
+    },
+    "5": {
+      "name": "Scope of Judgment",
+      "transition": "Understanding the extent and duration of discipline"
+    },
+    "6": {
+      "name": "Remnant & Holy Seed",
+      "transition": "Hope for survival through God's faithful remnant"
+    }
+  },
+  "hingeMetadata": {
+    "hinge": {
+      "explanation": "Chiastic Center (v7) — The coal touches Isaiah's lips: guilt removed, sin atoned, cleansing complete",
+      "color": "bg-blue-500"
+    },
+    "turn-commission": {
+      "explanation": "Narrative Transition (v8) — From cleansing to commission: \"Here am I. Send me!\" marks readiness to serve",
+      "color": "bg-yellow-400"
+    },
+    "turn-conviction": {
+      "explanation": "Dramatic Turn (v5) — From seeing God's glory to recognizing personal uncleanness: \"Woe to me! I am ruined!\"",
+      "color": "bg-red-500"
+    }
+  },
+  "structureModal": null
 }

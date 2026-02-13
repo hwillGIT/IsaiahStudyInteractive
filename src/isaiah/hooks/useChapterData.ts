@@ -20,6 +20,16 @@ export interface Connection {
   context: string;
 }
 
+export interface GroupMeta {
+  name: string;
+  transition: string;
+}
+
+export interface HingeMeta {
+  explanation: string;
+  color: string;
+}
+
 export interface ChapterData {
   chapterNumber: number;
   title: string;
@@ -28,6 +38,34 @@ export interface ChapterData {
   verses: Verse[];
   reflections: Record<number, Reflection>;
   scriptureConnections: Record<number, Connection>;
+  theme?: string;
+  groupMetadata?: Record<number, GroupMeta>;
+  hingeMetadata?: Record<string, HingeMeta>;
+  structureModal?: StructureModalData | null;
+}
+
+export interface StructureSection {
+  label: string;
+  name: string;
+  description: string;
+  color: string;
+  indent: number;
+  isCenter?: boolean;
+  centerQuote?: string;
+}
+
+export interface StructureParallel {
+  pair: string;
+  explanation: string;
+}
+
+export interface StructureModalData {
+  title: string;
+  subtitle?: string;
+  intro: string;
+  sections: StructureSection[];
+  parallels: StructureParallel[];
+  closing: string;
 }
 
 export function useChapterData(chapterNumber: number) {

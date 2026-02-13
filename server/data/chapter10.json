@@ -387,5 +387,59 @@
       ],
       "context": "The remnant learns what Ahaz refused: foreign alliances betray. Only God is trustworthy. This truth echoes to Paul's teaching that God deliberately allows weakness so we'll rely on Him alone."
     }
-  }
+  },
+  "theme": "God uses Assyria as His rod of anger, then judges their pride—sovereignly orchestrating history while preserving a faithful remnant",
+  "groupMetadata": {
+    "1": {
+      "name": "Woe to Unjust Legislators",
+      "transition": "Legislators who codify injustice, rob the poor—captivity awaits"
+    },
+    "2": {
+      "name": "Assyria: God's Rod of Anger",
+      "transition": "Assyria commissioned as rod in God's hand to punish His people"
+    },
+    "3": {
+      "name": "Assyria's Arrogant Boasting",
+      "transition": "Assyria boasts of conquering nations, ignorant of God's plan"
+    },
+    "4": {
+      "name": "God's Response to Pride",
+      "transition": "When God finishes His work, He will judge Assyria's pride"
+    },
+    "5": {
+      "name": "Fire Consumes the Mighty",
+      "transition": "Wasting disease and fire will consume Assyria's glory"
+    },
+    "6": {
+      "name": "Remnant Returns to God",
+      "transition": "Remnant will no longer lean on oppressors but trust God alone"
+    },
+    "7": {
+      "name": "Do Not Fear Assyria",
+      "transition": "God commands: do not fear—deliverance coming like Midian"
+    },
+    "8": {
+      "name": "The Enemy's March on Jerusalem",
+      "transition": "Poetic march through 12 cities as enemy threatens Zion"
+    },
+    "9": {
+      "name": "The Proud Forest Felled",
+      "transition": "God lops off mighty boughs—Lebanon's cedars fall"
+    }
+  },
+  "hingeMetadata": {
+    "hinge": {
+      "explanation": "Chiastic Center (v12) — The sovereign pivot: when God finishes disciplining Zion, He will judge Assyria's arrogance",
+      "color": "bg-blue-500"
+    },
+    "transition-rod": {
+      "explanation": "Narrative Transition (v5) — From Judah's oppressors to God's instrument: Assyria becomes the rod of divine anger",
+      "color": "bg-yellow-400"
+    },
+    "turn-remnant": {
+      "explanation": "Dramatic Turn (v20) — From leaning on oppressors to trusting God: the remnant will rely on the Holy One in truth",
+      "color": "bg-red-500"
+    }
+  },
+  "structureModal": null
 }
