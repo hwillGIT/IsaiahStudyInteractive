@@ -581,5 +581,23 @@
       "color": "bg-purple-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 19 Structure",
+    "subtitle": "The Oracle Against Egypt",
+    "intro": "Isaiah 19 follows a dramatic two-part structure that moves from total judgment to stunning restoration. The first half systematically dismantles Egypt — its religion, unity, economy, and wisdom — while the second half rebuilds it through five 'In that day' promises that culminate in Egypt being called 'my people' by God. The pivot at verse 16 transforms fear into faith, revealing that God's judgment was always aimed at drawing even Israel's greatest enemy into His family.",
+    "sections": [
+      { "label": "A (v1-4)", "name": "God Arrives in Judgment", "description": "The LORD rides a swift cloud into Egypt — idols tremble, civil war erupts, and a cruel master takes control", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v5-10)", "name": "Economic Collapse", "description": "The Nile dries up, fields blow away, fishermen groan, and workers despair — Egypt's entire economy crumbles from the foundation up", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "C (v11-15)", "name": "Wisdom Fails", "description": "Egypt's famous wise men are exposed as fools, leaders stagger in dizziness, and the nation is completely paralyzed — head and tail, high and low", "color": "blue", "indent": 2, "isCenter": false },
+      { "label": "PIVOT (v16-17)", "name": "Fear Becomes the Doorway", "description": "Egypt trembles before God's uplifted hand and fears tiny Judah — the shift from defiance to dread opens the way for transformation", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "They will shudder with fear at the uplifted hand that the LORD Almighty raises against them" },
+      { "label": "D (v18-22)", "name": "Egypt Turns to the LORD", "description": "Five cities speak Hebrew, an altar rises in Egypt's heart, God sends a savior, and He strikes and heals — full covenant worship begins", "color": "teal", "indent": 1, "isCenter": false },
+      { "label": "E (v23-25)", "name": "All Nations United in Worship", "description": "A highway links Egypt and Assyria, Israel joins as the third, and God calls Egypt 'my people' and Assyria 'my handiwork'", "color": "green", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ E", "explanation": "The chapter opens with God arriving to destroy Egypt's false worship and closes with Egypt worshiping the true God alongside Assyria and Israel. The idols that trembled in verse 1 are replaced by an altar to the LORD in verse 19. Judgment gives way to the most radical inclusion in all of Scripture — the oppressor becomes family." },
+      { "pair": "B ↔ D", "explanation": "Egypt's economic collapse (dried Nile, ruined fields, despairing workers) is answered by spiritual abundance — cities converted, an altar established, a savior sent. What God dismantled materially, He rebuilds spiritually. The nation that lost everything gains what money could never buy." },
+      { "pair": "C ↔ Pivot", "explanation": "Egypt's wise men were paralyzed by God-given dizziness; at the pivot, that same helplessness becomes the doorway to genuine fear of the LORD. The nation that 'could do nothing' (v15) is now ready to receive everything from God. Wisdom that failed under judgment is replaced by wisdom that begins with reverence." }
+    ],
+    "closing": "Isaiah 19 is one of the most breathtaking chapters in all of Scripture. It systematically tears down everything Egypt trusted — gods, unity, economy, wisdom — only to rebuild it all on the foundation of genuine relationship with God. The chapter's crowning moment is verse 25, where God extends His most intimate covenant names to Israel's historic enemies. The message is unmistakable: God's judgment is never the final word. His heart was always set on bringing all nations into His family."
+  }
 }

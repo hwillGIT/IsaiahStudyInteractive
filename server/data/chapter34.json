@@ -403,5 +403,22 @@
       "color": "bg-blue-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 34 Structure",
+    "subtitle": "Judgment on the Nations and Edom",
+    "intro": "Isaiah 34 follows a progressive judgment pattern that moves from a universal summons of all nations, narrows to a specific target (Edom), reaches total desolation, and then pivots to God's written guarantee that every detail of this judgment is certain. The chapter flows from cosmic destruction to earthly ruin, with the center revealing the permanent, irreversible nature of God's vengeance — before closing with the astonishing claim that it's all written down in God's own scroll.",
+    "sections": [
+      { "label": "A (v1-4)", "name": "Cosmic Summons and Judgment", "description": "All nations are called to hear God's verdict — His wrath falls on every army, corpses pile up, stars dissolve, and the sky rolls up like a scroll", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v5-7)", "name": "God's Sword Falls on Edom", "description": "The divine sword descends from heaven to Edom specifically — a sacrificial slaughter in Bozrah where blood and fat drench the land and the powerful fall alongside the common", "color": "blue", "indent": 1, "isCenter": false },
+      { "label": "CENTER (v8-10)", "name": "The Day of Vengeance", "description": "God's appointed day of retribution to uphold Zion's cause — Edom becomes a land of burning pitch, unquenchable fire, and perpetual smoke from generation to generation", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "For the LORD has a day of vengeance, a year of retribution, to uphold Zion's cause" },
+      { "label": "B' (v11-15)", "name": "Total Desolation and Wild Creatures", "description": "God stretches the measuring line of chaos over Edom — nobles vanish, thorns overrun citadels, and desert creatures, owls, and jackals take possession of the ruins", "color": "teal", "indent": 1, "isCenter": false },
+      { "label": "A' (v16-17)", "name": "Sealed in the Scroll of the LORD", "description": "God invites everyone to read His written decree — not one creature will be missing, not one will lack its mate, because His mouth has spoken and His hand has distributed their portions forever", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with a universal summons to hear God's verdict of judgment (A) and closes with an invitation to read God's written scroll guaranteeing every detail (A'). What God announces publicly in the heavens, He records permanently in writing — His word spoken and His word written are equally certain." },
+      { "pair": "B ↔ B'", "explanation": "God's sword descending on Edom in sacrificial slaughter (B) is answered by the thorough desolation that follows — chaos creatures inhabiting the ruins and thorns overrunning the fortresses (B'). The active judgment of the sword produces the lasting result of total emptiness." },
+      { "pair": "Center", "explanation": "The day of vengeance is the turning point that connects divine action to permanent consequence. God's retribution isn't random violence — it upholds Zion's cause. The unquenchable fire and perpetual smoke reveal that when God acts in judgment, the results are irreversible and eternal." }
+    ],
+    "closing": "The structure moves from universal judgment to specific target to permanent desolation, then seals it all with God's written guarantee. Every layer reinforces one truth: God's justice is comprehensive, purposeful, and irreversible — and every detail is recorded in His own scroll so that no one can say they weren't warned."
+  }
 }

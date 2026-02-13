@@ -512,5 +512,22 @@
       "color": "bg-blue-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 36 Structure",
+    "subtitle": "Sennacherib Threatens Jerusalem",
+    "intro": "Isaiah 36 follows a dramatic narrative structure built around an escalating propaganda assault on Jerusalem's faith. The chapter moves from the historical setting, through three waves of increasingly bold challenges to Judah's trust, reaching the audacious center where the commander claims God sent him — then escalates further with public propaganda aimed at the people themselves, before resolving in the stunning silence of a people who trust their king more than they fear the enemy.",
+    "sections": [
+      { "label": "A (v1-3)", "name": "The Stage Is Set", "description": "Sennacherib captures Judah's cities and sends his field commander to Jerusalem — Hezekiah's three officials go out to meet him at the Upper Pool, the same location where Ahaz failed the test of faith", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v4-7)", "name": "First Challenge: What Is Your Confidence?", "description": "The commander attacks the foundation of Judah's trust — dismissing their strategy as empty words, mocking Egypt as a splintered reed, and twisting Hezekiah's faithful reforms into evidence against him", "color": "blue", "indent": 1, "isCenter": false },
+      { "label": "CENTER (v8-10)", "name": "The Taunt and the False Claim", "description": "The commander offers horses Judah can't even ride, declares them too weak to defeat the lowest Assyrian officer, then makes his most audacious claim: 'The LORD himself told me to destroy this land'", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "Have I come to attack and destroy this land without the LORD? The LORD himself told me to march against this country and destroy it" },
+      { "label": "B' (v11-20)", "name": "Second Challenge: Surrender to Assyria", "description": "The commander refuses to speak Aramaic and addresses the people directly in Hebrew — offering counterfeit peace, promising a false promised land, naming conquered nations whose gods failed, and asking the ultimate blasphemous question: 'How can the LORD deliver Jerusalem from my hand?'", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "A' (v21-22)", "name": "Silent Faith and Mourning Report", "description": "The people obey Hezekiah's command and say nothing — the officials return with torn clothes and bring every word to the king, setting up the response that will come through prayer in chapter 37", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with officials going out to face the enemy (A) and closes with those same officials returning to report to their king (A'). The crisis that began at the Upper Pool — where Ahaz once failed — is now carried to Hezekiah, who will bring it to God. The torn clothes show grief, but the silence shows faith." },
+      { "pair": "B ↔ B'", "explanation": "The first wave of propaganda challenges Judah's basis of trust (B), while the second wave escalates to a direct assault on the people's faith, offering counterfeit blessings and naming gods who couldn't save their nations (B'). Both attacks target the same thing: trust in the LORD. But the second is louder, cruder, and aimed at breaking the common people." },
+      { "pair": "Center", "explanation": "The commander's claim that the LORD sent him is the hinge of the entire confrontation. It's the most dangerous lie because it contains a grain of twisted truth — God does use nations as instruments. But claiming divine authority for human aggression is the oldest form of spiritual deception, and it sets up the theological showdown that God Himself will answer in chapter 37." }
+    ],
+    "closing": "The structure builds from a historical crisis to a theological confrontation, with each layer escalating the pressure on Judah's faith. The center reveals that the real battle isn't military but spiritual — who truly speaks for God? The people's disciplined silence in the face of overwhelming propaganda is itself a confession of faith: they trust their king's command more than the enemy's threats, and their king trusts God."
+  }
 }

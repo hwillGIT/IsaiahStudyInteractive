@@ -340,5 +340,22 @@
       "color": "bg-blue-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 17 Structure",
+    "subtitle": "The Oracle Against Damascus",
+    "intro": "Isaiah 17 follows a concentric pattern that moves from the ruin of nations inward to a turning point where people finally look to their Maker, then outward to the consequences of forgetting God and His ultimate triumph over raging nations. The structure reveals that judgment is not the end — it is the painful path back to the One who made us.",
+    "sections": [
+      { "label": "A (v1-3)", "name": "Damascus and Ephraim Fall Together", "description": "Damascus becomes rubble, Ephraim loses its fortress — allied nations that trusted each other instead of God share the same ruin", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v4-6)", "name": "Israel's Glory Fades", "description": "Jacob's glory wastes away like a sick body, harvested clean like grain fields — but a few olives remain on the highest branches", "color": "blue", "indent": 1, "isCenter": false },
+      { "label": "CENTER (v7-8)", "name": "Eyes Turn to the Maker", "description": "The dramatic turning point — people finally look to their Maker and reject the idols their own fingers made", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "In that day people will look to their Maker and turn their eyes to the Holy One of Israel" },
+      { "label": "B' (v9-11)", "name": "The Cost of Forgetting God", "description": "Cities become overgrown wilderness, finest plants yield nothing — because they forgot God their Savior, the Rock of their fortress", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "A' (v12-14)", "name": "God Rebukes the Raging Nations", "description": "Nations rage like surging waters but God scatters them like chaff — evening terror is gone by morning", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The oracle opens with specific nations falling (Damascus and Ephraim) and closes with all raging nations scattered by God's rebuke. What begins as a local judgment expands to a universal principle: no power — whether a single city or a coalition of nations — can stand against God's word." },
+      { "pair": "B ↔ B'", "explanation": "Israel's fading glory and the few remaining olives (v4-6) mirror the overgrown cities and fruitless harvests of those who forgot God (v9-11). Both sections show the consequences of misplaced trust, but the remnant olives in B hint at hope that B's desolation threatens to erase." },
+      { "pair": "Center", "explanation": "The turning point is beautiful: after all the destruction, people finally look up — to their Maker, to the Holy One of Israel. They stop admiring what their hands built and start seeing who built them. This is the redemptive purpose hidden inside every judgment in Isaiah." }
+    ],
+    "closing": "This chapter shows that God's deepest desire in judgment is not destruction but redirection — turning human eyes from idols back to the Maker. The structure places that turning point at the very center, revealing that everything before it drives people toward God, and everything after it shows what happens when they forget Him."
+  }
 }

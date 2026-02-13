@@ -367,5 +367,63 @@
       "color": "bg-purple-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 47 Structure",
+    "subtitle": "The Fall of Lady Babylon",
+    "intro": "Isaiah 47 is a taunt song against personified Babylon — the 'Virgin Daughter' who thought herself untouchable. The chapter strips her of every title, comfort, and defense in descending order. It opens with the queen forced into slave labor and closes with her advisors wandering off unable to save her. At the center sits Babylon's fatal claim — 'I am, and there is none besides me' — stealing God's own self-description. The structure mirrors her arrogance with her collapse: every boast in the first half meets its reversal in the second.",
+    "sections": [
+      {
+        "label": "A (v1-4)",
+        "name": "The Queen Dethroned",
+        "description": "Babylon is commanded to sit in the dust — no more throne, no more tenderness. The queen of nations is reduced to grinding flour like the lowest slave. Her nakedness is exposed and vengeance is declared. Then a stunning interruption: 'Our Redeemer — the LORD Almighty is his name.' Babylon's fall is Israel's freedom.",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v5-7)",
+        "name": "Cruelty Without Mercy",
+        "description": "Babylon is stripped of her title 'queen of kingdoms' and sent into silence and darkness. God reveals why He used her — to discipline His people — but she went too far, showing no mercy even to the elderly. Her fatal flaw surfaces: 'I am forever — the eternal queen!' She never stopped to think about consequences.",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v8-9)",
+        "name": "The Blasphemous Boast",
+        "description": "Babylon's deepest sin is exposed: she echoes God's own words — 'I am, and there is none besides me.' She claims divine permanence, insisting she will never be widowed or lose children. But both losses strike in a single day, overwhelming all her sorceries and spells. Self-deification meets instant reversal.",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "I am, and there is none besides me. I will never be a widow or suffer the loss of children."
+      },
+      {
+        "label": "B' (v10-11)",
+        "name": "Hidden Sin Exposed",
+        "description": "The lie beneath all Babylon's sins is uncovered: 'No one sees me.' Her vaunted wisdom and knowledge became tools of self-deception. Disaster, calamity, and catastrophe build in intensity — and she cannot conjure it away, buy it off, or predict it. Every escape route is sealed shut.",
+        "color": "purple",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v12-15)",
+        "name": "Sorcery Consumed Like Stubble",
+        "description": "God sarcastically invites Babylon to keep trying her spells and stargazers — the same ones she has labored at since childhood. Let them save her, if they can. But they are stubble consumed by fire — not even useful as coals for warming. Every advisor wanders off in confusion. The devastating verdict: 'There is not one that can save you.'",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with Babylon's external power stripped away — throne, title, dignity, all removed by God's direct command (A). It closes with her internal resources destroyed — sorcery, astrology, and every advisor consumed like stubble (A'). In the opening, she loses her position; in the closing, she loses her protection. The queen who sat on a throne now has no one left to save her."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "Babylon's merciless abuse of power and her delusion of permanence — 'I am forever' (B) — are answered by the exposure of her deepest lie: 'No one sees me' (B'). She thought her cruelty was invisible and her position eternal. But the God she ignored was watching all along, and the disaster she thought impossible arrives without warning. Willful blindness in B meets inescapable judgment in B'."
+      }
+    ],
+    "closing": "Isaiah 47 dismantles the world's greatest empire in fifteen verses — not with armies but with truth. Every layer of Babylon's identity is peeled away: her throne, her title, her sorcery, her advisors, and finally her claim to be god. At the center of her collapse is the sin at the center of all human pride: stealing God's own identity and saying 'I am, and there is none besides me.' The chapter ends in total isolation — every helper gone, every spell broken, and not one that can save."
+  }
 }

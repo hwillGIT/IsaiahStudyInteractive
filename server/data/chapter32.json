@@ -462,5 +462,22 @@
       "color": "bg-blue-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 32 Structure",
+    "subtitle": "The Righteous King and the Spirit Poured Out",
+    "intro": "Isaiah 32 follows a chiastic pattern that opens with a vision of the righteous king's transforming reign, descends into the reality of complacency and judgment, then rises again through the Spirit's outpouring to a future of peace and blessing. The outer layers mirror each other — righteous rule answered by Spirit-filled restoration — while the center exposes the complacency that must be broken before transformation can come.",
+    "sections": [
+      { "label": "A (v1-4)", "name": "The Righteous King's Reign", "description": "A king reigns in righteousness — his rulers shelter like shade and streams, blind eyes open, deaf ears hear, and fearful hearts find understanding", "color": "blue", "indent": 0, "isCenter": false },
+      { "label": "B (v5-8)", "name": "Fools Exposed, Nobles Honored", "description": "Under righteous rule, masks come off — fools lose their honored titles, scoundrels are exposed for scheming against the poor, and the truly noble stand by noble deeds", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "CENTER (v9-14)", "name": "Warning to the Complacent", "description": "Complacent women are told to tremble — harvests will fail, pleasant fields will grow thorns, and the city of revelry will become a wasteland, abandoned forever", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "You women who are so complacent, rise up and listen to me; you daughters who feel secure, hear what I have to say!" },
+      { "label": "B' (v15-17)", "name": "The Spirit Brings Justice and Peace", "description": "Till the Spirit is poured from on high — deserts become fertile fields, justice dwells in the land, and righteousness produces peace, quietness, and confidence forever", "color": "teal", "indent": 1, "isCenter": false },
+      { "label": "A' (v18-20)", "name": "Peaceful Dwelling and Abundant Blessing", "description": "God's people live in peaceful homes and undisturbed rest — sowing by every stream with cattle ranging free, blessed even when storms flatten forests around them", "color": "green", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with the righteous king providing shelter, streams, and shade (v1-4) and closes with God's people dwelling in that very peace — secure homes, undisturbed rest, and sowing by every stream (v18-20). What the king promises at the start, his people experience at the end." },
+      { "pair": "B ↔ B'", "explanation": "The exposure of fools and nobles (v5-8) is answered by the Spirit's transformation (v15-17). Where fools withheld water from the thirsty, the Spirit turns deserts into fertile fields. Where scoundrels schemed against the poor, justice now dwells in the land and righteousness produces lasting peace." },
+      { "pair": "Center", "explanation": "The center is the wake-up call: complacency must be shattered before restoration can come. The comfortable must tremble, the harvest must fail, and the city must become a wasteland — 'till the Spirit is poured from on high.' Judgment clears the ground for the Spirit's transforming work." }
+    ],
+    "closing": "The structure traces a dramatic arc from royal promise through sobering judgment to Spirit-filled fulfillment. The righteous king's vision (A) finds its reality in peaceful dwelling (A'), but only after complacency is broken at the center. The single word 'till' in verse 15 is the hinge of the whole chapter — desolation is not the end, but the doorway to the Spirit's outpouring that makes everything new."
+  }
 }

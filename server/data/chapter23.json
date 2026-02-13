@@ -424,5 +424,24 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 23 Structure",
+    "subtitle": "The Oracle Against Tyre",
+    "intro": "Isaiah 23 follows a concentric pattern that moves from the shock of Tyre's commercial collapse inward to the theological center — 'The LORD Almighty planned it' — then back out through the consequences of judgment, before ending with a stunning redemptive turn. The chapter opens and closes with the ships of Tarshish, creating a literary frame (inclusio) around the entire oracle. Tyre was the ancient world's greatest trading hub, and this oracle asks the question every commercial empire must face: who really controls the marketplace?",
+    "sections": [
+      { "label": "A (v1-5)", "name": "Wailing Over Tyre's Fall", "description": "Ships returning from Tarshish discover their home port is gone — no house, no harbor. Sidon is stunned silent, Egypt trembles, and the sea itself disowns its children", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v6-9)", "name": "Who Planned This?", "description": "Refugees flee to Tarshish while a piercing question builds: who could topple the city that crowned kings and whose merchants were princes? The answer thunders back — the LORD Almighty planned it, to humble all pride", "color": "blue", "indent": 1, "isCenter": false },
+      { "label": "CENTER (v9)", "name": "The LORD Almighty Planned It", "description": "The theological heart of the oracle — behind Tyre's fall stands not chance or rival nations but the deliberate plan of God to bring down pride in all its splendor", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "The LORD Almighty planned it, to bring down her pride in all her splendor and to humble all who are renowned on the earth." },
+      { "label": "B' (v10-12)", "name": "No Harbor, No Rest", "description": "Maritime traders must become farmers, God's hand stretches over the sea making kingdoms tremble, and even fleeing to Cyprus brings no rest — there is no safe harbor from divine judgment", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "A' (v13-14)", "name": "Wailing Revisited", "description": "Babylon's own ruin serves as a warning, and the oracle circles back to its opening cry — 'Wail, you ships of Tarshish; your fortress is destroyed!' — sealing the judgment with a literary bookend", "color": "gray", "indent": 0, "isCenter": false },
+      { "label": "D (v15-18)", "name": "Seventy Years and Redemption", "description": "After seventy years of silence, Tyre returns to trade — but now her profits are set apart for the LORD, not hoarded. Commerce itself is redeemed as trade earnings feed and clothe those who serve God", "color": "teal", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "Both sections open with 'Wail, you ships of Tarshish!' creating the oracle's literary frame. In A, the ships discover Tyre is gone; in A', the wailing is confirmed and finalized. Between these bookends, the entire case against commercial pride is laid out. The repetition drives home the certainty: what God plans, God accomplishes." },
+      { "pair": "B ↔ B'", "explanation": "Section B asks the pivotal question — who could bring down the city that bestowed crowns? — and answers it with God's sovereign plan. Section B' shows the consequences of that plan: harbors gone, fortresses destroyed, and no rest anywhere. The question of B receives its lived-out answer in B'. God doesn't just plan judgment; He executes it thoroughly." },
+      { "pair": "Center", "explanation": "Verse 9 is the theological hinge on which everything turns. Before it, Tyre looks invincible — ancient, wealthy, world-spanning. After it, Tyre is helpless — harborless, restless, reduced to farming. The single sentence 'The LORD Almighty planned it' transforms an economic collapse into a theological statement: no commercial empire operates outside God's sovereign counsel." },
+      { "pair": "D (Redemptive Coda)", "explanation": "The final section breaks the pattern of judgment with an unexpected twist: Tyre's commerce is restored but redirected. Her profits become 'set apart for the LORD' — not stored or hoarded but given to sustain God's servants. This is the redemption of economics itself: wealth that once fueled pride now feeds the faithful. The oracle that began with wailing ends with provision." }
+    ],
+    "closing": "Isaiah 23 traces the arc from commercial pride through divine judgment to surprising redemption. Tyre's story warns every marketplace and economy: the LORD Almighty plans the rise and fall of commercial empires, and no amount of wealth makes a nation independent of God. Yet the final verse offers hope that even the profits of pride can be redirected toward holy purposes — that commerce itself can be redeemed when its earnings serve the LORD rather than human ambition."
+  }
 }

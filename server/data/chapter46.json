@@ -319,5 +319,63 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 46 Structure",
+    "subtitle": "The God Who Carries His People",
+    "intro": "Isaiah 46 is built around a single devastating contrast: gods you have to carry versus the God who carries you. The chapter opens with Babylon's most famous deities — Bel and Nebo — sagging on the backs of exhausted animals, hauled away as heavy luggage. Then God speaks directly to Israel: I have carried you since birth and will carry you to old age. The center exposes idol-making as absurd — pouring gold into a mold, then bowing before your own creation. From there, the chapter pivots to God's unmatched ability to declare the future and accomplish it, culminating in the stunning promise that His righteousness is on its way and will not be late.",
+    "sections": [
+      {
+        "label": "A (v1-2)",
+        "name": "Babylon's Gods Carried Away",
+        "description": "Bel bows down, Nebo stoops low — the mighty gods of Babylon are reduced to heavy cargo on the backs of weary animals. They can't even rescue the luggage they've become. The gods of the world's greatest empire go off into captivity along with their worshipers.",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v3-4)",
+        "name": "The God Who Has Carried You",
+        "description": "God speaks tenderly to Israel: I have upheld you since birth and carried you since you were born. Even to old age and gray hairs, I will sustain you, carry you, and rescue you. The God who made you takes personal responsibility for you — from cradle to grave.",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v5-7)",
+        "name": "The Absurdity of Idol-Making",
+        "description": "God asks: who is my equal? Then He exposes the manufacturing process — pour out gold, hire a craftsman, bow before the product. The idol must be lifted onto shoulders and carried to its spot. Once placed, it cannot move, cannot answer, cannot save. Three total failures in three devastating strokes.",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "They lift it to their shoulders and carry it; they set it up in its place, and there it stands. From that spot it cannot move."
+      },
+      {
+        "label": "B' (v8-11)",
+        "name": "Remember — I Am God Alone",
+        "description": "Three commands pile up: remember, keep in mind, take it to heart. God declares He is God and there is no other — He announces the end from the beginning and His purpose will stand. He summons Cyrus like a bird of prey from the east to fulfill His plan. What He has said, He will bring about.",
+        "color": "purple",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v12-13)",
+        "name": "My Righteousness Is Near",
+        "description": "God addresses the stubborn-hearted who are far from His righteousness — but instead of giving up on them, He brings His righteousness near. It is not far away and His salvation will not be delayed. He grants salvation to Zion and His splendor to Israel. Grace closes the distance that rebellion created.",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with Babylon's gods being carried away into captivity — helpless, heavy, and defeated (A). It closes with God bringing His righteousness near to stubborn-hearted people who are far from Him (A'). The contrast is total: false gods are hauled away from their worshipers, while the true God moves toward His rebellious people. What idols cannot do — close the gap — God does freely."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "God's personal promise to carry Israel from birth to old age (B) is matched by His cosmic claim to be the only God who declares the end from the beginning (B'). The first is intimate and tender — I made you, I will carry you. The second is majestic and sovereign — I summon empires to fulfill my purpose. Together they reveal a God who is both a gentle parent and the ruler of history, and whose commitment to His people operates at every scale."
+      }
+    ],
+    "closing": "Isaiah 46 asks one simple question: who is doing the carrying? Babylon's gods are dead weight that burden their worshipers. But the Lord carries His people from birth to death, declares the future before it happens, and brings His righteousness to those too stubborn to seek it. The chapter demolishes every substitute for God — not with philosophical argument but with a single image: a god that has to be hauled on weary shoulders versus a God who lifts you onto His."
+  }
 }

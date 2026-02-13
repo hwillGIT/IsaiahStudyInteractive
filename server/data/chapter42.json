@@ -581,5 +581,63 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 42 Structure",
+    "subtitle": "The Servant of the LORD — A Light for the Nations",
+    "intro": "Isaiah 42 is built around a dramatic contrast between two servants: the ideal Servant whom God presents with delight, and blind Israel who has failed her calling. The chapter moves from the gentle justice-bringer at the opening, through a universal hymn of praise at the center, to the devastating exposure of Israel's blindness at the close. The structure asks the question that drives the rest of Isaiah: if God's chosen servant-nation is blind, who will carry out the mission?",
+    "sections": [
+      {
+        "label": "A (v1-4)",
+        "name": "The Ideal Servant Introduced",
+        "description": "God presents His chosen one with delight — Spirit-empowered, gentle with the broken, and unstoppable in bringing justice to every nation without shouting or force",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v5-9)",
+        "name": "The Servant's Mission Defined",
+        "description": "The Creator commissions the servant as a covenant for the people and a light for the nations — to open blind eyes, free prisoners, and announce new things before they happen",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v10-12)",
+        "name": "A New Song for All Creation",
+        "description": "The servant's mission is so magnificent that all creation erupts in a brand-new song — from the sea to the islands, from the desert of Kedar to the mountains of Sela, the whole earth gives glory to God",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "Sing to the LORD a new song, his praise from the ends of the earth"
+      },
+      {
+        "label": "B' (v13-17)",
+        "name": "God the Warrior Breaks His Silence",
+        "description": "After long silence, God erupts like a warrior and a woman in labor — reshaping the landscape, leading the blind along new paths, and turning back those who trust in idols",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v18-25)",
+        "name": "The Blind Servant Exposed",
+        "description": "The devastating reversal — God's own servant Israel is the blind and deaf one, having seen everything but understood nothing, now plundered and trapped with no one to rescue them",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with the ideal Servant who opens blind eyes and brings justice to the nations (A), and closes with servant Israel who is herself blind, deaf, and plundered (A'). The contrast is heartbreaking: God's chosen vessel for light has become the one sitting in darkness. This tension between the faithful Servant and the failed servant drives the rest of Isaiah toward the Suffering Servant of chapter 53."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "The servant's mission includes opening blind eyes and freeing prisoners from darkness (B), and God as warrior leads the blind by unfamiliar paths and turns darkness to light (B'). Both sections deal with blindness and liberation, but with a twist: in B the servant is the healer, while in B' God Himself must do the leading because His servant-nation has gone blind. The mission hasn't changed — but the one who was supposed to carry it out needs rescuing too."
+      }
+    ],
+    "closing": "Isaiah 42's structure reveals the crisis at the heart of God's plan: the servant called to bring light to the nations is herself sitting in darkness. The new song at the center celebrates what God will do, while the outer frame exposes the gap between the ideal and the reality. This unresolved tension is the engine that drives Isaiah forward — toward a Servant who will succeed where Israel failed."
+  }
 }

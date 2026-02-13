@@ -602,5 +602,63 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 49 Structure",
+    "subtitle": "The Servant's Mission and Zion Restored",
+    "intro": "Isaiah 49 is the Second Servant Song expanded into a full chapter of comfort. It opens with the Servant's global calling — formed in the womb, hidden like a polished arrow, then revealed as a light to all nations. At the center stands God's breathtaking response to Zion's cry of abandonment: 'Can a mother forget her nursing child? I will not forget you — I have engraved you on the palms of my hands.' The chapter moves outward from the Servant's mission to Zion's restoration to the nations carrying her children home, building toward a climax where God Himself fights for His people and all flesh knows He is the Redeemer.",
+    "sections": [
+      {
+        "label": "A (v1-6)",
+        "name": "The Servant Called from the Womb",
+        "description": "The Servant addresses the whole world: called before birth, shaped like a sharp sword and polished arrow, hidden in God's hand until the right moment. His mission expands beyond restoring Israel — He becomes a light for all nations so that salvation reaches the ends of the earth.",
+        "color": "yellow",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v7-13)",
+        "name": "Kings Will See and Bow",
+        "description": "The despised, rejected Servant will be honored by kings and princes. God answers Him in the time of favor, making Him a covenant for the people. Captives go free, hunger and thirst end, mountains become highways, and all creation bursts into song because the LORD comforts His people.",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v14-18)",
+        "name": "Engraved on God's Palms",
+        "description": "Zion cries out 'The LORD has forsaken me!' and God responds with the tenderest promise in Scripture. Even a nursing mother might forget her child — but God never will. He has engraved Zion on the palms of His hands. Her children hasten back, her destroyers depart, and she wears her returning children like a bride's ornaments.",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "Can a mother forget the baby at her breast? Though she may forget, I will not forget you! See, I have engraved you on the palms of my hands."
+      },
+      {
+        "label": "B' (v19-23)",
+        "name": "Zion's Children Overflow",
+        "description": "The ruined land becomes too small for all the returning children. Zion is astonished — 'Who bore me these?' Nations carry her sons and daughters home, kings become foster fathers, queens become nursing mothers. The promise seals it: those who hope in God will not be disappointed.",
+        "color": "teal",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v24-26)",
+        "name": "God Fights for His People",
+        "description": "Can captives be rescued from warriors? Humanly impossible — but God answers yes. He will personally contend with those who contend with Zion. Oppressors self-destruct, and the result is universal recognition: all mankind will know that the LORD is Savior, Redeemer, the Mighty One of Jacob.",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with the Servant's global mission — called to be a light to the nations so salvation reaches earth's ends (A). It closes with God's universal self-revelation — all mankind will know He is Savior and Redeemer (A'). Both sections face outward to the whole world. In A, the Servant is sent to the nations; in A', the nations witness God's power firsthand."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "Kings and rulers bow before the once-despised Servant, and creation celebrates God's comfort (B). In the mirror, nations carry Zion's children home, kings become foster fathers, and hope in God is vindicated (B'). Both sections show foreign powers serving God's restoration. In B, they bow; in B', they nurture — the world moves from reverence to active participation in God's plan."
+      }
+    ],
+    "closing": "Isaiah 49 is a love letter from the God who never forgets. The Servant's mission stretches from womb to world's end, but at the heart of the chapter stands the most intimate promise imaginable: 'I have engraved you on the palms of my hands.' Zion's despair — 'the LORD has forsaken me' — receives an answer so tender it redefines what divine love looks like. Mothers may forget; God will not. Nations may resist; they will carry your children home. Warriors may hold captives; God will contend for them personally. From the Servant's hidden preparation to the universal recognition of God as Redeemer, the chapter traces an arc from calling to comfort to conquest — all driven by a love that is literally etched into God's hands."
+  }
 }

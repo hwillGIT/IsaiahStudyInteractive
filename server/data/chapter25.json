@@ -294,5 +294,22 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 25 Structure",
+    "subtitle": "The Feast of Salvation and Death Swallowed Up",
+    "intro": "Isaiah 25 follows a concentric pattern that moves from praise for God's past faithfulness inward to the mountain feast where death is destroyed, then outward to the response of vindicated faith and the humbling of the proud. The center reveals the heart of the chapter: God swallows up death forever.",
+    "sections": [
+      { "label": "A (v1-3)", "name": "Praise for God's Wonderful Plans", "description": "Personal praise for God's faithfulness — proud cities reduced to rubble, strong nations brought to honor Him", "color": "yellow", "indent": 0, "isCenter": false },
+      { "label": "B (v4-5)", "name": "Refuge for the Poor", "description": "God shelters the needy from the storm and silences the ruthless like shade cools desert heat", "color": "blue", "indent": 1, "isCenter": false },
+      { "label": "CENTER (v6-8)", "name": "The Feast and Death Destroyed", "description": "God prepares a lavish feast for all peoples, removes the shroud of death, wipes away every tear, and swallows up death forever", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "He will swallow up death forever. The Sovereign LORD will wipe away the tears from all faces" },
+      { "label": "B' (v9)", "name": "Vindicated Trust", "description": "Those who waited declare 'This is our God — we trusted in Him and He saved us'", "color": "teal", "indent": 1, "isCenter": false },
+      { "label": "A' (v10-12)", "name": "Moab Trampled and Walls Demolished", "description": "The proud are trampled like straw, their cleverness fails, and fortified walls are ground to dust", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with praise for God demolishing proud cities and closes with the proud (Moab) trampled and walls brought to dust. God's faithful plans (v1) produce the thorough humbling of pride (v10-12)." },
+      { "pair": "B ↔ B'", "explanation": "God as refuge for the poor and needy (v4-5) is matched by the testimony of those who trusted and were saved (v9). Protection in the present leads to joyful confession in the future." },
+      { "pair": "Center", "explanation": "The theological heart of the chapter — and one of the most important passages in all of Isaiah — declares God's feast for all peoples and the defeat of death itself. Everything before it leads to this climax; everything after it flows from it." }
+    ],
+    "closing": "The concentric structure reveals that God's destruction of pride and protection of the poor both serve one ultimate purpose: the mountain feast where death is swallowed up and tears are wiped away. This is the gospel in seed form — God's grace triumphing over death for all peoples."
+  }
 }

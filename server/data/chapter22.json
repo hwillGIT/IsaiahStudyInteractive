@@ -581,5 +581,24 @@
       "color": "bg-green-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 22 Structure",
+    "subtitle": "The Valley of Vision — Oracle Against Jerusalem",
+    "intro": "Isaiah 22 unfolds in two major movements connected by a single devastating diagnosis: God's own city forgot Him. The first half (v1-14) follows a concentric pattern spiraling inward from blind celebration to the unatonable sin of refusing repentance, with the hinge at verse 11 — 'you did not look to the One who made it.' The second half (v15-25) presents a dramatic contrast between two stewards: Shebna the self-serving leader who is thrown out, and Eliakim the faithful servant who receives the key of David. Together, the two halves ask the same question: will you trust yourself or the One who made everything?",
+    "sections": [
+      { "label": "A (v1-4)", "name": "Blind Celebration", "description": "Jerusalem parties on the rooftops while disaster approaches — leaders flee without a fight, and Isaiah alone weeps bitterly over his people's destruction", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v5-8)", "name": "The LORD's Day of Judgment", "description": "God sends a day of tumult and terror through foreign armies — Elam and Kir surround the city while the people run to weapons instead of prayer", "color": "blue", "indent": 1, "isCenter": false },
+      { "label": "CENTER (v9-11)", "name": "Self-Reliance Exposed", "description": "Jerusalem patches walls, stores water, and tears down houses to fortify defenses — doing everything right practically but missing the one thing that matters: looking to God", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "You did not look to the One who made it, or have regard for the One who planned it long ago." },
+      { "label": "B' (v12-14)", "name": "Repentance Refused", "description": "God called for weeping and sackcloth, but the people threw a feast instead — 'Let us eat and drink, for tomorrow we die!' — and this defiance becomes the one sin that cannot be atoned for", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "C (v15-19)", "name": "Shebna: The Unfaithful Steward", "description": "God confronts Shebna the palace administrator who carved himself a grand tomb instead of serving — he will be rolled up like a ball and hurled into exile", "color": "gray", "indent": 0, "isCenter": false },
+      { "label": "C' (v20-25)", "name": "Eliakim: The Faithful Steward", "description": "God summons His servant Eliakim, gives him the key of David that opens and shuts with absolute authority, and drives him like a peg into a firm place — yet even this faithful leader will eventually give way, pointing to the need for a greater Servant", "color": "teal", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ B'", "explanation": "Both sections contrast celebration with grief. In A, the people celebrate on rooftops while Isaiah weeps alone. In B', God calls for mourning but the people throw a lavish feast. The same tragic disconnect runs through both: the people party when they should grieve, and their refusal to mourn seals their judgment." },
+      { "pair": "B ↔ Center", "explanation": "In B, God strips away Judah's defenses and the people immediately reach for weapons in the armory. The center expands this response — walls, water, buildings — cataloging every practical measure they took. The devastating punchline ties them together: all that effort, and 'you did not look to the One who made it.' The problem isn't the preparations but the direction of their trust." },
+      { "pair": "C ↔ C'", "explanation": "Shebna and Eliakim are mirror-image leaders. Shebna seized power and built himself a monument; Eliakim is summoned by God and called 'my servant.' Shebna will be hurled away; Eliakim is driven in like a firm peg. One used authority for self-glory, the other receives it for fatherly care. Yet even Eliakim's peg eventually gives way (v25), pointing beyond all human leaders to the Messiah who holds the key of David forever (Revelation 3:7)." },
+      { "pair": "Center", "explanation": "Verse 11 is the hinge of the entire chapter — the verdict beneath every other failure. Jerusalem's walls, water systems, and military preparations were impressive engineering, but they were functional atheism: solving God-sized problems without God. 'You did not look to the One who made it' is the epitaph of self-reliance and the root of the unatonable sin declared in verse 14." }
+    ],
+    "closing": "Isaiah 22 strips away every false support — rooftop parties, military hardware, self-carved monuments — and exposes the one question that determines everything: where are you looking? Jerusalem looked everywhere except to God, and the result was irreversible judgment. But even within this dark oracle, the key of David appears — a key that will ultimately rest on the shoulders of One who never fails, whose peg will never give way, and whose authority to open and shut stands forever."
+  }
 }

@@ -158,5 +158,20 @@
       "color": "bg-blue-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 20 Structure",
+    "subtitle": "Isaiah's Sign Against Egypt and Cush",
+    "intro": "Isaiah 20 follows a compact linear structure built around a single prophetic sign-act. The chapter moves from historical setting to divine command, from embodied obedience to revealed meaning, and finally to the devastating application for anyone who trusted in Egypt. The prophet's body becomes the message itself — what Isaiah endured voluntarily for three years, Egypt and Cush will endure by force.",
+    "sections": [
+      { "label": "A (v1)", "name": "Historical Setting", "description": "Assyria captures Ashdod under Sargon II — God's word enters a specific moment in history when empires are on the move", "color": "blue", "indent": 0, "isCenter": false },
+      { "label": "B (v2)", "name": "The Costly Command", "description": "God tells Isaiah to strip off his sackcloth and sandals — and Isaiah obeys immediately, walking around stripped and barefoot as a living sign", "color": "red", "indent": 1, "isCenter": false },
+      { "label": "CENTER (v3-4)", "name": "The Meaning Revealed", "description": "God explains: Isaiah's three years of public humiliation picture what Assyria will do to Egypt and Cush — leading them away stripped, barefoot, and shamed", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "Just as my servant Isaiah has gone stripped and barefoot for three years, as a sign and portent against Egypt and Cush" },
+      { "label": "C (v5-6)", "name": "The Warning Lands", "description": "Those who trusted in Egypt are dismayed — their source of security has collapsed, and a desperate question hangs in the air: 'How then can we escape?'", "color": "purple", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ C", "explanation": "The chapter opens with Assyria's military advance against Ashdod and closes with the coastal peoples asking how they can possibly escape Assyria. The historical event that frames the chapter becomes the inescapable reality that closes it — Assyria is coming, and Egypt cannot save you." },
+      { "pair": "B ↔ Center", "explanation": "Isaiah's obedient act of stripping himself (v2) finds its meaning in God's revelation (v3-4). The prophet didn't understand the full purpose of his humiliation until God explained it three years later. His voluntary suffering mirrored the involuntary suffering awaiting the nations — the messenger became the message." }
+    ],
+    "closing": "This short, powerful chapter shows that prophetic obedience can be deeply costly and deeply purposeful. Isaiah gave three years of his dignity so that God's people might see the truth before it was too late: trusting in human power instead of God leads only to shame. The unanswered question at the end — 'How can we escape?' — forces every reader to supply the only real answer: escape is found in God alone."
+  }
 }

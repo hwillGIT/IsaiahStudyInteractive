@@ -644,5 +644,63 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 43 Structure",
+    "subtitle": "I Have Called You by Name — You Are Mine",
+    "intro": "Isaiah 43 unfolds as a passionate love letter from God to His wayward people, built around a striking contrast: God's relentless devotion on one side, and Israel's stubborn indifference on the other. The chapter opens with God's fierce personal claim — 'you are mine' — and moves through a courtroom scene proving His uniqueness, a breathtaking announcement that He is doing something brand new, and then a painful exposure of Israel's failure to worship. Yet the chapter resolves not with punishment but with scandalous grace: God forgives for His own sake, not Israel's merit.",
+    "sections": [
+      {
+        "label": "A (v1-7)",
+        "name": "You Are Mine",
+        "description": "God claims Israel with fierce tenderness — created, redeemed, called by name, precious, loved, and gathered from the ends of the earth. No trial can separate them from Him.",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v8-13)",
+        "name": "The Courtroom — You Are My Witnesses",
+        "description": "God puts His case before the nations: let any rival god prove its credentials. Israel, though blind and deaf, stands as God's witness. The verdict is absolute — no god before Him, none after, no savior but Him.",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v14-21)",
+        "name": "From the Old Exodus to the New Thing",
+        "description": "God recalls His Red Sea power — armies snuffed out like a candle wick — then commands His people to forget even that, because something greater is coming. A new road through the wilderness, streams in the wasteland, creation itself giving praise.",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "See, I am doing a new thing! Now it springs up; do you not perceive it?"
+      },
+      {
+        "label": "B' (v22-24)",
+        "name": "Israel's Worship Failure Exposed",
+        "description": "The tone turns sharp. The people called by name have not called on God. No offerings, no honor, no devotion — instead they have burdened God with their sins and wearied Him with their offenses.",
+        "color": "purple",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v25-28)",
+        "name": "Grace Despite Everything",
+        "description": "The shocking resolution — God blots out Israel's sins not because they deserve it, but for His own sake. He remembers their sins no more. Even after exposing their failure from the first father onward, forgiveness has the final word.",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with God's passionate personal claim — 'I have redeemed you, I have called you by name, you are mine' (A) — and closes with God forgiving Israel's sins for His own sake (A'). Both sections reveal a love that isn't earned: at the start, God treasures them as precious; at the end, He forgives them despite total failure. The bookends show that God's devotion doesn't depend on Israel's faithfulness — it flows from who He is."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "In the courtroom scene, God proves He alone saves and calls Israel as His witnesses (B). But in the mirror section, those same witnesses stand exposed as people who haven't even bothered to call on God or bring Him offerings (B'). The irony is devastating: the very people chosen to testify about God's faithfulness have been unfaithful themselves. Yet this failure only makes God's grace in verse 25 more stunning."
+      }
+    ],
+    "closing": "Isaiah 43 reveals a God whose love is fiercer than His people's failure. The structure moves from tender possession to courtroom proof to breathtaking new creation — then plunges into the painful truth of Israel's indifference, only to land on scandalous forgiveness. The 'new thing' at the center isn't just a new road through the wilderness; it's a God who blots out sins for His own sake when His people have given Him every reason not to."
+  }
 }

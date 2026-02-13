@@ -736,5 +736,25 @@
       "color": "bg-green-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 14 Structure",
+    "subtitle": "The Fall of Babylon's King and Oracles Against the Nations",
+    "intro": "Isaiah 14 is built around the famous taunt song against Babylon's king, framed by God's restorative purposes. The chapter moves from Israel's restoration through the king's spectacular fall, then outward to God's unbreakable plan for all nations. The structure shows that pride's downfall is nested inside God's larger story of redemption.",
+    "sections": [
+      { "label": "A (v1-4a)", "name": "Israel Restored, Taunt Song Begins", "description": "God has compassion on Jacob, settles them in their land, and they take up a taunt against Babylon's king", "color": "yellow", "indent": 0, "isCenter": false },
+      { "label": "B (v4b-8)", "name": "The Oppressor's End", "description": "The LORD breaks the tyrant's rod — the whole earth rests, even the cedars of Lebanon celebrate", "color": "blue", "indent": 1, "isCenter": false },
+      { "label": "C (v9-11)", "name": "Sheol's Mocking Welcome", "description": "Dead kings rise to greet the fallen ruler: 'You have become weak, as we are' — maggots replace pomp", "color": "teal", "indent": 2, "isCenter": false },
+      { "label": "CENTER (v12-15)", "name": "The Morning Star Falls", "description": "Five 'I will' boasts of pride crash into one devastating 'But' — the climax of the entire taunt song", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "How you have fallen from heaven, morning star, son of the dawn!" },
+      { "label": "C' (v16-21)", "name": "The Tyrant's Disgrace", "description": "Onlookers stare in disbelief — no honorable burial, his dynasty cut off, his legacy erased", "color": "purple", "indent": 2, "isCenter": false },
+      { "label": "B' (v22-23)", "name": "God's Word Against Babylon", "description": "The LORD Almighty personally decrees Babylon's total erasure — swept with the broom of destruction", "color": "red", "indent": 1, "isCenter": false },
+      { "label": "A' (v24-32)", "name": "God's Unbreakable Plan", "description": "God's purpose stands over Assyria, Philistia, and all nations — Zion is established as refuge for the afflicted", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with God restoring Israel and closes with God establishing Zion as a refuge. Both frame the judgment poetry with hope: God's people are delivered, and His purposes cannot be thwarted by any empire." },
+      { "pair": "B ↔ B'", "explanation": "The oppressor's rod is broken in B (the earth rests), and in B' God Himself declares Babylon's total erasure. The celebration of the tyrant's fall in B finds its divine confirmation in B' — what the nations experienced, God now officially seals." },
+      { "pair": "C ↔ C'", "explanation": "Dead kings mock the fallen ruler in Sheol (C), and living onlookers stare at his disgraceful end on earth (C'). Both perspectives — from below and from above — reach the same conclusion: the mighty are brought low." },
+      { "pair": "Center", "explanation": "The morning star passage (v12-15) is the dramatic heart of the chapter. Five ascending 'I will' statements of pride are answered by one divine 'But you are brought down.' This is the Bible's most vivid portrait of how pride that reaches for heaven meets a fall to the pit." }
+    ],
+    "closing": "The structure nests the king's spectacular fall inside God's larger plan of redemption. Pride rises at the center and is crushed, while restoration and refuge frame the whole — showing that God's ultimate purpose is not destruction but the establishment of His unshakeable kingdom."
+  }
 }

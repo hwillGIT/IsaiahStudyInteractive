@@ -661,5 +661,28 @@
       "color": "bg-green-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 28 Structure",
+    "subtitle": "Woe to Ephraim's Crown and the Precious Cornerstone",
+    "intro": "Isaiah 28 follows a chiastic pattern that moves from the fading crown of human pride to the unshakable cornerstone of God's plan. The outer layers contrast human arrogance with divine wisdom, while the center reveals God's answer to false security: a tested, precious cornerstone in Zion.",
+    "sections": [
+      { "label": "A (v1-4)", "name": "Ephraim's Fading Crown", "description": "Woe to the drunkards of Samaria — their proud beauty is a wilting flower about to be trampled and devoured", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v5-6)", "name": "God Becomes the Crown", "description": "The LORD Himself becomes a glorious crown for the faithful remnant, giving justice to judges and strength to warriors", "color": "green", "indent": 1, "isCenter": false },
+      { "label": "C (v7-10)", "name": "Drunken Leaders Mock God's Word", "description": "Priests and prophets stagger from wine, mocking Isaiah's teaching as childish babble — every table covered with filth", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "D (v11-13)", "name": "Foreign Tongues as Judgment", "description": "Since they refused God's clear word, He will speak through foreign invaders — their own mockery becomes their sentence", "color": "blue", "indent": 2, "isCenter": false },
+      { "label": "CENTER (v14-16)", "name": "The Precious Cornerstone", "description": "Against the scoffers' covenant with death, God lays a tested, precious cornerstone in Zion — whoever trusts in it will never panic", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "See, I lay a stone in Zion, a tested stone, a precious cornerstone for a sure foundation; the one who relies on it will never be stricken with panic" },
+      { "label": "D' (v17-19)", "name": "Justice Sweeps Away the Lie", "description": "God's measuring line of justice exposes the crooked walls — the covenant with death is canceled and the scourge beats down relentlessly", "color": "blue", "indent": 2, "isCenter": false },
+      { "label": "C' (v20-22)", "name": "God's Strange Work", "description": "The bed is too short and the blanket too narrow — God rises to do His unusual task of judging His own people, warning them to stop mocking", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "B' (v23-28)", "name": "The Farmer's Wise Methods", "description": "A wise farmer knows when to plow, what to plant, and how to thresh each grain — God handles His people with the same careful, tailored wisdom", "color": "green", "indent": 1, "isCenter": false },
+      { "label": "A' (v29)", "name": "God's Wonderful Wisdom", "description": "Everything comes from the LORD Almighty, whose plan is wonderful and whose wisdom is magnificent", "color": "teal", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with Ephraim's fading human glory and closes with God's magnificent wisdom. Human pride produces a wilting crown; God's plan produces wonderful, lasting purpose." },
+      { "pair": "B ↔ B'", "explanation": "God replaces the drunkards' fading crown by becoming the remnant's true crown (B), and the farmer's parable shows how God wisely tends each person according to their need (B'). Both reveal God's careful, personal engagement with His people." },
+      { "pair": "C ↔ C'", "explanation": "The drunken leaders mock Isaiah's simple teaching as baby talk (C), and God warns that their too-short bed and too-narrow blanket expose the absurdity of self-made security (C'). Those who mock God's word discover their own solutions are laughably inadequate." },
+      { "pair": "D ↔ D'", "explanation": "God speaks through foreign tongues because they rejected clear prophecy (D), and His justice sweeps away the lie-based refuge they built instead (D'). Rejected revelation leads to imposed confusion and demolished falsehood." },
+      { "pair": "Center", "explanation": "Verse 16 is the theological heart: God lays a tested cornerstone in Zion. Against every false foundation — pride, mockery, lies, foreign alliances — God provides one sure foundation. Trust in this stone replaces panic with peace." }
+    ],
+    "closing": "The chiastic structure exposes the bankruptcy of human pride and self-made security while revealing God's answer: a precious cornerstone for those who trust, and wisdom as careful and measured as a farmer tending his fields. From fading crowns to magnificent wisdom, every layer points to the one sure foundation God lays in Zion."
+  }
 }

@@ -227,5 +227,19 @@
       "color": "bg-blue-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 31 Structure",
+    "subtitle": "Woe to Those Who Rely on Egypt",
+    "intro": "Isaiah 31 follows a chiastic pattern that moves from the folly of trusting Egypt to God's fierce protection and finally to a call to repent and witness divine deliverance. The outer layers contrast human military trust with God's supernatural victory, while the center reveals God as both fierce lion and tender mother bird fighting for His people.",
+    "sections": [
+      { "label": "A (v1-3)", "name": "Woe: Trusting Egypt Instead of God", "description": "Judah runs to Egypt for horses and chariots instead of seeking the Holy One — but Egyptians are mere flesh, not spirit, and when God acts, everyone falls together", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "CENTER (v4-5)", "name": "God Fights Like a Lion and Hovering Birds", "description": "The LORD roars like a lion over His prey, unintimidated by any opposition — and hovers over Jerusalem like a mother bird, shielding and delivering with Passover echoes", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "Like birds hovering overhead, the LORD Almighty will shield Jerusalem; he will shield it and deliver it, he will 'pass over' it and will rescue it" },
+      { "label": "A' (v6-9)", "name": "Return to God and Watch Assyria Fall", "description": "The call to repent and reject handmade idols — then Assyria falls by no human sword, and God's fire burns in Zion as both refining furnace and consuming judgment", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with Judah foolishly trusting Egypt's horses and chariots and closes with Assyria falling by no human sword. Human military alliances prove useless (A), while God's divine intervention proves unstoppable (A'). The flesh-versus-spirit contrast of v3 is answered by the supernatural defeat of v8." },
+      { "pair": "Center", "explanation": "At the heart of the chapter stand two stunning images of God: a fierce lion no crowd of shepherds can scare away, and a mother bird hovering protectively over her young. God fights for Jerusalem with both ferocity and tenderness — the Passover echo in 'pass over' connects this deliverance to the Exodus itself." }
+    ],
+    "closing": "The structure reveals a single message: stop trusting what is flesh and start trusting the God who fights like a lion and shelters like a bird. Egypt's horses crumble, but God's fire in Zion endures — and the only fitting response is to return to Him and throw away the idols your own hands have made."
+  }
 }

@@ -560,5 +560,25 @@
       "color": "bg-blue-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 33 Structure",
+    "subtitle": "Woe to the Destroyer — The Exalted LORD",
+    "intro": "Isaiah 33 follows a chiastic pattern that moves from the destroyer's doom and the people's cry for grace, through social collapse and God's dramatic rising, to the ultimate question of who can dwell with a holy God — answered by a glorious vision of the king in his beauty and Zion fully restored. The outer layers contrast destruction with restoration, while the center reveals God rising in power to judge the wicked.",
+    "sections": [
+      { "label": "A (v1-4)", "name": "Woe to the Destroyer — Prayer for Grace", "description": "The treacherous destroyer will be destroyed in turn — the people cry for morning-by-morning grace, and when God rises, nations scatter and their plunder is gathered like a locust swarm", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v5-6)", "name": "The LORD Exalted — Sure Foundation", "description": "The LORD dwells on high and fills Zion with justice — He becomes the sure foundation, a treasure store of salvation, wisdom, and knowledge unlocked only by the fear of the LORD", "color": "blue", "indent": 1, "isCenter": false },
+      { "label": "C (v7-9)", "name": "Crisis: Diplomacy Fails, Creation Mourns", "description": "Warriors cry in the streets, peace envoys weep, highways are deserted, treaties broken — even the land itself withers as Lebanon, Sharon, Bashan, and Carmel drop their leaves", "color": "purple", "indent": 2, "isCenter": false },
+      { "label": "CENTER (v10-13)", "name": "God Rises in Triple Declaration", "description": "Three thundering 'nows' break the silence — God will arise, be exalted, and be lifted up — the enemies' own scheming becomes the fire that consumes them, and all the world must acknowledge His power", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "Now will I arise, says the LORD. Now will I be exalted; now will I be lifted up" },
+      { "label": "C' (v14-16)", "name": "Who Can Dwell with Consuming Fire?", "description": "Sinners in Zion tremble before the holy God — but those who walk righteously, reject bribes, and turn from evil will dwell on the heights with bread and water guaranteed", "color": "teal", "indent": 2, "isCenter": false },
+      { "label": "B' (v17-19)", "name": "Eyes See the King in His Beauty", "description": "Faithfulness is rewarded with breathtaking sight — beholding the king in his beauty and a land stretching far — former terrors become fading memories and arrogant oppressors vanish", "color": "green", "indent": 1, "isCenter": false },
+      { "label": "A' (v20-24)", "name": "Zion Restored — The LORD Saves", "description": "Jerusalem becomes an unmovable tent of peace — the LORD is judge, lawgiver, and king who saves — even the lame carry plunder, no one is sick, and all sins are forgiven", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with woe against the destroyer and a desperate prayer for grace (A), and closes with Zion fully restored — an immovable city where the LORD is judge, lawgiver, and king, illness is gone, and sins are forgiven (A'). The destroyer is destroyed; the city of God stands forever." },
+      { "pair": "B ↔ B'", "explanation": "God as the exalted sure foundation whose treasure requires the fear of the LORD (B) is answered by the reward of seeing the king in his beauty (B'). The foundation of reverence produces the fruit of vision — those who feared the LORD now behold Him in glory." },
+      { "pair": "C ↔ C'", "explanation": "The crisis of failed diplomacy and withering creation (C) is answered by the entrance requirements for God's holy presence (C'). When human systems collapse, the question becomes personal: who can survive proximity to the consuming fire? The answer: those who live with integrity." },
+      { "pair": "Center", "explanation": "God's triple 'now' is the turning point of the entire chapter. After watching human schemes fail and creation mourn, God speaks in first person with decisive, irreversible action. The enemies' own breath becomes their fire — and all the earth, far and near, must acknowledge what He has done." }
+    ],
+    "closing": "The structure sweeps from destruction to restoration through the decisive center of God's rising. Every layer reveals the same truth: human treachery, diplomacy, and power all fail — but the LORD who is judge, lawgiver, and king saves His people completely. The final vision is staggering: a city where no one is sick and every sin is forgiven, guarded by a God who is Himself the broad river no enemy warship can sail."
+  }
 }

@@ -300,5 +300,63 @@
       "color": "bg-purple-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 53 Structure",
+    "subtitle": "The Suffering Servant — Pierced for Our Transgressions",
+    "intro": "Isaiah 53 is the theological summit of the entire Old Testament — the most detailed and devastating portrait of substitutionary atonement written seven centuries before Calvary. The chapter moves from the Servant's rejection and humble origins, through the shattering revelation that His suffering was for us, to His silent sacrifice and unjust death, and finally to His triumphant vindication beyond the grave. At the center stands the great exchange: He was pierced for our transgressions, crushed for our iniquities, punished so we could have peace, and wounded so we could be healed. Every line transfers guilt from humanity to the Servant and blessing from the Servant to humanity.",
+    "sections": [
+      {
+        "label": "A (v1-3)",
+        "name": "Despised and Rejected",
+        "description": "The chapter opens with a haunting question: 'Who has believed our message?' The Servant grew up like a root out of dry ground — nothing outwardly impressive, no beauty to attract, no majesty to demand attention. He was despised, rejected, intimate with suffering, and people turned their faces away from Him. Humanity's verdict: we held Him in low esteem.",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v4-6)",
+        "name": "The Great Revelation — He Bore Our Suffering",
+        "description": "The veil is torn away: His suffering was not His own punishment — it was ours. 'Surely He took up our pain.' We assumed God was striking Him for His own sin, but every wound had our name on it. Pierced for our transgressions, crushed for our iniquities, punished so we could have peace, wounded so we could be healed. We all wandered like sheep, and the LORD laid on Him the iniquity of us all.",
+        "color": "red",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v5)",
+        "name": "The Great Exchange",
+        "description": "The theological heart of the Bible's atonement teaching. Five statements build an overwhelming case: pierced for our transgressions, crushed for our iniquities, the punishment that brought us peace was on Him, and by His wounds we are healed. Every phrase transfers our guilt to Him and His blessing to us. This is penal substitutionary atonement stated with devastating clarity.",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "He was pierced for our transgressions, he was crushed for our iniquities; the punishment that brought us peace was on him, and by his wounds we are healed."
+      },
+      {
+        "label": "B' (v7-9)",
+        "name": "Silent Lamb — Unjust Death",
+        "description": "The Servant is led like a lamb to slaughter, silent before His shearers — not the helplessness of a victim but the resolve of a willing sacrifice. Oppressed, denied justice, cut off from the living, and no one protested. He was assigned a grave with criminals yet buried with the rich, though He had done no violence and spoken no deceit. A spotless sacrifice from start to finish.",
+        "color": "purple",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v10-12)",
+        "name": "Vindication Beyond the Grave",
+        "description": "The most staggering reversal: it was the LORD's will to crush Him — not cruelty, but costly redemption. Yet death is not the end. He will see His offspring, prolong His days, see the light of life, and be satisfied. His knowledge justifies many. Because He poured out His life unto death and bore the sin of many, God gives Him a portion among the great. The Servant who was despised in verse 3 is now exalted — interceding forever for those He saved.",
+        "color": "yellow",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with the Servant despised, rejected, and held in low esteem — humanity's verdict on God's greatest gift (A). It closes with God's verdict: exaltation, vindication, and eternal reward. The Servant who was a root out of dry ground now sees offspring; the one who was cut off from the living prolongs His days (A'). Human rejection is overturned by divine coronation."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "The great revelation shows our sin transferred to the Servant — pierced, crushed, punished, wounded for what we did (B). The mirror shows how He bore it: silently, willingly, unjustly condemned, yet completely innocent (B'). Together they answer two questions: Why did He suffer? (B — for our transgressions) and How did He suffer? (B' — as a willing, silent, spotless sacrifice)."
+      }
+    ],
+    "closing": "Isaiah 53 is the chapter the entire Bible points toward and flows from. A rejected servant, a root from dry ground, despised and discarded — yet carrying the weight of the world's sin on His shoulders. At the center stands the most personal sentence ever written about every human being: He was pierced for your transgressions, crushed for your iniquities, punished so you could have peace, wounded so you could be healed. The lamb who was silent at slaughter becomes the king who divides spoils with the strong. The one who poured out His life unto death sees the light of life again and is satisfied. This is not theology about someone else — this is the suffering love of God written in blood, seven hundred years before the cross proved every word true."
+  }
 }

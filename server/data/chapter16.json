@@ -336,5 +336,22 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 16 Structure",
+    "subtitle": "Moab's Pride and Plea for Refuge",
+    "intro": "Isaiah 16 follows a chiastic pattern that moves from a plea for refuge inward to a messianic throne of love and justice, then outward through pride, lament, and a final countdown. The center reveals that even amid judgment on a pagan nation, God is building a kingdom founded on love — and the prophet's own tears show that judgment and compassion go hand in hand.",
+    "sections": [
+      { "label": "A (v1-4)", "name": "Plea for Refuge", "description": "Moab is told to send tribute to Zion and Judah is told to shelter the fugitives — mercy and protection for the displaced", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "CENTER (v5)", "name": "The Messianic Throne", "description": "A throne established in love, faithfulness, and justice — a Davidic king who speeds the cause of righteousness", "color": "orange", "indent": 1, "isCenter": true, "centerQuote": "In love a throne will be established; in faithfulness a man will sit on it" },
+      { "label": "B (v6-8)", "name": "Moab's Pride Exposed", "description": "Moab's many-layered pride is catalogued and her vineyards are trampled — empty boasts meet real destruction", "color": "blue", "indent": 0, "isCenter": false },
+      { "label": "C (v9-12)", "name": "The Prophet Weeps", "description": "Isaiah weeps personally for Moab's silenced joy — his heart laments like a harp while Moab's worship proves futile", "color": "purple", "indent": 0, "isCenter": false },
+      { "label": "A' (v13-14)", "name": "The Final Countdown", "description": "God reaffirms His word and sets a three-year deadline — Moab's splendor will be despised, few survivors will remain", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with a call to send tribute and seek refuge at Zion, and closes with a divine deadline that makes the plea urgent. Moab's window for humbling herself is real but limited — the opening invitation and closing countdown create a tension between mercy offered and judgment coming." },
+      { "pair": "B ↔ C", "explanation": "Moab's pride (v6-8) is answered by the prophet's tears (v9-12). Where Moab boasts emptily, Isaiah weeps genuinely. The contrast reveals that God's response to pride isn't cold punishment but heartbroken discipline — the one announcing judgment grieves most deeply." },
+      { "pair": "Center", "explanation": "At the heart of this oracle against a pagan nation stands a messianic promise: a throne of love, faithfulness, and justice from David's line. This is stunning placement — God plants His kingdom hope in the soil of Moab's ruin, showing that His redemptive plan encompasses even enemy nations." }
+    ],
+    "closing": "This chapter reveals that God's judgment is never the whole story. At the center stands a throne of love, surrounded by both an invitation to find refuge and a prophet's tears for those who refuse it. Pride is the only thing that keeps anyone — Moab or us — from the shelter God offers."
+  }
 }

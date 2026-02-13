@@ -711,5 +711,83 @@
       "color": "bg-purple-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 40 Structure",
+    "subtitle": "Comfort My People",
+    "intro": "Isaiah 40 opens the second major division of the book with a sweeping chiastic structure that moves from God's tender comfort inward to the eternal word, then outward to God's incomparable greatness. The center — 'Here is your God!' — is the heartbeat of the chapter: everything before prepares for His arrival, and everything after reveals His majesty. The structure mirrors the journey from human weakness to divine strength, beginning and ending with comfort for the weary.",
+    "sections": [
+      {
+        "label": "A (v1-2)",
+        "name": "Comfort Proclaimed",
+        "description": "God commands double comfort for Jerusalem — her hard service is over, her sin is paid for, and He speaks tenderly to her heart",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v3-5)",
+        "name": "Prepare the Way",
+        "description": "A voice calls to build a highway in the wilderness — valleys raised, mountains lowered — so God's glory can be revealed to all people",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "C (v6-8)",
+        "name": "The Eternal Word",
+        "description": "All people are like grass that withers, but God's word endures forever — the great hinge between human frailty and divine permanence",
+        "color": "purple",
+        "indent": 2,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v9-11)",
+        "name": "Here Is Your God!",
+        "description": "The herald shouts the best news possible — God arrives with power in one hand and tenderness in the other, ruling like a king yet carrying His lambs close to His heart",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "Here is your God! He tends his flock like a shepherd: He gathers the lambs in his arms and carries them close to his heart"
+      },
+      {
+        "label": "C' (v12-20)",
+        "name": "The Incomparable Creator",
+        "description": "Rhetorical questions reveal God's unmatched greatness — He measured the oceans in His palm, nations are a drop in a bucket, and idols are handmade jokes that need nailing down to stay upright",
+        "color": "purple",
+        "indent": 2,
+        "isCenter": false
+      },
+      {
+        "label": "B' (v21-26)",
+        "name": "God Enthroned Above All",
+        "description": "Do you not know? God sits above the circle of the earth, stretches out the heavens like a tent, and calls every star by name — nothing escapes His notice",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v27-31)",
+        "name": "Strength for the Weary",
+        "description": "The chapter circles back to the weary — God never grows tired, He gives strength to the weak, and those who hope in Him will soar on wings like eagles",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with God commanding comfort for His exhausted people whose 'hard service' is over (A), and closes with God giving strength to the weary so they will 'run and not grow weary' (A'). Both sections address human exhaustion — the first declares the struggle is over, the last promises supernatural renewal. The God who ends your suffering also renews your strength."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "The wilderness highway prepares for God's glory to be revealed to 'all people' (B), and God enthroned above creation calls every star by name with none missing (B'). Both sections show God's glory on display — first through landscape transformation, then through cosmic sovereignty. The God who reshapes valleys and mountains also stretches out the heavens."
+      },
+      {
+        "pair": "C ↔ C'",
+        "explanation": "Human frailty — 'all people are like grass' that withers and falls (C) — is matched by God's infinite greatness over nations, wisdom, and idol-makers (C'). Both sections contrast human smallness with divine permanence. The grass withers, but the God who made it holds oceans in His palm."
+      }
+    ],
+    "closing": "Isaiah 40 wraps exhausted exiles in a structure that begins and ends with comfort, moving inward to the eternal word and outward to the incomparable God. At the center stands the announcement every weary heart needs: 'Here is your God!' — mighty enough to rule the nations yet gentle enough to carry a lamb against His chest."
+  }
 }

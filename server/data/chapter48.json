@@ -518,5 +518,63 @@
       "color": "bg-purple-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 48 Structure",
+    "subtitle": "Israel Refined, Not Rejected",
+    "intro": "Isaiah 48 closes the great trial section of chapters 40-48 with a final reckoning between God and His stubborn people. The chapter moves from indictment to refinement to liberation — exposing Israel's hypocrisy, explaining why God predicted events in advance (so no idol could steal the credit), and revealing that even exile was a furnace of purification, not destruction. At the center, God refines Israel through affliction for His own name's sake. The chapter builds to a climactic exodus call — 'Leave Babylon!' — echoing the original exodus from Egypt, complete with water from the rock. It ends with a sobering coda: there is no peace for the wicked.",
+    "sections": [
+      {
+        "label": "A (v1-2)",
+        "name": "Religious Words Without Reality",
+        "description": "God addresses Israel by their full pedigree — descendants of Jacob, from the line of Judah — but immediately exposes the gap: they take oaths in God's name but not in truth or righteousness. They claim to be citizens of the holy city and to rely on God, but the labels don't match the life.",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v3-8)",
+        "name": "Prophecy to Prevent Idol Credit",
+        "description": "God explains why He predicted events long ago: Israel is so stubborn — iron neck, bronze forehead — that without advance announcements, they would credit their wooden and metal gods. He revealed old things to block false attribution and now declares new things to block the 'I already knew that' excuse. The diagnosis is devastating: treacherous from birth, ears never open.",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v9-11)",
+        "name": "Refined in the Furnace, Not Destroyed",
+        "description": "The turning point: God delays His wrath for His own name's sake. He refines Israel in the furnace of affliction — but not as silver, meaning the refining is gentler than they deserved. The emphatic repetition 'for my own sake, for my own sake' reveals that Israel's survival rests on God's commitment to His own glory, not on their merit.",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "See, I have refined you, though not as silver; I have tested you in the furnace of affliction."
+      },
+      {
+        "label": "B' (v12-16)",
+        "name": "The First and the Last Speaks",
+        "description": "God declares His eternal identity — the first and the last, the One who laid earth's foundations and spread the heavens. He challenges the idols: which of them foretold these things? His chosen ally will carry out His purpose against Babylon. A mysterious voice emerges: 'The Sovereign LORD has sent me, endowed with his Spirit' — hinting at something beyond a human prophet.",
+        "color": "teal",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v17-22)",
+        "name": "If Only — Then Leave and Celebrate",
+        "description": "God reveals Himself as Redeemer and teacher who shows you what is best. Then comes the heartbreaking lament: 'If only you had paid attention — your peace would have been like a river.' But grace prevails over grief. The chapter erupts into a joyful exodus command: 'Leave Babylon! Flee! Announce it with shouts of joy — the LORD has redeemed His servant Jacob!' Water from the rock recalls the original exodus. A final warning seals the section: no peace for the wicked.",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with Israel's hollow religious identity — using God's name without truth, claiming reliance without reality (A). It closes with what genuine relationship with God looks like: a Redeemer who teaches what is best, peace like a river for those who listen, and a joyful exodus for the redeemed (A'). The contrast is between faith as a label and faith as a lived experience. What Israel claimed to have in A, God offers to actually give them in A'."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "God's past prophecies were designed to prevent Israel from crediting idols with His work (B). Now God reveals His cosmic identity — first and last, Creator of heaven and earth — and challenges any idol to match His track record (B'). Both sections deal with the question of who deserves credit for what happens in history. In B, the answer is proven by fulfilled prediction; in B', it is proven by God's sovereign identity and His appointed instrument against Babylon."
+      }
+    ],
+    "closing": "Isaiah 48 is the final chapter of the great trial between God and the idols, and it ends not with a verdict but with an exodus. Despite Israel's stubbornness, treachery, and hollow religion, God refines rather than destroys — and He does it for His own name's sake, which turns out to be the most secure foundation imaginable. The chapter's emotional arc moves from indictment through grief ('if only you had listened') to explosive joy ('Leave Babylon with shouts of joy!'). The God who predicted the past, controls the present, and declares the future now commands His people to walk out of captivity and into freedom."
+  }
 }

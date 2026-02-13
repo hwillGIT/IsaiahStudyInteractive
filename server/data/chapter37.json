@@ -858,5 +858,83 @@
       "color": "bg-purple-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 37 Structure",
+    "subtitle": "Hezekiah's Prayer and Jerusalem's Deliverance",
+    "intro": "Isaiah 37 follows a powerful chiastic structure centered on Hezekiah's prayer in the temple. The chapter moves from crisis to prayer to deliverance — with Sennacherib's threats escalating on one side and God's decisive answer matching them on the other. The literary design makes one thing unmistakable: prayer is the hinge that turns the entire narrative from despair to divine victory.",
+    "sections": [
+      {
+        "label": "A (v1-4)",
+        "name": "Hezekiah's Distress and Plea to Isaiah",
+        "description": "Hezekiah tears his clothes, puts on sackcloth, and enters the temple — he sends his top officials to the prophet Isaiah begging for prayer, admitting the nation has no strength to deliver itself",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v5-7)",
+        "name": "Isaiah's First Oracle: Do Not Be Afraid",
+        "description": "God's answer through Isaiah reduces Assyria's generals to mere 'underlings' — a rumor will send Sennacherib home, and he will fall by the sword in his own land",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "C (v8-13)",
+        "name": "Sennacherib's Second Threat",
+        "description": "Sennacherib doubles down with a threatening letter, listing conquered nations and their failed gods — asking 'will you be delivered?' and daring Hezekiah to trust in God",
+        "color": "purple",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v14-20)",
+        "name": "Hezekiah's Prayer in the Temple",
+        "description": "Hezekiah spreads the threatening letter before the LORD and prays — declaring God alone is God over all kingdoms, acknowledging Assyria's real power, but asking for deliverance so all nations will know the LORD is the only God",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "Now, LORD our God, deliver us from his hand, so that all kingdoms on earth may know that you, LORD, are the only God"
+      },
+      {
+        "label": "C' (v21-29)",
+        "name": "God's Oracle Against Sennacherib",
+        "description": "God answers 'because you have prayed' — Virgin Daughter Zion mocks the retreating enemy, God exposes Sennacherib's arrogance, and declares He will put His hook in Assyria's nose and send him back the way he came",
+        "color": "teal",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "B' (v30-32)",
+        "name": "The Sign of Restoration",
+        "description": "God gives a sign of hope — the land will recover, a remnant will take root and bear fruit, and the zeal of the LORD Almighty will accomplish it all",
+        "color": "green",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v33-38)",
+        "name": "Jerusalem Delivered, Sennacherib Destroyed",
+        "description": "God declares Sennacherib will never enter the city — the angel of the LORD strikes 185,000 Assyrians dead, Sennacherib retreats to Nineveh, and is murdered by his own sons in his own temple",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with Hezekiah in utter distress — tearing his clothes and entering God's temple in desperation (A). It closes with complete deliverance — Sennacherib's army destroyed, the king fleeing home, and dying in his own god's temple (A'). The contrast between the two temples is devastating: Hezekiah finds salvation in God's house; Sennacherib finds death in his idol's house."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "Isaiah's first oracle promises that a 'report' will send Sennacherib home and the sword will find him (B). The sign of restoration promises the land will recover and a remnant will flourish (B'). Both are divine promises of reversal — one for the enemy's defeat, the other for God's people's renewal."
+      },
+      {
+        "pair": "C ↔ C'",
+        "explanation": "Sennacherib's threatening letter asks 'where are the gods who saved?' and lists nations that fell (C). God's answering oracle asks 'who have you ridiculed?' and declares that He planned Assyria's victories all along (C'). Every boast in the letter is systematically dismantled by heaven's response."
+      }
+    ],
+    "closing": "The entire chapter pivots on one act: Hezekiah spreading a threatening letter before God and praying. Everything before it builds the crisis; everything after it unfolds the answer. Prayer doesn't just comfort the pray-er — it moves the hand of God and changes the course of history."
+  }
 }

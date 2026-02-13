@@ -539,5 +539,25 @@
       "color": "bg-purple-600"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 24 Structure",
+    "subtitle": "The LORD's Devastation of the Earth",
+    "intro": "Isaiah 24 follows a concentric (chiastic) pattern that moves from universal devastation inward to the cause of judgment (covenant-breaking), then pivots through a surprising burst of praise before returning to cosmic upheaval, and finally climaxes with God's glorious reign. The structure shows that judgment clears the stage for God's enthronement.",
+    "sections": [
+      { "label": "A (v1-3)", "name": "Universal Devastation Announced", "description": "God lays waste the earth and scatters its inhabitants — no one is exempt, from priest to people", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v4-6)", "name": "The Earth Defiled", "description": "Creation withers because humanity broke the everlasting covenant — a curse consumes the earth", "color": "yellow", "indent": 1, "isCenter": false },
+      { "label": "C (v7-13)", "name": "Joy Silenced and the City Ruined", "description": "Wine dries up, music stops, the city of chaos lies desolate — all celebration is banished", "color": "purple", "indent": 2, "isCenter": false },
+      { "label": "CENTER (v14-16a)", "name": "The Remnant's Praise", "description": "A surprising burst of joy from east and west — voices acclaim God's majesty and sing 'Glory to the Righteous One'", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "Glory to the Righteous One" },
+      { "label": "C' (v16b-20)", "name": "Terror and Cosmic Collapse", "description": "Treachery remains, terror-pit-snare await, and the earth reels like a drunkard under its guilt", "color": "blue", "indent": 2, "isCenter": false },
+      { "label": "B' (v21-22)", "name": "Powers Punished", "description": "God punishes heavenly powers and earthly kings — they are imprisoned and await final judgment", "color": "teal", "indent": 1, "isCenter": false },
+      { "label": "A' (v23)", "name": "The LORD Reigns in Glory", "description": "The moon and sun are outshone as the LORD Almighty reigns on Mount Zion with great glory", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with God devastating the earth and closes with God reigning gloriously on Zion. Judgment is not the final word — it clears the way for God's glorious enthronement." },
+      { "pair": "B ↔ B'", "explanation": "The root cause of judgment (breaking the everlasting covenant, v4-6) mirrors the final punishment of the powers responsible (heavenly and earthly rulers imprisoned, v21-22). Covenant-breaking leads to cosmic accountability." },
+      { "pair": "C ↔ C'", "explanation": "The silencing of earthly joy and the ruined city (v7-13) mirrors the terror, cosmic shaking, and earth reeling under guilt (v16b-20). Both sections describe the effects of judgment — one cultural, the other cosmic." },
+      { "pair": "Center", "explanation": "At the heart of global devastation, the remnant's voices rise in praise. This surprising center reveals that even in judgment, God preserves a people who acclaim His righteousness. Praise in the midst of ruin is the deepest expression of faith." }
+    ],
+    "closing": "The concentric pattern shows that God's judgment is not random chaos but purposeful clearing — moving from devastation through the root cause to the remnant's praise at the center, then back outward to cosmic collapse and finally God's glorious reign. The structure itself proclaims: judgment serves enthronement."
+  }
 }

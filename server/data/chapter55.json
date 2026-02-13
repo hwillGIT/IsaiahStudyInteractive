@@ -329,5 +329,83 @@
       "color": "bg-purple-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 55 Structure",
+    "subtitle": "Come, All Who Are Thirsty — The Everlasting Invitation",
+    "intro": "Isaiah 55 is the grand finale of Second Isaiah — a breathtaking invitation that throws open the doors of grace to everyone who will come. The chapter moves from God's free marketplace (come buy without money!) through the Davidic covenant extended to all nations, to the urgent call to seek the LORD while He is near. At the center stands the great mystery: God's thoughts and ways are infinitely higher than ours — which is why His pardon is so shockingly free. Then God's unfailing word is compared to rain that always produces fruit, and the chapter — and all of Second Isaiah — climaxes in a cosmic celebration where mountains sing, trees clap their hands, and thorns are replaced with beauty forever.",
+    "sections": [
+      {
+        "label": "A (v1-2)",
+        "name": "Come to the Waters — The Great Invitation",
+        "description": "Three times God cries 'Come!' — to the thirsty, to the penniless. Water, wine, milk, bread — everything needed for life and celebration, offered free of charge. Then the piercing question: why spend money on what isn't bread? Why labor for what doesn't satisfy? Listen, and feast on what is truly good.",
+        "color": "blue",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v3-5)",
+        "name": "The Everlasting Covenant — David's Promise for All",
+        "description": "The invitation deepens: 'Listen, that you may live.' God extends David's royal covenant — once exclusive to one dynasty — to everyone who will come. David was God's witness and ruler to the nations; now that witness-role expands. Nations you've never known will come running, drawn by the splendor God bestows on His people.",
+        "color": "purple",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "C (v6-7)",
+        "name": "Seek the LORD — The Urgent Call",
+        "description": "Urgency enters: seek the LORD while He may be found, call while He is near. The door is open now — don't wait. Repentance goes deep: forsake wicked ways and unrighteous thoughts. And the promise is extraordinary — God will have mercy and freely, lavishly, abundantly pardon.",
+        "color": "teal",
+        "indent": 2,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v8-9)",
+        "name": "My Thoughts Are Not Your Thoughts",
+        "description": "The theological center of the chapter — and the key to understanding why grace seems too good to be true. God's thoughts and ways are not ours. As high as the heavens are above the earth, so His ways tower above ours. This isn't about suffering or confusion — in context, it explains why God pardons so freely. We calculate; He lavishes. We withhold; He gives without limit.",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "For my thoughts are not your thoughts, neither are your ways my ways. As the heavens are higher than the earth, so are my ways higher than your ways and my thoughts than your thoughts."
+      },
+      {
+        "label": "C' (v10-11)",
+        "name": "The Word That Never Returns Empty",
+        "description": "God's word is compared to rain and snow that water the earth and always produce growth. Just as precipitation never falls in vain, God's word will not return empty. It accomplishes what He desires and achieves the purpose for which He sends it. Every promise is on a mission — and every mission succeeds.",
+        "color": "green",
+        "indent": 2,
+        "isCenter": false
+      },
+      {
+        "label": "B' (v12)",
+        "name": "Joy and Peace — Creation Celebrates",
+        "description": "The triumphant climax of all Second Isaiah: 'You will go out in joy and be led forth in peace.' This is the greater exodus — not fleeing in haste but marching in celebration. Mountains and hills burst into song, trees of the field clap their hands. All creation joins the party because God's people are finally, fully redeemed.",
+        "color": "red",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v13)",
+        "name": "Thorns Become Beauty — The Everlasting Sign",
+        "description": "The final verse reverses the curse of Genesis 3: thornbushes become junipers, briers become myrtles. What was cursed becomes beautiful, what was painful becomes fragrant. And this transformation is permanent — 'an everlasting sign, that will not be destroyed.' The last word of Second Isaiah is a world made new, for God's renown, forever.",
+        "color": "yellow",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with God offering free water, wine, milk, and bread to the thirsty and bankrupt (A), and closes with the curse of thorns and briers replaced by beautiful, fragrant trees as an everlasting sign (A'). Together they frame the chapter as a movement from spiritual hunger satisfied to creation itself transformed — the invitation to feast leads to a world made new."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "David's everlasting covenant is extended to all nations, who come running drawn by God's splendor (B). In the mirror, God's people go out in joy and peace while all creation — mountains, hills, trees — bursts into celebration (B'). The covenant that draws nations inward becomes the joy that bursts outward. What God promises in B, He fulfills in B'."
+      },
+      {
+        "pair": "C ↔ C'",
+        "explanation": "The urgent call to seek the LORD and receive His free pardon (C) is answered by the guarantee that God's word never returns empty (C'). Repentance is the human response; the unfailing word is the divine assurance. Together they say: turn to God now, because every word He speaks will accomplish its purpose — including His promise to pardon."
+      }
+    ],
+    "closing": "Isaiah 55 is the standing ovation at the end of Second Isaiah — God's final, wide-open invitation before the curtain falls. Come to the waters, all of you, with empty hands and empty pockets, and receive everything for free. The Davidic promises are yours, God's pardon is lavish beyond calculation, and His word will accomplish every purpose for which He speaks it. The grand finale is pure cosmic joy: mountains singing, trees applauding, thorns becoming beauty, and all of it an everlasting sign that will never be destroyed. This is how Second Isaiah ends — not with a whisper but with all creation clapping its hands."
+  }
 }

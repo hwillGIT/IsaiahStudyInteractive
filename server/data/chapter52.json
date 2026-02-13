@@ -367,5 +367,63 @@
       "color": "bg-purple-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 52 Structure",
+    "subtitle": "Awake, Zion — The LORD Returns to Reign",
+    "intro": "Isaiah 52 builds from a double 'Awake!' to Zion, through the stunning proclamation of God's reign, and arrives at the introduction of the Suffering Servant. The chapter moves from captivity to celebration to a sacred departure, then pivots dramatically to the Servant who will be exalted beyond all expectation — yet marred beyond recognition. The beautiful feet on the mountains stand at the center, carrying the good news that transforms everything before and after them.",
+    "sections": [
+      {
+        "label": "A (v1-2)",
+        "name": "Awake, Awake, Zion!",
+        "description": "God commands Zion to wake up, put on strength, and dress in splendor. She is told to shake off the dust, break free from her chains, and rise from captive to queen. The double 'Awake!' echoes the cries of chapter 51 but now addresses Zion herself.",
+        "color": "yellow",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v3-6)",
+        "name": "Sold for Nothing, Redeemed for Free",
+        "description": "God builds His case: Israel was sold for nothing — no legitimate price was paid. From Egypt to Assyria to Babylon, oppressors have exploited His people and blasphemed His name. But God declares: 'My people will know my name. They will know it is I.'",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v7-10)",
+        "name": "Beautiful Feet — Your God Reigns!",
+        "description": "The glorious center of the chapter: a messenger runs over the mountains bringing good news — peace, salvation, and the declaration 'Your God reigns!' Watchmen shout for joy, ruins burst into song, and the LORD bares His holy arm for all nations to see. Comfort promised in chapter 40 is now comfort delivered.",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "How beautiful on the mountains are the feet of those who bring good news, who proclaim peace, who say to Zion, 'Your God reigns!'"
+      },
+      {
+        "label": "B' (v11-12)",
+        "name": "Depart, Depart — The Holy Exodus",
+        "description": "The double 'Depart, depart' mirrors the double 'Awake' of the opening. God's people leave Babylon not in panicked haste but in confident procession, carrying sacred articles. The LORD goes before them as vanguard and behind them as rear guard — surrounded by God on every side.",
+        "color": "teal",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v13-15)",
+        "name": "The Servant — Exalted Yet Marred",
+        "description": "The chapter pivots to the fourth Servant Song. The Servant will be raised, lifted up, and highly exalted — using the same language as God Himself in Isaiah 6:1. Yet He is disfigured beyond recognition. The shocking contrast: as appalling as His suffering, so stunning will be His impact — sprinkling nations, silencing kings, revealing what was never told.",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with Zion told to awake and clothe herself in strength and splendor (A), and closes with the Servant who will be raised and highly exalted yet marred beyond human likeness (A'). Both sections involve dramatic transformation — Zion from captive to queen, the Servant from disfigured to exalted — and both reveal that God's glory comes through unexpected means."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "God traces the history of Israel being exploited for nothing and His name blasphemed (B), then commands a holy departure from Babylon — not in haste but in confident procession under God's protection (B'). The injustice of captivity is answered by the dignity of departure. What was stolen for nothing is reclaimed with divine escort."
+      }
+    ],
+    "closing": "Isaiah 52 is the great awakening chapter — Zion wakes up, messengers proclaim God's reign, ruins sing, and a new exodus begins. But the final verses shatter every expectation: the one who brings this salvation will be exalted to divine heights yet marred beyond human recognition. The beautiful feet that carry good news over the mountains lead directly to the wounded Servant whose suffering will sprinkle nations. Chapter 52 opens the door to the most important prophecy in the Old Testament."
+  }
 }

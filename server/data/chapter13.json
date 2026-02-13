@@ -508,5 +508,22 @@
       "color": "bg-blue-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 13 Structure",
+    "subtitle": "The Oracle Against Babylon",
+    "intro": "Isaiah 13 follows a concentric (chiastic) pattern that moves from God summoning His armies inward to the heart of His judgment against human pride, then outward again to Babylon's total desolation. The structure shows that pride is the root issue and everything else radiates from God's response to it.",
+    "sections": [
+      { "label": "A (v1-5)", "name": "God Musters His Army", "description": "God raises a banner and summons warriors from the ends of the earth to carry out His wrath", "color": "yellow", "indent": 0, "isCenter": false },
+      { "label": "B (v6-10)", "name": "The Day of the LORD", "description": "Terror, anguish, and cosmic upheaval — hearts melt, stars go dark, the sun and moon refuse to shine", "color": "red", "indent": 1, "isCenter": false },
+      { "label": "CENTER (v11-13)", "name": "God Confronts Human Pride", "description": "The theological heart — God personally punishes the world's evil and humbles the arrogant", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "I will put an end to the arrogance of the haughty and will humble the pride of the ruthless" },
+      { "label": "B' (v14-18)", "name": "The Slaughter Unfolds", "description": "People scatter like hunted gazelle, the unbribable Medes carry out merciless judgment", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "A' (v19-22)", "name": "Babylon Becomes a Wasteland", "description": "The jewel of kingdoms is overthrown like Sodom — wild animals replace civilization forever", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with God assembling a mighty army and closes with the result of that army's work — Babylon reduced to permanent ruins. What God summons in verses 1-5, He completes in verses 19-22." },
+      { "pair": "B ↔ B'", "explanation": "The cosmic terror of the Day of the LORD (darkened skies, melting hearts) finds its ground-level counterpart in the actual slaughter — refugees fleeing, the Medes showing no mercy. Heaven's signs in B become earth's reality in B'." },
+      { "pair": "Center", "explanation": "At the heart of the chapter stands God's direct declaration against pride. Everything else — the armies, the cosmic signs, the slaughter, the desolation — flows from this one reality: God opposes the proud. This is the reason behind all the judgment." }
+    ],
+    "closing": "The chiastic pattern reveals that Babylon's fall isn't random destruction but a purposeful, God-directed response to human arrogance. The structure moves from preparation to terror to the core issue (pride) to consequences to final ruin — showing that pride is the root and desolation is the fruit."
+  }
 }

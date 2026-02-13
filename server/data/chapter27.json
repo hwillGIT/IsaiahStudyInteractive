@@ -325,5 +325,23 @@
       "color": "bg-amber-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 27 Structure",
+    "subtitle": "Leviathan Slain and Israel Restored",
+    "intro": "Isaiah 27 follows a linear pattern that moves from cosmic victory over chaos to God's tender care for His vineyard, through measured discipline, past the desolation of the godless city, and climaxes with the great trumpet gathering exiles to worship. The structure traces the full arc from evil's defeat to worship's restoration.",
+    "sections": [
+      { "label": "A (v1)", "name": "Leviathan Destroyed", "description": "God takes up His fierce sword and slays the twisting serpent, the monster of the sea — cosmic evil is defeated", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v2-5)", "name": "The Pleasant Vineyard", "description": "God sings over His fruitful vineyard, watering and guarding it day and night — enemies face fire, but peace is offered to all", "color": "green", "indent": 1, "isCenter": false },
+      { "label": "CENTER (v6)", "name": "Israel Fills the World with Fruit", "description": "The great turning point — Israel takes root, buds, blossoms, and fills the entire world with fruit", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "In days to come Jacob will take root, Israel will bud and blossom and fill all the world with fruit" },
+      { "label": "B' (v7-9)", "name": "Measured Discipline", "description": "God's correction of Israel is proportional, not destructive — exile atones for guilt as every idol altar is ground to dust", "color": "blue", "indent": 1, "isCenter": false },
+      { "label": "C (v10-11)", "name": "The Fortified City Desolate", "description": "The godless city stands empty — calves graze in ruins and women gather firewood from its dead branches", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "A' (v12-13)", "name": "The Great Trumpet and Gathered Exiles", "description": "God threshes from Euphrates to Egypt, gathering His people one by one — a great trumpet summons exiles to worship on the holy mountain", "color": "teal", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with God destroying Leviathan (the cosmic enemy) and closes with the great trumpet gathering scattered exiles to worship. Evil's defeat makes possible the people's restoration — from slaying the monster to sounding the trumpet of homecoming." },
+      { "pair": "B ↔ B'", "explanation": "God's tender care for His vineyard (v2-5) is balanced by His measured discipline of Israel (v7-9). He guards the vineyard from external threats while purifying it from internal idolatry. Both sections show a God who loves deeply enough to both protect and correct." },
+      { "pair": "Center", "explanation": "Verse 6 is the hinge of the chapter and the climax of Isaiah's entire 'Little Apocalypse' (chapters 24-27). Israel's calling to fill the world with fruit is the purpose behind everything — the monster slain, the vineyard tended, the discipline endured, and the exiles gathered." }
+    ],
+    "closing": "The linear structure traces the complete arc of redemption: evil destroyed, God's people tended, fruitfulness promised, discipline accepted, idols demolished, and exiles gathered to worship. Isaiah's Little Apocalypse ends not with devastation but with a trumpet blast calling God's scattered people home."
+  }
 }

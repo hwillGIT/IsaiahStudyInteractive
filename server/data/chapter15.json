@@ -221,5 +221,19 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 15 Structure",
+    "subtitle": "The Oracle Against Moab",
+    "intro": "Isaiah 15 follows a concentric pattern centered on the prophet's own heartbreak. The structure moves from Moab's sudden destruction inward to Isaiah's compassionate grief, then outward to the final, inescapable judgment. This reveals that God's heart — even in pronouncing judgment — is one of sorrow, not satisfaction.",
+    "sections": [
+      { "label": "A (v1-4)", "name": "Moab's Sudden Destruction", "description": "Two cities destroyed overnight — mourning fills the temples, streets, and rooftops as even warriors weep", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "CENTER (v5-7)", "name": "The Prophet's Heart Breaks", "description": "Isaiah's own heart cries out for Moab — refugees flee southward through dried-up, desolate land", "color": "orange", "indent": 1, "isCenter": true, "centerQuote": "My heart cries out over Moab" },
+      { "label": "A' (v8-9)", "name": "Judgment Reaches Every Border", "description": "Wailing echoes from border to border, waters run with blood, and God promises still more is coming", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The oracle opens with sudden destruction of specific cities (Ar, Kir) and closes with judgment reaching Moab's farthest borders (Eglaim, Beer Elim). What begins as localized devastation becomes nation-wide — no corner is spared. Both sections are filled with weeping and wailing." },
+      { "pair": "Center", "explanation": "The turning point is stunning: in the middle of a judgment oracle, the prophet's own heart breaks for the enemy nation. 'My heart cries out over Moab' reveals that true prophecy combines unflinching truth with genuine compassion. This center foreshadows Jesus weeping over Jerusalem even as He announced its judgment." }
+    ],
+    "closing": "This compact oracle shows that God's prophets don't deliver judgment with cold detachment — they weep. The structure places compassion at the center of destruction, revealing that even when God acts in justice, His heart grieves for the suffering it causes."
+  }
 }

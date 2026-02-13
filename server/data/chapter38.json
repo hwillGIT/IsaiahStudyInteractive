@@ -508,5 +508,63 @@
       "color": "bg-blue-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 38 Structure",
+    "subtitle": "Hezekiah's Illness and Song of Recovery",
+    "intro": "Isaiah 38 follows a symmetrical pattern that mirrors death and life around the central experience of facing mortality. The chapter opens with a death sentence and closes with practical healing, while at its heart stands Hezekiah's raw, personal psalm — his cry from the brink of death. The structure moves from verdict to reversal to lament to praise, showing that God's power over life and death transforms not just our circumstances but our entire perspective on what it means to be alive.",
+    "sections": [
+      {
+        "label": "A (v1-3)",
+        "name": "The Death Sentence and Hezekiah's Prayer",
+        "description": "Isaiah delivers God's verdict — 'you are going to die' — and Hezekiah turns his face to the wall, appeals to his faithfulness, and weeps bitterly before the LORD",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v4-8)",
+        "name": "God's Reversal: Fifteen Years Added",
+        "description": "God hears the prayer and sees the tears — He adds fifteen years to Hezekiah's life, promises deliverance from Assyria, and reverses the shadow on the stairway of Ahaz as a sign that He can reverse the irreversible",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v9-14)",
+        "name": "Hezekiah's Lament: Facing the Gates of Death",
+        "description": "Hezekiah pours out his grief in raw poetry — robbed of his years, cut from the loom like unfinished cloth, broken like bones under a lion's jaws, crying like a dove with eyes weak from looking heavenward",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "Like a shepherd's tent my house has been pulled down and taken from me. Like a weaver I have rolled up my life, and he has cut me off from the loom"
+      },
+      {
+        "label": "B' (v15-20)",
+        "name": "Hezekiah's Praise: Restored to Life",
+        "description": "The tone transforms from lament to gratitude — suffering was for his benefit, God kept him from the pit and put his sins behind His back, the living praise God, and parents tell their children of His faithfulness",
+        "color": "green",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v21-22)",
+        "name": "The Practical Remedy and the Desire for the Temple",
+        "description": "Isaiah prescribes a fig poultice for the boil, and Hezekiah asks for the sign that he will go up to the temple — his deepest longing is not just health but worship",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with Isaiah delivering a death sentence and Hezekiah weeping (A), and closes with Isaiah prescribing a simple remedy and Hezekiah looking toward the temple (A'). The same prophet who announced death now facilitates healing. What began with 'put your house in order' ends with 'I will go up to the temple' — a journey from funeral preparations to worship plans."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "God's reversal of the death sentence and the miraculous backward shadow (B) is matched by Hezekiah's transformed perspective on suffering and his vow of lifelong praise (B'). The divine act of adding years is answered by the human response of dedicating those years to worship. God gives life; Hezekiah gives praise."
+      }
+    ],
+    "closing": "At the center of this chapter stands the most honest poetry in Isaiah — a man staring into the gates of death, crying like a bird, watching his life unravel like cloth cut from a loom. But the structure itself is the message: lament is surrounded by reversal, and death is enveloped by life. God doesn't silence our grief — He wraps it in resurrection."
+  }
 }

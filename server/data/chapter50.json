@@ -279,5 +279,63 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 50 Structure",
+    "subtitle": "The Obedient Servant Who Trusts God",
+    "intro": "Isaiah 50 is the Third Servant Song, tightly structured around a single question: who is truly faithful? God opens by proving He never abandoned Israel — there is no divorce certificate, no creditor's receipt. The failure was Israel's, not God's. Then the Servant speaks, revealing a life of daily obedience, voluntary suffering, and unshakable confidence in God's vindication. At the center, the Servant sets His face like flint — the hinge between suffering endured and accusations defeated. The chapter closes with a stark choice for every listener: trust God in the dark, or light your own fire and lie down in torment.",
+    "sections": [
+      {
+        "label": "A (v1-3)",
+        "name": "No Certificate of Divorce",
+        "description": "God challenges Israel with two rhetorical questions: where is the divorce certificate? Which creditor did I sell you to? The answer is nowhere and no one. Israel's separation came from their own sins, not from God's rejection. His arm is not too short — He dries seas and darkens skies at a word.",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v4-6)",
+        "name": "The Servant's Daily Obedience",
+        "description": "The Servant receives a well-instructed tongue and ears awakened morning by morning. Where Israel refused to answer when God called, this Servant listens and obeys without rebellion. The cost is staggering: beatings on His back, beard pulled out, mocking and spitting — all voluntarily endured.",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v7)",
+        "name": "Face Set Like Flint",
+        "description": "The turning point of the chapter: 'Because the Sovereign LORD helps me, I will not be disgraced.' The Servant sets His face like flint — unyielding determination rooted not in personal toughness but in divine help. Shame cannot stick to one whom God sustains.",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "Because the Sovereign LORD helps me, I will not be disgraced. Therefore have I set my face like flint, and I know I will not be put to shame."
+      },
+      {
+        "label": "B' (v8-9)",
+        "name": "The Courtroom Challenge",
+        "description": "Confidence erupts into a bold legal challenge: 'He who vindicates me is near — who will bring charges? Let us face each other!' The Servant's accusers are compared to garments eaten by moths — they will simply disintegrate. God's vindication outlasts every opposition.",
+        "color": "teal",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v10-11)",
+        "name": "Trust or Torment",
+        "description": "The chapter closes with a choice for every listener. The faithful who walk in darkness are told to trust God's name and rely on His character. But those who light their own fires — manufacturing their own solutions instead of waiting for God — will lie down in torment. Self-made light leads to suffering, not safety.",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "God proves His faithfulness by showing there was never a divorce (A). The chapter closes by demanding a response — will you trust this faithful God in the dark, or reject Him and kindle your own fire (A')? Both sections deal with the relationship between God and His people: A establishes that God never broke the bond; A' asks whether His people will honor it."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "The Servant's obedience leads to voluntary suffering — beatings, humiliation, and spitting (B). But that same obedience produces unshakable confidence in God's courtroom — no charge can stick, every accuser will decay like moth-eaten cloth (B'). Suffering in B is answered by vindication in B'. What the world inflicts, God overrules."
+      }
+    ],
+    "closing": "Isaiah 50 presents the starkest portrait of the Servant yet: a man who listens every morning, obeys without flinching, suffers without retaliating, and stands in court without fear — all because the Sovereign LORD helps him. The chapter's tight structure moves from God's faithfulness to the Servant's faithfulness and back out to the listener's choice. At the center, a face set like flint becomes the image of what trust looks like under pressure. The final verse draws a line in the sand: you can walk in God's darkness trusting His name, or you can light your own fire and discover that self-made solutions end in torment. There is no middle ground."
+  }
 }

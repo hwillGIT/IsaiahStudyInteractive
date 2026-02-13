@@ -753,5 +753,28 @@
       "color": "bg-purple-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 30 Structure",
+    "subtitle": "Woe to the Obstinate Children",
+    "intro": "Isaiah 30 follows a chiastic pattern that contrasts the futility of trusting Egypt with the beauty of trusting God. The outer layers pit human schemes against divine action, while the center reveals God's offer of repentance and rest — an offer tragically refused but graciously renewed.",
+    "sections": [
+      { "label": "A (v1-5)", "name": "Obstinate Children Run to Egypt", "description": "Woe to those who make plans without God's Spirit, seeking Pharaoh's protection instead — Egypt brings only shame and disgrace", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v6-7)", "name": "Rahab the Do-Nothing", "description": "Caravans haul treasure through lion-infested desert to reach Egypt, but God names her 'Rahab the Do-Nothing' — all bluster, no help", "color": "yellow", "indent": 1, "isCenter": false },
+      { "label": "C (v8-11)", "name": "Rebellious People Reject God's Word", "description": "God writes His warning as a permanent witness — the people demand pleasant illusions and tell the prophets to stop confronting them with the Holy One", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "D (v12-14)", "name": "Sin Collapses Like a Cracked Wall", "description": "Their sin becomes a high wall that looks strong but is cracked and bulging — it shatters suddenly into pieces too small to carry a coal or scoop water", "color": "blue", "indent": 2, "isCenter": false },
+      { "label": "CENTER (v15-17)", "name": "Repentance and Rest Refused", "description": "God offers the perfect remedy — salvation through repentance and rest, strength through quietness and trust — but they choose horses and flight instead", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "In repentance and rest is your salvation, in quietness and trust is your strength, but you would have none of it" },
+      { "label": "D' (v18-22)", "name": "God Longs to Be Gracious", "description": "Yet the LORD yearns to show compassion — He promises guidance at every turn, a voice saying 'This is the way,' and hearts that throw away idols in disgust", "color": "green", "indent": 2, "isCenter": false },
+      { "label": "C' (v23-26)", "name": "Restoration and Cosmic Healing", "description": "Rain falls on seeds, cattle graze broad meadows, streams flow on mountaintops, and the moon shines like the sun — God heals the wounds He inflicted", "color": "teal", "indent": 1, "isCenter": false },
+      { "label": "B' (v27-28)", "name": "God Comes with Burning Anger", "description": "The Name of the LORD arrives from afar with fire and flood — He shakes the nations in His sieve and puts a bit in their jaws", "color": "red", "indent": 1, "isCenter": false },
+      { "label": "A' (v29-33)", "name": "Joyful Celebration as God Defeats Assyria", "description": "God's people sing festival songs while the LORD shatters Assyria with His majestic voice — every blow falls to the music of timbrels and harps", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with obstinate children running to Egypt for help and closes with God Himself defeating Assyria to joyful singing. Human schemes to find foreign allies are answered by God's direct intervention — running to Egypt brings shame, but waiting for God brings celebration." },
+      { "pair": "B ↔ B'", "explanation": "Egypt is named 'Rahab the Do-Nothing' — impressive looking but powerless (B), while God arrives with genuine cosmic power: fire, flood, and a sieve for the nations (B'). The contrast between a do-nothing monster and the all-doing God could not be sharper." },
+      { "pair": "C ↔ C'", "explanation": "The people demand pleasant illusions and silence the prophets (C), but God responds with genuine blessings that exceed any illusion — real rain, real harvests, and cosmic healing where moonlight equals sunlight (C'). What they wanted in fantasy, God provides in reality." },
+      { "pair": "D ↔ D'", "explanation": "Sin collapses like a cracked wall, shattering beyond repair (D), but God longs to be gracious, offering guidance at every turn and hearts transformed to reject idols (D'). Where sin brings sudden destruction, grace brings patient restoration." },
+      { "pair": "Center", "explanation": "Verse 15 is the chapter's heartbeat: God's offer of salvation through repentance and rest, strength through quietness and trust. The tragedy — 'you would have none of it' — reveals that the only barrier to God's grace is human refusal to receive it." }
+    ],
+    "closing": "The chiastic structure exposes the absurdity of running to Egypt when God is longing to be gracious. Every layer contrasts human schemes with divine provision: shame versus celebration, a do-nothing monster versus the Almighty, pleasant illusions versus cosmic restoration. At the center stands God's simplest and most profound offer — rest and trust — waiting for anyone willing to receive it."
+  }
 }

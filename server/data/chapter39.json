@@ -210,5 +210,55 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 39 Structure",
+    "subtitle": "Envoys from Babylon — The Shadow of Exile",
+    "intro": "Isaiah 39 is the shortest and most devastating chapter in the Hezekiah narrative. Its tight four-part structure moves from pride to exposure to prophecy to chilling acceptance. The literary design mirrors the crime and its punishment: what Hezekiah proudly displayed to Babylon will be carried off to Babylon. This chapter serves as the great hinge of the entire book — closing the era of Assyrian threat and opening the door to Babylonian exile that chapters 40-66 will address.",
+    "sections": [
+      {
+        "label": "A (v1-2)",
+        "name": "Babylon's Envoys and Hezekiah's Pride",
+        "description": "Merodach-Baladan sends letters and a gift after hearing of Hezekiah's recovery — Hezekiah receives them gladly and shows them everything in his storehouses, armory, and treasures, holding nothing back",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v3-4)",
+        "name": "Isaiah's Probing Questions",
+        "description": "The prophet confronts Hezekiah with pointed questions — 'Where did they come from?' and 'What did they see?' — forcing the king to hear his own foolishness as he confesses: 'There is nothing I did not show them'",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v5-7)",
+        "name": "The Prophecy of Babylonian Exile",
+        "description": "Isaiah delivers the word of the LORD Almighty — everything Hezekiah showed will be carried to Babylon, nothing will be left, and his own descendants will serve as eunuchs in the Babylonian palace",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "The time will surely come when everything in your palace, and all that your predecessors have stored up until this day, will be carried off to Babylon. Nothing will be left, says the LORD"
+      },
+      {
+        "label": "A' (v8)",
+        "name": "Hezekiah's Troubling Response",
+        "description": "Hezekiah calls God's judgment 'good' — not because he repents, but because exile will not come in his lifetime, revealing a shocking self-centeredness from the man who once wept before God for his people",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with Hezekiah receiving Babylon's envoys 'gladly' and showing them everything (A), and closes with Hezekiah receiving God's judgment and calling it 'good' (A'). Both responses reveal the same flaw: Hezekiah evaluates everything through the lens of personal benefit. He welcomed Babylon for the flattery; he accepted judgment because it wouldn't touch him. The glad reception and the relieved acceptance are two sides of the same self-centeredness."
+      },
+      {
+        "pair": "B ↔ Center",
+        "explanation": "Isaiah's questions force Hezekiah to confess 'there is nothing I did not show them' (B), and God's verdict echoes back 'nothing will be left' (Center). The punishment mirrors the crime with devastating precision — the totality of the display becomes the totality of the loss. What pride paraded, judgment will plunder."
+      }
+    ],
+    "closing": "In just eight verses, Isaiah 39 turns Hezekiah's greatest moment of pride into the seed of Israel's greatest suffering. The chapter is the bridge between two halves of Isaiah — closing the Assyrian era with a whisper of Babylon, setting the stage for the comfort and restoration that will fill chapters 40 through 66."
+  }
 }

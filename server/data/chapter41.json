@@ -663,5 +663,71 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 41 Structure",
+    "subtitle": "Fear Not — God's Challenge to the Nations",
+    "intro": "Isaiah 41 unfolds as a dramatic courtroom scene with God at the center. The chapter opens and closes with God putting the nations and their idols on trial, while the heart of the passage pivots to Israel with the famous 'Do not fear' promise. The chiastic structure contrasts the nations' panicked idol-making with God's tender care for His chosen servant, showing that what the nations fear most — God's power — is exactly what makes Israel safe.",
+    "sections": [
+      {
+        "label": "A (v1-4)",
+        "name": "God Summons the Nations to Court",
+        "description": "God commands the nations to silence and asks: Who raised up the conqueror from the east? Answer: 'I, the LORD — with the first and with the last — I am he'",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v5-7)",
+        "name": "The Nations Panic and Make Idols",
+        "description": "The nations tremble at God's power — but instead of turning to Him, they encourage each other and nail together idols that can't even stand up on their own",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v8-10)",
+        "name": "Fear Not — I Am With You",
+        "description": "God pivots from the trembling nations to His chosen servant Israel — descendant of Abraham His friend — and delivers one of Scripture's greatest promises of presence, strength, and help",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand"
+      },
+      {
+        "label": "B' (v11-16)",
+        "name": "Israel's Enemies Vanish, Weakness Becomes Strength",
+        "description": "God takes hold of Israel's right hand and transforms 'worm Jacob' into a sharp threshing sledge that crushes mountains — enemies disappear completely and Israel rejoices in the LORD",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "C (v17-20)",
+        "name": "God Transforms the Wilderness",
+        "description": "God answers the thirsty and needy — rivers on barren heights, seven trees in the desert — so that everyone will see and know that the hand of the LORD has done this",
+        "color": "teal",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v21-29)",
+        "name": "God Puts the Idols on Trial",
+        "description": "God reopens court and dares the idols to explain the past or predict the future — they cannot do anything at all, and the verdict is devastating: 'You are less than nothing'",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with God summoning the nations to answer 'Who raised up the conqueror?' (A), and closes with God challenging the idols to explain or predict anything at all (A'). Both are courtroom scenes where God is the Judge. In the first, God proves He controls history; in the last, the idols are exposed as 'less than nothing.' The same power that terrifies the nations vindicates the true God."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "The nations respond to God's power by panicking and building idols that need to be nailed down (B), while God responds to Israel's weakness by taking hold of their hand and transforming a worm into a threshing sledge (B'). The contrast is devastating: the nations prop up their gods; God props up His people. Idols can't stand without nails; Israel can't fall with God's right hand."
+      }
+    ],
+    "closing": "Isaiah 41 is built around the most comforting words in Scripture, placed at the exact center of a courtroom drama. While nations tremble and idols fail every test, God's chosen servant hears: 'Do not fear, I am with you.' The structure itself preaches the message — when everything else panics or proves worthless, God holds your hand."
+  }
 }

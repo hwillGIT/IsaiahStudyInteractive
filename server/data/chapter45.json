@@ -581,5 +581,63 @@
       "color": "bg-blue-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 45 Structure",
+    "subtitle": "Cyrus, God's Anointed — Turn to Me and Be Saved",
+    "intro": "Isaiah 45 builds from God's stunning commission of a pagan king to the most universal salvation invitation in the Old Testament. The chapter opens with God anointing Cyrus — a man who doesn't even know Him — to conquer nations and free Israel. At the center, God defends His right as Potter to shape history however He chooses. The chapter then widens its lens from Israel to the entire world, culminating in the breathtaking call: 'Turn to me and be saved, all you ends of the earth.' Every knee will bow — the only question is whether it happens in grateful worship or reluctant surrender.",
+    "sections": [
+      {
+        "label": "A (v1-7)",
+        "name": "Cyrus Commissioned by Name",
+        "description": "God anoints the Persian king Cyrus — taking him by the hand, leveling mountains, shattering gates of bronze — all so the world will know 'I am the LORD, and there is no other.' He forms light and darkness, prosperity and disaster. Nothing is outside His control.",
+        "color": "red",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v8)",
+        "name": "Righteousness Rains Down",
+        "description": "A cosmic prayer erupts: let the heavens rain righteousness, let the earth open wide and salvation spring up from the ground. Heaven and earth work together to produce what only God can create.",
+        "color": "yellow",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v9-13)",
+        "name": "The Potter's Rights",
+        "description": "God silences every objection to His methods. Does the clay tell the potter what to make? Does a child tell its parents what to birth? The One who made the earth, created humanity, and stretched out the heavens can certainly raise up one Persian king — and He doesn't need anyone's permission.",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "Does the clay say to the potter, 'What are you making?'"
+      },
+      {
+        "label": "B' (v14-17)",
+        "name": "Nations Bow, Israel Saved Forever",
+        "description": "The wealth of nations flows toward God's people, and foreigners confess 'Surely God is with you.' Idol makers face disgrace, but Israel receives everlasting salvation — permanent deliverance that stretches into eternity, never to be shamed.",
+        "color": "purple",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v18-25)",
+        "name": "Turn to Me and Be Saved, All the Earth",
+        "description": "God who created the earth with purpose and speaks truth openly now issues the ultimate invitation: 'Turn to me and be saved, all you ends of the earth.' He swears by Himself — every knee will bow, every tongue confess. In the LORD alone are deliverance and strength.",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with God commissioning one pagan king to fulfill His purposes (A), and closes with God inviting all the ends of the earth to turn and be saved (A'). Both sections thunder 'I am the LORD, and there is no other,' but the scope expands dramatically: in A, one man is called by name; in A', all humanity is summoned. What begins as a specific decree to Cyrus becomes a universal altar call — the same sovereign God who moves empires opens His arms to every person on earth."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "The cosmic prayer calls for righteousness to rain from heaven and salvation to spring from the earth (B), and the mirror section shows this prayer being answered: nations acknowledge God, idol makers are shamed, and Israel receives everlasting salvation (B'). The prayer envisions heaven and earth meeting; the fulfillment shows it happening — the hidden God who saves (v15) is revealed through the very events He set in motion."
+      }
+    ],
+    "closing": "Isaiah 45 moves from a shocking appointment — a pagan king called God's anointed — through a defense of divine sovereignty at the center, to the widest salvation invitation in the Old Testament. The Potter who shapes history without asking permission is the same God who opens His arms to the whole world. The chapter's final vision — every knee bowing, every tongue confessing — is so sweeping that Paul applies it directly to Jesus Christ, revealing that the sovereign LORD of Isaiah and the risen Christ are one and the same."
+  }
 }

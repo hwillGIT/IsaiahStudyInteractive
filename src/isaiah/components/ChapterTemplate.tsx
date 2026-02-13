@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ChapterNavigation } from './ChapterNavigation';
 import { StructureButton } from './StructureButton';
-import { useChapterData } from '../hooks/useChapterData';
+import { useChapterData, type StructureSection, type StructureParallel } from '../hooks/useChapterData';
 import { getColorClass, getUniqueHingeTypes } from '../utils/chapterHelpers';
 import '../App.css';
 
@@ -23,7 +23,7 @@ const defaultGroupNames: Record<number, string> = {
 
 function ChapterTemplate({ chapterNumber }: ChapterTemplateProps) {
   const [selectedVerse, setSelectedVerse] = useState<number | null>(null);
-  const [_showStructureModal, setShowStructureModal] = useState(false);
+  const [showStructureModal, setShowStructureModal] = useState(false);
   const [reflectionMode, setReflectionMode] = useState<'seeing' | 'life' | 'teach'>('seeing');
   const [modalView, setModalView] = useState<'reflection' | 'connections'>('reflection');
 
@@ -292,6 +292,87 @@ function ChapterTemplate({ chapterNumber }: ChapterTemplateProps) {
             </div>
           </div>
         )}
+
+        {showStructureModal && data.structureModal && (() => {
+          const colorMap: Record<string, { bg: string; text: string; bgLight: string; border: string }> = {
+            yellow: { bg: 'bg-yellow-400', text: 'text-yellow-700', bgLight: 'bg-yellow-100', border: 'border-yellow-500' },
+            red: { bg: 'bg-red-500', text: 'text-red-700', bgLight: 'bg-red-100', border: 'border-red-500' },
+            blue: { bg: 'bg-blue-600', text: 'text-blue-700', bgLight: 'bg-blue-100', border: 'border-blue-500' },
+            purple: { bg: 'bg-purple-500', text: 'text-purple-700', bgLight: 'bg-purple-100', border: 'border-purple-500' },
+            orange: { bg: 'bg-orange-500', text: 'text-orange-700', bgLight: 'bg-orange-100', border: 'border-orange-500' },
+            teal: { bg: 'bg-teal-500', text: 'text-teal-800', bgLight: 'bg-teal-100', border: 'border-teal-500' },
+            green: { bg: 'bg-green-500', text: 'text-green-700', bgLight: 'bg-green-100', border: 'border-green-500' },
+            gray: { bg: 'bg-gray-600', text: 'text-gray-700', bgLight: 'bg-gray-100', border: 'border-gray-500' },
+          };
+          const indentClass = ['ml-0', 'ml-4', 'ml-8', 'ml-12'];
+          const sm = data.structureModal;
+          const centerIndex = sm.sections.findIndex((s: StructureSection) => s.isCenter);
+
+          return (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+              <div className="bg-white rounded-lg max-w-3xl w-full my-8">
+                <div className="p-6 border-b border-gray-200 bg-white rounded-t-lg">
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-800">{sm.title}</h3>
+                      {sm.subtitle && <p className="text-sm text-gray-600 mt-1">{sm.subtitle}</p>}
+                    </div>
+                    <button
+                      onClick={() => setShowStructureModal(false)}
+                      className="text-gray-500 hover:text-gray-700 text-2xl font-bold"
+                    >
+                      ×
+                    </button>
+                  </div>
+                </div>
+                <div className="p-6">
+                  {sm.intro && <p className="text-sm text-gray-600 mb-4">{sm.intro}</p>}
+                  <div className="space-y-1 font-mono text-xs text-gray-700 bg-gray-50 p-4 rounded">
+                    {sm.sections.map((section: StructureSection, idx: number) => {
+                      const colors = colorMap[section.color] || colorMap.gray;
+                      const indent = indentClass[Math.min(section.indent, 3)];
+                      const isFirstAfterCenter = centerIndex >= 0 && idx === centerIndex + 1;
+
+                      return (
+                        <div key={idx}>
+                          {section.isCenter ? (
+                            <>
+                              <div className={`${indent} ${colors.bgLight} px-2 py-1 rounded border-l-4 ${colors.border} flex items-start gap-2`}>
+                                <div className={`w-3 h-3 ${colors.bg} rounded mt-0.5 flex-shrink-0`}></div>
+                                <span className={`font-sans ${colors.text} font-bold`}>★ {section.label}: {section.name} — {section.description}</span>
+                              </div>
+                              {section.centerQuote && (
+                                <div className={`${indentClass[Math.min(section.indent + 1, 3)]} ${colors.text} font-sans italic pl-5`}>"{section.centerQuote}"</div>
+                              )}
+                            </>
+                          ) : (
+                            <div className={`${isFirstAfterCenter ? 'mt-3 border-t-2 border-gray-300 pt-2 ' : ''}${indent} flex items-start gap-2`}>
+                              <div className={`w-3 h-3 ${colors.bg} rounded mt-0.5 flex-shrink-0`}></div>
+                              <span>{section.label}: <span className={`font-sans font-semibold ${colors.text}`}>{section.name}</span> — {section.description}</span>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  {sm.parallels && sm.parallels.length > 0 && (
+                    <div className="mt-4 p-4 bg-blue-50 rounded border-l-4 border-blue-500">
+                      <h4 className="font-bold text-gray-800 mb-3">How the Parallels Connect:</h4>
+                      <ul className="space-y-2 text-sm text-gray-700 leading-relaxed">
+                        {sm.parallels.map((p: StructureParallel, idx: number) => (
+                          <li key={idx}><strong>{p.pair}:</strong> {p.explanation}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {sm.closing && <p className="text-sm text-gray-600 mt-4 italic">{sm.closing}</p>}
+                </div>
+              </div>
+            </div>
+          );
+        })()}
       </div>
     </div>
   );

@@ -252,5 +252,22 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 35 Structure",
+    "subtitle": "The Ransomed Return with Joy to Zion",
+    "intro": "Isaiah 35 follows a beautiful chiastic pattern that mirrors chapter 34's judgment with glorious redemption. The chapter moves from creation's joy outward, inward to the encouragement of the weak, reaches its center in the miraculous healings that prove God has come, and then opens out again to the Highway of Holiness — the safe, sacred road home for the redeemed. Each layer builds toward the climax: everlasting joy and the permanent exile of sorrow.",
+    "sections": [
+      { "label": "A (v1-2)", "name": "The Desert Blooms with Glory", "description": "The wilderness rejoices, the desert blossoms like a crocus, and the glory of Lebanon, Carmel, and Sharon is given to barren ground — all creation sees God's splendor", "color": "green", "indent": 0, "isCenter": false },
+      { "label": "B (v3-4)", "name": "Strengthen the Weak — God Will Come", "description": "Feeble hands are strengthened, weak knees steadied, and fearful hearts are told: be strong, do not fear — your God will come with vengeance and salvation together", "color": "blue", "indent": 1, "isCenter": false },
+      { "label": "CENTER (v5-7)", "name": "Miraculous Healing and Living Water", "description": "Blind eyes open, deaf ears unstop, the lame leap like deer, the mute shout for joy — water gushes in the wilderness and jackal haunts become lush gardens", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "Then will the eyes of the blind be opened and the ears of the deaf unstopped" },
+      { "label": "B' (v8-9)", "name": "The Highway of Holiness", "description": "A sacred highway is prepared — safe, set apart, free from predators — where only the redeemed walk, protected from every danger that once threatened the journey", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "A' (v10)", "name": "The Ransomed Return with Everlasting Joy", "description": "The LORD's rescued people return to Zion singing — everlasting joy crowns their heads, gladness overtakes them, and sorrow and sighing flee away forever", "color": "yellow", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "Creation's joy at seeing God's glory (A) finds its fulfillment in the ransomed people's joy as they return to Zion (A'). The desert blooming is not the destination — it's the scenery along the road to everlasting gladness. What begins with nature rejoicing ends with redeemed people singing." },
+      { "pair": "B ↔ B'", "explanation": "The command to strengthen the weak and the promise 'your God will come' (B) is answered by the Highway of Holiness prepared for safe passage home (B'). God doesn't just promise to come — He builds the road. The fearful hearts are given not just words of courage but an actual protected path to walk on." },
+      { "pair": "Center", "explanation": "The miraculous healings are the proof that God has arrived. Blind eyes opening, deaf ears unstopping, the lame leaping, and water breaking forth in the desert — these are the messianic signs Jesus pointed to when John the Baptist asked 'Are you the one?' The center proves the promise: your God has come." }
+    ],
+    "closing": "The structure mirrors chapter 34's destruction with chapter 35's restoration — where judgment filled the land with wild creatures, redemption transforms it into a blooming garden. Every layer builds toward one destination: the redeemed coming home on a holy highway, crowned with joy that never ends, while sorrow itself becomes the exile."
+  }
 }

@@ -640,5 +640,63 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 44 Structure",
+    "subtitle": "Israel Chosen and Idols Ridiculed",
+    "intro": "Isaiah 44 is built around one of the sharpest contrasts in all of Scripture: the living God who pours out His Spirit versus the lifeless idols that people carve from firewood. The chapter opens with God's tender promise to water His chosen people like trees by a stream, moves into a devastating satire on idol-making at the center, and closes with God's sovereign plan that names a Persian king by name over a century before his birth. The structure forces a choice: worship the God who made the trees, or bow to the block of wood left over after lunch.",
+    "sections": [
+      {
+        "label": "A (v1-5)",
+        "name": "The Spirit Poured Out",
+        "description": "God tenderly addresses His chosen servant Israel, promising to pour water on thirsty ground and His Spirit on their descendants. The result is explosive growth — people freely claiming 'I belong to the LORD.'",
+        "color": "teal",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v6-8)",
+        "name": "The First and the Last",
+        "description": "God declares His absolute uniqueness — King, Redeemer, LORD Almighty. 'I am the first and I am the last; apart from me there is no God.' He challenges any rival to match His track record and calls Israel as His witnesses.",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v9-20)",
+        "name": "The Great Idol Satire",
+        "description": "The longest and most biting satire in the Bible. A man cuts down a tree, burns half for cooking his dinner, and carves the other half into a god he prays to for salvation. Same wood, same tree — half becomes firewood, half becomes a deity. 'No one stops to think.'",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "Half of the wood he burns in the fire... from the rest he makes a god, his idol; he bows down to it and worships"
+      },
+      {
+        "label": "B' (v21-23)",
+        "name": "Sins Swept Away Like Clouds",
+        "description": "God calls Israel back from the idol delusion with one of Scripture's most beautiful promises: 'I have swept away your offenses like a cloud, your sins like the morning mist.' All creation — heavens, mountains, forests — erupts in celebration.",
+        "color": "green",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v24-28)",
+        "name": "The Creator's Sovereign Plan",
+        "description": "God stacks His credentials — Redeemer, Maker of all things, the one who stretches out the heavens alone. He foils false prophets, fulfills true ones, and names Cyrus as the shepherd who will rebuild Jerusalem and its temple.",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens with God pouring out His Spirit to create flourishing life among His people (A), and closes with God exercising His sovereign creative power over all of history — stretching out the heavens and directing the Persian king Cyrus to rebuild Jerusalem (A'). Both sections reveal a God who acts with unstoppable initiative: in A He waters His people's souls, in A' He shapes the course of empires. The Spirit that makes individuals flourish is the same power that moves world history."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "God declares 'I am the first and I am the last' and challenges any rival to match Him (B), then demonstrates exactly why by sweeping away Israel's sins like morning mist and summoning all creation to sing for joy (B'). In B, God proves His uniqueness by His unmatched knowledge of the future; in B', He proves it by His unmatched capacity to forgive. No idol could do either — which is exactly what the satire between them exposes."
+      }
+    ],
+    "closing": "Isaiah 44's structure places the absurdity of idolatry at the center, surrounded by the reality of the living God. On one side stands His Spirit-giving, life-creating power; on the other, His sovereign control over nations and kings. The idol satire in the middle asks the devastating question: why would anyone pray to leftover firewood when they could know the God who names kings before they are born and sweeps away sins like morning clouds?"
+  }
 }

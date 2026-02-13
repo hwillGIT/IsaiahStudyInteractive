@@ -491,5 +491,25 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 26 Structure",
+    "subtitle": "A Song of Trust and Resurrection Hope",
+    "intro": "Isaiah 26 follows a chiastic pattern that moves from the security of God's city and perfect peace inward through trust, waiting, and lament, arriving at the stunning center: resurrection. The structure reveals that human effort fails to produce life, but God raises the dead — the answer to every lament in the chapter.",
+    "sections": [
+      { "label": "A (v1-4)", "name": "The Strong City and Perfect Peace", "description": "God's city has salvation for walls — perfect peace belongs to those whose minds are fixed on Him, the eternal Rock", "color": "yellow", "indent": 0, "isCenter": false },
+      { "label": "B (v5-6)", "name": "The Lofty City Brought Low", "description": "God humbles the proud city to dust and the feet of the poor trample its ruins", "color": "red", "indent": 1, "isCenter": false },
+      { "label": "C (v7-10)", "name": "Walking, Waiting, and Yearning", "description": "The righteous walk God's level path, yearning for Him day and night — but the wicked waste grace and refuse to see God's majesty", "color": "blue", "indent": 2, "isCenter": false },
+      { "label": "D (v11-15)", "name": "Confession and Loyalty", "description": "All our accomplishments are God's doing — other lords have ruled but only God's name do we honor, and He has enlarged the nation", "color": "purple", "indent": 2, "isCenter": false },
+      { "label": "E (v16-18)", "name": "Labor That Produces Nothing", "description": "In distress they barely whisper prayers, writhing like a woman in labor — but giving birth only to wind, unable to bring salvation", "color": "teal", "indent": 2, "isCenter": false },
+      { "label": "CENTER (v19)", "name": "Resurrection!", "description": "God's dead will live, their bodies will rise — those in the dust will wake up and shout for joy as God's dew brings life from death", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "But your dead will live, LORD; their bodies will rise — let those who dwell in the dust wake up and shout for joy" },
+      { "label": "A' (v20-21)", "name": "Shelter and Final Justice", "description": "God tells His people to hide while His wrath passes, then comes to punish the earth — the ground will reveal every hidden injustice", "color": "gray", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "The chapter opens with God's city offering security and perfect peace, and closes with God telling His people to shelter behind closed doors while judgment passes. Both sections promise divine protection — one through the city's walls, the other through hidden rooms." },
+      { "pair": "B ↔ E", "explanation": "The proud city brought low (v5-6) contrasts with God's people laboring but producing nothing (v16-18). Human pride is demolished from without; human effort fails from within. Both point to the need for God's direct intervention." },
+      { "pair": "C ↔ D", "explanation": "The righteous yearning for God while the wicked waste grace (v7-10) is answered by the confession that all accomplishments belong to God and only His name deserves honor (v11-15). Longing leads to loyalty." },
+      { "pair": "Center", "explanation": "Verse 19 is the dramatic answer to the despair of verses 16-18. Where human labor produced only wind, God produces resurrection. This is one of the Old Testament's clearest promises that God will raise the dead — the theological climax of the entire song." }
+    ],
+    "closing": "The chiastic pattern builds from security through yearning and failure toward the stunning center: resurrection. Human effort gives birth to wind, but God gives birth to life from the dust. The structure itself teaches that the answer to every human limitation is God's power to raise the dead."
+  }
 }

@@ -399,5 +399,22 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 21 Structure",
+    "subtitle": "Oracles Against Babylon, Edom, and Arabia",
+    "intro": "Isaiah 21 contains three distinct oracles unified by the theme of watchful waiting in darkness. The chapter moves from the dramatic fall of Babylon through the haunting night-cry from Edom to the displacement of Arabian traders — each oracle revealing a different face of divine judgment. The watchman motif ties everything together: someone is always watching, and God's word always arrives, even when the answer is unsettling.",
+    "sections": [
+      { "label": "A (v1-4)", "name": "The Dire Vision", "description": "Isaiah receives a terrifying vision of Babylon's fall — invaders sweep in like desert whirlwinds and the prophet is physically wrecked by what he sees", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v5-8)", "name": "The Watchman Waits", "description": "Babylon feasts while the watchman stands alert day after day, night after night, faithfully watching for God's promised sign on the horizon", "color": "blue", "indent": 1, "isCenter": false },
+      { "label": "CENTER (v9-10)", "name": "Babylon Has Fallen", "description": "The climactic announcement arrives — 'Babylon has fallen, has fallen!' — and Isaiah delivers this word to God's crushed people on the threshing floor", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "Babylon has fallen, has fallen! All the images of its gods lie shattered on the ground!" },
+      { "label": "C (v11-12)", "name": "The Edom Oracle: Night and Morning", "description": "A haunting cry from Seir asks 'How much longer?' — the watchman answers that morning comes but so does night, and invites the questioner to keep asking", "color": "purple", "indent": 1, "isCenter": false },
+      { "label": "D (v13-17)", "name": "The Arabia Oracle: Fugitives and Countdown", "description": "Arabian traders hide in thickets, refugees flee drawn swords, and God sets a precise one-year deadline for Kedar's splendor to end", "color": "teal", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ D", "explanation": "Both the opening and closing oracles describe nations overwhelmed by military force — Babylon by Elam and Media, Arabia by unnamed invaders. In both cases, prosperous peoples are suddenly displaced. The prophet who is 'racked with pain' in verse 3 mirrors the fugitives 'fleeing from the sword' in verse 15. God's judgment reaches both the mightiest empire and the desert traders." },
+      { "pair": "B ↔ C", "explanation": "The watchman motif connects these two sections. In B, the watchman faithfully stands at his post waiting for Babylon's fall. In C, Edom calls out to the watchman asking when the night will end. Both involve patient waiting in darkness, but with different postures: the watchman in B receives a definitive answer ('Babylon has fallen'), while the questioner in C gets an open-ended invitation ('come back yet again'). Faithful watching is rewarded; anxious questioning is met with patience." },
+      { "pair": "Center", "explanation": "The double cry 'has fallen, has fallen' is the chapter's explosive center — the moment everything has been building toward. But Isaiah doesn't celebrate; he turns immediately to 'my people who are crushed on the threshing floor.' The fall of the oppressor means freedom for the oppressed. God's word through the watchman isn't just geopolitical news; it's pastoral comfort for those ground down by suffering." }
+    ],
+    "closing": "Isaiah 21 is a chapter of watchmen and waiting — of faithful observers standing through long nights until God's word arrives. Babylon falls, Edom gropes in twilight, and Arabia's traders scatter. Through it all, the prophet carries the unbearable weight of what he sees, yet faithfully delivers it to those who need to hear. The message across all three oracles is the same: no empire, no alliance, no commercial network outlasts the word of the God of Israel."
+  }
 }

@@ -560,5 +560,25 @@
       "color": "bg-green-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 29 Structure",
+    "subtitle": "Woe to Ariel — The City Where David Settled",
+    "intro": "Isaiah 29 follows a chiastic pattern that moves from siege and humiliation through spiritual blindness to the central diagnosis of lip-service worship, then reverses outward through transformation and restoration. The structure traces the journey from woe to wonder, from sealed scrolls to opened eyes.",
+    "sections": [
+      { "label": "A (v1-4)", "name": "Woe to Ariel — Siege and Humiliation", "description": "God besieges His own beloved city, bringing proud Jerusalem down to whisper from the dust like a ghost", "color": "red", "indent": 0, "isCenter": false },
+      { "label": "B (v5-8)", "name": "Sudden Deliverance from Enemies", "description": "In an instant, God reduces the attacking nations to dust and blown chaff — their conquest dissolves like a hungry person's dream of eating", "color": "blue", "indent": 1, "isCenter": false },
+      { "label": "C (v9-12)", "name": "Spiritual Blindness and the Sealed Scroll", "description": "God pours out a deep sleep on prophets and seers — His word becomes a sealed scroll that no one can read, whether educated or not", "color": "purple", "indent": 2, "isCenter": false },
+      { "label": "CENTER (v13-14)", "name": "Hearts Far from God", "description": "The core diagnosis: lips honor God but hearts are distant, worship reduced to human tradition — so God will astound them with wonder upon wonder", "color": "orange", "indent": 2, "isCenter": true, "centerQuote": "These people come near to me with their mouth and honor me with their lips, but their hearts are far from me" },
+      { "label": "C' (v15-16)", "name": "Woe to Those Who Hide from God", "description": "Schemers dig deep to hide their plans from the LORD, but the clay cannot tell the potter 'You did not make me' — they have turned things upside down", "color": "purple", "indent": 2, "isCenter": false },
+      { "label": "B' (v17-21)", "name": "God Transforms and Restores", "description": "Lebanon becomes a garden, the deaf hear the sealed scroll, the blind see out of darkness, and the humble rejoice as ruthless oppressors vanish", "color": "green", "indent": 1, "isCenter": false },
+      { "label": "A' (v22-24)", "name": "Jacob Restored — The Wayward Gain Understanding", "description": "No more shame or pale faces — when they see their children as God's handiwork, they worship in holiness, and even the wayward accept instruction", "color": "teal", "indent": 0, "isCenter": false }
+    ],
+    "parallels": [
+      { "pair": "A ↔ A'", "explanation": "Jerusalem is humiliated to whispering from the dust (A), but the chapter ends with Jacob's shame removed and faces restored (A'). God brings His city low so He can lift it up transformed — humiliation becomes the pathway to genuine holiness." },
+      { "pair": "B ↔ B'", "explanation": "God suddenly scatters enemy nations like chaff and dissolves their conquest like a dream (B), and He transforms nature itself — turning barrenness into fertility, giving sight to the blind, and removing every oppressor (B'). Divine power destroys what threatens and restores what was lost." },
+      { "pair": "C ↔ C'", "explanation": "God seals the eyes of prophets and makes His word unreadable (C), while schemers foolishly try to hide their plans from the all-seeing Creator (C'). Both sections expose the futility of operating apart from God — whether He imposes blindness or people choose it." },
+      { "pair": "Center", "explanation": "Verse 13 is the chapter's diagnosis, quoted by Jesus in Matthew 15 and Mark 7: the gap between lips and heart is the root disease. Everything flows from this — blindness results from hollow worship, and restoration comes when hearts truly return to God." }
+    ],
+    "closing": "The chiastic structure reveals that God's harshest judgments serve His deepest purposes: siege leads to deliverance, blindness gives way to sight, and lip-service worship is replaced by genuine awe. Isaiah's message is that God tears down hollow religion to build heartfelt devotion — the wayward gain understanding and the complainers accept instruction."
+  }
 }

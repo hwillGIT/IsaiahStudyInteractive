@@ -539,5 +539,83 @@
       "color": "bg-red-500"
     }
   },
-  "structureModal": null
+  "structureModal": {
+    "title": "Chapter 51 Structure",
+    "subtitle": "Awake, Awake — Everlasting Salvation for Zion",
+    "intro": "Isaiah 51 is built around three 'Listen to me' calls and two explosive 'Awake, awake!' cries. God first calls His people to look back to Abraham — one man who became a nation — then forward to a salvation that outlasts the heavens. At the center, the people cry out for God's arm to awake as it did at the Exodus, and God responds by identifying Himself as the Comforter who stretches out heavens and lays earth's foundations. The chapter climaxes with Jerusalem herself told to awake: the cup of wrath is removed from her hand forever and placed in the hands of her tormentors.",
+    "sections": [
+      {
+        "label": "A (v1-3)",
+        "name": "Look to the Rock — Abraham and Eden",
+        "description": "God tells those who pursue righteousness to look back: Abraham was only one man when God called him, yet from him came a nation. Now God will do the same for Zion — her ruins will become Eden, her wastelands the garden of the LORD, filled with joy and singing.",
+        "color": "yellow",
+        "indent": 0,
+        "isCenter": false
+      },
+      {
+        "label": "B (v4-6)",
+        "name": "Salvation That Outlasts the Heavens",
+        "description": "God's instruction goes out as a light to the nations. His arm brings justice even to distant islands. Then the staggering contrast: heavens vanish like smoke, earth wears out like old clothes, people die like flies — but God's salvation lasts forever. His righteousness will never fail.",
+        "color": "blue",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "C (v7-8)",
+        "name": "Do Not Fear Mere Mortals",
+        "description": "God speaks directly to those who carry His instruction in their hearts: don't fear the insults of people. Moths will eat them like a garment, worms will devour them like wool. But God's righteousness endures through all generations — human threats have an expiration date.",
+        "color": "purple",
+        "indent": 2,
+        "isCenter": false
+      },
+      {
+        "label": "CENTER (v9-11)",
+        "name": "Awake, Arm of the LORD!",
+        "description": "The passionate center of the chapter: God's people cry out for His arm to awake and act as it did at the Red Sea — cutting Rahab to pieces, drying the deep, making a road for the redeemed. The answer comes as a vision of the ransomed returning to Zion with singing, crowned with everlasting joy, as sorrow and sighing flee away.",
+        "color": "orange",
+        "indent": 2,
+        "isCenter": true,
+        "centerQuote": "Awake, awake, arm of the LORD, clothe yourself with strength! Was it not you who dried up the sea, who made a road in the depths so that the redeemed might cross over?"
+      },
+      {
+        "label": "C' (v12-16)",
+        "name": "I Am He Who Comforts You",
+        "description": "God answers the cry with His own identity: 'I, even I, am he who comforts you.' Why fear mortals who are grass? Why forget the Maker who stretches out heavens? Prisoners will be freed, bread will not fail. God puts His words in their mouths, covers them with His hand, and declares: 'You are my people.'",
+        "color": "teal",
+        "indent": 2,
+        "isCenter": false
+      },
+      {
+        "label": "B' (v17-20)",
+        "name": "Awake, Awake, Jerusalem!",
+        "description": "Now Jerusalem is told to awake — she has drained the cup of God's wrath to its dregs and staggers under its weight. Her children lie helpless at every corner. Double calamities have struck — ruin, destruction, famine, sword — and no human hand can comfort her.",
+        "color": "red",
+        "indent": 1,
+        "isCenter": false
+      },
+      {
+        "label": "A' (v21-23)",
+        "name": "The Cup Removed Forever",
+        "description": "God speaks the final word: 'I have taken the cup of staggering out of your hand — you will never drink from it again.' The cup of wrath transfers to Jerusalem's tormentors, those who made her lie down like a street to be walked on. What was endured is now ended, permanently and completely.",
+        "color": "gray",
+        "indent": 0,
+        "isCenter": false
+      }
+    ],
+    "parallels": [
+      {
+        "pair": "A ↔ A'",
+        "explanation": "The chapter opens by looking back to Abraham — one man blessed and multiplied — and Zion's ruins becoming Eden (A). It closes with Zion's suffering permanently ended — the cup of wrath removed forever and given to her oppressors (A'). Both sections deal with God's transformative power: in A, He turns deserts into gardens; in A', He turns judgment into deliverance."
+      },
+      {
+        "pair": "B ↔ B'",
+        "explanation": "God's salvation outlasts the heavens — everything material vanishes, but His righteousness never fails (B). In the mirror, Jerusalem has been staggering under the full weight of divine wrath, her children helpless (B'). Both sections confront the temporary and the permanent: in B, creation fades but salvation endures; in B', suffering was real but finite — the cup is being taken away."
+      },
+      {
+        "pair": "C ↔ C'",
+        "explanation": "Those who carry God's instruction are told not to fear mortals — moths will eat their oppressors (C). God Himself answers: 'I am he who comforts you — why fear grass when your Maker stretches out the heavens?' (C'). Both sections address the fear of human enemies: C commands courage by pointing to oppressors' fragility; C' provides courage by revealing the Comforter's cosmic power."
+      }
+    ],
+    "closing": "Isaiah 51 moves from memory to hope to action. Look back to Abraham — God builds nations from nothing. Look up at the heavens — they will vanish, but God's salvation won't. Then comes the explosive center: awake, arm of the LORD! The people cry for God to act, and God responds by revealing Himself as the Comforter whose power stretches out the heavens. The chapter climaxes with the most dramatic reversal: the cup of wrath that Jerusalem drained to its dregs is physically removed from her hand — never to return — and placed into the hands of those who walked on her back. From Abraham's rock to Jerusalem's cup, the message is the same: what God starts, He finishes, and what He removes, He removes forever."
+  }
 }
