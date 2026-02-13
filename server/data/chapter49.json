@@ -1,0 +1,606 @@
+{
+  "chapterNumber": 49,
+  "title": "Isaiah Chapter 49",
+  "subtitle": "The Servant's Mission and Zion Restored",
+  "structureSubtitle": "See the Servant who is a light to all nations",
+  "verses": [
+    {
+      "number": 1,
+      "text": "Listen to me, you islands; hear this, you distant nations: Before I was born the LORD called me; from my mother's womb he has spoken my name.",
+      "group": 1
+    },
+    {
+      "number": 2,
+      "text": "He made my mouth like a sharpened sword, in the shadow of his hand he hid me; he made me into a polished arrow and concealed me in his quiver.",
+      "group": 1
+    },
+    {
+      "number": 3,
+      "text": "He said to me, 'You are my servant, Israel, in whom I will display my splendor.'",
+      "group": 1
+    },
+    {
+      "number": 4,
+      "text": "But I said, 'I have labored in vain; I have spent my strength for nothing at all. Yet what is due me is in the LORD's hand, and my reward is with my God.'",
+      "group": 1
+    },
+    {
+      "number": 5,
+      "text": "And now the LORD says—he who formed me in the womb to be his servant to bring Jacob back to him and gather Israel to himself, for I am honored in the eyes of the LORD and my God has been my strength—",
+      "group": 1
+    },
+    {
+      "number": 6,
+      "text": "he says: 'It is too small a thing for you to be my servant to restore the tribes of Jacob and bring back those of Israel I have kept. I will also make you a light for the Gentiles, that my salvation may reach to the ends of the earth.'",
+      "group": 1,
+      "isHinge": true,
+      "hingeType": "foundation"
+    },
+    {
+      "number": 7,
+      "text": "This is what the LORD says—the Redeemer and Holy One of Israel—to him who was despised and abhorred by the nation, to the servant of rulers: 'Kings will see you and stand up, princes will see and bow down, because of the LORD, who is faithful, the Holy One of Israel, who has chosen you.'",
+      "group": 2
+    },
+    {
+      "number": 8,
+      "text": "This is what the LORD says: 'In the time of my favor I answered you, and in the day of salvation I helped you; I will keep you and will make you to be a covenant for the people, to restore the land and to reassign its desolate inheritances,",
+      "group": 2
+    },
+    {
+      "number": 9,
+      "text": "to say to the captives, \"Come out,\" and to those in darkness, \"Be free!\" They will feed beside the roads and find pasture on every barren hill.",
+      "group": 2
+    },
+    {
+      "number": 10,
+      "text": "They will neither hunger nor thirst, nor will the desert heat or the sun beat down on them. He who has compassion on them will guide them and lead them beside springs of water.",
+      "group": 2
+    },
+    {
+      "number": 11,
+      "text": "I will turn all my mountains into roads, and my highways will be raised up.",
+      "group": 2
+    },
+    {
+      "number": 12,
+      "text": "See, they will come from afar—some from the north, some from the west, some from the region of Aswan.",
+      "group": 2
+    },
+    {
+      "number": 13,
+      "text": "Shout for joy, you heavens; rejoice, you earth; burst into song, you mountains! For the LORD comforts his people and will have compassion on his afflicted ones.",
+      "group": 2
+    },
+    {
+      "number": 14,
+      "text": "But Zion said, 'The LORD has forsaken me, the Lord has forgotten me.'",
+      "group": 3
+    },
+    {
+      "number": 15,
+      "text": "'Can a mother forget the baby at her breast and have no compassion on the child she has borne? Though she may forget, I will not forget you!",
+      "group": 3,
+      "isHinge": true,
+      "hingeType": "hinge"
+    },
+    {
+      "number": 16,
+      "text": "See, I have engraved you on the palms of my hands; your walls are ever before me.",
+      "group": 3
+    },
+    {
+      "number": 17,
+      "text": "Your children hasten back, and those who laid you waste depart from you.",
+      "group": 3
+    },
+    {
+      "number": 18,
+      "text": "Lift up your eyes and look around; all your children gather and come to you. As surely as I live,' declares the LORD, 'you will wear them all as ornaments; you will put them on, like a bride.'",
+      "group": 3
+    },
+    {
+      "number": 19,
+      "text": "'Though you were ruined and made desolate and your land laid waste, now you will be too small for your people, and those who devoured you will be far away.",
+      "group": 4
+    },
+    {
+      "number": 20,
+      "text": "The children born during your bereavement will yet say in your hearing, \"This place is too small for us; give us more space to live in.\"",
+      "group": 4
+    },
+    {
+      "number": 21,
+      "text": "Then you will say in your heart, \"Who bore me these? I was bereaved and barren; I was exiled and rejected. Who brought these up? I was left all alone, but these—where have they come from?\"'",
+      "group": 4
+    },
+    {
+      "number": 22,
+      "text": "This is what the Sovereign LORD says: 'See, I will beckon to the nations, I will lift up my banner to the peoples; they will bring your sons in their arms and carry your daughters on their hips.",
+      "group": 5
+    },
+    {
+      "number": 23,
+      "text": "Kings will be your foster fathers, and their queens your nursing mothers. They will bow down before you with their faces to the ground; they will lick the dust at your feet. Then you will know that I am the LORD; those who hope in me will not be disappointed.'",
+      "group": 5,
+      "isHinge": true,
+      "hingeType": "turn"
+    },
+    {
+      "number": 24,
+      "text": "Can plunder be taken from warriors, or captives be rescued from the fierce?",
+      "group": 6
+    },
+    {
+      "number": 25,
+      "text": "But this is what the LORD says: 'Yes, captives will be taken from warriors, and plunder retrieved from the fierce; I will contend with those who contend with you, and your children I will save.",
+      "group": 6
+    },
+    {
+      "number": 26,
+      "text": "I will make your oppressors eat their own flesh; they will be drunk on their own blood, as with wine. Then all mankind will know that I, the LORD, am your Savior, your Redeemer, the Mighty One of Jacob.'",
+      "group": 6
+    }
+  ],
+  "reflections": {
+    "1": {
+      "seeing": "The Servant addresses the whole world—islands and distant nations—not just Israel. His calling begins before birth, echoing Jeremiah 1:5. The phrase 'spoken my name' indicates intimate, personal purpose: God knew the Servant's identity and mission before he drew breath.",
+      "life": "God's purpose for you didn't begin when you discovered it—it began before you were born. If God called the Servant from the womb, He has also woven purpose into your story long before you became aware of it.",
+      "teach": "Divine calling precedes human awareness. The Servant's pre-birth commission shows that God's redemptive plans are not reactive but intentional. The global audience ('islands,' 'distant nations') signals that this mission has universal scope from the very first word."
+    },
+    "2": {
+      "seeing": "Two weapon metaphors—a sharpened sword and a polished arrow—emphasize the Servant's effectiveness and readiness. Yet both are hidden: the sword in God's hand, the arrow in His quiver. The Servant is powerful but patient, waiting for God's timing.",
+      "life": "Have you ever felt hidden or shelved? The Servant was concealed not because he was forgotten but because he was being prepared. God's quiver is not a place of neglect—it's a place of protection until the right moment.",
+      "teach": "Hiddenness and readiness go together in God's economy. The Servant is both sharp and concealed—fully equipped yet withheld until the appointed time. Preparation in obscurity is not wasted time; it is divine strategy."
+    },
+    "3": {
+      "seeing": "God calls the Servant 'Israel'—yet this individual Servant will restore Israel (v5-6). He embodies what the nation was meant to be: the faithful representative who displays God's splendor. Where the nation failed, this Servant succeeds.",
+      "life": "You may feel that your role is too small to display God's glory. But the Servant's entire purpose is to be a canvas for divine splendor. Your life, yielded to God, becomes a display case for His beauty.",
+      "teach": "The Servant is called 'Israel' because he fulfills Israel's vocation perfectly. He is the faithful remnant reduced to one. The concept of corporate representation—one standing for many—is central to understanding how Christ fulfills Israel's mission."
+    },
+    "4": {
+      "seeing": "The Servant experiences deep discouragement: 'I have labored in vain.' Yet he doesn't quit—he entrusts his outcome to God. 'What is due me is in the LORD's hand' is a statement of faith under apparent failure.",
+      "life": "Ministry without visible results can feel pointless. The Servant models a powerful response: honest lament followed by radical trust. You can name your discouragement and still leave the outcome with God.",
+      "teach": "Faithful obedience does not guarantee immediate visible results. The Servant's honesty about perceived failure, combined with his confidence in God's justice, models how to persevere when the fruit of your labor seems invisible."
+    },
+    "5": {
+      "seeing": "The Servant's mission is clarified: bring Jacob back and gather Israel. He was formed in the womb for this specific task. The phrase 'honored in the eyes of the LORD' reassures the Servant that God sees his worth even when others don't.",
+      "life": "When people overlook your contributions, God doesn't. The Servant finds his honor not in public recognition but in the LORD's eyes. Your value is not determined by human applause but by divine affirmation.",
+      "teach": "The Servant's mission includes the restoration of Israel—a task that goes beyond teaching or preaching to actual national redemption. God's strength sustains the Servant through what would otherwise be an impossible assignment."
+    },
+    "6": {
+      "seeing": "This is the climactic verse of the Servant Song. Restoring Israel alone is 'too small a thing.' The Servant's mission expands to be 'a light for the Gentiles' so that salvation reaches 'the ends of the earth.' God's plan was always global.",
+      "life": "God's vision for your life is probably bigger than you think. If restoring an entire nation was 'too small,' then your limited expectations of God may need expanding. He is a God of immeasurable reach.",
+      "teach": "This verse shatters any narrow reading of God's salvation. The Servant is not merely Israel's deliverer but the world's light. Paul and Barnabas quote this verse in Acts 13:47 as the basis for Gentile mission. The 'ends of the earth' language anticipates the Great Commission."
+    },
+    "7": {
+      "seeing": "The Servant is 'despised and abhorred by the nation'—rejected by the very people he came to save. Yet kings and princes will rise and bow before him. The reversal is stunning: from contempt to coronation, because the LORD is faithful.",
+      "life": "Rejection by people close to you stings the most. The Servant was despised by his own nation yet honored by foreign rulers. God's faithfulness means that current rejection is never the final chapter.",
+      "teach": "The pattern of rejection followed by exaltation is central to messianic prophecy. Kings standing and bowing shows a complete reversal of status. The reason is not the Servant's own power but 'the LORD, who is faithful'—divine faithfulness guarantees the outcome."
+    },
+    "8": {
+      "seeing": "God answers the Servant 'in the time of my favor'—there is a set time for salvation. The Servant himself becomes 'a covenant for the people,' not just a covenant-maker but the embodiment of God's promise. Desolate inheritances will be restored.",
+      "life": "God's timing is not random; it is purposeful. 'In the time of my favor' means He has marked out a season for your deliverance. You are not waiting aimlessly—you are waiting within God's sovereign calendar.",
+      "teach": "Paul quotes this verse in 2 Corinthians 6:2: 'Now is the time of God's favor, now is the day of salvation.' The 'covenant for the people' language parallels Isaiah 42:6, showing the Servant as the living embodiment of God's promises to humanity."
+    },
+    "9": {
+      "seeing": "Captives are told to 'come out' and those in darkness to 'be free.' This is both physical and spiritual liberation. The imagery of feeding beside roads and finding pasture on barren hills shows God's provision in unexpected places.",
+      "life": "What prison are you sitting in—fear, shame, addiction, grief? The Servant's voice says, 'Come out. Be free.' Freedom is not something you earn; it is a command spoken by the One who has the authority to open every door.",
+      "teach": "Jesus echoes this liberation in Luke 4:18-19 when he reads Isaiah 61 in the synagogue. The captivity is both literal (exile) and spiritual (sin). The barren hills producing pasture shows God's ability to provide sustenance where none naturally exists."
+    },
+    "10": {
+      "seeing": "No hunger, no thirst, no scorching heat—God removes every hardship from the journey home. He who has 'compassion' guides them to springs of water. This echoes the exodus journey through the wilderness, but now perfected.",
+      "life": "God doesn't just free you—He sustains you on the journey. The promise here is comprehensive care: physical needs met, harsh conditions removed, and compassionate guidance every step of the way.",
+      "teach": "This verse parallels Revelation 7:16-17 almost word for word, where the redeemed before God's throne 'will neither hunger nor thirst.' The new exodus surpasses the first: where Israel grumbled in the wilderness, the redeemed are led to springs of water by the Lamb."
+    },
+    "11": {
+      "seeing": "Mountains become roads and highways are raised up. Every obstacle in the path of God's returning people is removed. This echoes Isaiah 40:3-4, where valleys are filled and mountains made low. God reshapes geography for redemption.",
+      "life": "The obstacles between you and God's promises may look like mountains. But God specializes in turning mountains into highways. What seems impassable to you is just raw material for God's road-building project.",
+      "teach": "The highway motif runs throughout Isaiah (11:16; 35:8; 40:3; 62:10). It represents God removing every barrier to restoration. In the ancient Near East, kings built roads to project power; here God builds roads to bring His children home."
+    },
+    "12": {
+      "seeing": "The returning exiles come from every direction—north, west, and the distant south (Aswan/Sinim). This is not just Babylon; it is a worldwide ingathering. God's people are scattered everywhere, and from everywhere they return.",
+      "life": "No matter how far you've wandered, God's gathering power reaches you. The returning exiles come from the farthest corners of the known world. Distance from God is never a disqualification from His call to come home.",
+      "teach": "The mention of Aswan (southern Egypt) alongside north and west shows a universal ingathering beyond the Babylonian exile. This anticipates the global church—people from every nation gathered into God's family, fulfilling the promise to Abraham."
+    },
+    "13": {
+      "seeing": "Heaven, earth, and mountains join in a cosmic celebration. The reason: 'The LORD comforts his people and will have compassion on his afflicted ones.' Creation itself responds to God's redemptive acts with exuberant praise.",
+      "life": "When God moves in your life, it's not just a private event—all creation celebrates. Your comfort is cause for cosmic joy. The mountains don't stay silent when God shows compassion; neither should you.",
+      "teach": "This doxology mirrors Isaiah 44:23 and 55:12, where creation sings at God's redemption. The pairing of 'comforts' and 'compassion' shows that God's restoration is driven by tender emotion, not mere duty. He feels deeply for His afflicted people."
+    },
+    "14": {
+      "seeing": "After the cosmic celebration, Zion's raw complaint cuts in: 'The LORD has forsaken me, the Lord has forgotten me.' The contrast is jarring. Even as heaven rejoices, Zion feels abandoned. Her pain is real and voiced without shame.",
+      "life": "Have you ever felt forgotten by God—especially when others seem to be celebrating? Zion's complaint is honest prayer. God doesn't rebuke her for feeling abandoned; instead, He responds with one of the tenderest promises in all of Scripture.",
+      "teach": "Zion is personified as a grieving woman who feels abandoned. This literary technique allows the prophet to give voice to the deepest fears of the exilic community. God's response (v15-16) shows that honest lament invites divine tenderness, not punishment."
+    },
+    "15": {
+      "seeing": "God responds with the most intimate human analogy possible: a nursing mother with her infant. Even that bond, strong as it is, can fail—'though she may forget.' But God's love surpasses even maternal instinct: 'I will not forget you.' This is the hinge of the chapter.",
+      "life": "If the strongest human love imaginable—a mother nursing her baby—can fail, God's love still holds. Whatever your experience of abandonment, this verse rewrites the story. You are unforgettable to the God of the universe.",
+      "teach": "The maternal imagery for God is striking and deliberate. God transcends every human analogy: even the most primal bond in nature is surpassed by divine faithfulness. The emphatic Hebrew construction—'I, I will not forget you'—doubles down on the certainty."
+    },
+    "16": {
+      "seeing": "'Engraved on the palms of my hands' goes beyond writing—engraving is permanent, carved into the flesh. Zion is not a note God might lose; she is inscribed into His very being. 'Your walls are ever before me' means God is already planning the rebuilding.",
+      "life": "You are not a Post-it note stuck to God's fridge. You are engraved into His hands—permanently, painfully, purposefully. For Christians, this image takes on deeper meaning at the cross, where nails engraved humanity's redemption into the palms of Christ.",
+      "teach": "Ancient Near Eastern customs included tattooing the name of a beloved city on the hand. God appropriates this image to show His permanent commitment to Zion. The 'walls ever before me' indicates that reconstruction is already in God's mind—even before the rubble is cleared."
+    },
+    "17": {
+      "seeing": "Zion's children 'hasten back' while her destroyers 'depart.' There is a divine exchange happening: exile reverses, occupation ends, and restoration accelerates. The children are already on their way.",
+      "life": "What was taken from you is being returned. What destroyed your peace is departing. God's restoration doesn't move slowly when His time comes—the children 'hasten,' they run back to where they belong.",
+      "teach": "The Hebrew wordplay here is significant: the word for 'children' (bonayik) sounds like 'builders' (bonayik), suggesting that those who return will also rebuild. Restoration and construction happen simultaneously in God's economy."
+    },
+    "18": {
+      "seeing": "Zion is told to 'lift up your eyes'—stop looking down in grief and look around. Her returning children are so numerous she wears them 'like ornaments' and puts them on 'like a bride.' Desolation is replaced by beauty and celebration.",
+      "life": "God invites you to change your posture—from looking down in sorrow to looking up in expectation. The returning blessings will be so abundant they'll adorn you like wedding jewelry. Grief gives way to bridal joy.",
+      "teach": "The bridal imagery transforms Zion from a forsaken widow into a radiant bride. 'As surely as I live' is a divine oath—God stakes His own existence on this promise. The ornamental language echoes Isaiah 61:10, where salvation and righteousness are garments of praise."
+    },
+    "19": {
+      "seeing": "The reversal is complete: ruins become too small, devastation gives way to overcrowding, and devourers flee. The problem shifts from emptiness to abundance—there isn't enough room for all the returning children.",
+      "life": "God's restoration doesn't just refill what was lost—it overflows. You may be praying to get back to where you were, but God's plan is to give you more than you had before. Your 'too small' is His starting point.",
+      "teach": "The contrast between past devastation and future abundance is a consistent prophetic pattern (Joel 2:25). God doesn't merely restore the status quo; He superabounds. The 'too small' motif recurs in verse 20, emphasizing the surprising scale of restoration."
+    },
+    "20": {
+      "seeing": "Children born during bereavement—the unexpected generation—are the ones asking for more room. These are the children Zion didn't know she had, born during her darkest season of exile and loss.",
+      "life": "Even during your season of loss, God was at work bringing new life. The children you didn't know about will one day crowd your house and ask for more space. God was busy when you thought He was silent.",
+      "teach": "The 'children born during bereavement' represent the surprising growth of God's people even during exile. This paradox—fruitfulness in barrenness—echoes Sarah, Hannah, and ultimately the church, which grows under persecution."
+    },
+    "21": {
+      "seeing": "Zion is astonished: 'Who bore me these?' She was bereaved, barren, exiled, rejected—yet here are children everywhere. She cannot account for this abundance through natural means. It is a miracle of divine multiplication.",
+      "life": "There will come a day when you look around and ask, 'Where did all this come from?' The blessings will outpace your ability to explain them. That's the signature of a God who works beyond human calculation.",
+      "teach": "Zion's five-fold self-description—bereaved, barren, exiled, rejected, alone—makes the sudden abundance inexplicable apart from God. This anticipates Isaiah 54:1, where the barren woman sings because her children outnumber those of the married woman."
+    },
+    "22": {
+      "seeing": "God signals to the nations, and they respond by carrying Zion's sons and daughters home. Foreign nations become servants of Israel's restoration. Kings carry children in their arms; queens carry them on their hips. The imagery is tender and startling.",
+      "life": "God can mobilize anyone to serve His purposes for you—even those who seem indifferent or opposed. The nations that once ignored Zion now cradle her children. God's resources for your restoration are unlimited.",
+      "teach": "The Sovereign LORD lifts a 'banner' (nes)—a rallying signal for the nations. This reverses the power dynamic: instead of Israel serving the nations, the nations serve Israel's children. The arms-and-hips imagery emphasizes gentle, personal care."
+    },
+    "23": {
+      "seeing": "Kings become foster fathers and queens become nursing mothers to Zion's children. The mightiest rulers on earth bow face-down and 'lick the dust'—total submission. The verse climaxes with the promise: 'Those who hope in me will not be disappointed.'",
+      "life": "Hope in God is never wasted. Every prayer, every tear, every season of waiting reaches its fulfillment in this promise. You will not be put to shame for trusting Him. The hope you carry is backed by the Sovereign LORD Himself.",
+      "teach": "Paul quotes the climax of this verse in Romans 10:11: 'Anyone who believes in him will never be put to shame.' The 'foster fathers' image shows the nations nurturing what they once tried to destroy. This is the turn of the chapter—hope vindicated."
+    },
+    "24": {
+      "seeing": "A rhetorical question challenges the possibility of rescue: 'Can plunder be taken from warriors?' The implied answer is no—humanly impossible. This sets up God's answer in the next verse, where He does the impossible.",
+      "life": "Some situations look utterly hopeless—the enemy is too strong, the grip too tight. This verse gives voice to that despair honestly before God breaks in with His answer. Your impossible question is God's invitation to act.",
+      "teach": "The rhetorical question functions as a literary setup. By voicing the objection ('this is impossible'), the prophet creates space for God's dramatic rebuttal. The pattern—human impossibility met by divine power—runs throughout Scripture (Genesis 18:14; Jeremiah 32:27)."
+    },
+    "25": {
+      "seeing": "God answers the 'impossible' question directly: 'Yes, captives will be taken from warriors.' What human power cannot accomplish, God will do. 'I will contend with those who contend with you' means God enters the fight personally on Zion's behalf.",
+      "life": "God doesn't send a substitute when your enemy is too strong—He enters the ring Himself. 'I will contend with those who contend with you' is God declaring that your fight is His fight. You don't face the warrior alone.",
+      "teach": "God's 'I will' statements in this verse are emphatic: I will contend, I will save. The personal pronouns underscore divine initiative. This is holy war language—God as the divine warrior fighting for His people, a theme that culminates in Revelation 19."
+    },
+    "26": {
+      "seeing": "The oppressors' self-destruction—eating their own flesh, drunk on their own blood—shows that evil eventually consumes itself. The purpose of this judgment is revelatory: 'all mankind will know that I, the LORD, am your Savior.' God's final goal is universal recognition.",
+      "life": "The systems and forces that oppress you are not sustainable—evil devours itself. God's judgment isn't just punishment; it's revelation. When He acts, the whole world will know who your Savior is.",
+      "teach": "The chapter ends where it began: with a universal audience. Verse 1 called the nations to listen; verse 26 declares that all mankind will know. The titles—Savior, Redeemer, Mighty One of Jacob—compress God's identity into a threefold affirmation of power and tenderness."
+    }
+  },
+  "scriptureConnections": {
+    "1": {
+      "from": [
+        "Jeremiah 1:5 - Before I formed you in the womb I knew you, before you were born I set you apart",
+        "Psalm 139:13-16 - You knit me together in my mother's womb; all the days ordained for me were written"
+      ],
+      "to": [
+        "Galatians 1:15 - God set me apart from my mother's womb and called me by his grace",
+        "Luke 1:31 - You will conceive and give birth to a son, and you are to call him Jesus"
+      ],
+      "context": "Pre-birth calling signals divine purpose that precedes human choice. Paul recognized this pattern in his own calling, and Jesus' naming before birth fulfills the Servant's identity as one called from the womb."
+    },
+    "2": {
+      "from": [
+        "Psalm 45:3-5 - Gird your sword on your side, mighty one; let your sharp arrows pierce the hearts of the king's enemies",
+        "Psalm 127:4-5 - Like arrows in the hands of a warrior are children born in one's youth"
+      ],
+      "to": [
+        "Hebrews 4:12 - The word of God is alive and active, sharper than any double-edged sword",
+        "Ephesians 6:17 - Take the sword of the Spirit, which is the word of God"
+      ],
+      "context": "The sword-and-arrow imagery links the Servant's words to God's Word. Hebrews identifies God's Word as the ultimate sharp sword, and the Servant's concealment in God's quiver prefigures Christ's hidden years before public ministry."
+    },
+    "3": {
+      "from": [
+        "Isaiah 44:21 - Remember these things, Jacob, for you, Israel, are my servant; I have made you",
+        "Isaiah 41:8 - But you, Israel, my servant, Jacob, whom I have chosen"
+      ],
+      "to": [
+        "John 1:14 - The Word became flesh and made his dwelling among us; we have seen his glory",
+        "2 Corinthians 4:6 - God made his light shine in our hearts to give us the light of the knowledge of God's glory displayed in the face of Christ"
+      ],
+      "context": "The Servant embodies Israel's calling and displays God's splendor. Where the nation failed to reflect God's glory, Christ succeeded perfectly—the glory of God shining in His face, the true Israel in whom God is glorified."
+    },
+    "4": {
+      "from": [
+        "Psalm 22:1-2 - My God, my God, why have you forsaken me? I cry out by day, but you do not answer",
+        "Ecclesiastes 1:2-3 - Meaningless! Meaningless! What does anyone gain from all their toil?"
+      ],
+      "to": [
+        "Philippians 2:16 - Hold firmly to the word of life so that I can boast on the day of Christ that I did not run or labor in vain",
+        "1 Corinthians 15:58 - Your labor in the Lord is not in vain"
+      ],
+      "context": "The Servant's sense of futility echoes the psalmist's cry and Ecclesiastes' existential questions. Paul resolves this tension: labor in the Lord is never in vain because God guarantees the outcome, even when we cannot see it."
+    },
+    "5": {
+      "from": [
+        "Isaiah 44:2 - This is what the LORD says—he who made you, who formed you in the womb",
+        "Isaiah 44:24 - I am the LORD, the Maker of all things, who stretches out the heavens"
+      ],
+      "to": [
+        "Luke 2:32 - A light for revelation to the Gentiles, and the glory of your people Israel",
+        "Acts 3:26 - God raised up his servant and sent him first to you to bless you"
+      ],
+      "context": "The Servant is formed to bring Jacob back—a mission fulfilled in Jesus, who came first to the lost sheep of Israel. Simeon recognized this dual purpose: glory for Israel and light for the Gentiles."
+    },
+    "6": {
+      "from": [
+        "Isaiah 42:6 - I will make you to be a covenant for the people and a light for the Gentiles",
+        "Genesis 12:3 - All peoples on earth will be blessed through you"
+      ],
+      "to": [
+        "Acts 13:47 - I have made you a light for the Gentiles, that you may bring salvation to the ends of the earth",
+        "Luke 2:30-32 - My eyes have seen your salvation, which you have prepared in the sight of all nations"
+      ],
+      "context": "This verse is the theological foundation of Gentile mission. Paul and Barnabas explicitly quote it in Acts 13:47 to justify preaching to non-Jews. God's salvation was never meant for one nation alone—it was always heading for the ends of the earth."
+    },
+    "7": {
+      "from": [
+        "Psalm 22:6 - I am a worm and not a man, scorned by everyone, despised by the people",
+        "Isaiah 53:3 - He was despised and rejected by mankind, a man of suffering"
+      ],
+      "to": [
+        "Philippians 2:9-11 - God exalted him to the highest place and gave him the name that is above every name",
+        "Revelation 5:12 - Worthy is the Lamb, who was slain, to receive power and wealth and wisdom and strength"
+      ],
+      "context": "The pattern of despised-then-exalted is the heartbeat of the gospel. The one scorned by nations is honored by kings—a reversal fulfilled when every knee bows and every tongue confesses that Jesus Christ is Lord."
+    },
+    "8": {
+      "from": [
+        "Isaiah 42:6 - I will keep you and will make you to be a covenant for the people",
+        "Psalm 69:13 - In the time of your favor, O God, answer me with your sure salvation"
+      ],
+      "to": [
+        "2 Corinthians 6:2 - I tell you, now is the time of God's favor, now is the day of salvation",
+        "Hebrews 9:15 - Christ is the mediator of a new covenant, that those who are called may receive the promised eternal inheritance"
+      ],
+      "context": "Paul directly quotes this verse to proclaim that the 'time of favor' has arrived in Christ. The Servant who is 'a covenant for the people' becomes the mediator of the new covenant—not just delivering promises but embodying them."
+    },
+    "9": {
+      "from": [
+        "Isaiah 42:7 - To open eyes that are blind, to free captives from prison",
+        "Psalm 107:10-14 - Some sat in darkness, in utter darkness, prisoners suffering in iron chains; He brought them out of darkness"
+      ],
+      "to": [
+        "Luke 4:18-19 - He has sent me to proclaim freedom for the prisoners and recovery of sight for the blind",
+        "John 8:36 - If the Son sets you free, you will be free indeed"
+      ],
+      "context": "Jesus reads from Isaiah in the Nazareth synagogue and announces that this liberation is happening 'today.' The Servant's command to captives—'Come out!'—finds its ultimate fulfillment in Christ, who frees people from sin's deepest prison."
+    },
+    "10": {
+      "from": [
+        "Psalm 23:1-2 - The LORD is my shepherd, I lack nothing; He makes me lie down in green pastures, he leads me beside quiet waters",
+        "Exodus 17:6 - Strike the rock, and water will come out of it for the people to drink"
+      ],
+      "to": [
+        "Revelation 7:16-17 - Never again will they hunger; never again will they thirst. The Lamb at the center of the throne will be their shepherd; he will lead them to springs of living water",
+        "John 10:11 - I am the good shepherd. The good shepherd lays down his life for the sheep"
+      ],
+      "context": "This verse is quoted almost verbatim in Revelation 7:16-17, showing its ultimate fulfillment in the new creation. The compassionate guide of Isaiah 49 is revealed as the Lamb who shepherds His people to eternal springs of living water."
+    },
+    "11": {
+      "from": [
+        "Isaiah 40:3-4 - Every valley shall be raised up, every mountain and hill made low",
+        "Isaiah 35:8 - A highway will be there; it will be called the Way of Holiness"
+      ],
+      "to": [
+        "John 14:6 - I am the way and the truth and the life. No one comes to the Father except through me",
+        "Hebrews 10:19-20 - We have confidence to enter the Most Holy Place by a new and living way opened for us"
+      ],
+      "context": "God's highway-building removes every obstacle between His people and home. In Christ, the ultimate highway is opened: Jesus is 'the way' to the Father, and through His flesh a new and living way is opened into God's presence."
+    },
+    "12": {
+      "from": [
+        "Isaiah 11:11-12 - He will assemble the scattered people of Judah from the four quarters of the earth",
+        "Deuteronomy 30:3-4 - Even if you have been banished to the most distant land, from there the LORD your God will gather you"
+      ],
+      "to": [
+        "Revelation 7:9 - A great multitude that no one could count, from every nation, tribe, people and language",
+        "Acts 2:5-11 - God-fearing Jews from every nation under heaven; we hear them declaring the wonders of God"
+      ],
+      "context": "The worldwide ingathering from north, west, and south anticipates the global church. At Pentecost, people from every nation hear God's wonders, and in Revelation the multitude becomes too large to count—Isaiah's vision fully realized."
+    },
+    "13": {
+      "from": [
+        "Isaiah 44:23 - Sing for joy, you heavens; shout, you earth beneath; burst into song, you mountains",
+        "Psalm 98:4-8 - Shout for joy to the LORD, all the earth; let the rivers clap their hands, let the mountains sing together for joy"
+      ],
+      "to": [
+        "Romans 8:19-21 - The creation itself will be liberated from its bondage to decay and brought into the freedom of the children of God",
+        "Luke 2:13-14 - A great company of the heavenly host appeared, praising God and saying, Glory to God in the highest"
+      ],
+      "context": "Creation's celebration at God's comfort anticipates the cosmic liberation Paul describes in Romans 8. When God acts to save, the response is not limited to humans—heaven, earth, and mountains join the choir."
+    },
+    "14": {
+      "from": [
+        "Psalm 22:1 - My God, my God, why have you forsaken me? Why are you so far from saving me?",
+        "Lamentations 5:20 - Why do you always forget us? Why do you forsake us so long?"
+      ],
+      "to": [
+        "Matthew 27:46 - My God, my God, why have you forsaken me?",
+        "Romans 8:38-39 - Neither death nor life nor anything else in all creation will be able to separate us from the love of God"
+      ],
+      "context": "Zion's cry of abandonment echoes through Scripture. Jesus himself takes up this cry on the cross—the one time God truly did forsake someone, so that His people would never be forsaken. Paul's answer in Romans 8 is the final word: nothing can separate us."
+    },
+    "15": {
+      "from": [
+        "Deuteronomy 4:31 - The LORD your God is a merciful God; he will not abandon or destroy you",
+        "Hosea 11:1-4 - When Israel was a child, I loved him; I led them with cords of human kindness, with ties of love"
+      ],
+      "to": [
+        "Romans 8:35-37 - Who shall separate us from the love of Christ? In all these things we are more than conquerors",
+        "John 10:28-29 - No one will snatch them out of my hand; no one can snatch them out of my Father's hand"
+      ],
+      "context": "God's love surpasses the strongest human bond. A nursing mother's instinct is powerful, but God's commitment is greater. This impossible-to-forget love finds its fullest expression in Christ, from whose hand no one can be snatched."
+    },
+    "16": {
+      "from": [
+        "Song of Solomon 8:6 - Place me like a seal over your heart; for love is as strong as death",
+        "Exodus 13:9 - This observance will be for you like a sign on your hand and a reminder on your forehead"
+      ],
+      "to": [
+        "John 20:27 - Put your finger here; see my hands. Reach out your hand and put it into my side",
+        "Galatians 6:17 - I bear on my body the marks of Jesus"
+      ],
+      "context": "God engraves Zion on His palms—permanent, painful, purposeful. Christians see this fulfilled in the nail-scarred hands of Christ, where humanity's redemption is literally inscribed. The risen Jesus shows His hands as proof of unforgettable love."
+    },
+    "17": {
+      "from": [
+        "Isaiah 54:7 - For a brief moment I abandoned you, but with deep compassion I will bring you back",
+        "Ezekiel 36:33-35 - On the day I cleanse you, I will resettle your towns and the ruins will be rebuilt"
+      ],
+      "to": [
+        "Luke 15:20 - While he was still a long way off, his father saw him and was filled with compassion for him",
+        "1 Peter 2:10 - Once you were not a people, but now you are the people of God"
+      ],
+      "context": "Children hastening back mirrors the prodigal son parable—the Father watching, the children running home. God's restoration involves both the return of what was lost and the departure of what was destructive."
+    },
+    "18": {
+      "from": [
+        "Isaiah 60:4 - Lift up your eyes and look about you: all assemble and come to you",
+        "Isaiah 61:10 - He has clothed me with garments of salvation and arrayed me in a robe of his righteousness, as a bride"
+      ],
+      "to": [
+        "Revelation 21:2 - I saw the Holy City, the new Jerusalem, coming down out of heaven, prepared as a bride beautifully dressed",
+        "Ephesians 5:25-27 - Christ loved the church and gave himself up for her to present her as a radiant church"
+      ],
+      "context": "Zion as a bride adorned with her children anticipates the church as the Bride of Christ. The divine oath—'as surely as I live'—guarantees that restoration is not wishful thinking but sworn reality."
+    },
+    "19": {
+      "from": [
+        "Isaiah 54:1-3 - Sing, barren woman; enlarge the place of your tent, stretch your tent curtains wide",
+        "Ezekiel 36:10-11 - I will increase the number of people and animals living on you; the towns will be inhabited and the ruins rebuilt"
+      ],
+      "to": [
+        "Galatians 4:27 - Be glad, barren woman, for more are the children of the desolate woman than of her who has a husband",
+        "Acts 15:14-17 - God first intervened to choose a people for his name from the Gentiles"
+      ],
+      "context": "God's restoration creates an abundance problem: too many children, not enough space. Paul applies this barren-to-fruitful pattern to the church, where Gentile inclusion produces growth beyond all expectation."
+    },
+    "20": {
+      "from": [
+        "Genesis 26:22 - Now the LORD has given us room and we will flourish in the land",
+        "Zechariah 2:4 - Jerusalem will be a city without walls because of the great number of people and animals in it"
+      ],
+      "to": [
+        "Ephesians 3:20 - God is able to do immeasurably more than all we ask or imagine",
+        "John 14:2 - My Father's house has many rooms; I am going there to prepare a place for you"
+      ],
+      "context": "The overcrowding problem—'too small for us'—illustrates God's superabundant restoration. What was once desolate overflows with life, anticipating the Father's house with many rooms and God's ability to do immeasurably more."
+    },
+    "21": {
+      "from": [
+        "Isaiah 54:1 - Sing, barren woman; you who never bore a child; burst into song, shout for joy",
+        "Ruth 4:14-17 - Praise be to the LORD, who this day has not left you without a guardian-redeemer; Naomi has a son"
+      ],
+      "to": [
+        "Romans 11:25-26 - Israel has experienced a hardening in part until the full number of the Gentiles has come in, and in this way all Israel will be saved",
+        "Revelation 7:9 - A great multitude that no one could count, from every nation, tribe, people and language"
+      ],
+      "context": "Zion's astonishment at her unexpected children mirrors the mystery Paul describes: the Gentile ingathering produces a family so vast it defies explanation apart from God's sovereign grace."
+    },
+    "22": {
+      "from": [
+        "Isaiah 11:12 - He will raise a banner for the nations and gather the exiles of Israel",
+        "Isaiah 66:20 - They will bring all your people, from all the nations, to my holy mountain in Jerusalem"
+      ],
+      "to": [
+        "Romans 15:16 - To be a minister of Christ Jesus to the Gentiles with the priestly duty of proclaiming the gospel",
+        "Matthew 2:11 - They bowed down and worshiped him. Then they opened their treasures and presented him with gifts"
+      ],
+      "context": "Nations carrying Israel's children home reverses the exile pattern. The Magi carrying gifts to the infant Christ is an early fulfillment—Gentile rulers coming to serve the Servant's mission."
+    },
+    "23": {
+      "from": [
+        "Psalm 72:10-11 - May all kings bow down to him and all nations serve him",
+        "Isaiah 45:23 - Before me every knee will bow; by me every tongue will swear"
+      ],
+      "to": [
+        "Romans 10:11 - Anyone who believes in him will never be put to shame",
+        "Philippians 2:10-11 - At the name of Jesus every knee should bow, in heaven and on earth and under the earth"
+      ],
+      "context": "Paul quotes 'those who hope in me will not be disappointed' in Romans 10:11 to assure believers—Jew and Gentile alike—that trust in Christ is never misplaced. The kings bowing prefigures universal acknowledgment of Jesus as Lord."
+    },
+    "24": {
+      "from": [
+        "Jeremiah 32:17 - Nothing is too hard for you, Sovereign LORD",
+        "Genesis 18:14 - Is anything too hard for the LORD?"
+      ],
+      "to": [
+        "Matthew 19:26 - With man this is impossible, but with God all things are possible",
+        "Luke 1:37 - For no word from God will ever fail"
+      ],
+      "context": "The rhetorical question—can captives be rescued from the fierce?—echoes Scripture's recurring challenge: is anything too hard for God? Jesus' answer is definitive: with God all things are possible."
+    },
+    "25": {
+      "from": [
+        "Exodus 14:13-14 - The LORD will fight for you; you need only to be still",
+        "Deuteronomy 20:4 - The LORD your God is the one who goes with you to fight for you against your enemies"
+      ],
+      "to": [
+        "Romans 8:31 - If God is for us, who can be against us?",
+        "Colossians 2:15 - Having disarmed the powers and authorities, he made a public spectacle of them, triumphing over them by the cross"
+      ],
+      "context": "God as the divine warrior who fights for His people reaches its climax at the cross, where Christ disarmed every power and authority. 'I will contend with those who contend with you' is fulfilled in the cosmic victory of the resurrection."
+    },
+    "26": {
+      "from": [
+        "Exodus 6:7 - You will know that I am the LORD your God, who brought you out from under the yoke of the Egyptians",
+        "Ezekiel 39:28 - Then they will know that I am the LORD their God"
+      ],
+      "to": [
+        "Revelation 19:15-16 - Coming out of his mouth is a sharp sword; on his robe and on his thigh he has this name written: King of Kings and Lord of Lords",
+        "Philippians 2:11 - Every tongue acknowledge that Jesus Christ is Lord, to the glory of God the Father"
+      ],
+      "context": "The chapter closes with universal revelation: 'all mankind will know.' God's identity as Savior, Redeemer, and Mighty One is fully revealed in Christ, whose lordship every tongue will confess and every knee acknowledge."
+    }
+  },
+  "theme": "The Servant called from the womb becomes a light to all nations, and God promises Zion that He will never forget her—engraving her on the palms of His hands",
+  "groupMetadata": {
+    "1": {
+      "name": "The Second Servant Song",
+      "transition": "Called from the womb, a polished arrow; 'I will make you a light for the Gentiles'"
+    },
+    "2": {
+      "name": "Kings Will See and Bow",
+      "transition": "Despised servant honored by kings; prisoners freed, the earth rejoices"
+    },
+    "3": {
+      "name": "Zion Says: 'The LORD Has Forsaken Me'",
+      "transition": "God's response: 'Can a mother forget her nursing child? I have engraved you on the palms of my hands'"
+    },
+    "4": {
+      "name": "Zion's Children Return",
+      "transition": "'Who bore me these?' — so many children the land is too small"
+    },
+    "5": {
+      "name": "The Nations Carry Your Children Home",
+      "transition": "Kings become foster fathers; 'Those who hope in me will not be disappointed'"
+    },
+    "6": {
+      "name": "Captives Freed from the Mighty",
+      "transition": "'I will contend with those who contend with you' — all flesh will know"
+    }
+  },
+  "hingeMetadata": {
+    "foundation": {
+      "explanation": "Foundation (v6) — 'I will make you a light for the Gentiles' — the Servant's universal mission expands beyond Israel to the ends of the earth",
+      "color": "bg-yellow-500"
+    },
+    "hinge": {
+      "explanation": "Hinge (v15) — 'Can a mother forget her nursing child?' — God's unforgettable love surpasses the strongest human bond",
+      "color": "bg-blue-500"
+    },
+    "turn": {
+      "explanation": "Turn (v23) — 'Those who hope in me will not be disappointed' — the promise of vindication for all who trust in the LORD",
+      "color": "bg-red-500"
+    }
+  },
+  "structureModal": null
+}

@@ -20,45 +20,151 @@ function Home() {
   const [showHowToUse, setShowHowToUse] = useState(false);
   const [showPropheticWorld, setShowPropheticWorld] = useState(false);
 
-  const chapters = [
-    { num: 1, title: "The Rebellious Nation and the Invitation to Return", verses: 31, theme: "God's covenant lawsuit centers on the divine invitation: 'Though your sins are like scarlet, they shall be as white as snow'" },
-    { num: 2, title: "God's Mountain, Idolatry, and the Day of the LORD", verses: 22, theme: "From exaltation to humiliation: God's mountain above all vs. humanity bowing to idols" },
-    { num: 3, title: "Judgment on Leaders and Pride", verses: 25, theme: "When leaders fail, society crumbles—God removes props to expose dependence on Him" },
-    { num: 4, title: "The Branch of the LORD and God's Return", verses: 6, theme: "After judgment comes cleansing—God's glory returns to shelter His purified people" },
-    { num: 5, title: "The Song of the Vineyard and Six Woes", verses: 30, theme: "God's vineyard produces wild grapes—justice turns to bloodshed, righteousness to cries of distress" },
-    { num: 6, title: "Encountering God's Holiness and Divine Commissioning", verses: 13, theme: "Isaiah's throne room vision: conviction, cleansing, commission, and the promise of a holy remnant" },
-    { num: 7, title: "The Sign of Immanuel - God With Us", verses: 25, theme: "When human fear meets divine promise, God offers the ultimate sign: Immanuel, God with us" },
-    { num: 8, title: "Sanctuary or Stumbling Stone", verses: 22, theme: "The same God becomes either sanctuary for those who trust or stumbling stone for those who fear" },
-    { num: 9, title: "The Light in the Darkness and the Prince of Peace", verses: 21, theme: "From deep darkness to great light—the child born to us will establish endless peace and justice" },
-    { num: 10, title: "Assyria: God's Rod and the Remnant's Return", verses: 34, theme: "God uses Assyria as His rod of anger, then judges their pride—sovereignly orchestrating history while preserving a faithful remnant" },
-    { num: 11, title: "The Messiah's Reign and the Peaceable Kingdom", verses: 16, theme: "From Jesse's stump emerges the Spirit-empowered Messiah bringing righteous judgment, universal peace, and restoration for all nations" },
-    { num: 12, title: "Song of Thanksgiving and Praise", verses: 6, theme: "The Book of Immanuel concludes with joyful thanksgiving: drawing from wells of salvation and proclaiming God's deeds among all peoples" }
+  const sections = [
+    {
+      title: "The Book of Immanuel",
+      subtitle: "Chapters 1-12",
+      color: "purple",
+      chapters: [
+        { num: 1, title: "The Rebellious Nation and the Invitation to Return", verses: 31 },
+        { num: 2, title: "God's Mountain, Idolatry, and the Day of the LORD", verses: 22 },
+        { num: 3, title: "Judgment on Leaders and Pride", verses: 25 },
+        { num: 4, title: "The Branch of the LORD and God's Return", verses: 6 },
+        { num: 5, title: "The Song of the Vineyard and Six Woes", verses: 30 },
+        { num: 6, title: "Encountering God's Holiness and Divine Commissioning", verses: 13 },
+        { num: 7, title: "The Sign of Immanuel - God With Us", verses: 25 },
+        { num: 8, title: "Sanctuary or Stumbling Stone", verses: 22 },
+        { num: 9, title: "The Light in the Darkness and the Prince of Peace", verses: 21 },
+        { num: 10, title: "Assyria: God's Rod and the Remnant's Return", verses: 34 },
+        { num: 11, title: "The Messiah's Reign and the Peaceable Kingdom", verses: 16 },
+        { num: 12, title: "Song of Thanksgiving and Praise", verses: 6 },
+      ]
+    },
+    {
+      title: "Oracles Against the Nations",
+      subtitle: "Chapters 13-23",
+      color: "red",
+      chapters: [
+        { num: 13, title: "The Fall of Babylon", verses: 22 },
+        { num: 14, title: "Babylon's King Falls, Philistia Warned", verses: 32 },
+        { num: 15, title: "A Lament for Moab", verses: 9 },
+        { num: 16, title: "Moab's Pride and Plea for Shelter", verses: 14 },
+        { num: 17, title: "Oracle Against Damascus and Israel", verses: 14 },
+        { num: 18, title: "Oracle to the Land of Cush", verses: 7 },
+        { num: 19, title: "Oracle Against Egypt — Judgment and Healing", verses: 25 },
+        { num: 20, title: "Isaiah's Sign Against Egypt and Cush", verses: 6 },
+        { num: 21, title: "Oracles: Babylon, Edom, and Arabia", verses: 17 },
+        { num: 22, title: "Oracle Against the Valley of Vision — Jerusalem", verses: 25 },
+        { num: 23, title: "Oracle Against Tyre", verses: 18 },
+      ]
+    },
+    {
+      title: "The Isaiah Apocalypse",
+      subtitle: "Chapters 24-27",
+      color: "amber",
+      chapters: [
+        { num: 24, title: "The LORD's Devastation of the Earth", verses: 23 },
+        { num: 25, title: "Praise for God's Salvation", verses: 12 },
+        { num: 26, title: "A Song of Trust and Victory", verses: 21 },
+        { num: 27, title: "Deliverance of Israel", verses: 13 },
+      ]
+    },
+    {
+      title: "Woe Oracles",
+      subtitle: "Chapters 28-33",
+      color: "orange",
+      chapters: [
+        { num: 28, title: "Woe to the Leaders of Ephraim and Judah", verses: 29 },
+        { num: 29, title: "Woe to Jerusalem — Ariel", verses: 24 },
+        { num: 30, title: "Woe to the Obstinate Nation", verses: 33 },
+        { num: 31, title: "Woe to Those Who Rely on Egypt", verses: 9 },
+        { num: 32, title: "The Righteous King and Complacent Women", verses: 20 },
+        { num: 33, title: "Woe to the Destroyer — The King in His Beauty", verses: 24 },
+      ]
+    },
+    {
+      title: "Judgment, Hope, and Historical Narrative",
+      subtitle: "Chapters 34-39",
+      color: "teal",
+      chapters: [
+        { num: 34, title: "Judgment on the Nations and Edom", verses: 17 },
+        { num: 35, title: "The Ransomed Return with Joy to Zion", verses: 10 },
+        { num: 36, title: "Sennacherib Threatens Jerusalem", verses: 22 },
+        { num: 37, title: "Hezekiah's Prayer and Jerusalem's Deliverance", verses: 38 },
+        { num: 38, title: "Hezekiah's Illness and Song of Recovery", verses: 22 },
+        { num: 39, title: "Envoys from Babylon — The Shadow of Exile", verses: 8 },
+      ]
+    },
+    {
+      title: "Second Isaiah: Comfort and Redemption",
+      subtitle: "Chapters 40-55",
+      color: "blue",
+      chapters: [
+        { num: 40, title: "Comfort My People", verses: 31 },
+        { num: 41, title: "Fear Not — God's Challenge to the Nations", verses: 29 },
+        { num: 42, title: "The Servant of the LORD — A Light for the Nations", verses: 25 },
+        { num: 43, title: "I Have Called You by Name — You Are Mine", verses: 28 },
+        { num: 44, title: "Israel Chosen and Idols Ridiculed", verses: 28 },
+        { num: 45, title: "Cyrus, God's Anointed — Turn to Me and Be Saved", verses: 25 },
+        { num: 46, title: "The God Who Carries His People", verses: 13 },
+        { num: 47, title: "The Fall of Lady Babylon", verses: 15 },
+        { num: 48, title: "Israel Refined, Not Rejected", verses: 22 },
+        { num: 49, title: "The Servant's Mission and Zion Restored", verses: 26 },
+        { num: 50, title: "The Obedient Servant Who Trusts God", verses: 11 },
+        { num: 51, title: "Awake, Awake — Everlasting Salvation for Zion", verses: 23 },
+        { num: 52, title: "Awake, Zion — The LORD Returns to Reign", verses: 15 },
+        { num: 53, title: "The Suffering Servant — Pierced for Our Transgressions", verses: 12 },
+        { num: 54, title: "Sing, Barren Woman — God's Everlasting Covenant of Peace", verses: 17 },
+        { num: 55, title: "Come, All Who Are Thirsty — The Everlasting Invitation", verses: 13 },
+      ]
+    }
   ];
+
+  const colorMap: Record<string, { border: string; text: string; bg: string }> = {
+    purple: { border: 'border-purple-500', text: 'text-purple-600', bg: 'bg-purple-50' },
+    red: { border: 'border-red-500', text: 'text-red-600', bg: 'bg-red-50' },
+    amber: { border: 'border-amber-500', text: 'text-amber-600', bg: 'bg-amber-50' },
+    orange: { border: 'border-orange-500', text: 'text-orange-600', bg: 'bg-orange-50' },
+    teal: { border: 'border-teal-500', text: 'text-teal-600', bg: 'bg-teal-50' },
+    blue: { border: 'border-blue-500', text: 'text-blue-600', bg: 'bg-blue-50' },
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 p-6">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-5xl font-bold text-gray-800 mb-3">Isaiah Interactive Study</h1>
-          <p className="text-xl text-gray-600">Chapters 1-12: Exploring God's Message Through Color-Coded Themes</p>
+          <p className="text-xl text-gray-600">Chapters 1-55: Exploring God's Message Through Color-Coded Themes</p>
           <p className="text-sm text-gray-500 mt-2">Click any chapter to begin your study journey</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {chapters.map((chapter) => (
-            <Link
-              key={chapter.num}
-              to={`/chapter-${chapter.num}`}
-              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-5 border-l-4 border-purple-500 hover:border-purple-700"
-            >
-              <div className="flex items-start justify-between mb-2">
-                <h2 className="text-2xl font-bold text-purple-600">Chapter {chapter.num}</h2>
-                <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">{chapter.verses} verses</span>
+        <div className="space-y-6">
+          {sections.map((section) => {
+            const colors = colorMap[section.color];
+            return (
+              <div key={section.title}>
+                <div className={`border-l-4 ${colors.border} pl-4 mb-3`}>
+                  <h2 className={`text-xl font-bold ${colors.text}`}>{section.title}</h2>
+                  <p className="text-sm text-gray-500">{section.subtitle}</p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {section.chapters.map((chapter) => (
+                    <Link
+                      key={chapter.num}
+                      to={chapter.num <= 12 ? `/chapter-${chapter.num}` : `/chapter/${chapter.num}`}
+                      className={`bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow p-3 border-l-4 ${colors.border}`}
+                    >
+                      <div className="flex items-start justify-between mb-1">
+                        <h3 className={`text-lg font-bold ${colors.text}`}>Chapter {chapter.num}</h3>
+                        <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">{chapter.verses} vs</span>
+                      </div>
+                      <p className="text-xs font-medium text-gray-700">{chapter.title}</p>
+                    </Link>
+                  ))}
+                </div>
               </div>
-              <h3 className="text-sm font-semibold text-gray-800 mb-2">{chapter.title}</h3>
-              <p className="text-xs text-gray-600 leading-relaxed">{chapter.theme}</p>
-            </Link>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

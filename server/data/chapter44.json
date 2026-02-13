@@ -1,0 +1,644 @@
+{
+  "chapterNumber": 44,
+  "title": "Isaiah Chapter 44",
+  "subtitle": "Israel Chosen and Idols Ridiculed",
+  "structureSubtitle": "See the absurdity of idolatry and the certainty of God",
+  "verses": [
+    {
+      "number": 1,
+      "text": "But now listen, Jacob, my servant, Israel, whom I have chosen.",
+      "group": 1
+    },
+    {
+      "number": 2,
+      "text": "This is what the LORD says—he who made you, who formed you in the womb, and who will help you: Do not be afraid, Jacob, my servant, Jeshurun, whom I have chosen.",
+      "group": 1
+    },
+    {
+      "number": 3,
+      "text": "For I will pour water on the thirsty land, and streams on the dry ground; I will pour out my Spirit on your offspring, and my blessing on your descendants.",
+      "group": 1
+    },
+    {
+      "number": 4,
+      "text": "They will spring up like grass in a meadow, like poplar trees by flowing streams.",
+      "group": 1
+    },
+    {
+      "number": 5,
+      "text": "Some will say, 'I belong to the LORD'; others will call themselves by the name of Jacob; still others will write on their hand, 'The LORD's,' and will take the name Israel.",
+      "group": 1
+    },
+    {
+      "number": 6,
+      "text": "This is what the LORD says—Israel's King and Redeemer, the LORD Almighty: I am the first and I am the last; apart from me there is no God.",
+      "group": 2,
+      "isHinge": true,
+      "hingeType": "foundation"
+    },
+    {
+      "number": 7,
+      "text": "Who then is like me? Let him proclaim it. Let him declare and lay out before me what has happened since I established my ancient people, and what is yet to come—yes, let them foretell what will come.",
+      "group": 2
+    },
+    {
+      "number": 8,
+      "text": "Do not tremble, do not be afraid. Did I not proclaim this and foretell it long ago? You are my witnesses. Is there any God besides me? No, there is no other Rock; I know not one.",
+      "group": 2
+    },
+    {
+      "number": 9,
+      "text": "All who make idols are nothing, and the things they treasure are worthless. Those who would speak up for them are blind; they are ignorant, to their own shame.",
+      "group": 3
+    },
+    {
+      "number": 10,
+      "text": "Who shapes a god and casts an idol, which can profit nothing?",
+      "group": 3
+    },
+    {
+      "number": 11,
+      "text": "People who do that will be put to shame; such craftsmen are only human beings. Let them all come together and take their stand; they will be brought down to terror and shame.",
+      "group": 3
+    },
+    {
+      "number": 12,
+      "text": "The blacksmith takes a tool and works with it in the coals; he shapes an idol with hammers, he forges it with the might of his arm. He gets hungry and loses his strength; he drinks no water and grows faint.",
+      "group": 3
+    },
+    {
+      "number": 13,
+      "text": "The carpenter measures with a line and makes an outline with a marker; he roughs it out with chisels and marks it with compasses. He shapes it in human form, human form in all its glory, that it may dwell in a shrine.",
+      "group": 3
+    },
+    {
+      "number": 14,
+      "text": "He cut down cedars, or perhaps took a cypress or oak. He let it grow among the trees of the forest, or planted a pine, and the rain made it grow.",
+      "group": 3
+    },
+    {
+      "number": 15,
+      "text": "It is used as fuel for burning. Some of it he takes and warms himself, he kindles a fire and bakes bread. But he also fashions a god and worships it; he makes an idol and bows down to it.",
+      "group": 3
+    },
+    {
+      "number": 16,
+      "text": "Half of the wood he burns in the fire; over it he prepares his meal, he roasts his meat and eats his fill. He also warms himself and says, 'Ah! I am warm; I see the fire.'",
+      "group": 3
+    },
+    {
+      "number": 17,
+      "text": "From the rest he makes a god, his idol; he bows down to it and worships. He prays to it and says, 'Save me! You are my god!'",
+      "group": 3
+    },
+    {
+      "number": 18,
+      "text": "They know nothing, they understand nothing; their eyes are plastered over so they cannot see, and their minds closed so they cannot understand.",
+      "group": 3
+    },
+    {
+      "number": 19,
+      "text": "No one stops to think, no one has the knowledge or understanding to say, 'Half of it I used for fuel; I even baked bread over its coals, I roasted meat and I ate. Shall I make a detestable thing from what is left? Shall I bow down to a block of wood?'",
+      "group": 3
+    },
+    {
+      "number": 20,
+      "text": "Such a person feeds on ashes; a deluded heart misleads him; he cannot save himself, or say, 'Is not this thing in my right hand a lie?'",
+      "group": 3
+    },
+    {
+      "number": 21,
+      "text": "Remember these things, Jacob, for you, Israel, are my servant. I have made you, you are my servant; Israel, I will not forget you.",
+      "group": 4
+    },
+    {
+      "number": 22,
+      "text": "I have swept away your offenses like a cloud, your sins like the morning mist. Return to me, for I have redeemed you.",
+      "group": 4,
+      "isHinge": true,
+      "hingeType": "hinge"
+    },
+    {
+      "number": 23,
+      "text": "Sing for joy, you heavens, for the LORD has done this; shout aloud, you earth beneath. Burst into song, you mountains, you forests and all your trees, for the LORD has redeemed Jacob, he displays his glory in Israel.",
+      "group": 4
+    },
+    {
+      "number": 24,
+      "text": "This is what the LORD says—your Redeemer, who formed you in the womb: I am the LORD, the Maker of all things, who stretches out the heavens, who spreads out the earth by myself,",
+      "group": 5
+    },
+    {
+      "number": 25,
+      "text": "who foils the signs of false prophets and makes fools of diviners, who overthrows the learning of the wise and turns it into nonsense,",
+      "group": 5
+    },
+    {
+      "number": 26,
+      "text": "who carries out the words of his servants and fulfills the predictions of his messengers, who says of Jerusalem, 'It shall be inhabited,' of the towns of Judah, 'They shall be rebuilt,' and of their ruins, 'I will restore them,'",
+      "group": 5
+    },
+    {
+      "number": 27,
+      "text": "who says to the watery deep, 'Be dry, and I will dry up your streams,'",
+      "group": 5
+    },
+    {
+      "number": 28,
+      "text": "who says of Cyrus, 'He is my shepherd and will accomplish all that I please; he will say of Jerusalem, \"Let it be rebuilt,\" and of the temple, \"Let its foundations be laid.\"'",
+      "group": 5,
+      "isHinge": true,
+      "hingeType": "climax"
+    }
+  ],
+  "reflections": {
+    "1": {
+      "seeing": "God opens with 'But now'—a dramatic pivot from the judgment themes preceding this passage. He tenderly addresses Jacob as 'my servant' and Israel as 'chosen,' reaffirming the covenant relationship despite Israel's failures.",
+      "life": "When you feel disqualified by past mistakes, God says 'But now listen.' He doesn't define you by your worst moments. He still calls you chosen, still calls you His servant. That identity hasn't changed.",
+      "teach": "Election is rooted in God's initiative, not human merit. 'My servant' and 'whom I have chosen' remind us that belonging to God begins with His decision, not ours. Grace precedes calling."
+    },
+    "2": {
+      "seeing": "God identifies Himself as the one who made and formed Israel in the womb—a deeply personal metaphor. The rare title 'Jeshurun' (upright one) is an affectionate name, used only four times in Scripture, expressing God's tender view of His people.",
+      "life": "God formed you before you drew breath. When fear whispers that you're on your own, this verse says otherwise: the One who shaped you in the womb promises to help you. You were never an accident.",
+      "teach": "'Jeshurun' as a pet name for Israel reveals God's affection even when addressing a wayward people. The command 'Do not be afraid' appears because fear is the natural response when you forget who made you."
+    },
+    "3": {
+      "seeing": "The imagery shifts from physical water to spiritual outpouring. 'I will pour out my Spirit' parallels 'I will pour water on the thirsty land,' linking physical refreshment with spiritual renewal. This is one of the clearest Old Testament promises of the Spirit's coming.",
+      "life": "If your spiritual life feels like dry ground, this promise is for you. God doesn't trickle—He pours. The same Spirit that brought life to a desert nation is available to refresh your parched soul today.",
+      "teach": "This verse anticipates Pentecost (Acts 2). The Spirit's outpouring on 'offspring' and 'descendants' shows God's blessings are generational—He plans beyond our lifetime, watering future generations through present faithfulness."
+    },
+    "4": {
+      "seeing": "The result of the Spirit's outpouring is explosive growth—grass in a meadow, poplar trees by flowing streams. The imagery conveys abundance, vitality, and sustainability. Spirit-watered people don't just survive; they flourish.",
+      "life": "Spiritual growth isn't about trying harder but being watered well. When God's Spirit pours into your life, growth becomes natural—like grass that can't help but spring up when rain falls on good soil.",
+      "teach": "The botanical metaphor shows that spiritual fruitfulness depends on the source of nourishment, not the effort of the plant. Trees by flowing streams don't struggle to grow; they simply receive what flows to them."
+    },
+    "5": {
+      "seeing": "The climax of the Spirit's work: voluntary identification with God. People freely declare 'I belong to the LORD' and write His name on their hands. This isn't coerced religion but joyful ownership—people choosing God's name as their identity.",
+      "life": "What name defines you? Career title, family role, past failure? This verse pictures people so transformed by God's Spirit that they tattoo 'The LORD's' on their hands—they want everyone to know whom they belong to.",
+      "teach": "Writing on the hand echoes the opposite of the mark of the beast—it's a voluntary seal of devotion. The variety of expressions ('I belong,' 'call themselves by Jacob,' 'write on their hand') shows diverse worship styles united by one Lord."
+    },
+    "6": {
+      "seeing": "God declares His absolute uniqueness with staggering titles: Israel's King, Redeemer, LORD Almighty. Then the climactic claim: 'I am the first and I am the last; apart from me there is no God.' This isn't just monotheism—it's God's own self-testimony.",
+      "life": "Every substitute god—money, approval, control—crumbles before this declaration. If He is the first and the last, nothing came before Him and nothing outlasts Him. Building your life on anything else is building on what will expire.",
+      "teach": "Jesus applies 'the first and the last' to Himself in Revelation 1:17 and 22:13, making this a key Christological text. The God of Isaiah and the Christ of Revelation share the same self-designation of eternal deity."
+    },
+    "7": {
+      "seeing": "God issues an open challenge: Who can match His track record? He invites any rival to declare what has happened and what will come. The challenge stands unanswered because no idol has ever predicted and fulfilled history.",
+      "life": "When you're anxious about the future, remember: God has been directing history since He 'established my ancient people.' The One who has narrated the past is already writing your future. No competitor can make that claim.",
+      "teach": "Predictive prophecy is presented as God's unique credential. Unlike fortune-tellers who guess, God declares the end from the beginning. This challenge to rival gods forms the backbone of Isaiah's courtroom argument (chapters 41-48)."
+    },
+    "8": {
+      "seeing": "God turns to His people as courtroom witnesses: 'You are my witnesses.' They have seen His prophecies fulfilled. The rhetorical question 'Is there any God besides me?' expects a resounding no. He is the only Rock—solid, immovable, dependable.",
+      "life": "You are God's witness. Your life story—every prayer answered, every crisis survived—is evidence that He is real. When doubt creeps in, review your own testimony. You've seen His faithfulness firsthand.",
+      "teach": "The 'Rock' metaphor connects to Deuteronomy 32:4 and foreshadows Christ the Rock (1 Corinthians 10:4). God's statement 'I know not one' is not ignorance but emphatic denial—there is no other deity in existence."
+    },
+    "9": {
+      "seeing": "The satire begins. Idol-makers are 'nothing'—the Hebrew word tohu echoes Genesis 1:2's 'formless void.' They treasure what is 'worthless,' and their advocates are literally blind. The language is deliberately harsh to expose idolatry's emptiness.",
+      "life": "What 'worthless things' do you treasure? We may not carve statues, but we invest enormous energy in things that can't deliver what they promise—status symbols, digital validation, material accumulation. The blindness is the same.",
+      "teach": "Isaiah uses tohu ('formless/nothing') deliberately—idol-makers are returning creation to pre-creation chaos. Instead of participating in God's creative order, they unmake meaning by worshiping what cannot see, hear, or save."
+    },
+    "10": {
+      "seeing": "The rhetorical question drips with sarcasm: Who would shape a god that 'can profit nothing'? The very act of manufacturing a deity exposes the absurdity—a god you have to make is no god at all.",
+      "life": "We 'shape' our own gods when we design a version of spirituality that makes no demands on us. A custom-built god—whether carved from wood or crafted from personal preferences—will always profit nothing.",
+      "teach": "The Hebrew word for 'profit' (ya'al) appears frequently in Isaiah's idol polemic. The test of any object of worship is simple: does it actually deliver? Idols fail this test categorically."
+    },
+    "11": {
+      "seeing": "The craftsmen who make idols are 'only human beings'—the very thing their products are supposed to transcend. The irony is devastating: mortal men create immortal gods. The maker is greater than the made, yet worships what he made.",
+      "life": "Anything you create with your own hands cannot save you. Your achievements, your portfolio, your carefully constructed image—they are products of a finite person. Don't worship what your own effort produced.",
+      "teach": "Isaiah exposes the fundamental category error of idolatry: the creature making the creator. True worship flows upward—from the made to the Maker. Reversed worship always ends in 'terror and shame.'"
+    },
+    "12": {
+      "seeing": "Now the camera zooms in on the blacksmith. He works with coals, hammers, and his strong arm—but he gets hungry, thirsty, and faint. The god-maker's own body betrays his limitation. He can't even sustain himself, let alone create a savior.",
+      "life": "Ever poured all your energy into something that couldn't give anything back? The blacksmith exhausts himself making a god that will never feed him, never refresh him, never strengthen his weary arms.",
+      "teach": "The physical details are theologically loaded: hunger, thirst, and faintness prove the idol-maker's creatureliness. A god born from a fainting man's hands inherits his weakness. The contrast with the LORD who 'does not grow tired or weary' (40:28) is stark."
+    },
+    "13": {
+      "seeing": "The carpenter meticulously measures, outlines, and shapes the idol 'in human form, human form in all its glory.' The repetition of 'human form' emphasizes the absurdity: he's making a god that looks like himself, then housing it in a shrine.",
+      "life": "We tend to make God in our image rather than being remade in His. When your picture of God conveniently shares all your opinions and never challenges you, you may have carved an idol shaped like yourself.",
+      "teach": "The progression—line, marker, chisels, compasses—shows elaborate craftsmanship serving a foolish purpose. The more detailed the artistry, the deeper the irony: magnificent skill creating a magnificent nothing."
+    },
+    "14": {
+      "seeing": "Isaiah traces the idol all the way back to a tree in the forest. The god-to-be was once a cedar, cypress, or oak—planted, rained on, growing naturally. The idol's origin story is a tree that God grew with His rain.",
+      "life": "The raw materials of every idol come from God's creation. Even our misplaced worship borrows from His gifts. The irony: we take what God provided and fashion it into a replacement for Him.",
+      "teach": "The phrase 'the rain made it grow' is devastating—God's own provision (rain) nourishes the tree that becomes an idol. Idolatry is always parasitic on the true God's generosity."
+    },
+    "15": {
+      "seeing": "Here the satire reaches its sharpest point: the same piece of wood serves as fuel for fire, oven for bread, AND material for a god. The wood doesn't change—only the man's irrational treatment of it changes.",
+      "life": "We laugh at the absurdity, but do we split our resources the same way? Half our time building the kingdom of God, half building kingdoms of self-promotion? The divided wood mirrors our divided loyalties.",
+      "teach": "The theological brilliance lies in the identical material serving opposite purposes. If the wood can be burned for warmth, it has no divine essence. The idol is functionally identical to firewood—same substance, delusional classification."
+    },
+    "16": {
+      "seeing": "The man is satisfied with his fire: 'Ah! I am warm; I see the fire.' He recognizes the wood's real utility—it gives heat and cooks food. His senses work perfectly for practical purposes but shut down completely for spiritual ones.",
+      "life": "We're often perfectly rational in everyday life—budgeting, cooking, planning—yet completely irrational about what we worship. The same mind that balances a checkbook can chase after things that will never satisfy.",
+      "teach": "Isaiah highlights selective rationality: the man correctly uses half the wood but irrationally worships the other half. Idolatry doesn't require total insanity—just a compartmentalized blindness that exempts our cherished objects from scrutiny."
+    },
+    "17": {
+      "seeing": "The punchline lands: 'From the rest he makes a god.' The leftover wood—the scraps after cooking and warming—becomes his deity. He bows, worships, and prays 'Save me! You are my god!' to lumber.",
+      "life": "Does anything in your life get the leftovers of your time and attention yet receive your desperate prayers? 'Save me!' we cry to careers, relationships, or substances that are no more capable of saving than a block of wood.",
+      "teach": "The prayer 'Save me! You are my god!' is tragically ironic. Salvation requires power the idol doesn't possess. The worshiper's desperation highlights his need; his chosen savior highlights his delusion."
+    },
+    "18": {
+      "seeing": "Isaiah delivers the diagnosis: spiritual blindness and closed minds. 'Eyes plastered over' and 'minds closed' describe a judicial hardening—they have refused to see for so long that they now cannot see. The condition is both chosen and imposed.",
+      "life": "Spiritual blindness rarely happens overnight. It's the result of repeated choices to ignore truth. Every time we rationalize an idol, our vision dims a little more. The cure is to stop and honestly ask: what am I not seeing?",
+      "teach": "This verse connects to Isaiah 6:9-10's commission of judicial hardening. Idolatry creates a feedback loop: worshiping nothing produces ignorance, which produces more worship of nothing. Only divine intervention breaks the cycle."
+    },
+    "19": {
+      "seeing": "Isaiah voices the thought that never occurs to the idol-maker: 'Shall I bow down to a block of wood?' The devastating logic—half for fuel, half for worship—is so obvious that only spiritual blindness explains missing it. 'No one stops to think' is the tragedy.",
+      "life": "The most powerful weapon against idolatry is honest reflection. Simply stopping to think—'Is what I'm pursuing actually capable of delivering what I need?'—can break the spell of a thousand false promises.",
+      "teach": "The unasked question ('Shall I make a detestable thing from what is left?') reveals that idolatry persists through unreflection, not through evidence. Critical thinking is inherently hostile to false worship."
+    },
+    "20": {
+      "seeing": "'Feeds on ashes'—a striking metaphor for consuming what has already been consumed. The deluded heart is both the cause and the effect: it misleads, and the person cannot self-diagnose. He holds a lie in his right hand but cannot recognize it.",
+      "life": "A 'deluded heart' is the scariest condition because you don't know you have it. The person feeding on ashes thinks he's feasting. Ask trusted friends, Scripture, and the Spirit to show you what your right hand is holding.",
+      "teach": "The phrase 'a lie in my right hand' recalls the right hand as the place of power and action. Our strongest grip may be clutching our greatest deception. Only God's truth can pry open a deluded fist."
+    },
+    "21": {
+      "seeing": "After the idol satire, God tenderly returns to Israel: 'Remember these things.' The contrast is sharp—from deluded idol-worshipers to God's remembered servant. 'I will not forget you' answers every fear of abandonment.",
+      "life": "God says 'I will not forget you' to people who have repeatedly forgotten Him. His memory of you doesn't depend on your memory of Him. Even when you lose track of God, He never loses track of you.",
+      "teach": "'I have made you, you are my servant' reaffirms identity after the idol section exposed false identity. The cure for idolatry isn't just smashing idols—it's remembering whose servant you truly are."
+    },
+    "22": {
+      "seeing": "This is one of Scripture's most beautiful grace statements. Offenses swept away 'like a cloud,' sins dispersed 'like the morning mist'—here now, gone completely. The invitation 'Return to me' follows the declaration 'I have redeemed you.' Redemption precedes repentance.",
+      "life": "Your sins aren't a permanent stain—they're a cloud that God has swept away. Morning mist doesn't linger; it vanishes when the sun rises. God's redemption is that thorough. Now return to the One who already cleared the sky.",
+      "teach": "The order is theologically crucial: God redeems first, then calls Israel to return. Grace precedes response. This matches the New Testament pattern: 'While we were still sinners, Christ died for us' (Romans 5:8)."
+    },
+    "23": {
+      "seeing": "Creation itself is summoned to celebrate: heavens, earth, mountains, forests, and trees. Redemption is so magnificent that the natural world bursts into song. 'The LORD has redeemed Jacob' is the cause; cosmic joy is the response.",
+      "life": "When was the last time God's grace made you want to shout? This verse says even mountains and trees can't contain their joy over redemption. If creation celebrates, how much more should you—the one actually redeemed?",
+      "teach": "The cosmic celebration anticipates Romans 8:19-22, where creation groans awaiting redemption. Here, creation sings because redemption has come. The scope of salvation is not just personal but cosmic—all creation is affected."
+    },
+    "24": {
+      "seeing": "God reintroduces Himself with stacking credentials: your Redeemer, your former in the womb, the Maker of all things, the one who stretches heavens and spreads earth 'by myself.' No assistant, no committee—God alone created everything.",
+      "life": "The same God who stretched out the heavens formed you in the womb. You share a Creator with the cosmos. When your problems feel too big, remember: the Maker of galaxies is your personal Redeemer.",
+      "teach": "'By myself' is a powerful monotheistic declaration. No co-creator, no demiurge—God alone made everything. This sets up the Cyrus prophecy: the God who made the universe can certainly direct a Persian king."
+    },
+    "25": {
+      "seeing": "God actively opposes counterfeit knowledge: He foils false prophets, exposes diviners as fools, and turns human 'wisdom' into nonsense. This isn't passive—God is engaged in dismantling deception wherever it operates.",
+      "life": "Every prediction that contradicts God's word will eventually be exposed as nonsense. When the world's 'wisdom' tells you something that conflicts with Scripture, remember: God has a track record of overturning false expertise.",
+      "teach": "Paul echoes this in 1 Corinthians 1:20: 'Has not God made foolish the wisdom of the world?' The pattern is consistent: human wisdom apart from God's revelation eventually collapses. Only God's word endures."
+    },
+    "26": {
+      "seeing": "In contrast to foiling false prophets, God 'carries out the words of his servants' and 'fulfills the predictions of his messengers.' True prophets are vindicated; their words come to pass. Jerusalem will be inhabited; Judah's towns rebuilt.",
+      "life": "God keeps His promises even when they seem impossible. 'It shall be inhabited' was spoken about a city destined for destruction. God sees past the rubble to the restoration. He speaks the same over your ruins.",
+      "teach": "This verse establishes the true-prophet/false-prophet contrast. The test is fulfillment: false prophets are foiled; true prophets are fulfilled. This criterion appears in Deuteronomy 18:21-22 and validates Isaiah's own prophetic ministry."
+    },
+    "27": {
+      "seeing": "God commands the 'watery deep' to be dry—echoing the Red Sea crossing and anticipating the return from exile. The God who parted seas for Moses will remove every obstacle for the returning exiles.",
+      "life": "What 'watery deep' stands between you and God's promise for your life? The same God who dried up the Red Sea and the Jordan River can clear a path through your most overwhelming obstacle.",
+      "teach": "The drying of waters connects to the Exodus motif running through Isaiah 40-55. The new exodus from Babylon will mirror the original exodus from Egypt, with God removing barriers just as powerfully."
+    },
+    "28": {
+      "seeing": "The chapter's stunning climax: God names Cyrus by name—over a century before his birth—calling him 'my shepherd.' A pagan Persian emperor is God's chosen instrument to rebuild Jerusalem and lay the temple's foundations. God's sovereignty transcends national and religious boundaries.",
+      "life": "God can use anyone—even people who don't know Him—to accomplish His purposes. That difficult boss, that unlikely helper, that unexpected turn of events? God is orchestrating through people and circumstances you'd never choose.",
+      "teach": "Naming Cyrus before his birth is one of the Bible's most remarkable predictive prophecies. Cyrus conquered Babylon in 539 BC and issued the decree allowing Jews to return (Ezra 1:1-4). God calls a pagan king 'my shepherd'—sovereign grace ignores human categories."
+    }
+  },
+  "scriptureConnections": {
+    "1": {
+      "from": [
+        "Genesis 32:28 - God renames Jacob to Israel, establishing the covenant identity",
+        "Deuteronomy 7:6 - The LORD your God has chosen you out of all the peoples on the face of the earth"
+      ],
+      "to": [
+        "1 Peter 2:9 - You are a chosen people, a royal priesthood, a holy nation",
+        "Ephesians 1:4 - He chose us in Him before the creation of the world"
+      ],
+      "context": "God's election of Israel anticipates His election of believers in Christ. The 'chosen' identity that began with Jacob extends to all who are in Christ, chosen before the foundation of the world."
+    },
+    "2": {
+      "from": [
+        "Psalm 139:13-14 - You knit me together in my mother's womb; I am fearfully and wonderfully made",
+        "Jeremiah 1:5 - Before I formed you in the womb I knew you, before you were born I set you apart"
+      ],
+      "to": [
+        "Galatians 1:15 - God set me apart from my mother's womb and called me by His grace",
+        "Luke 1:44 - The baby in my womb leaped for joy at the sound of your greeting"
+      ],
+      "context": "God's intimate involvement in forming His people in the womb speaks to His sovereign purpose before birth. Paul recognized this same prenatal calling in his apostolic commission."
+    },
+    "3": {
+      "from": [
+        "Joel 2:28-29 - I will pour out my Spirit on all people; your sons and daughters will prophesy",
+        "Ezekiel 36:26-27 - I will put my Spirit in you and move you to follow my decrees"
+      ],
+      "to": [
+        "Acts 2:17-18 - In the last days I will pour out my Spirit on all people",
+        "Titus 3:5-6 - He saved us through the washing of rebirth and renewal by the Holy Spirit, whom He poured out on us generously"
+      ],
+      "context": "Isaiah's promise of the Spirit's outpouring finds direct fulfillment at Pentecost. Peter quoted Joel, but Isaiah 44:3 provides the foundational imagery of water on thirsty land—spiritual refreshment for parched souls."
+    },
+    "4": {
+      "from": [
+        "Psalm 1:3 - He is like a tree planted by streams of water, which yields its fruit in season",
+        "Jeremiah 17:8 - He will be like a tree planted by the water that sends out its roots by the stream"
+      ],
+      "to": [
+        "John 15:5 - I am the vine; you are the branches. If you remain in me and I in you, you will bear much fruit",
+        "Galatians 5:22-23 - The fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control"
+      ],
+      "context": "The flourishing vegetation imagery connects the Old Testament's tree-by-water metaphor with the New Testament's fruit-bearing life in the Spirit. Both depend entirely on the source of nourishment."
+    },
+    "5": {
+      "from": [
+        "Exodus 13:9 - This observance will be for you like a sign on your hand and a reminder on your forehead",
+        "Deuteronomy 6:8 - Tie them as symbols on your hands and bind them on your foreheads"
+      ],
+      "to": [
+        "Romans 10:9 - If you declare with your mouth 'Jesus is Lord' and believe in your heart, you will be saved",
+        "Galatians 3:28-29 - You are all one in Christ Jesus; if you belong to Christ, then you are Abraham's seed"
+      ],
+      "context": "The voluntary identification with God—writing His name on one's hand—anticipates the New Testament confession of faith. Both Testaments envision people joyfully owning their identity as belonging to the LORD."
+    },
+    "6": {
+      "from": [
+        "Deuteronomy 4:35 - The LORD is God; besides him there is no other",
+        "Isaiah 41:4 - I, the LORD—with the first of them and with the last—I am he"
+      ],
+      "to": [
+        "Revelation 1:17 - I am the First and the Last; I am the Living One",
+        "Revelation 22:13 - I am the Alpha and the Omega, the First and the Last, the Beginning and the End"
+      ],
+      "context": "Jesus directly claims Isaiah's divine title 'the First and the Last' in Revelation. This is one of the strongest New Testament affirmations of Christ's deity—He shares God's unique self-designation."
+    },
+    "7": {
+      "from": [
+        "Isaiah 41:22-23 - Tell us what the former things were, so that we may consider them and know their final outcome",
+        "Deuteronomy 18:21-22 - If what a prophet proclaims in the name of the LORD does not take place, that is a message the LORD has not spoken"
+      ],
+      "to": [
+        "John 13:19 - I am telling you now before it happens, so that when it does happen you will believe that I am who I am",
+        "Acts 17:31 - He has given proof of this to everyone by raising Jesus from the dead"
+      ],
+      "context": "God's ability to predict the future is His ultimate credential. Jesus adopted this same approach, telling disciples things before they happened so fulfilled prophecy would confirm His identity."
+    },
+    "8": {
+      "from": [
+        "Deuteronomy 32:4 - He is the Rock, his works are perfect, and all his ways are just",
+        "2 Samuel 22:32 - For who is God besides the LORD? And who is the Rock except our God?"
+      ],
+      "to": [
+        "1 Corinthians 10:4 - They drank from the spiritual rock that accompanied them, and that rock was Christ",
+        "Acts 1:8 - You will be my witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth"
+      ],
+      "context": "Israel as God's witnesses anticipates the church's witness mandate in Acts. The 'Rock' imagery finds its New Testament fulfillment in Christ, the spiritual Rock who sustains His people through every wilderness."
+    },
+    "9": {
+      "from": [
+        "Psalm 115:4-8 - Their idols are silver and gold, made by human hands; those who make them will be like them",
+        "Jeremiah 10:3-5 - The practices of the peoples are worthless; they cut a tree out of the forest"
+      ],
+      "to": [
+        "Acts 17:29 - We should not think that the divine being is like gold or silver or stone—an image made by human design and skill",
+        "Romans 1:22-23 - Although they claimed to be wise, they became fools and exchanged the glory of the immortal God for images"
+      ],
+      "context": "The Old Testament polemic against idol-making continues directly into the New Testament. Paul's critique of idolatry in Romans 1 and Acts 17 draws on the same logic Isaiah establishes here."
+    },
+    "10": {
+      "from": [
+        "Habakkuk 2:18 - Of what value is an idol carved by a craftsman? Or an image that teaches lies?",
+        "Psalm 135:15-18 - The idols of the nations are silver and gold, made by human hands"
+      ],
+      "to": [
+        "1 Corinthians 8:4 - We know that an idol is nothing at all in the world and that there is no God but one",
+        "1 John 5:21 - Dear children, keep yourselves from idols"
+      ],
+      "context": "Paul's declaration that 'an idol is nothing' echoes Isaiah's polemic. The worthlessness of idols is a consistent biblical theme from the prophets through the apostles."
+    },
+    "11": {
+      "from": [
+        "Isaiah 41:6-7 - Each one helps the other and says to his brother, 'Be strong!' The craftsman encourages the goldsmith",
+        "Jeremiah 10:14 - Every goldsmith is shamed by his idols; his images are a fraud, they have no breath in them"
+      ],
+      "to": [
+        "2 Thessalonians 2:8 - The lawless one will be revealed, whom the Lord Jesus will overthrow",
+        "Revelation 19:20 - The beast was captured, and with it the false prophet; both were thrown into the lake of fire"
+      ],
+      "context": "The shame promised to idol-makers finds its ultimate fulfillment in the final defeat of all false worship. Every counterfeit object of devotion will be brought down to 'terror and shame.'"
+    },
+    "12": {
+      "from": [
+        "Isaiah 40:28-31 - The LORD does not grow tired or weary; He gives strength to the weary",
+        "Psalm 121:3-4 - He who watches over Israel will neither slumber nor sleep"
+      ],
+      "to": [
+        "Matthew 11:28 - Come to me, all you who are weary and burdened, and I will give you rest",
+        "John 4:13-14 - Everyone who drinks this water will be thirsty again, but whoever drinks the water I give will never thirst"
+      ],
+      "context": "The blacksmith who grows hungry and faint contrasts sharply with the God who never grows weary. Jesus offers rest to the weary and water to the thirsty—everything the idol-maker lacks and his idol cannot provide."
+    },
+    "13": {
+      "from": [
+        "Genesis 1:26-27 - God created mankind in his own image, in the image of God he created them",
+        "Exodus 20:4 - You shall not make for yourself an image in the form of anything in heaven above or on the earth beneath"
+      ],
+      "to": [
+        "Colossians 1:15 - The Son is the image of the invisible God, the firstborn over all creation",
+        "2 Corinthians 3:18 - We are being transformed into his image with ever-increasing glory"
+      ],
+      "context": "The carpenter shapes an idol in human form, reversing Genesis: instead of God making humans in His image, humans make gods in theirs. Christ alone is the true image of the invisible God."
+    },
+    "14": {
+      "from": [
+        "Psalm 104:16 - The trees of the LORD are well watered, the cedars of Lebanon that he planted",
+        "Isaiah 41:19 - I will put in the desert the cedar and the acacia, the myrtle and the olive"
+      ],
+      "to": [
+        "James 1:17 - Every good and perfect gift is from above, coming down from the Father of the heavenly lights",
+        "Acts 14:17 - He has shown kindness by giving you rain from heaven and crops in their seasons"
+      ],
+      "context": "The rain that grew the idol's tree came from God. Every material used in false worship originates from the true Creator's generosity—a profound irony that Paul also noted in Acts 14."
+    },
+    "15": {
+      "from": [
+        "Deuteronomy 4:28 - There you will worship man-made gods of wood and stone, which cannot see or hear or eat or smell",
+        "Isaiah 40:19-20 - As for an idol, a metalworker casts it, and a goldsmith overlays it with gold"
+      ],
+      "to": [
+        "Acts 19:26 - Paul has convinced and led astray large numbers of people; he says that gods made by human hands are no gods at all",
+        "Galatians 4:8-9 - When you did not know God, you were slaves to those who by nature are not gods"
+      ],
+      "context": "The same wood serving as both fuel and god exposes idolatry's absurdity. Paul carried this argument to Ephesus, where idol-worship was big business, declaring that handmade gods are no gods at all."
+    },
+    "16": {
+      "from": [
+        "Ecclesiastes 2:24 - A person can do nothing better than to eat and drink and find satisfaction in their own toil",
+        "Proverbs 26:12 - Do you see a person wise in their own eyes? There is more hope for a fool than for them"
+      ],
+      "to": [
+        "Luke 12:19-20 - I'll say to myself, 'You have plenty of grain laid up for many years. Take life easy.' But God said, 'You fool!'",
+        "James 4:13-14 - You do not even know what will happen tomorrow. What is your life? A mist that appears and then vanishes."
+      ],
+      "context": "The man's self-satisfied 'Ah! I am warm' mirrors the rich fool's complacency in Luke 12. Both are content with physical comfort while oblivious to spiritual bankruptcy."
+    },
+    "17": {
+      "from": [
+        "1 Kings 18:26-29 - They called on the name of Baal from morning till noon. 'Baal, answer us!' they shouted. But there was no response",
+        "Judges 10:14 - Go and cry out to the gods you have chosen. Let them save you when you are in trouble!"
+      ],
+      "to": [
+        "Matthew 7:7-8 - Ask and it will be given to you; seek and you will find; knock and the door will be opened",
+        "Hebrews 4:16 - Let us then approach God's throne of grace with confidence, so that we may receive mercy"
+      ],
+      "context": "The idol-worshiper's desperate 'Save me!' goes unanswered, contrasting with Jesus' promise that those who ask the true God will receive. Prayer's power depends entirely on the one being addressed."
+    },
+    "18": {
+      "from": [
+        "Isaiah 6:9-10 - Make the heart of this people calloused; make their ears dull and close their eyes",
+        "Deuteronomy 29:4 - But to this day the LORD has not given you a mind that understands or eyes that see or ears that hear"
+      ],
+      "to": [
+        "2 Corinthians 4:4 - The god of this age has blinded the minds of unbelievers so that they cannot see the light of the gospel",
+        "Ephesians 4:18 - They are darkened in their understanding and separated from the life of God because of the ignorance that is in them"
+      ],
+      "context": "Spiritual blindness is a consistent biblical theme. Isaiah's 'eyes plastered over' connects to Paul's description of minds blinded by the god of this age. Only divine illumination breaks through."
+    },
+    "19": {
+      "from": [
+        "Jeremiah 10:8 - They are all senseless and foolish; they are taught by worthless wooden idols",
+        "Psalm 115:4-6 - They have mouths but cannot speak, eyes but cannot see, ears but cannot hear"
+      ],
+      "to": [
+        "Romans 1:21-22 - Although they knew God, they neither glorified him as God nor gave thanks; their thinking became futile",
+        "2 Timothy 3:7 - Always learning but never able to come to a knowledge of the truth"
+      ],
+      "context": "The refusal to 'stop and think' mirrors Paul's description of futile thinking in Romans 1. Both Isaiah and Paul identify willful unreflection as the mechanism that sustains false worship."
+    },
+    "20": {
+      "from": [
+        "Hosea 12:1 - Ephraim feeds on the wind; he pursues the east wind all day",
+        "Proverbs 14:12 - There is a way that appears to be right, but in the end it leads to death"
+      ],
+      "to": [
+        "2 Thessalonians 2:11 - God sends them a powerful delusion so that they will believe the lie",
+        "John 8:44 - The devil is a liar and the father of lies"
+      ],
+      "context": "'Feeding on ashes' and holding 'a lie in my right hand' connect to the New Testament theme of deception. The deluded heart cannot self-diagnose—only the truth of Christ sets free."
+    },
+    "21": {
+      "from": [
+        "Isaiah 49:15 - Can a mother forget the baby at her breast? Though she may forget, I will not forget you!",
+        "Deuteronomy 4:31 - The LORD your God is a merciful God; he will not abandon or destroy you or forget the covenant"
+      ],
+      "to": [
+        "2 Timothy 2:13 - If we are faithless, he remains faithful, for he cannot disown himself",
+        "Hebrews 13:5 - Never will I leave you; never will I forsake you"
+      ],
+      "context": "God's 'I will not forget you' anticipates Christ's promise never to leave or forsake His people. Divine faithfulness does not depend on human faithfulness—it flows from God's unchanging character."
+    },
+    "22": {
+      "from": [
+        "Psalm 103:12 - As far as the east is from the west, so far has he removed our transgressions from us",
+        "Micah 7:19 - You will tread our sins underfoot and hurl all our iniquities into the depths of the sea"
+      ],
+      "to": [
+        "Romans 5:8 - While we were still sinners, Christ died for us",
+        "Colossians 2:13-14 - He forgave us all our sins, having canceled the charge of our legal indebtedness, nailing it to the cross"
+      ],
+      "context": "Sins swept away like clouds and morning mist—gone without a trace. This is the gospel in the Old Testament: full forgiveness precedes the call to return. Christ's cross accomplished what this verse promised."
+    },
+    "23": {
+      "from": [
+        "Psalm 96:11-12 - Let the heavens rejoice, let the earth be glad; let the fields be jubilant and everything in them; let all the trees of the forest sing for joy",
+        "Psalm 98:7-8 - Let the sea resound, and everything in it; let the rivers clap their hands, let the mountains sing together for joy"
+      ],
+      "to": [
+        "Romans 8:19-21 - The creation waits in eager expectation for the children of God to be revealed; creation itself will be liberated",
+        "Revelation 5:13 - Every creature in heaven and on earth and under the earth and on the sea sang: To him who sits on the throne and to the Lamb be praise"
+      ],
+      "context": "When God redeems, all creation celebrates. Isaiah's singing mountains anticipate Paul's groaning creation awaiting liberation and Revelation's universal chorus of praise. Redemption has cosmic scope."
+    },
+    "24": {
+      "from": [
+        "Job 9:8 - He alone stretches out the heavens and treads on the waves of the sea",
+        "Psalm 136:5-6 - Who by his understanding made the heavens and spread out the earth upon the waters"
+      ],
+      "to": [
+        "John 1:3 - Through him all things were made; without him nothing was made that has been made",
+        "Colossians 1:16-17 - For in him all things were created; things in heaven and on earth. He is before all things, and in him all things hold together"
+      ],
+      "context": "God's claim to have made all things 'by myself' finds its New Testament counterpart in Christ, through whom all things were made. The Creator-Redeemer of Isaiah is the Christ of the New Testament."
+    },
+    "25": {
+      "from": [
+        "Deuteronomy 18:20-22 - A prophet who presumes to speak in my name anything I have not commanded shall die",
+        "Jeremiah 50:36 - A sword against her false prophets! They will become fools"
+      ],
+      "to": [
+        "1 Corinthians 1:19-20 - I will destroy the wisdom of the wise; has not God made foolish the wisdom of the world?",
+        "1 Corinthians 3:19 - The wisdom of this world is foolishness in God's sight"
+      ],
+      "context": "God's overthrow of false wisdom is a consistent theme. Paul directly applies this principle to the cross, which appears foolish to worldly wisdom but is the power of God to those being saved."
+    },
+    "26": {
+      "from": [
+        "Joshua 21:45 - Not one of all the LORD's good promises to Israel failed; every one was fulfilled",
+        "1 Kings 8:56 - Not one word has failed of all the good promises he gave through his servant Moses"
+      ],
+      "to": [
+        "2 Corinthians 1:20 - No matter how many promises God has made, they are 'Yes' in Christ",
+        "Luke 24:44 - Everything must be fulfilled that is written about me in the Law of Moses, the Prophets and the Psalms"
+      ],
+      "context": "God's track record of fulfilling His servants' words reaches its climax in Christ, in whom every divine promise finds its 'Yes.' The rebuilding of Jerusalem was just a preview of the ultimate restoration."
+    },
+    "27": {
+      "from": [
+        "Exodus 14:21-22 - The LORD drove the sea back with a strong east wind and turned it into dry land",
+        "Joshua 3:16-17 - The water from upstream stopped flowing, and the priests who carried the ark stood on dry ground"
+      ],
+      "to": [
+        "Mark 4:39 - He got up, rebuked the wind and said to the waves, 'Quiet! Be still!' Then the wind died down and it was completely calm",
+        "Revelation 21:1 - Then I saw a new heaven and a new earth; there was no longer any sea"
+      ],
+      "context": "God's command over waters—drying seas, calming storms—demonstrates His sovereignty over chaos. Jesus exercised this same authority, and in the new creation, the chaotic sea is eliminated entirely."
+    },
+    "28": {
+      "from": [
+        "2 Chronicles 36:22-23 - The LORD moved the heart of Cyrus king of Persia to make a proclamation: The LORD has appointed me to build a temple",
+        "Ezra 1:1-4 - The LORD moved the heart of Cyrus to issue a proclamation to rebuild the temple in Jerusalem"
+      ],
+      "to": [
+        "Matthew 16:18 - On this rock I will build my church, and the gates of Hades will not overcome it",
+        "Ephesians 2:19-22 - You are built on the foundation of the apostles and prophets, with Christ Jesus himself as the chief cornerstone; the whole building is joined together and rises to become a holy temple in the Lord"
+      ],
+      "context": "Cyrus rebuilding the physical temple foreshadows Christ building the spiritual temple—the church. God uses unlikely instruments (a pagan king, a crucified Messiah) to accomplish His building purposes."
+    }
+  },
+  "theme": "God pours out His Spirit on chosen Israel, ridicules the absurdity of idol-making, sweeps away sins like clouds, and sovereignly names Cyrus as His shepherd to rebuild Jerusalem",
+  "groupMetadata": {
+    "1": {
+      "name": "The Spirit Poured Out",
+      "transition": "God's chosen servant refreshed—water on thirsty land, Spirit on offspring, children claiming the LORD's name"
+    },
+    "2": {
+      "name": "There Is No God Besides Me",
+      "transition": "God's absolute uniqueness declared—the first and the last, the only Rock, Israel as witnesses"
+    },
+    "3": {
+      "name": "The Absurdity of Idols",
+      "transition": "Extended satire on idol-making—a man burns half a log for warmth and worships the other half"
+    },
+    "4": {
+      "name": "Remember These Things",
+      "transition": "Grace proclaimed—offenses swept away like clouds, sins like morning mist, creation sings for joy"
+    },
+    "5": {
+      "name": "The LORD Who Made All Things",
+      "transition": "God's sovereign plan—frustrates false prophets, confirms His word, names Cyrus as shepherd over Jerusalem's rebuilding"
+    }
+  },
+  "hingeMetadata": {
+    "foundation": {
+      "explanation": "Foundation (v6) — 'I am the first and I am the last; apart from me there is no God' — God's absolute uniqueness as the basis for everything that follows",
+      "color": "bg-purple-500"
+    },
+    "hinge": {
+      "explanation": "Chiastic Center (v22) — 'I have swept away your offenses like a cloud' — grace at the heart of the chapter, redemption before repentance",
+      "color": "bg-blue-500"
+    },
+    "climax": {
+      "explanation": "Climax (v28) — God names Cyrus as His shepherd and commands Jerusalem rebuilt — sovereign prophecy fulfilled through an unlikely instrument",
+      "color": "bg-red-500"
+    }
+  },
+  "structureModal": null
+}
